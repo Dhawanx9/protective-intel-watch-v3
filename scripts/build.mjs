@@ -1,11 +1,12 @@
 // Orchestrates the full pipeline: fetch RSS -> dedupe -> categorize -> write JSON.
 // This is what GitHub Actions runs on a schedule. The browser never touches RSS directly.
-import { writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fetchAllFeeds } from "./fetch-feeds.mjs";
 import { dedupeArticles } from "./dedupe.mjs";
 import { categorizeClusters } from "./categorize.mjs";
 
 const DATA_DIR = new URL("../data/", import.meta.url);
+const CATEGORIES_PATH = new URL("../config/categories.json", import.meta.url);
 const MAX_AGE_DAYS = 7;
 
 function withinWindow(items) {
@@ -29,6 +30,13 @@ async function main() {
 
   events.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
+  // Full static category list (id/label/color only, no keyword lists) so the
+  // sidebar always shows every category - including ones with zero events in
+  // this particular run - instead of a category silently vanishing whenever
+  // no matching story happened to come through.
+  const { categories } = JSON.parse(await readFile(CATEGORIES_PATH, "utf8"));
+  const allCategories = categories.map(c => ({ id: c.id, label: c.label, color: c.color }));
+
   const finishedAt = new Date().toISOString();
   const meta = {
     generatedAt: finishedAt,
@@ -36,6 +44,7 @@ async function main() {
     totalEventsCount: events.length,
     rawArticleCount: items.length,
     feedHealth,
+    allCategories,
     categoriesPresent: [...new Set(events.map(e => e.category))]
   };
 
