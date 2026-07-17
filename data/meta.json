@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-17T15:23:38.563Z",
-  "startedAt": "2026-07-17T15:23:36.231Z",
-  "totalEventsCount": 47,
-  "rawArticleCount": 486,
+  "generatedAt": "2026-07-17T15:24:55.621Z",
+  "startedAt": "2026-07-17T15:24:44.179Z",
+  "totalEventsCount": 192,
+  "rawArticleCount": 2480,
   "feedHealth": [
     {
       "id": "bbc-world",
@@ -10,7 +10,7 @@
       "status": "ok",
       "count": 38,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "guardian-world",
@@ -18,7 +18,7 @@
       "status": "ok",
       "count": 0,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "sky-world",
@@ -26,7 +26,7 @@
       "status": "ok",
       "count": 9,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "ndtv-top",
@@ -34,7 +34,7 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "toi-top",
@@ -42,7 +42,7 @@
       "status": "ok",
       "count": 45,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "hindu-national",
@@ -50,7 +50,7 @@
       "status": "ok",
       "count": 60,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "htimes-india",
@@ -58,7 +58,7 @@
       "status": "ok",
       "count": 100,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "npr-world",
@@ -66,7 +66,7 @@
       "status": "ok",
       "count": 10,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "cbs-world",
@@ -74,7 +74,7 @@
       "status": "ok",
       "count": 30,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "nyt-world",
@@ -82,7 +82,7 @@
       "status": "ok",
       "count": 55,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "aljazeera-all",
@@ -90,7 +90,7 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "dw-world",
@@ -98,7 +98,7 @@
       "status": "ok",
       "count": 0,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "france24-world",
@@ -106,7 +106,7 @@
       "status": "ok",
       "count": 24,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "scmp-world",
@@ -114,7 +114,7 @@
       "status": "ok",
       "count": 50,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "cna-asia",
@@ -122,7 +122,7 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     },
     {
       "id": "ani-news",
@@ -130,7 +130,719 @@
       "status": "error",
       "count": 0,
       "error": "HTTP 403",
-      "checkedAt": "2026-07-17T15:23:38.358Z"
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "cnn-top-stories-usa",
+      "label": "CNN Top Stories (USA)",
+      "status": "ok",
+      "count": 69,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "cnn-world-usa",
+      "label": "CNN World (USA)",
+      "status": "ok",
+      "count": 29,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "abc-news-top-stories-usa",
+      "label": "ABC News Top Stories (USA)",
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "abc-news-us-headlines-usa",
+      "label": "ABC News US Headlines (USA)",
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "nbc-news-usa",
+      "label": "NBC News (USA)",
+      "status": "ok",
+      "count": 21,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "fox-news-latest-usa",
+      "label": "Fox News Latest (USA)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "fox-news-national-usa",
+      "label": "Fox News National (USA)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "usa-today-top-stories-usa",
+      "label": "USA Today Top Stories (USA)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "politico-usa",
+      "label": "Politico (USA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-hill-usa",
+      "label": "The Hill (USA)",
+      "status": "ok",
+      "count": 15,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "wsj-world-news-usa",
+      "label": "WSJ World News (USA)",
+      "status": "ok",
+      "count": 20,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "wsj-us-business-usa",
+      "label": "WSJ US Business (USA)",
+      "status": "ok",
+      "count": 20,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "la-times-usa",
+      "label": "LA Times (USA)",
+      "status": "ok",
+      "count": 96,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "chicago-tribune-usa",
+      "label": "Chicago Tribune (USA)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "ny-post-usa",
+      "label": "NY Post (USA)",
+      "status": "ok",
+      "count": 23,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "ny-daily-news-usa",
+      "label": "NY Daily News (USA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "newsweek-usa",
+      "label": "Newsweek (USA)",
+      "status": "ok",
+      "count": 20,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-atlantic-usa",
+      "label": "The Atlantic (USA)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "orlando-sentinel-usa",
+      "label": "Orlando Sentinel (USA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "baltimore-sun-usa",
+      "label": "Baltimore Sun (USA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "hartford-courant-usa",
+      "label": "Hartford Courant (USA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "seattle-times-usa",
+      "label": "Seattle Times (USA)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "miami-herald-usa",
+      "label": "Miami Herald (USA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 404",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "denver-post-usa",
+      "label": "Denver Post (USA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "star-tribune-minneapolis-usa",
+      "label": "Star Tribune Minneapolis (USA)",
+      "status": "ok",
+      "count": 10,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "houston-chronicle-usa",
+      "label": "Houston Chronicle (USA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 404",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "dallas-morning-news-usa",
+      "label": "Dallas Morning News (USA)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "boston-globe-usa",
+      "label": "Boston Globe (USA)",
+      "status": "ok",
+      "count": 10,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "cbc-news-top-stories-canada",
+      "label": "CBC News Top Stories (Canada)",
+      "status": "ok",
+      "count": 20,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "cbc-news-world-canada",
+      "label": "CBC News World (Canada)",
+      "status": "ok",
+      "count": 20,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "global-news-canada-canada",
+      "label": "Global News Canada (Canada)",
+      "status": "ok",
+      "count": 10,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "toronto-star-canada",
+      "label": "Toronto Star (Canada)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "bbc-uk-uk",
+      "label": "BBC UK (UK)",
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "bbc-business-uk",
+      "label": "BBC Business (UK)",
+      "status": "ok",
+      "count": 54,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "bbc-technology-uk",
+      "label": "BBC Technology (UK)",
+      "status": "ok",
+      "count": 21,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "bbc-england-uk",
+      "label": "BBC England (UK)",
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-guardian-uk-uk",
+      "label": "The Guardian UK (UK)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-guardian-business-uk",
+      "label": "The Guardian Business (UK)",
+      "status": "ok",
+      "count": 40,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-independent-uk",
+      "label": "The Independent (UK)",
+      "status": "ok",
+      "count": 100,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-telegraph-uk",
+      "label": "The Telegraph (UK)",
+      "status": "ok",
+      "count": 120,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "metro-uk-uk",
+      "label": "Metro UK (UK)",
+      "status": "ok",
+      "count": 21,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "evening-standard-uk",
+      "label": "Evening Standard (UK)",
+      "status": "ok",
+      "count": 100,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "daily-mail-uk-news-uk",
+      "label": "Daily Mail UK News (UK)",
+      "status": "ok",
+      "count": 150,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-mirror-uk",
+      "label": "The Mirror (UK)",
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "city-am-uk",
+      "label": "City AM (UK)",
+      "status": "ok",
+      "count": 30,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "manchester-evening-news-uk",
+      "label": "Manchester Evening News (UK)",
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "liverpool-echo-uk",
+      "label": "Liverpool Echo (UK)",
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "birmingham-live-uk",
+      "label": "Birmingham Live (UK)",
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "wales-online-uk",
+      "label": "Wales Online (UK)",
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "glasgow-live-uk",
+      "label": "Glasgow Live (UK)",
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "belfast-live-uk",
+      "label": "Belfast Live (UK)",
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "euronews-emea",
+      "label": "Euronews (EMEA)",
+      "status": "ok",
+      "count": 50,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "politico-europe-emea",
+      "label": "Politico Europe (EMEA)",
+      "status": "ok",
+      "count": 10,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "dw-europe-emea",
+      "label": "DW Europe (EMEA)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "times-of-israel-emea",
+      "label": "Times of Israel (EMEA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "jerusalem-post-emea",
+      "label": "Jerusalem Post (EMEA)",
+      "status": "ok",
+      "count": 26,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "al-arabiya-english-emea",
+      "label": "Al Arabiya English (EMEA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "arab-news-emea",
+      "label": "Arab News (EMEA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-national-uae-emea",
+      "label": "The National UAE (EMEA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 404",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "egypt-independent-emea",
+      "label": "Egypt Independent (EMEA)",
+      "status": "ok",
+      "count": 10,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "news24-south-africa-emea",
+      "label": "News24 South Africa (EMEA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 404",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "allafrica-headlines-emea",
+      "label": "AllAfrica Headlines (EMEA)",
+      "status": "ok",
+      "count": 30,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "daily-maverick-south-africa-emea",
+      "label": "Daily Maverick South Africa (EMEA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "der-spiegel-international-emea",
+      "label": "Der Spiegel International (EMEA)",
+      "status": "ok",
+      "count": 20,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "swiss-info-english-emea",
+      "label": "Swiss Info English (EMEA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 410",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "rfi-english-emea",
+      "label": "RFI English (EMEA)",
+      "status": "ok",
+      "count": 21,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-moscow-times-emea",
+      "label": "The Moscow Times (EMEA)",
+      "status": "ok",
+      "count": 50,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "kyiv-independent-emea",
+      "label": "Kyiv Independent (EMEA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 404",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "middle-east-eye-emea",
+      "label": "Middle East Eye (EMEA)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "premium-times-nigeria-emea",
+      "label": "Premium Times Nigeria (EMEA)",
+      "status": "ok",
+      "count": 15,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "nation-africa-kenya-emea",
+      "label": "Nation Africa Kenya (EMEA)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "japan-times-apac",
+      "label": "Japan Times (APAC)",
+      "status": "ok",
+      "count": 30,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-straits-times-singapore-apac",
+      "label": "The Straits Times Singapore (APAC)",
+      "status": "ok",
+      "count": 43,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-straits-times-asia-apac",
+      "label": "The Straits Times Asia (APAC)",
+      "status": "ok",
+      "count": 50,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "abc-news-australia-apac",
+      "label": "ABC News Australia (APAC)",
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "sydney-morning-herald-apac",
+      "label": "Sydney Morning Herald (APAC)",
+      "status": "ok",
+      "count": 20,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-age-australia-apac",
+      "label": "The Age Australia (APAC)",
+      "status": "ok",
+      "count": 20,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "bangkok-post-top-stories-apac",
+      "label": "Bangkok Post Top Stories (APAC)",
+      "status": "ok",
+      "count": 10,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "jakarta-post-apac",
+      "label": "Jakarta Post (APAC)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 404",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "philippine-daily-inquirer-apac",
+      "label": "Philippine Daily Inquirer (APAC)",
+      "status": "ok",
+      "count": 20,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "taipei-times-apac",
+      "label": "Taipei Times (APAC)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "dawn-pakistan-apac",
+      "label": "Dawn Pakistan (APAC)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-news-international-pakistan-apac",
+      "label": "The News International Pakistan (APAC)",
+      "status": "ok",
+      "count": 50,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "hindustan-times-world-apac",
+      "label": "Hindustan Times World (APAC)",
+      "status": "ok",
+      "count": 100,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "deccan-herald-apac",
+      "label": "Deccan Herald (APAC)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 404",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "the-star-malaysia-apac",
+      "label": "The Star Malaysia (APAC)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 404",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "new-zealand-herald-apac",
+      "label": "New Zealand Herald (APAC)",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 404",
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "china-daily-apac",
+      "label": "China Daily (APAC)",
+      "status": "ok",
+      "count": 100,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
+    },
+    {
+      "id": "korea-herald-apac",
+      "label": "Korea Herald (APAC)",
+      "status": "ok",
+      "count": 0,
+      "error": null,
+      "checkedAt": "2026-07-17T15:24:51.459Z"
     }
   ],
   "allCategories": [
@@ -206,12 +918,17 @@
     }
   ],
   "categoriesPresent": [
-    "executive_threats",
-    "civil_unrest",
     "natural_disaster",
     "terrorism",
+    "executive_threats",
+    "civil_unrest",
+    "crime",
+    "facility_threats",
     "corporate_reputation",
+    "political_instability",
     "protests",
-    "travel_risk"
+    "travel_risk",
+    "geopolitical",
+    "cyber_threats"
   ]
 }
