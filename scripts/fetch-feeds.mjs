@@ -72,6 +72,56 @@ function parseFeedXml(xml) {
   return items;
 }
 
+/** True if a response body actually looks like RSS/Atom XML rather than an HTML page. */
+function looksLikeFeed(text) {
+  const head = text.slice(0, 800);
+  return /<rss[\s>]/i.test(head) || /<feed[\s>]/i.test(head) || /<\?xml/i.test(head);
+}
+
+/** Standard feed auto-discovery: nearly every site with RSS advertises it via a
+ *  <link rel="alternate" type="application/rss+xml" href="..."> tag in its HTML
+ *  <head>. This is the same mechanism real RSS reader apps use - not scraping,
+ *  just reading a tag the site itself publishes for exactly this purpose. */
+function discoverFeedUrl(html, baseUrl) {
+  const linkTagRe = /<link\b[^>]*>/gi;
+  let m;
+  while ((m = linkTagRe.exec(html))) {
+    const tag = m[0];
+    if (/type=["'](application\/rss\+xml|application\/atom\+xml)["']/i.test(tag)) {
+      const hrefMatch = tag.match(/href=["']([^"']+)["']/i);
+      if (hrefMatch) {
+        try { return new URL(hrefMatch[1], baseUrl).toString(); }
+        catch { return hrefMatch[1]; }
+      }
+    }
+  }
+  return null;
+}
+
+async function fetchWithTimeout(url, timeoutMs, controller) {
+  const res = await fetch(url, {
+    signal: controller.signal,
+    headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" }
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.text();
+}
+
+/** Fetches feed.url as-is; if it's not actually XML (e.g. someone pasted a
+ *  homepage instead of a feed URL), auto-discovers the real feed link from
+ *  the page's own <link> tag and fetches that instead. */
+async function resolveAndFetchXml(url, timeoutMs, controller) {
+  const text = await fetchWithTimeout(url, timeoutMs, controller);
+  if (looksLikeFeed(text)) return text;
+
+  const discovered = discoverFeedUrl(text, url);
+  if (!discovered) throw new Error("No RSS/Atom feed found on this page (no <link rel=\"alternate\"> tag) - this site may not publish RSS at all.");
+
+  const feedText = await fetchWithTimeout(discovered, timeoutMs, controller);
+  if (!looksLikeFeed(feedText)) throw new Error(`Discovered link (${discovered}) didn't return valid RSS/Atom either.`);
+  return feedText;
+}
+
 export async function fetchAllFeeds({ timeoutMs = 15000 } = {}) {
   const enabled = await fetchFeedListFromSupabase();
 
@@ -79,12 +129,7 @@ export async function fetchAllFeeds({ timeoutMs = 15000 } = {}) {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), timeoutMs);
     try {
-      const res = await fetch(feed.url, {
-        signal: controller.signal,
-        headers: { "User-Agent": "ProtectiveIntelWatch/2.0 (+static-pipeline)" }
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const xml = await res.text();
+      const xml = await resolveAndFetchXml(feed.url, timeoutMs, controller);
       const items = parseFeedXml(xml).map(it => ({
         ...it,
         domain: domainOf(it.url),
