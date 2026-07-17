@@ -96,6 +96,7 @@ function renderTrendChart(events) {
 
 function drawDonut(canvas, segments) {
   const ctx = setupCanvas(canvas);
+  if (!ctx) return;
   const w = canvas.clientWidth, h = canvas.clientHeight || 160;
   const cx = w / 2, cy = h / 2, rOuter = Math.min(w, h) / 2 - 6, rInner = rOuter * 0.6;
   const total = Math.max(1, segments.reduce((s, x) => s + x.value, 0));
@@ -120,6 +121,7 @@ function drawDonut(canvas, segments) {
 
 function drawLineChart(canvas, values) {
   const ctx = setupCanvas(canvas);
+  if (!ctx) return;
   const w = canvas.clientWidth, h = canvas.clientHeight || 140;
   const pad = 10;
   const max = Math.max(1, ...values);
@@ -140,6 +142,7 @@ function drawLineChart(canvas, values) {
 function setupCanvas(canvas) {
   const dpr = window.devicePixelRatio || 1;
   const rect = canvas.getBoundingClientRect();
+  if (rect.width <=0) return null; //canvas is hidden (wrong table) -skip drawing, dont crash
   const h = rect.height || 160;
   canvas.width = rect.width * dpr;
   canvas.height = h * dpr;
