@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-07-17T14:45:33.608Z",
-    "startedAt": "2026-07-17T14:45:31.959Z",
+    "generatedAt": "2026-07-17T14:46:03.164Z",
+    "startedAt": "2026-07-17T14:46:01.411Z",
     "totalEventsCount": 44,
     "rawArticleCount": 489,
     "feedHealth": [
@@ -11,7 +11,7 @@
         "status": "ok",
         "count": 38,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "guardian-world",
@@ -19,7 +19,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "sky-world",
@@ -27,7 +27,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "ndtv-top",
@@ -35,7 +35,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "toi-top",
@@ -43,7 +43,7 @@
         "status": "ok",
         "count": 45,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "hindu-national",
@@ -51,7 +51,7 @@
         "status": "ok",
         "count": 60,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "htimes-india",
@@ -59,7 +59,7 @@
         "status": "ok",
         "count": 100,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "npr-world",
@@ -67,7 +67,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "cbs-world",
@@ -75,7 +75,7 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "nyt-world",
@@ -83,7 +83,7 @@
         "status": "ok",
         "count": 57,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "aljazeera-all",
@@ -91,7 +91,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "dw-world",
@@ -99,7 +99,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "france24-world",
@@ -107,7 +107,7 @@
         "status": "ok",
         "count": 24,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "scmp-world",
@@ -115,7 +115,7 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "cna-asia",
@@ -123,7 +123,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       },
       {
         "id": "ani-news",
@@ -131,20 +131,44 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-17T14:45:33.386Z"
+        "checkedAt": "2026-07-17T14:46:02.942Z"
       }
     ],
     "categoriesPresent": [
+      "natural_disaster",
       "terrorism",
       "civil_unrest",
       "corporate_reputation",
       "protests",
-      "natural_disaster",
       "executive_threats",
       "travel_risk"
     ]
   },
   "events": [
+    {
+      "id": "https://www.nytimes.com/2026/07/17/world/americas/venezuela-earthquakes-families-migration.html",
+      "title": "Venezuela Earthquakes Force a Grim Homecoming for Migrants",
+      "bluf": "Venezuela Earthquakes Force a Grim Homecoming for Migrants. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Venezuela",
+      "lat": 6.4,
+      "lon": -66.6,
+      "publishedAt": "2026-07-17T14:41:05.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "nytimes.com",
+          "label": "New York Times – World",
+          "url": "https://www.nytimes.com/2026/07/17/world/americas/venezuela-earthquakes-families-migration.html",
+          "publishedAt": "2026-07-17T14:41:05.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.nytimes.com/2026/07/17/world/americas/venezuela-earthquakes-families-migration.html",
+      "primaryDomain": "nytimes.com"
+    },
     {
       "id": "https://www.scmp.com/news/world/europe/article/3361007/jk-rowling-condemns-amnesty-branding-her-womens-crisis-centre-anti-rights?utm_source=rss_feed",
       "title": "J.K. Rowling condemns Amnesty for branding her women’s crisis centre anti-rights",
@@ -672,30 +696,6 @@
       ],
       "primaryUrl": "https://www.france24.com/en/election-fraud-claims-and-threats-to-media-what-to-know-about-trump-s-address",
       "primaryDomain": "france24.com"
-    },
-    {
-      "id": "https://www.nytimes.com/2026/07/17/world/americas/venezuela-earthquakes-families-migration.html",
-      "title": "Venezuela Earthquakes Force a Grim Homecoming for Migrants",
-      "bluf": "Venezuela Earthquakes Force a Grim Homecoming for Migrants. Classified under Natural Disaster. Reported by 1 outlet.",
-      "category": "natural_disaster",
-      "categoryLabel": "Natural Disaster",
-      "categoryColor": "#5cb85c",
-      "severity": "LOW",
-      "country": "Venezuela",
-      "lat": 6.4,
-      "lon": -66.6,
-      "publishedAt": "2026-07-17T09:01:42.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "nytimes.com",
-          "label": "New York Times – World",
-          "url": "https://www.nytimes.com/2026/07/17/world/americas/venezuela-earthquakes-families-migration.html",
-          "publishedAt": "2026-07-17T09:01:42.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.nytimes.com/2026/07/17/world/americas/venezuela-earthquakes-families-migration.html",
-      "primaryDomain": "nytimes.com"
     },
     {
       "id": "https://www.hindustantimes.com/india-news/she-chased-me-away-madan-mitra-explains-why-he-left-mamatas-side-amid-tmc-crisis-101784276436372.html",
