@@ -183,34 +183,19 @@
 
       <!-- FEED MANAGER -->
       <section class="view" id="view-feedManager">
-        <div class="panel" style="margin-bottom:16px;">
-          <div class="panel-body" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
-            <div id="authSignedOut" style="display:flex;align-items:center;gap:8px;flex:1;min-width:260px;">
-              <input type="text" id="authEmailInput" placeholder="you@yourcompany.com" style="flex:1;min-width:200px;">
-              <button class="btn small primary" id="sendMagicLinkBtn">Send sign-in link</button>
-              <span style="font-size:11.5px;color:var(--text-faint);">Feeds are visible to everyone; only allowlisted admins can add/edit/delete.</span>
-            </div>
-            <div id="authSignedIn" style="display:none;align-items:center;gap:10px;">
-              <span class="status-dot ok"></span>
-              <span>Signed in as <b id="authEmailLabel"></b></span>
-              <button class="btn small" id="signOutBtn">Sign out</button>
-            </div>
-          </div>
-        </div>
-
         <div id="feedManagerBody">
           <div class="analytics-grid" style="grid-template-columns:1fr 360px;">
             <div class="panel">
-              <h2>Connected Feeds <span style="font-weight:400;color:var(--text-faint);">— live from Supabase</span></h2>
+              <h2>Connected Feeds</h2>
               <div class="panel-body">
                 <table class="data-table">
-                  <thead><tr><th>Status</th><th>Feed</th><th>Last Pull</th><th>Articles</th><th>Enabled</th><th data-requires-auth style="display:none;"></th></tr></thead>
+                  <thead><tr><th>Status</th><th>Feed</th><th>Last Pull</th><th>Articles</th><th>Enabled</th><th></th></tr></thead>
                   <tbody id="feedRows"></tbody>
                 </table>
               </div>
             </div>
             <div>
-              <div class="panel" style="margin-bottom:16px;" data-requires-auth>
+              <div class="panel" style="margin-bottom:16px;">
                 <h2>Add / Edit a Feed</h2>
                 <div class="panel-body">
                   <div class="field"><label>Label</label><input type="text" id="newFeedLabel" placeholder="e.g. Reuters World"></div>
@@ -224,7 +209,7 @@
                 <h2>OPML</h2>
                 <div class="panel-body">
                   <button class="btn small" id="exportOpmlBtn">Export OPML</button>
-                  <label class="btn small" data-requires-auth style="display:inline-flex;margin-left:8px;">Import OPML<input type="file" id="importOpmlInput" accept=".opml,.xml" hidden></label>
+                  <label class="btn small" style="display:inline-flex;margin-left:8px;">Import OPML<input type="file" id="importOpmlInput" accept=".opml,.xml" hidden></label>
                 </div>
               </div>
             </div>
@@ -258,12 +243,10 @@
       </section>
 
     </div>
-
-    <footer class="app-footer">
-      Protective Intel Watch v2 — data pipeline runs via GitHub Actions every 10 minutes, fetching RSS server-side and publishing static JSON. The browser never calls RSS directly. Classification, severity, and BLUF summaries are rule-based heuristics — treat this as a triage aid, not a verified intelligence assessment.
-    </footer>
   </div>
 </div>
+
+<button id="scrollTopBtn" title="Back to top" aria-label="Back to top" style="position:fixed;bottom:24px;right:24px;width:42px;height:42px;border-radius:50%;background:var(--panel);border:1px solid var(--border);color:var(--text);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .15s;z-index:50;font-size:18px;">&#8593;</button>
 
 <div class="toast-stack" id="toastStack"></div>
 
