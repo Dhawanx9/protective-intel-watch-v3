@@ -98,7 +98,9 @@ function drawDonut(canvas, segments) {
   const ctx = setupCanvas(canvas);
   if (!ctx) return;
   const w = canvas.clientWidth, h = canvas.clientHeight || 160;
-  const cx = w / 2, cy = h / 2, rOuter = Math.min(w, h) / 2 - 6, rInner = rOuter * 0.6;
+  const cx = w / 2, cy = h / 2;
+  const rOuter = Math.max(6, Math.min(w, h) / 2 - 6);
+  const rInner = rOuter * 0.6;
   const total = Math.max(1, segments.reduce((s, x) => s + x.value, 0));
   let start = -Math.PI / 2;
   ctx.clearRect(0, 0, w, h);
@@ -142,7 +144,7 @@ function drawLineChart(canvas, values) {
 function setupCanvas(canvas) {
   const dpr = window.devicePixelRatio || 1;
   const rect = canvas.getBoundingClientRect();
-  if (rect.width <=0) return null; //canvas is hidden (wrong table) -skip drawing, dont crash
+  if (rect.width <= 0) return null; // canvas is hidden (wrong tab) - skip drawing, don't crash
   const h = rect.height || 160;
   canvas.width = rect.width * dpr;
   canvas.height = h * dpr;
