@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-07-17T14:49:44.300Z",
-    "startedAt": "2026-07-17T14:49:42.817Z",
-    "totalEventsCount": 45,
-    "rawArticleCount": 489,
+    "generatedAt": "2026-07-17T14:59:34.260Z",
+    "startedAt": "2026-07-17T14:59:32.407Z",
+    "totalEventsCount": 43,
+    "rawArticleCount": 488,
     "feedHealth": [
       {
         "id": "bbc-world",
@@ -11,7 +11,7 @@
         "status": "ok",
         "count": 38,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "guardian-world",
@@ -19,7 +19,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "sky-world",
@@ -27,7 +27,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "ndtv-top",
@@ -35,7 +35,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "toi-top",
@@ -43,7 +43,7 @@
         "status": "ok",
         "count": 45,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "hindu-national",
@@ -51,7 +51,7 @@
         "status": "ok",
         "count": 60,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "htimes-india",
@@ -59,7 +59,7 @@
         "status": "ok",
         "count": 100,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "npr-world",
@@ -67,7 +67,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "cbs-world",
@@ -75,15 +75,15 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "nyt-world",
         "label": "New York Times – World",
         "status": "ok",
-        "count": 57,
+        "count": 56,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "aljazeera-all",
@@ -91,7 +91,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "dw-world",
@@ -99,7 +99,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "france24-world",
@@ -107,7 +107,7 @@
         "status": "ok",
         "count": 24,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "scmp-world",
@@ -115,7 +115,7 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "cna-asia",
@@ -123,7 +123,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       },
       {
         "id": "ani-news",
@@ -131,7 +131,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-17T14:49:44.083Z"
+        "checkedAt": "2026-07-17T14:59:34.034Z"
       }
     ],
     "categoriesPresent": [
@@ -146,6 +146,30 @@
   },
   "events": [
     {
+      "id": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
+      "title": "At least two dead in Texas floods ravaging same area where campers died",
+      "bluf": "At least two dead in Texas floods ravaging same area where campers died. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "HIGH",
+      "country": "United Kingdom",
+      "lat": 54,
+      "lon": -2.9,
+      "publishedAt": "2026-07-17T14:56:26.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "bbc.co.uk",
+          "label": "BBC News – World",
+          "url": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-07-17T14:56:26.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
+      "primaryDomain": "bbc.co.uk"
+    },
+    {
       "id": "https://www.nytimes.com/2026/07/17/world/americas/venezuela-earthquakes-families-migration.html",
       "title": "Venezuela Earthquakes Force a Grim Homecoming for Migrants",
       "bluf": "Venezuela Earthquakes Force a Grim Homecoming for Migrants. Classified under Natural Disaster. Reported by 1 outlet.",
@@ -156,14 +180,14 @@
       "country": "Venezuela",
       "lat": 6.4,
       "lon": -66.6,
-      "publishedAt": "2026-07-17T14:41:05.000Z",
+      "publishedAt": "2026-07-17T14:50:01.000Z",
       "sourceCount": 1,
       "sources": [
         {
           "domain": "nytimes.com",
           "label": "New York Times – World",
           "url": "https://www.nytimes.com/2026/07/17/world/americas/venezuela-earthquakes-families-migration.html",
-          "publishedAt": "2026-07-17T14:41:05.000Z"
+          "publishedAt": "2026-07-17T14:50:01.000Z"
         }
       ],
       "primaryUrl": "https://www.nytimes.com/2026/07/17/world/americas/venezuela-earthquakes-families-migration.html",
@@ -530,30 +554,6 @@
       "primaryDomain": "cbsnews.com"
     },
     {
-      "id": "https://www.channelnewsasia.com/world/northeast-spain-wildfire-destroys-over-12000-hectares-regional-authorities-6261151",
-      "title": "Northeast Spain wildfire destroys over 12,000 hectares: Regional authorities",
-      "bluf": "Northeast Spain wildfire destroys over 12,000 hectares. Classified under Natural Disaster. Reported by 1 outlet.",
-      "category": "natural_disaster",
-      "categoryLabel": "Natural Disaster",
-      "categoryColor": "#5cb85c",
-      "severity": "LOW",
-      "country": "Spain",
-      "lat": 40.2,
-      "lon": -3.7,
-      "publishedAt": "2026-07-17T11:20:39.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "channelnewsasia.com",
-          "label": "Channel News Asia – Asia",
-          "url": "https://www.channelnewsasia.com/world/northeast-spain-wildfire-destroys-over-12000-hectares-regional-authorities-6261151",
-          "publishedAt": "2026-07-17T11:20:39.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.channelnewsasia.com/world/northeast-spain-wildfire-destroys-over-12000-hectares-regional-authorities-6261151",
-      "primaryDomain": "channelnewsasia.com"
-    },
-    {
       "id": "https://www.scmp.com/news/world/middle-east/article/3360980/chemical-tanker-seized-yemen-coast-suspected-somali-pirate-hijack?utm_source=rss_feed",
       "title": "Chemical tanker seized off Yemen coast in suspected Somali pirate hijack",
       "bluf": "Chemical tanker seized off Yemen coast in suspected Somali pirate hijack. Classified under Travel Risk. Reported by 1 outlet.",
@@ -698,30 +698,6 @@
       "primaryDomain": "france24.com"
     },
     {
-      "id": "https://www.france24.com/en/election-fraud-claims-and-threats-to-media-what-to-know-about-trump-s-address",
-      "title": "Election fraud claims and threats to media: what to know about Trump's address",
-      "bluf": "Election fraud claims and threats to media. Classified under Executive Threats. Reported by 1 outlet.",
-      "category": "executive_threats",
-      "categoryLabel": "Executive Threats",
-      "categoryColor": "#5b8def",
-      "severity": "MEDIUM",
-      "country": "France",
-      "lat": 46.6,
-      "lon": 2.2,
-      "publishedAt": "2026-07-17T09:18:46.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "france24.com",
-          "label": "France 24 – World",
-          "url": "https://www.france24.com/en/election-fraud-claims-and-threats-to-media-what-to-know-about-trump-s-address",
-          "publishedAt": "2026-07-17T09:18:46.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.france24.com/en/election-fraud-claims-and-threats-to-media-what-to-know-about-trump-s-address",
-      "primaryDomain": "france24.com"
-    },
-    {
       "id": "https://www.hindustantimes.com/india-news/she-chased-me-away-madan-mitra-explains-why-he-left-mamatas-side-amid-tmc-crisis-101784276436372.html",
       "title": "'She chased me away': Madan Mitra explains why he left Mamata's side amid TMC crisis",
       "bluf": "'She chased me away'. Classified under Terrorism. Reported by 1 outlet.",
@@ -747,12 +723,12 @@
     },
     {
       "id": "https://www.scmp.com/news/china/politics/article/3360928/rescuers-southwest-china-race-extreme-weather-reach-residents-trapped-landslide?utm_source=rss_feed",
-      "title": "Rescuers in southwest China race against time to reach residents trapped by landslide",
-      "bluf": "Rescuers in southwest China race against time to reach residents trapped by landslide. Classified under Natural Disaster. Reported by 1 outlet.",
+      "title": "Rescuers in China race to reach residents trapped by landslide that has killed 8 people",
+      "bluf": "Rescuers in China race to reach residents trapped by landslide that has killed 8 people. Classified under Natural Disaster. Reported by 1 outlet.",
       "category": "natural_disaster",
       "categoryLabel": "Natural Disaster",
       "categoryColor": "#5cb85c",
-      "severity": "LOW",
+      "severity": "HIGH",
       "country": "China",
       "lat": 35.9,
       "lon": 104.2,
@@ -912,30 +888,6 @@
       ],
       "primaryUrl": "https://www.nytimes.com/2026/07/16/world/canada/canada-wildfires-firefighters-heat.html",
       "primaryDomain": "nytimes.com"
-    },
-    {
-      "id": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
-      "title": "At least one dead in Texas floods ravaging same area where campers died",
-      "bluf": "At least one dead in Texas floods ravaging same area where campers died. Classified under Natural Disaster. Reported by 1 outlet.",
-      "category": "natural_disaster",
-      "categoryLabel": "Natural Disaster",
-      "categoryColor": "#5cb85c",
-      "severity": "HIGH",
-      "country": "United Kingdom",
-      "lat": 54,
-      "lon": -2.9,
-      "publishedAt": "2026-07-16T22:08:13.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "bbc.co.uk",
-          "label": "BBC News – World",
-          "url": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-07-16T22:08:13.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
-      "primaryDomain": "bbc.co.uk"
     },
     {
       "id": "https://www.cbsnews.com/news/us-designates-juarez-cartel-los-viagras-foreign-terrorist-organizations/",
