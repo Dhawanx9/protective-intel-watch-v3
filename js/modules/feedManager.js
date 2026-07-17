@@ -109,12 +109,12 @@ const id = label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "
 ({ error } = await supabase.from("feeds").insert({ id, label, url, region, enabled: true }));
 }
 if (error) { alert("Couldn't save: " + error.message); return; }
-
 document.getElementById("newFeedLabel").value = "";
 document.getElementById("newFeedUrl").value = "";
 document.getElementById("newFeedRegion").value = "";
 btn.textContent = "Add feed";
 btn.removeAttribute("data-editing-id");
+loadFeeds(); // refresh the table immediately instead of waiting on Realtime
 });
 }
 
