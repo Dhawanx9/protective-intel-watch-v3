@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-17T13:52:04.491Z",
-  "startedAt": "2026-07-17T13:52:02.082Z",
-  "totalEventsCount": 55,
-  "rawArticleCount": 486,
+  "generatedAt": "2026-07-17T14:09:02.870Z",
+  "startedAt": "2026-07-17T14:09:00.652Z",
+  "totalEventsCount": 51,
+  "rawArticleCount": 487,
   "feedHealth": [
     {
       "id": "bbc-world",
@@ -10,7 +10,7 @@
       "status": "ok",
       "count": 38,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "guardian-world",
@@ -18,7 +18,7 @@
       "status": "ok",
       "count": 0,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "sky-world",
@@ -26,7 +26,7 @@
       "status": "ok",
       "count": 9,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "ndtv-top",
@@ -34,15 +34,15 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "toi-top",
       "label": "Times of India – Top Stories",
       "status": "ok",
-      "count": 42,
+      "count": 43,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "hindu-national",
@@ -50,7 +50,7 @@
       "status": "ok",
       "count": 60,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "htimes-india",
@@ -58,7 +58,7 @@
       "status": "ok",
       "count": 100,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "npr-world",
@@ -66,7 +66,7 @@
       "status": "ok",
       "count": 10,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "cbs-world",
@@ -74,7 +74,7 @@
       "status": "ok",
       "count": 30,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "nyt-world",
@@ -82,7 +82,7 @@
       "status": "ok",
       "count": 58,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "aljazeera-all",
@@ -90,7 +90,7 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "dw-world",
@@ -98,7 +98,7 @@
       "status": "ok",
       "count": 0,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "france24-world",
@@ -106,7 +106,7 @@
       "status": "ok",
       "count": 24,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "scmp-world",
@@ -114,7 +114,7 @@
       "status": "ok",
       "count": 50,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     },
     {
       "id": "cna-asia",
@@ -122,18 +122,26 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checkedAt": "2026-07-17T13:52:04.293Z"
+      "checkedAt": "2026-07-17T14:09:02.649Z"
+    },
+    {
+      "id": "ani-news",
+      "label": "ANI NEWS",
+      "status": "error",
+      "count": 0,
+      "error": "HTTP 403",
+      "checkedAt": "2026-07-17T14:09:02.649Z"
     }
   ],
   "categoriesPresent": [
+    "civil_unrest",
     "facility_threats",
     "geopolitical",
-    "civil_unrest",
     "terrorism",
     "corporate_reputation",
+    "protests",
     "natural_disaster",
     "executive_threats",
-    "travel_risk",
-    "protests"
+    "travel_risk"
   ]
 }

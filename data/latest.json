@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-07-17T13:52:04.491Z",
-    "startedAt": "2026-07-17T13:52:02.082Z",
-    "totalEventsCount": 55,
-    "rawArticleCount": 486,
+    "generatedAt": "2026-07-17T14:09:02.870Z",
+    "startedAt": "2026-07-17T14:09:00.652Z",
+    "totalEventsCount": 51,
+    "rawArticleCount": 487,
     "feedHealth": [
       {
         "id": "bbc-world",
@@ -11,7 +11,7 @@
         "status": "ok",
         "count": 38,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "guardian-world",
@@ -19,7 +19,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "sky-world",
@@ -27,7 +27,7 @@
         "status": "ok",
         "count": 9,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "ndtv-top",
@@ -35,15 +35,15 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "toi-top",
         "label": "Times of India – Top Stories",
         "status": "ok",
-        "count": 42,
+        "count": 43,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "hindu-national",
@@ -51,7 +51,7 @@
         "status": "ok",
         "count": 60,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "htimes-india",
@@ -59,7 +59,7 @@
         "status": "ok",
         "count": 100,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "npr-world",
@@ -67,7 +67,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "cbs-world",
@@ -75,7 +75,7 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "nyt-world",
@@ -83,7 +83,7 @@
         "status": "ok",
         "count": 58,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "aljazeera-all",
@@ -91,7 +91,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "dw-world",
@@ -99,7 +99,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "france24-world",
@@ -107,7 +107,7 @@
         "status": "ok",
         "count": 24,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "scmp-world",
@@ -115,7 +115,7 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       },
       {
         "id": "cna-asia",
@@ -123,22 +123,54 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-17T13:52:04.293Z"
+        "checkedAt": "2026-07-17T14:09:02.649Z"
+      },
+      {
+        "id": "ani-news",
+        "label": "ANI NEWS",
+        "status": "error",
+        "count": 0,
+        "error": "HTTP 403",
+        "checkedAt": "2026-07-17T14:09:02.649Z"
       }
     ],
     "categoriesPresent": [
+      "civil_unrest",
       "facility_threats",
       "geopolitical",
-      "civil_unrest",
       "terrorism",
       "corporate_reputation",
+      "protests",
       "natural_disaster",
       "executive_threats",
-      "travel_risk",
-      "protests"
+      "travel_risk"
     ]
   },
   "events": [
+    {
+      "id": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
+      "title": "Jantar Mantar protest LIVE: Sonam Wangchuk dehydrated; fasting student leaders advised not to walk",
+      "bluf": "Jantar Mantar protest LIVE. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T13:50:46.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
+          "publishedAt": "2026-07-17T13:50:46.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
+      "primaryDomain": "thehindu.com"
+    },
     {
       "id": "https://www.thehindu.com/news/cities/bangalore/handwritten-hoax-bomb-threat-note-delays-indigo-flight-from-bengaluru/article71233394.ece",
       "title": "Handwritten hoax bomb threat note delays IndiGo flight from Bengaluru",
@@ -284,6 +316,30 @@
       "primaryDomain": "thehindu.com"
     },
     {
+      "id": "https://timesofindia.indiatimes.com/india/kattar-beimaan-party-pm-modi-attacks-aap-on-corruption-law-and-order-at-jalandhar-rally/articleshow/132461956.cms",
+      "title": "'Kattar Beimaan Party': PM Modi attacks AAP at Jalandhar rally",
+      "bluf": "'Kattar Beimaan Party'. Classified under Protests. Reported by 1 outlet.",
+      "category": "protests",
+      "categoryLabel": "Protests",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T12:51:52.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "timesofindia.indiatimes.com",
+          "label": "Times of India – Top Stories",
+          "url": "https://timesofindia.indiatimes.com/india/kattar-beimaan-party-pm-modi-attacks-aap-on-corruption-law-and-order-at-jalandhar-rally/articleshow/132461956.cms",
+          "publishedAt": "2026-07-17T12:51:52.000Z"
+        }
+      ],
+      "primaryUrl": "https://timesofindia.indiatimes.com/india/kattar-beimaan-party-pm-modi-attacks-aap-on-corruption-law-and-order-at-jalandhar-rally/articleshow/132461956.cms",
+      "primaryDomain": "timesofindia.indiatimes.com"
+    },
+    {
       "id": "https://www.ndtv.com/india-news/congress-to-join-omar-abdullahs-protest-for-jammu-and-kashmirs-statehood-11784962#publisher=newsstand",
       "title": "Congress To Join Omar Abdullah's Protest For Jammu and Kashmir's Statehood",
       "bluf": "Congress To Join Omar Abdullah's Protest For Jammu and Kashmir's Statehood. Classified under Civil Unrest. Reported by 1 outlet.",
@@ -378,30 +434,6 @@
       ],
       "primaryUrl": "https://www.hindustantimes.com/india-news/kedarnath-yatra-resumes-after-landslide-blocks-trek-route-imd-issues-alert-101784289943589.html",
       "primaryDomain": "hindustantimes.com"
-    },
-    {
-      "id": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
-      "title": "Jantar Mantar protest LIVE: Sonam Wangchuk dehydrated; fasting student leaders advised not to walk",
-      "bluf": "Jantar Mantar protest LIVE. Classified under Civil Unrest. Reported by 1 outlet.",
-      "category": "civil_unrest",
-      "categoryLabel": "Civil Unrest",
-      "categoryColor": "#f2b134",
-      "severity": "LOW",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-17T12:35:55.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "thehindu.com",
-          "label": "The Hindu – National",
-          "url": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
-          "publishedAt": "2026-07-17T12:35:55.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
-      "primaryDomain": "thehindu.com"
     },
     {
       "id": "https://timesofindia.indiatimes.com/world/pakistan/pakistans-fifth-province-gilgit-baltistan-assembly-passes-key-resolution-amid-pok-unrest/articleshow/132460277.cms",
@@ -572,54 +604,6 @@
       "primaryDomain": "cbsnews.com"
     },
     {
-      "id": "https://www.thehindu.com/news/national/west-bengal/tmc-mla-madan-mitra-attends-mamata-camps-assembly-protest-days-after-joining-rebel-faction/article71233596.ece",
-      "title": "TMC MLA Madan Mitra attends Mamata camp's assembly protest days after joining rebel faction",
-      "bluf": "TMC MLA Madan Mitra attends Mamata camp's assembly protest days after joining rebel faction. Classified under Civil Unrest. Reported by 1 outlet.",
-      "category": "civil_unrest",
-      "categoryLabel": "Civil Unrest",
-      "categoryColor": "#f2b134",
-      "severity": "LOW",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-17T11:44:23.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "thehindu.com",
-          "label": "The Hindu – National",
-          "url": "https://www.thehindu.com/news/national/west-bengal/tmc-mla-madan-mitra-attends-mamata-camps-assembly-protest-days-after-joining-rebel-faction/article71233596.ece",
-          "publishedAt": "2026-07-17T11:44:23.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.thehindu.com/news/national/west-bengal/tmc-mla-madan-mitra-attends-mamata-camps-assembly-protest-days-after-joining-rebel-faction/article71233596.ece",
-      "primaryDomain": "thehindu.com"
-    },
-    {
-      "id": "https://www.thehindu.com/news/national/gujarat/five-more-arrested-in-gujarat-anti-terrorist-squad-probe-into-alleged-jem-module-total-accused-rises-to-13/article71233601.ece",
-      "title": "Five more arrested in Gujarat Anti-Terrorist Squad probe into alleged JeM module; total accused rises to 13",
-      "bluf": "Five more arrested in Gujarat Anti. Classified under Terrorism. Reported by 1 outlet.",
-      "category": "terrorism",
-      "categoryLabel": "Terrorism",
-      "categoryColor": "#c0392b",
-      "severity": "HIGH",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-17T11:43:14.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "thehindu.com",
-          "label": "The Hindu – National",
-          "url": "https://www.thehindu.com/news/national/gujarat/five-more-arrested-in-gujarat-anti-terrorist-squad-probe-into-alleged-jem-module-total-accused-rises-to-13/article71233601.ece",
-          "publishedAt": "2026-07-17T11:43:14.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.thehindu.com/news/national/gujarat/five-more-arrested-in-gujarat-anti-terrorist-squad-probe-into-alleged-jem-module-total-accused-rises-to-13/article71233601.ece",
-      "primaryDomain": "thehindu.com"
-    },
-    {
       "id": "https://www.channelnewsasia.com/world/northeast-spain-wildfire-destroys-over-12000-hectares-regional-authorities-6261151",
       "title": "Northeast Spain wildfire destroys over 12,000 hectares: Regional authorities",
       "bluf": "Northeast Spain wildfire destroys over 12,000 hectares. Classified under Natural Disaster. Reported by 1 outlet.",
@@ -641,30 +625,6 @@
         }
       ],
       "primaryUrl": "https://www.channelnewsasia.com/world/northeast-spain-wildfire-destroys-over-12000-hectares-regional-authorities-6261151",
-      "primaryDomain": "channelnewsasia.com"
-    },
-    {
-      "id": "https://www.channelnewsasia.com/business/telstra-ceo-points-undocumented-software-change-outage-in-senate-testimony-6261086",
-      "title": "Telstra CEO points to undocumented software change for outage in Senate testimony",
-      "bluf": "Telstra CEO points to undocumented software change for outage in Senate testimony. Classified under Executive Threats. Reported by 1 outlet.",
-      "category": "executive_threats",
-      "categoryLabel": "Executive Threats",
-      "categoryColor": "#5b8def",
-      "severity": "LOW",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-17T11:01:55.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "channelnewsasia.com",
-          "label": "Channel News Asia – Asia",
-          "url": "https://www.channelnewsasia.com/business/telstra-ceo-points-undocumented-software-change-outage-in-senate-testimony-6261086",
-          "publishedAt": "2026-07-17T11:01:55.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.channelnewsasia.com/business/telstra-ceo-points-undocumented-software-change-outage-in-senate-testimony-6261086",
       "primaryDomain": "channelnewsasia.com"
     },
     {
@@ -930,30 +890,6 @@
       ],
       "primaryUrl": "https://www.hindustantimes.com/india-news/she-chased-me-away-madan-mitra-explains-why-he-left-mamatas-side-amid-tmc-crisis-101784276436372.html",
       "primaryDomain": "hindustantimes.com"
-    },
-    {
-      "id": "https://timesofindia.indiatimes.com/india/modi-thinks-way-in-advance-pm-says-hormuz-crisis-didnt-affect-railways-draws-parallel-with-2014/articleshow/132456794.cms",
-      "title": "'Modi thinks way in advance': PM says Hormuz crisis didn't affect railways",
-      "bluf": "'Modi thinks way in advance'. Classified under Terrorism. Reported by 1 outlet.",
-      "category": "terrorism",
-      "categoryLabel": "Terrorism",
-      "categoryColor": "#c0392b",
-      "severity": "LOW",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-17T08:39:36.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "timesofindia.indiatimes.com",
-          "label": "Times of India – Top Stories",
-          "url": "https://timesofindia.indiatimes.com/india/modi-thinks-way-in-advance-pm-says-hormuz-crisis-didnt-affect-railways-draws-parallel-with-2014/articleshow/132456794.cms",
-          "publishedAt": "2026-07-17T08:39:36.000Z"
-        }
-      ],
-      "primaryUrl": "https://timesofindia.indiatimes.com/india/modi-thinks-way-in-advance-pm-says-hormuz-crisis-didnt-affect-railways-draws-parallel-with-2014/articleshow/132456794.cms",
-      "primaryDomain": "timesofindia.indiatimes.com"
     },
     {
       "id": "https://www.scmp.com/news/china/politics/article/3360928/rescuers-southwest-china-race-extreme-weather-reach-residents-trapped-landslide?utm_source=rss_feed",
@@ -1386,30 +1322,6 @@
       ],
       "primaryUrl": "https://news.sky.com/story/wildfires-force-thousands-to-evacuate-as-skies-darken-over-us-and-canadian-cities-13563962",
       "primaryDomain": "news.sky.com"
-    },
-    {
-      "id": "https://www.hindustantimes.com/india-news/rath-yatra-millions-brave-heavy-rain-as-jagannath-chariots-roll-in-odisha-s-puri-101784191466811.html",
-      "title": "Rath Yatra: Millions brave heavy rain as Jagannath chariots roll in Odisha’s Puri",
-      "bluf": "Rath Yatra. Classified under Civil Unrest. Reported by 1 outlet.",
-      "category": "civil_unrest",
-      "categoryLabel": "Civil Unrest",
-      "categoryColor": "#f2b134",
-      "severity": "MEDIUM",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-16T08:44:26.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "hindustantimes.com",
-          "label": "Hindustan Times – India News",
-          "url": "https://www.hindustantimes.com/india-news/rath-yatra-millions-brave-heavy-rain-as-jagannath-chariots-roll-in-odisha-s-puri-101784191466811.html",
-          "publishedAt": "2026-07-16T08:44:26.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.hindustantimes.com/india-news/rath-yatra-millions-brave-heavy-rain-as-jagannath-chariots-roll-in-odisha-s-puri-101784191466811.html",
-      "primaryDomain": "hindustantimes.com"
     },
     {
       "id": "https://www.bbc.co.uk/news/videos/c62q3kw126xo?at_medium=RSS&at_campaign=rss",
