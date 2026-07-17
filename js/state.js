@@ -47,7 +47,14 @@ class Store {
   setEvents(events, meta) {
     this.data.events = events;
     this.data.meta = meta;
-    this.data.categories = [...new Map(events.map(e => [e.category, { id: e.category, label: e.categoryLabel, color: e.categoryColor }])).values()];
+    if (meta?.allCategories?.length) {
+      // Preferred: static list from the pipeline, so a category with zero
+      // current events (e.g. Facility Threats on a quiet day) still shows.
+      this.data.categories = meta.allCategories;
+    } else {
+      // Fallback for older data/latest.json generated before this field existed.
+      this.data.categories = [...new Map(events.map(e => [e.category, { id: e.category, label: e.categoryLabel, color: e.categoryColor }])).values()];
+    }
     this.data.loaded = true;
     this.emit("events");
   }
