@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-07-17T13:08:33.557Z",
-    "startedAt": "2026-07-17T13:08:31.512Z",
-    "totalEventsCount": 52,
-    "rawArticleCount": 485,
+    "generatedAt": "2026-07-17T13:37:26.158Z",
+    "startedAt": "2026-07-17T13:37:24.240Z",
+    "totalEventsCount": 55,
+    "rawArticleCount": 486,
     "feedHealth": [
       {
         "id": "bbc-world",
@@ -11,7 +11,7 @@
         "status": "ok",
         "count": 38,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.340Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "guardian-world",
@@ -19,7 +19,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.340Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "sky-world",
@@ -27,7 +27,7 @@
         "status": "ok",
         "count": 9,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.340Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "ndtv-top",
@@ -35,7 +35,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.340Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "toi-top",
@@ -43,7 +43,7 @@
         "status": "ok",
         "count": 42,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.340Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "hindu-national",
@@ -51,7 +51,7 @@
         "status": "ok",
         "count": 60,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.341Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "htimes-india",
@@ -59,7 +59,7 @@
         "status": "ok",
         "count": 100,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.341Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "npr-world",
@@ -67,7 +67,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.341Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "cbs-world",
@@ -75,7 +75,7 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.341Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "nyt-world",
@@ -83,7 +83,7 @@
         "status": "ok",
         "count": 58,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.341Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "aljazeera-all",
@@ -91,7 +91,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.341Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "dw-world",
@@ -99,15 +99,15 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.341Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "france24-world",
         "label": "France 24 – World",
         "status": "ok",
-        "count": 23,
+        "count": 24,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.341Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "scmp-world",
@@ -115,7 +115,7 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.341Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       },
       {
         "id": "cna-asia",
@@ -123,20 +123,142 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-17T13:08:33.341Z"
+        "checkedAt": "2026-07-17T13:37:25.931Z"
       }
     ],
     "categoriesPresent": [
+      "facility_threats",
+      "geopolitical",
       "civil_unrest",
-      "natural_disaster",
       "terrorism",
+      "corporate_reputation",
+      "natural_disaster",
       "executive_threats",
       "travel_risk",
-      "protests",
-      "corporate_reputation"
+      "protests"
     ]
   },
   "events": [
+    {
+      "id": "https://www.thehindu.com/news/cities/bangalore/handwritten-hoax-bomb-threat-note-delays-indigo-flight-from-bengaluru/article71233394.ece",
+      "title": "Handwritten hoax bomb threat note delays IndiGo flight from Bengaluru",
+      "bluf": "Handwritten hoax bomb threat note delays IndiGo flight from Bengaluru. Classified under Facility Threats. Reported by 1 outlet.",
+      "category": "facility_threats",
+      "categoryLabel": "Facility Threats",
+      "categoryColor": "#e5484d",
+      "severity": "HIGH",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T13:30:47.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/cities/bangalore/handwritten-hoax-bomb-threat-note-delays-indigo-flight-from-bengaluru/article71233394.ece",
+          "publishedAt": "2026-07-17T13:30:47.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/cities/bangalore/handwritten-hoax-bomb-threat-note-delays-indigo-flight-from-bengaluru/article71233394.ece",
+      "primaryDomain": "thehindu.com"
+    },
+    {
+      "id": "https://www.thehindu.com/news/cities/Hyderabad/telangana-government-sanctions-20-cr-for-nac-skill-development-centre-in-manthani/article71234115.ece",
+      "title": "Telangana government sanctions ₹20 cr for NAC Skill Development Centre in Manthani",
+      "bluf": "Telangana government sanctions ₹20 cr for NAC Skill Development Centre in Manthani. Classified under Geopolitical Events. Reported by 1 outlet.",
+      "category": "geopolitical",
+      "categoryLabel": "Geopolitical Events",
+      "categoryColor": "#4a7fc9",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T13:21:54.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/cities/Hyderabad/telangana-government-sanctions-20-cr-for-nac-skill-development-centre-in-manthani/article71234115.ece",
+          "publishedAt": "2026-07-17T13:21:54.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/cities/Hyderabad/telangana-government-sanctions-20-cr-for-nac-skill-development-centre-in-manthani/article71234115.ece",
+      "primaryDomain": "thehindu.com"
+    },
+    {
+      "id": "https://www.aljazeera.com/news/2026/7/17/un-urges-probe-into-deaths-in-pakistani-administered-kashmir-unrest?traffic_source=rss",
+      "title": "UN urges probe into deaths in Pakistani-administered Kashmir unrest",
+      "bluf": "UN urges probe into deaths in Pakistani. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "HIGH",
+      "country": "Pakistan",
+      "lat": 30.4,
+      "lon": 69.3,
+      "publishedAt": "2026-07-17T13:16:57.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "aljazeera.com",
+          "label": "Al Jazeera – All",
+          "url": "https://www.aljazeera.com/news/2026/7/17/un-urges-probe-into-deaths-in-pakistani-administered-kashmir-unrest?traffic_source=rss",
+          "publishedAt": "2026-07-17T13:16:57.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.aljazeera.com/news/2026/7/17/un-urges-probe-into-deaths-in-pakistani-administered-kashmir-unrest?traffic_source=rss",
+      "primaryDomain": "aljazeera.com"
+    },
+    {
+      "id": "https://www.aljazeera.com/news/2026/7/17/ukraine-cuts-off-crimea-from-russia-plunging-it-into-an-energy-crisis?traffic_source=rss",
+      "title": "Ukraine ‘cuts off’ Crimea from Russia, plunging it into an energy crisis",
+      "bluf": "Ukraine ‘cuts off’ Crimea from Russia, plunging it into an energy crisis. Classified under Terrorism. Reported by 1 outlet.",
+      "category": "terrorism",
+      "categoryLabel": "Terrorism",
+      "categoryColor": "#c0392b",
+      "severity": "LOW",
+      "country": "Russia",
+      "lat": 61.5,
+      "lon": 105.3,
+      "publishedAt": "2026-07-17T13:10:00.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "aljazeera.com",
+          "label": "Al Jazeera – All",
+          "url": "https://www.aljazeera.com/news/2026/7/17/ukraine-cuts-off-crimea-from-russia-plunging-it-into-an-energy-crisis?traffic_source=rss",
+          "publishedAt": "2026-07-17T13:10:00.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.aljazeera.com/news/2026/7/17/ukraine-cuts-off-crimea-from-russia-plunging-it-into-an-energy-crisis?traffic_source=rss",
+      "primaryDomain": "aljazeera.com"
+    },
+    {
+      "id": "https://www.channelnewsasia.com/business/zoox-recalls-self-driving-cars-because-they-may-not-detect-smoke-6261376",
+      "title": "Zoox recalls self-driving cars because they may not detect smoke",
+      "bluf": "Zoox recalls self. Classified under Corporate Reputation. Reported by 1 outlet.",
+      "category": "corporate_reputation",
+      "categoryLabel": "Corporate Reputation",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T13:01:54.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "channelnewsasia.com",
+          "label": "Channel News Asia – Asia",
+          "url": "https://www.channelnewsasia.com/business/zoox-recalls-self-driving-cars-because-they-may-not-detect-smoke-6261376",
+          "publishedAt": "2026-07-17T13:01:54.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.channelnewsasia.com/business/zoox-recalls-self-driving-cars-because-they-may-not-detect-smoke-6261376",
+      "primaryDomain": "channelnewsasia.com"
+    },
     {
       "id": "https://www.thehindu.com/news/national/andhra-pradesh/farmers-panel-opposes-proposed-india-us-fta-plans-protests-on-july-22/article71234060.ece",
       "title": "Farmers’ panel opposes proposed India-U.S. FTA, plans protests on July 22",
@@ -450,30 +572,6 @@
       "primaryDomain": "cbsnews.com"
     },
     {
-      "id": "https://timesofindia.indiatimes.com/technology/tech-news/volkswagen-employees-allowed-to-question-ceo-oliver-blume-after-memo-informing-of-100000-layoffs-and-closure-of-four-german-plants-union-says-we-will-host-extraordinary-staff-assemblies-to-/articleshow/132460583.cms",
-      "title": "Volkswagen employees to ‘grill’ CEO after memo informing of 100,000 layoffs",
-      "bluf": "Volkswagen employees to ‘grill’ CEO after memo informing of 100,000 layoffs. Classified under Executive Threats. Reported by 1 outlet.",
-      "category": "executive_threats",
-      "categoryLabel": "Executive Threats",
-      "categoryColor": "#5b8def",
-      "severity": "LOW",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-17T11:46:54.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "timesofindia.indiatimes.com",
-          "label": "Times of India – Top Stories",
-          "url": "https://timesofindia.indiatimes.com/technology/tech-news/volkswagen-employees-allowed-to-question-ceo-oliver-blume-after-memo-informing-of-100000-layoffs-and-closure-of-four-german-plants-union-says-we-will-host-extraordinary-staff-assemblies-to-/articleshow/132460583.cms",
-          "publishedAt": "2026-07-17T11:46:54.000Z"
-        }
-      ],
-      "primaryUrl": "https://timesofindia.indiatimes.com/technology/tech-news/volkswagen-employees-allowed-to-question-ceo-oliver-blume-after-memo-informing-of-100000-layoffs-and-closure-of-four-german-plants-union-says-we-will-host-extraordinary-staff-assemblies-to-/articleshow/132460583.cms",
-      "primaryDomain": "timesofindia.indiatimes.com"
-    },
-    {
       "id": "https://www.thehindu.com/news/national/west-bengal/tmc-mla-madan-mitra-attends-mamata-camps-assembly-protest-days-after-joining-rebel-faction/article71233596.ece",
       "title": "TMC MLA Madan Mitra attends Mamata camp's assembly protest days after joining rebel faction",
       "bluf": "TMC MLA Madan Mitra attends Mamata camp's assembly protest days after joining rebel faction. Classified under Civil Unrest. Reported by 1 outlet.",
@@ -592,6 +690,30 @@
       ],
       "primaryUrl": "https://www.scmp.com/news/world/middle-east/article/3360980/chemical-tanker-seized-yemen-coast-suspected-somali-pirate-hijack?utm_source=rss_feed",
       "primaryDomain": "scmp.com"
+    },
+    {
+      "id": "https://timesofindia.indiatimes.com/technology/tech-news/openai-ceo-sam-altman-admits-he-scared-millions-of-people-around-the-world-by-saying-ai-will-/articleshow/132459608.cms",
+      "title": "OpenAI CEO Sam Altman admits he scared millions of people around the world",
+      "bluf": "OpenAI CEO Sam Altman admits he scared millions of people around the world. Classified under Executive Threats. Reported by 1 outlet.",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T10:52:19.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "timesofindia.indiatimes.com",
+          "label": "Times of India – Top Stories",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/openai-ceo-sam-altman-admits-he-scared-millions-of-people-around-the-world-by-saying-ai-will-/articleshow/132459608.cms",
+          "publishedAt": "2026-07-17T10:52:19.000Z"
+        }
+      ],
+      "primaryUrl": "https://timesofindia.indiatimes.com/technology/tech-news/openai-ceo-sam-altman-admits-he-scared-millions-of-people-around-the-world-by-saying-ai-will-/articleshow/132459608.cms",
+      "primaryDomain": "timesofindia.indiatimes.com"
     },
     {
       "id": "https://www.bbc.co.uk/news/videos/c36d1n6g3x9o?at_medium=RSS&at_campaign=rss",
@@ -930,30 +1052,6 @@
       "primaryDomain": "hindustantimes.com"
     },
     {
-      "id": "https://www.aljazeera.com/video/newsfeed/2026/7/17/texas-floods-ravage-through-southwestern-areas-of-state?traffic_source=rss",
-      "title": "Texas floods ravage through southwestern areas of state",
-      "bluf": "Texas floods ravage through southwestern areas of state. Classified under Natural Disaster. Reported by 1 outlet.",
-      "category": "natural_disaster",
-      "categoryLabel": "Natural Disaster",
-      "categoryColor": "#5cb85c",
-      "severity": "LOW",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-17T05:12:11.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "aljazeera.com",
-          "label": "Al Jazeera – All",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/texas-floods-ravage-through-southwestern-areas-of-state?traffic_source=rss",
-          "publishedAt": "2026-07-17T05:12:11.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/17/texas-floods-ravage-through-southwestern-areas-of-state?traffic_source=rss",
-      "primaryDomain": "aljazeera.com"
-    },
-    {
       "id": "https://www.scmp.com/news/world/united-states-canada/article/3360884/us-confronts-floods-heatwaves-smoky-skies-all-once-amid-trump-aid-cuts?utm_source=rss_feed",
       "title": "US confronts floods, heatwaves, smoky skies all at once amid Trump aid cuts",
       "bluf": "US confronts floods, heatwaves, smoky skies all at once amid Trump aid cuts. Classified under Natural Disaster. Reported by 1 outlet.",
@@ -1048,30 +1146,6 @@
       ],
       "primaryUrl": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
       "primaryDomain": "bbc.co.uk"
-    },
-    {
-      "id": "https://www.france24.com/en/tv-shows/a-propos/20260716-canadian-wildfire-sends-hazardous-smoke-spewing-into-us",
-      "title": "Canadian wildfire sends hazardous smoke spewing into US",
-      "bluf": "Canadian wildfire sends hazardous smoke spewing into US. Classified under Natural Disaster. Reported by 1 outlet.",
-      "category": "natural_disaster",
-      "categoryLabel": "Natural Disaster",
-      "categoryColor": "#5cb85c",
-      "severity": "LOW",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-16T21:09:27.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "france24.com",
-          "label": "France 24 – World",
-          "url": "https://www.france24.com/en/tv-shows/a-propos/20260716-canadian-wildfire-sends-hazardous-smoke-spewing-into-us",
-          "publishedAt": "2026-07-16T21:09:27.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.france24.com/en/tv-shows/a-propos/20260716-canadian-wildfire-sends-hazardous-smoke-spewing-into-us",
-      "primaryDomain": "france24.com"
     },
     {
       "id": "https://www.cbsnews.com/news/us-designates-juarez-cartel-los-viagras-foreign-terrorist-organizations/",

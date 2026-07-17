@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-17T13:08:33.557Z",
-  "startedAt": "2026-07-17T13:08:31.512Z",
-  "totalEventsCount": 52,
-  "rawArticleCount": 485,
+  "generatedAt": "2026-07-17T13:37:26.158Z",
+  "startedAt": "2026-07-17T13:37:24.240Z",
+  "totalEventsCount": 55,
+  "rawArticleCount": 486,
   "feedHealth": [
     {
       "id": "bbc-world",
@@ -10,7 +10,7 @@
       "status": "ok",
       "count": 38,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.340Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "guardian-world",
@@ -18,7 +18,7 @@
       "status": "ok",
       "count": 0,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.340Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "sky-world",
@@ -26,7 +26,7 @@
       "status": "ok",
       "count": 9,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.340Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "ndtv-top",
@@ -34,7 +34,7 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.340Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "toi-top",
@@ -42,7 +42,7 @@
       "status": "ok",
       "count": 42,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.340Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "hindu-national",
@@ -50,7 +50,7 @@
       "status": "ok",
       "count": 60,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.341Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "htimes-india",
@@ -58,7 +58,7 @@
       "status": "ok",
       "count": 100,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.341Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "npr-world",
@@ -66,7 +66,7 @@
       "status": "ok",
       "count": 10,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.341Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "cbs-world",
@@ -74,7 +74,7 @@
       "status": "ok",
       "count": 30,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.341Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "nyt-world",
@@ -82,7 +82,7 @@
       "status": "ok",
       "count": 58,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.341Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "aljazeera-all",
@@ -90,7 +90,7 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.341Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "dw-world",
@@ -98,15 +98,15 @@
       "status": "ok",
       "count": 0,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.341Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "france24-world",
       "label": "France 24 – World",
       "status": "ok",
-      "count": 23,
+      "count": 24,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.341Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "scmp-world",
@@ -114,7 +114,7 @@
       "status": "ok",
       "count": 50,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.341Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     },
     {
       "id": "cna-asia",
@@ -122,16 +122,18 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checkedAt": "2026-07-17T13:08:33.341Z"
+      "checkedAt": "2026-07-17T13:37:25.931Z"
     }
   ],
   "categoriesPresent": [
+    "facility_threats",
+    "geopolitical",
     "civil_unrest",
-    "natural_disaster",
     "terrorism",
+    "corporate_reputation",
+    "natural_disaster",
     "executive_threats",
     "travel_risk",
-    "protests",
-    "corporate_reputation"
+    "protests"
   ]
 }
