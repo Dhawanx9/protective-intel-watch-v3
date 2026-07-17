@@ -36,13 +36,18 @@ function generateBLUF(cluster, category) {
   return `${lead}. Classified under ${category.label}. ${outlets}`;
 }
 
+const REGION_FALLBACK = { India: "India", UK: "United Kingdom", USA: "United States" };
+
 function detectCountry(cluster, countries) {
   const names = Object.keys(countries);
-  const hay = cluster.title.toLowerCase();
+  const hay = (cluster.title + " " + (cluster.items[0]?.description || "")).toLowerCase();
   for (const name of names) {
     if (hay.includes(name.toLowerCase())) return name;
   }
-  return cluster.items[0]?.countryHint || null;
+  // No explicit country mentioned - fall back to the feed's own region as an
+  // approximation, so Threats-by-Country and the map get something instead
+  // of piling everything into "Unknown".
+  return REGION_FALLBACK[cluster.items[0]?.region] || null;
 }
 
 export async function categorizeClusters(clusters) {
