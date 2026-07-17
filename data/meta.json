@@ -1,152 +1,137 @@
 {
-  "generatedAt": "2026-07-17T11:34:39.167Z",
-  "startedAt": "2026-07-17T11:33:54.167Z",
-  "totalEventsCount": 60,
-  "rawArticleCount": 120,
+  "generatedAt": "2026-07-17T13:08:33.557Z",
+  "startedAt": "2026-07-17T13:08:31.512Z",
+  "totalEventsCount": 52,
+  "rawArticleCount": 485,
   "feedHealth": [
     {
       "id": "bbc-world",
       "label": "BBC News – World",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 38,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.340Z"
     },
     {
       "id": "guardian-world",
       "label": "The Guardian – World",
-      "status": "disabled",
+      "status": "ok",
       "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.340Z"
     },
     {
       "id": "sky-world",
       "label": "Sky News – World",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 9,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.340Z"
     },
     {
       "id": "ndtv-top",
       "label": "NDTV – Top Stories",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 20,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.340Z"
     },
     {
       "id": "toi-top",
       "label": "Times of India – Top Stories",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 42,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.340Z"
     },
     {
       "id": "hindu-national",
       "label": "The Hindu – National",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 60,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.341Z"
     },
     {
       "id": "htimes-india",
       "label": "Hindustan Times – India News",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 100,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.341Z"
     },
     {
       "id": "npr-world",
       "label": "NPR – World",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 10,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.341Z"
     },
     {
       "id": "cbs-world",
       "label": "CBS News – World",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 30,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.341Z"
     },
     {
       "id": "nyt-world",
       "label": "New York Times – World",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 58,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.341Z"
     },
     {
       "id": "aljazeera-all",
       "label": "Al Jazeera – All",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 25,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.341Z"
     },
     {
       "id": "dw-world",
       "label": "Deutsche Welle – World",
-      "status": "disabled",
+      "status": "ok",
       "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.341Z"
     },
     {
       "id": "france24-world",
       "label": "France 24 – World",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 23,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.341Z"
     },
     {
       "id": "scmp-world",
       "label": "South China Morning Post – World",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 50,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.341Z"
     },
     {
       "id": "cna-asia",
       "label": "Channel News Asia – Asia",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
-    },
-    {
-      "id": "reuters-world",
-      "label": "Reuters – World (via aggregator mirror)",
-      "status": "disabled",
-      "count": 0,
-      "error": "Awaiting first pipeline run",
-      "checkedAt": "2026-07-17T11:34:39.168Z"
+      "status": "ok",
+      "count": 20,
+      "error": null,
+      "checkedAt": "2026-07-17T13:08:33.341Z"
     }
   ],
   "categoriesPresent": [
-    "executive_threats",
-    "facility_threats",
-    "travel_risk",
     "civil_unrest",
-    "terrorism",
-    "cyber_threats",
-    "crime",
-    "kidnapping",
     "natural_disaster",
-    "supply_chain",
-    "corporate_reputation",
-    "political_instability",
-    "geopolitical"
-  ],
-  "isSampleData": true
+    "terrorism",
+    "executive_threats",
+    "travel_risk",
+    "protests",
+    "corporate_reputation"
+  ]
 }

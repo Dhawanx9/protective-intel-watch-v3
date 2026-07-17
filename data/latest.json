@@ -1,2136 +1,1389 @@
 {
   "meta": {
-    "generatedAt": "2026-07-17T11:34:39.167Z",
-    "startedAt": "2026-07-17T11:33:54.167Z",
-    "totalEventsCount": 60,
-    "rawArticleCount": 120,
+    "generatedAt": "2026-07-17T13:08:33.557Z",
+    "startedAt": "2026-07-17T13:08:31.512Z",
+    "totalEventsCount": 52,
+    "rawArticleCount": 485,
     "feedHealth": [
       {
         "id": "bbc-world",
         "label": "BBC News – World",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 38,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.340Z"
       },
       {
         "id": "guardian-world",
         "label": "The Guardian – World",
-        "status": "disabled",
+        "status": "ok",
         "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.340Z"
       },
       {
         "id": "sky-world",
         "label": "Sky News – World",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 9,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.340Z"
       },
       {
         "id": "ndtv-top",
         "label": "NDTV – Top Stories",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 20,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.340Z"
       },
       {
         "id": "toi-top",
         "label": "Times of India – Top Stories",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 42,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.340Z"
       },
       {
         "id": "hindu-national",
         "label": "The Hindu – National",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 60,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.341Z"
       },
       {
         "id": "htimes-india",
         "label": "Hindustan Times – India News",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 100,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.341Z"
       },
       {
         "id": "npr-world",
         "label": "NPR – World",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 10,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.341Z"
       },
       {
         "id": "cbs-world",
         "label": "CBS News – World",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 30,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.341Z"
       },
       {
         "id": "nyt-world",
         "label": "New York Times – World",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 58,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.341Z"
       },
       {
         "id": "aljazeera-all",
         "label": "Al Jazeera – All",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 25,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.341Z"
       },
       {
         "id": "dw-world",
         "label": "Deutsche Welle – World",
-        "status": "disabled",
+        "status": "ok",
         "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.341Z"
       },
       {
         "id": "france24-world",
         "label": "France 24 – World",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 23,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.341Z"
       },
       {
         "id": "scmp-world",
         "label": "South China Morning Post – World",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 50,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.341Z"
       },
       {
         "id": "cna-asia",
         "label": "Channel News Asia – Asia",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
-      },
-      {
-        "id": "reuters-world",
-        "label": "Reuters – World (via aggregator mirror)",
-        "status": "disabled",
-        "count": 0,
-        "error": "Awaiting first pipeline run",
-        "checkedAt": "2026-07-17T11:34:39.168Z"
+        "status": "ok",
+        "count": 20,
+        "error": null,
+        "checkedAt": "2026-07-17T13:08:33.341Z"
       }
     ],
     "categoriesPresent": [
-      "executive_threats",
-      "facility_threats",
-      "travel_risk",
       "civil_unrest",
-      "terrorism",
-      "cyber_threats",
-      "crime",
-      "kidnapping",
       "natural_disaster",
-      "supply_chain",
-      "corporate_reputation",
-      "political_instability",
-      "geopolitical"
-    ],
-    "isSampleData": true
+      "terrorism",
+      "executive_threats",
+      "travel_risk",
+      "protests",
+      "corporate_reputation"
+    ]
   },
   "events": [
     {
-      "id": "evt_1",
-      "title": "[SAMPLE] Board chairman targeted in extortion attempt — United States",
-      "bluf": "Board chairman targeted in extortion attempt. Classified under Executive Threats. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "executive_threats",
-      "categoryLabel": "Executive Threats",
-      "categoryColor": "#5b8def",
-      "severity": "MEDIUM",
-      "country": "United States",
-      "lat": 39.8,
-      "lon": -98.6,
-      "publishedAt": "2026-07-14T08:34:39.167Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-1-0",
-          "publishedAt": "2026-07-14T08:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-1",
-      "primaryDomain": "demo-press.example"
-    },
-    {
-      "id": "evt_2",
-      "title": "[SAMPLE] Corporate CEO receives death threats amid restructuring dispute — France",
-      "bluf": "Corporate CEO receives death threats amid restructuring dispute. Classified under Executive Threats. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "executive_threats",
-      "categoryLabel": "Executive Threats",
-      "categoryColor": "#5b8def",
-      "severity": "LOW",
-      "country": "France",
-      "lat": 46.6,
-      "lon": 2.2,
-      "publishedAt": "2026-07-13T03:34:39.167Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-2-0",
-          "publishedAt": "2026-07-13T03:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-2",
-      "primaryDomain": "demo-gazette.example"
-    },
-    {
-      "id": "evt_3",
-      "title": "[SAMPLE] Board chairman targeted in extortion attempt — Israel",
-      "bluf": "Board chairman targeted in extortion attempt. Classified under Executive Threats. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "executive_threats",
-      "categoryLabel": "Executive Threats",
-      "categoryColor": "#5b8def",
-      "severity": "MEDIUM",
-      "country": "Israel",
-      "lat": 31,
-      "lon": 34.9,
-      "publishedAt": "2026-07-13T01:34:39.167Z",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-3-0",
-          "publishedAt": "2026-07-13T01:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-3-1",
-          "publishedAt": "2026-07-13T01:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-3-2",
-          "publishedAt": "2026-07-13T01:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-3",
-      "primaryDomain": "demo-press.example"
-    },
-    {
-      "id": "evt_4",
-      "title": "[SAMPLE] Corporate CEO receives death threats amid restructuring dispute — Egypt",
-      "bluf": "Corporate CEO receives death threats amid restructuring dispute. Classified under Executive Threats. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "executive_threats",
-      "categoryLabel": "Executive Threats",
-      "categoryColor": "#5b8def",
-      "severity": "HIGH",
-      "country": "Egypt",
-      "lat": 26.8,
-      "lon": 30.8,
-      "publishedAt": "2026-07-12T09:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-4-0",
-          "publishedAt": "2026-07-12T09:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-4-1",
-          "publishedAt": "2026-07-12T09:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-4-2",
-          "publishedAt": "2026-07-12T09:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-4-3",
-          "publishedAt": "2026-07-12T09:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-4",
-      "primaryDomain": "placeholder-news.example"
-    },
-    {
-      "id": "evt_5",
-      "title": "[SAMPLE] Corporate CEO receives death threats amid restructuring dispute — Pakistan",
-      "bluf": "Corporate CEO receives death threats amid restructuring dispute. Classified under Executive Threats. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "executive_threats",
-      "categoryLabel": "Executive Threats",
-      "categoryColor": "#5b8def",
-      "severity": "LOW",
-      "country": "Pakistan",
-      "lat": 30.4,
-      "lon": 69.3,
-      "publishedAt": "2026-07-13T08:34:39.167Z",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-5-0",
-          "publishedAt": "2026-07-13T08:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-5-1",
-          "publishedAt": "2026-07-13T08:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-5-2",
-          "publishedAt": "2026-07-13T08:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-5",
-      "primaryDomain": "sample-bulletin.example"
-    },
-    {
-      "id": "evt_6",
-      "title": "[SAMPLE] Unauthorized access reported at manufacturing facility — France",
-      "bluf": "Unauthorized access reported at manufacturing facility. Classified under Facility Threats. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "facility_threats",
-      "categoryLabel": "Facility Threats",
-      "categoryColor": "#e5484d",
-      "severity": "MEDIUM",
-      "country": "France",
-      "lat": 46.6,
-      "lon": 2.2,
-      "publishedAt": "2026-07-17T08:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-6-0",
-          "publishedAt": "2026-07-17T08:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-6-1",
-          "publishedAt": "2026-07-17T08:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-6",
-      "primaryDomain": "sample-wire.example"
-    },
-    {
-      "id": "evt_7",
-      "title": "[SAMPLE] Perimeter breach detected at logistics hub — United States",
-      "bluf": "Perimeter breach detected at logistics hub. Classified under Facility Threats. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "facility_threats",
-      "categoryLabel": "Facility Threats",
-      "categoryColor": "#e5484d",
-      "severity": "HIGH",
-      "country": "United States",
-      "lat": 39.8,
-      "lon": -98.6,
-      "publishedAt": "2026-07-16T03:34:39.167Z",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-7-0",
-          "publishedAt": "2026-07-16T03:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-7-1",
-          "publishedAt": "2026-07-16T03:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-7-2",
-          "publishedAt": "2026-07-16T03:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-7",
-      "primaryDomain": "placeholder-news.example"
-    },
-    {
-      "id": "evt_8",
-      "title": "[SAMPLE] Unauthorized access reported at manufacturing facility — Brazil",
-      "bluf": "Unauthorized access reported at manufacturing facility. Classified under Facility Threats. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "facility_threats",
-      "categoryLabel": "Facility Threats",
-      "categoryColor": "#e5484d",
-      "severity": "LOW",
-      "country": "Brazil",
-      "lat": -10.3,
-      "lon": -53.2,
-      "publishedAt": "2026-07-15T07:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-8-0",
-          "publishedAt": "2026-07-15T07:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-8-1",
-          "publishedAt": "2026-07-15T07:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-8",
-      "primaryDomain": "sample-bulletin.example"
-    },
-    {
-      "id": "evt_9",
-      "title": "[SAMPLE] Bomb threat forces evacuation of corporate headquarters — Brazil",
-      "bluf": "Bomb threat forces evacuation of corporate headquarters. Classified under Facility Threats. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "facility_threats",
-      "categoryLabel": "Facility Threats",
-      "categoryColor": "#e5484d",
-      "severity": "HIGH",
-      "country": "Brazil",
-      "lat": -10.3,
-      "lon": -53.2,
-      "publishedAt": "2026-07-17T02:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-9-0",
-          "publishedAt": "2026-07-17T02:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-9-1",
-          "publishedAt": "2026-07-17T02:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-9",
-      "primaryDomain": "sample-bulletin.example"
-    },
-    {
-      "id": "evt_10",
-      "title": "[SAMPLE] Airport closure disrupts regional business travel — United States",
-      "bluf": "Airport closure disrupts regional business travel. Classified under Travel Risk. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "travel_risk",
-      "categoryLabel": "Travel Risk",
-      "categoryColor": "#4dd0e1",
-      "severity": "LOW",
-      "country": "United States",
-      "lat": 39.8,
-      "lon": -98.6,
-      "publishedAt": "2026-07-16T03:34:39.167Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-10-0",
-          "publishedAt": "2026-07-16T03:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-10",
-      "primaryDomain": "demo-gazette.example"
-    },
-    {
-      "id": "evt_11",
-      "title": "[SAMPLE] Airport closure disrupts regional business travel — Pakistan",
-      "bluf": "Airport closure disrupts regional business travel. Classified under Travel Risk. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "travel_risk",
-      "categoryLabel": "Travel Risk",
-      "categoryColor": "#4dd0e1",
-      "severity": "HIGH",
-      "country": "Pakistan",
-      "lat": 30.4,
-      "lon": 69.3,
-      "publishedAt": "2026-07-17T00:34:39.167Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-11-0",
-          "publishedAt": "2026-07-17T00:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-11",
-      "primaryDomain": "sample-wire.example"
-    },
-    {
-      "id": "evt_12",
-      "title": "[SAMPLE] Airport closure disrupts regional business travel — France",
-      "bluf": "Airport closure disrupts regional business travel. Classified under Travel Risk. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "travel_risk",
-      "categoryLabel": "Travel Risk",
-      "categoryColor": "#4dd0e1",
-      "severity": "LOW",
-      "country": "France",
-      "lat": 46.6,
-      "lon": 2.2,
-      "publishedAt": "2026-07-12T08:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-12-0",
-          "publishedAt": "2026-07-12T08:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-12-1",
-          "publishedAt": "2026-07-12T08:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-12",
-      "primaryDomain": "placeholder-news.example"
-    },
-    {
-      "id": "evt_13",
-      "title": "[SAMPLE] Government issues new travel advisory for the region — Brazil",
-      "bluf": "Government issues new travel advisory for the region. Classified under Travel Risk. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "travel_risk",
-      "categoryLabel": "Travel Risk",
-      "categoryColor": "#4dd0e1",
-      "severity": "MEDIUM",
-      "country": "Brazil",
-      "lat": -10.3,
-      "lon": -53.2,
-      "publishedAt": "2026-07-11T02:34:39.167Z",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-13-0",
-          "publishedAt": "2026-07-11T02:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-13-1",
-          "publishedAt": "2026-07-11T02:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-13-2",
-          "publishedAt": "2026-07-11T02:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-13",
-      "primaryDomain": "placeholder-news.example"
-    },
-    {
-      "id": "evt_14",
-      "title": "[SAMPLE] Airport closure disrupts regional business travel — Mexico",
-      "bluf": "Airport closure disrupts regional business travel. Classified under Travel Risk. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "travel_risk",
-      "categoryLabel": "Travel Risk",
-      "categoryColor": "#4dd0e1",
-      "severity": "MEDIUM",
-      "country": "Mexico",
-      "lat": 23.6,
-      "lon": -102.5,
-      "publishedAt": "2026-07-13T11:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-14-0",
-          "publishedAt": "2026-07-13T11:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-14-1",
-          "publishedAt": "2026-07-13T11:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-14-2",
-          "publishedAt": "2026-07-13T11:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-14-3",
-          "publishedAt": "2026-07-13T11:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-14",
-      "primaryDomain": "demo-press.example"
-    },
-    {
-      "id": "evt_15",
-      "title": "[SAMPLE] Government issues new travel advisory for the region — Brazil",
-      "bluf": "Government issues new travel advisory for the region. Classified under Travel Risk. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "travel_risk",
-      "categoryLabel": "Travel Risk",
-      "categoryColor": "#4dd0e1",
-      "severity": "LOW",
-      "country": "Brazil",
-      "lat": -10.3,
-      "lon": -53.2,
-      "publishedAt": "2026-07-13T00:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-15-0",
-          "publishedAt": "2026-07-13T00:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-15-1",
-          "publishedAt": "2026-07-13T00:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-15-2",
-          "publishedAt": "2026-07-13T00:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-15-3",
-          "publishedAt": "2026-07-13T00:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-15",
-      "primaryDomain": "sample-bulletin.example"
-    },
-    {
-      "id": "evt_16",
-      "title": "[SAMPLE] Demonstrators clash with police outside government building — Israel",
-      "bluf": "Demonstrators clash with police outside government building. Classified under Civil Unrest. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "civil_unrest",
-      "categoryLabel": "Civil Unrest",
-      "categoryColor": "#f2b134",
-      "severity": "MEDIUM",
-      "country": "Israel",
-      "lat": 31,
-      "lon": 34.9,
-      "publishedAt": "2026-07-11T21:34:39.167Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-16-0",
-          "publishedAt": "2026-07-11T21:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-16",
-      "primaryDomain": "sample-bulletin.example"
-    },
-    {
-      "id": "evt_17",
-      "title": "[SAMPLE] Demonstrators clash with police outside government building — Ukraine",
-      "bluf": "Demonstrators clash with police outside government building. Classified under Civil Unrest. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "id": "https://www.thehindu.com/news/national/andhra-pradesh/farmers-panel-opposes-proposed-india-us-fta-plans-protests-on-july-22/article71234060.ece",
+      "title": "Farmers’ panel opposes proposed India-U.S. FTA, plans protests on July 22",
+      "bluf": "Farmers’ panel opposes proposed India. Classified under Civil Unrest. Reported by 1 outlet.",
       "category": "civil_unrest",
       "categoryLabel": "Civil Unrest",
       "categoryColor": "#f2b134",
       "severity": "LOW",
-      "country": "Ukraine",
-      "lat": 48.4,
-      "lon": 31.2,
-      "publishedAt": "2026-07-16T18:34:39.167Z",
-      "sourceCount": 4,
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-17T12:59:48.000Z",
+      "sourceCount": 1,
       "sources": [
         {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-17-0",
-          "publishedAt": "2026-07-16T18:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-17-1",
-          "publishedAt": "2026-07-16T18:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-17-2",
-          "publishedAt": "2026-07-16T18:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-17-3",
-          "publishedAt": "2026-07-16T18:34:39.167Z"
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/national/andhra-pradesh/farmers-panel-opposes-proposed-india-us-fta-plans-protests-on-july-22/article71234060.ece",
+          "publishedAt": "2026-07-17T12:59:48.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-17",
-      "primaryDomain": "sample-bulletin.example"
+      "primaryUrl": "https://www.thehindu.com/news/national/andhra-pradesh/farmers-panel-opposes-proposed-india-us-fta-plans-protests-on-july-22/article71234060.ece",
+      "primaryDomain": "thehindu.com"
     },
     {
-      "id": "evt_18",
-      "title": "[SAMPLE] Demonstrators clash with police outside government building — Nigeria",
-      "bluf": "Demonstrators clash with police outside government building. Classified under Civil Unrest. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "id": "https://www.ndtv.com/india-news/congress-to-join-omar-abdullahs-protest-for-jammu-and-kashmirs-statehood-11784962#publisher=newsstand",
+      "title": "Congress To Join Omar Abdullah's Protest For Jammu and Kashmir's Statehood",
+      "bluf": "Congress To Join Omar Abdullah's Protest For Jammu and Kashmir's Statehood. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T12:50:53.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "ndtv.com",
+          "label": "NDTV – Top Stories",
+          "url": "https://www.ndtv.com/india-news/congress-to-join-omar-abdullahs-protest-for-jammu-and-kashmirs-statehood-11784962#publisher=newsstand",
+          "publishedAt": "2026-07-17T12:50:53.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.ndtv.com/india-news/congress-to-join-omar-abdullahs-protest-for-jammu-and-kashmirs-statehood-11784962#publisher=newsstand",
+      "primaryDomain": "ndtv.com"
+    },
+    {
+      "id": "https://www.ndtv.com/india-news/in-flood-battered-arunachal-elephants-become-the-only-lifeline-11784915#publisher=newsstand",
+      "title": "In Flood-Battered Arunachal, Elephants Become The Only Lifeline",
+      "bluf": "In Flood. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T12:42:42.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "ndtv.com",
+          "label": "NDTV – Top Stories",
+          "url": "https://www.ndtv.com/india-news/in-flood-battered-arunachal-elephants-become-the-only-lifeline-11784915#publisher=newsstand",
+          "publishedAt": "2026-07-17T12:42:42.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.ndtv.com/india-news/in-flood-battered-arunachal-elephants-become-the-only-lifeline-11784915#publisher=newsstand",
+      "primaryDomain": "ndtv.com"
+    },
+    {
+      "id": "https://www.ndtv.com/world-news/bangladesh-protesters-seek-death-for-kolkata-mla-over-airport-mosque-row-11784904#publisher=newsstand",
+      "title": "Bangladesh Protesters Seek Death For Kolkata MLA Over Airport Mosque Row",
+      "bluf": "Bangladesh Protesters Seek Death For Kolkata MLA Over Airport Mosque Row. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "HIGH",
+      "country": "Bangladesh",
+      "lat": 23.7,
+      "lon": 90.4,
+      "publishedAt": "2026-07-17T12:39:36.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "ndtv.com",
+          "label": "NDTV – Top Stories",
+          "url": "https://www.ndtv.com/world-news/bangladesh-protesters-seek-death-for-kolkata-mla-over-airport-mosque-row-11784904#publisher=newsstand",
+          "publishedAt": "2026-07-17T12:39:36.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.ndtv.com/world-news/bangladesh-protesters-seek-death-for-kolkata-mla-over-airport-mosque-row-11784904#publisher=newsstand",
+      "primaryDomain": "ndtv.com"
+    },
+    {
+      "id": "https://www.hindustantimes.com/india-news/kedarnath-yatra-resumes-after-landslide-blocks-trek-route-imd-issues-alert-101784289943589.html",
+      "title": "Kedarnath Yatra resumes after landslide blocks trek route; IMD issues alert",
+      "bluf": "Kedarnath Yatra resumes after landslide blocks trek route; IMD issues alert. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T12:39:05.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "hindustantimes.com",
+          "label": "Hindustan Times – India News",
+          "url": "https://www.hindustantimes.com/india-news/kedarnath-yatra-resumes-after-landslide-blocks-trek-route-imd-issues-alert-101784289943589.html",
+          "publishedAt": "2026-07-17T12:39:05.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.hindustantimes.com/india-news/kedarnath-yatra-resumes-after-landslide-blocks-trek-route-imd-issues-alert-101784289943589.html",
+      "primaryDomain": "hindustantimes.com"
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
+      "title": "Jantar Mantar protest LIVE: Sonam Wangchuk dehydrated; fasting student leaders advised not to walk",
+      "bluf": "Jantar Mantar protest LIVE. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T12:35:55.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
+          "publishedAt": "2026-07-17T12:35:55.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
+      "primaryDomain": "thehindu.com"
+    },
+    {
+      "id": "https://timesofindia.indiatimes.com/world/pakistan/pakistans-fifth-province-gilgit-baltistan-assembly-passes-key-resolution-amid-pok-unrest/articleshow/132460277.cms",
+      "title": "Pakistan's fifth province? Gilgit-Baltistan assembly passes resolution amid PoK unrest",
+      "bluf": "Pakistan's fifth province? Gilgit. Classified under Civil Unrest. Reported by 1 outlet.",
       "category": "civil_unrest",
       "categoryLabel": "Civil Unrest",
       "categoryColor": "#f2b134",
       "severity": "MEDIUM",
-      "country": "Nigeria",
-      "lat": 9.1,
-      "lon": 8.7,
-      "publishedAt": "2026-07-10T20:34:39.167Z",
-      "sourceCount": 3,
+      "country": "Pakistan",
+      "lat": 30.4,
+      "lon": 69.3,
+      "publishedAt": "2026-07-17T12:32:34.000Z",
+      "sourceCount": 1,
       "sources": [
         {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-18-0",
-          "publishedAt": "2026-07-10T20:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-18-1",
-          "publishedAt": "2026-07-10T20:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-18-2",
-          "publishedAt": "2026-07-10T20:34:39.167Z"
+          "domain": "timesofindia.indiatimes.com",
+          "label": "Times of India – Top Stories",
+          "url": "https://timesofindia.indiatimes.com/world/pakistan/pakistans-fifth-province-gilgit-baltistan-assembly-passes-key-resolution-amid-pok-unrest/articleshow/132460277.cms",
+          "publishedAt": "2026-07-17T12:32:34.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-18",
-      "primaryDomain": "demo-press.example"
+      "primaryUrl": "https://timesofindia.indiatimes.com/world/pakistan/pakistans-fifth-province-gilgit-baltistan-assembly-passes-key-resolution-amid-pok-unrest/articleshow/132460277.cms",
+      "primaryDomain": "timesofindia.indiatimes.com"
     },
     {
-      "id": "evt_19",
-      "title": "[SAMPLE] Militant group claims responsibility for regional attack — France",
-      "bluf": "Militant group claims responsibility for regional attack. Classified under Terrorism. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "id": "https://www.scmp.com/opinion/world-opinion/article/3360812/tackle-climate-crisis-start-small-think-big-and-act-scale?utm_source=rss_feed",
+      "title": "To tackle the climate crisis, start small, think big and act at scale",
+      "bluf": "To tackle the climate crisis, start small, think big and act at scale. Classified under Terrorism. Reported by 1 outlet.",
       "category": "terrorism",
       "categoryLabel": "Terrorism",
       "categoryColor": "#c0392b",
       "severity": "LOW",
-      "country": "France",
-      "lat": 46.6,
-      "lon": 2.2,
-      "publishedAt": "2026-07-11T13:34:39.167Z",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T12:30:05.000Z",
       "sourceCount": 1,
       "sources": [
         {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-19-0",
-          "publishedAt": "2026-07-11T13:34:39.167Z"
+          "domain": "scmp.com",
+          "label": "South China Morning Post – World",
+          "url": "https://www.scmp.com/opinion/world-opinion/article/3360812/tackle-climate-crisis-start-small-think-big-and-act-scale?utm_source=rss_feed",
+          "publishedAt": "2026-07-17T12:30:05.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-19",
-      "primaryDomain": "demo-press.example"
+      "primaryUrl": "https://www.scmp.com/opinion/world-opinion/article/3360812/tackle-climate-crisis-start-small-think-big-and-act-scale?utm_source=rss_feed",
+      "primaryDomain": "scmp.com"
     },
     {
-      "id": "evt_20",
-      "title": "[SAMPLE] Security forces thwart planned attack on public venue — Pakistan",
-      "bluf": "Security forces thwart planned attack on public venue. Classified under Terrorism. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "id": "https://www.channelnewsasia.com/business/indian-regulator-warns-boss-scam-cyber-fraud-targeting-top-executives-6261286",
+      "title": "Indian regulator warns of &#039;boss scam&#039;, a cyber fraud targeting top executives",
+      "bluf": "Indian regulator warns of &#039;boss scam&#039;, a cyber fraud targeting top executives. Classified under Executive Threats. Reported by 1 outlet.",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-17T12:28:32.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "channelnewsasia.com",
+          "label": "Channel News Asia – Asia",
+          "url": "https://www.channelnewsasia.com/business/indian-regulator-warns-boss-scam-cyber-fraud-targeting-top-executives-6261286",
+          "publishedAt": "2026-07-17T12:28:32.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.channelnewsasia.com/business/indian-regulator-warns-boss-scam-cyber-fraud-targeting-top-executives-6261286",
+      "primaryDomain": "channelnewsasia.com"
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/karnataka/cbi-files-17th-chargesheet-against-builder-in-bengaluru-home-buyers-fraud-case/article71233547.ece",
+      "title": "CBI files 17th chargesheet against builder in Bengaluru home buyers fraud case",
+      "bluf": "CBI files 17th chargesheet against builder in Bengaluru home buyers fraud case. Classified under Executive Threats. Reported by 1 outlet.",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T12:21:23.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/national/karnataka/cbi-files-17th-chargesheet-against-builder-in-bengaluru-home-buyers-fraud-case/article71233547.ece",
+          "publishedAt": "2026-07-17T12:21:23.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/karnataka/cbi-files-17th-chargesheet-against-builder-in-bengaluru-home-buyers-fraud-case/article71233547.ece",
+      "primaryDomain": "thehindu.com"
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/indias-development-did-not-come-to-standstill-despite-oil-supply-crisis-pm-modi/article71233825.ece",
+      "title": "India's development did not come to standstill despite oil supply crisis: PM Modi",
+      "bluf": "India's development did not come to standstill despite oil supply crisis. Classified under Terrorism. Reported by 1 outlet.",
       "category": "terrorism",
       "categoryLabel": "Terrorism",
       "categoryColor": "#c0392b",
       "severity": "LOW",
-      "country": "Pakistan",
-      "lat": 30.4,
-      "lon": 69.3,
-      "publishedAt": "2026-07-11T11:34:39.167Z",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-17T12:15:57.000Z",
       "sourceCount": 1,
       "sources": [
         {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-20-0",
-          "publishedAt": "2026-07-11T11:34:39.167Z"
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/national/indias-development-did-not-come-to-standstill-despite-oil-supply-crisis-pm-modi/article71233825.ece",
+          "publishedAt": "2026-07-17T12:15:57.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-20",
-      "primaryDomain": "sample-bulletin.example"
+      "primaryUrl": "https://www.thehindu.com/news/national/indias-development-did-not-come-to-standstill-despite-oil-supply-crisis-pm-modi/article71233825.ece",
+      "primaryDomain": "thehindu.com"
     },
     {
-      "id": "evt_21",
-      "title": "[SAMPLE] Security forces thwart planned attack on public venue — United States",
-      "bluf": "Security forces thwart planned attack on public venue. Classified under Terrorism. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "id": "https://www.thehindu.com/news/national/india-navigated-one-of-the-biggest-energy-crises-with-little-burden-on-citizens-pm-modi-in-rajasthan/article71182628.ece",
+      "title": "India weathered West Asia crisis through strategic decision-making, diplomacy: PM Modi",
+      "bluf": "India weathered West Asia crisis through strategic decision. Classified under Terrorism. Reported by 1 outlet.",
       "category": "terrorism",
       "categoryLabel": "Terrorism",
       "categoryColor": "#c0392b",
-      "severity": "MEDIUM",
-      "country": "United States",
-      "lat": 39.8,
-      "lon": -98.6,
-      "publishedAt": "2026-07-12T07:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-21-0",
-          "publishedAt": "2026-07-12T07:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-21-1",
-          "publishedAt": "2026-07-12T07:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-21-2",
-          "publishedAt": "2026-07-12T07:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-21-3",
-          "publishedAt": "2026-07-12T07:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-21",
-      "primaryDomain": "sample-bulletin.example"
-    },
-    {
-      "id": "evt_22",
-      "title": "[SAMPLE] Ransomware attack disrupts operations at logistics firm — Brazil",
-      "bluf": "Ransomware attack disrupts operations at logistics firm. Classified under Cyber Threats. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "cyber_threats",
-      "categoryLabel": "Cyber Threats",
-      "categoryColor": "#8e6ff2",
-      "severity": "MEDIUM",
-      "country": "Brazil",
-      "lat": -10.3,
-      "lon": -53.2,
-      "publishedAt": "2026-07-12T01:34:39.167Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-22-0",
-          "publishedAt": "2026-07-12T01:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-22",
-      "primaryDomain": "demo-press.example"
-    },
-    {
-      "id": "evt_23",
-      "title": "[SAMPLE] Data breach exposes customer records at major retailer — United Kingdom",
-      "bluf": "Data breach exposes customer records at major retailer. Classified under Cyber Threats. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "cyber_threats",
-      "categoryLabel": "Cyber Threats",
-      "categoryColor": "#8e6ff2",
       "severity": "LOW",
-      "country": "United Kingdom",
-      "lat": 54,
-      "lon": -2.9,
-      "publishedAt": "2026-07-13T13:34:39.167Z",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-17T12:15:14.000Z",
       "sourceCount": 1,
       "sources": [
         {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-23-0",
-          "publishedAt": "2026-07-13T13:34:39.167Z"
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/national/india-navigated-one-of-the-biggest-energy-crises-with-little-burden-on-citizens-pm-modi-in-rajasthan/article71182628.ece",
+          "publishedAt": "2026-07-17T12:15:14.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-23",
-      "primaryDomain": "placeholder-news.example"
+      "primaryUrl": "https://www.thehindu.com/news/national/india-navigated-one-of-the-biggest-energy-crises-with-little-burden-on-citizens-pm-modi-in-rajasthan/article71182628.ece",
+      "primaryDomain": "thehindu.com"
     },
     {
-      "id": "evt_24",
-      "title": "[SAMPLE] Ransomware attack disrupts operations at logistics firm — France",
-      "bluf": "Ransomware attack disrupts operations at logistics firm. Classified under Cyber Threats. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "cyber_threats",
-      "categoryLabel": "Cyber Threats",
-      "categoryColor": "#8e6ff2",
+      "id": "https://www.cbsnews.com/news/wildfires-smoke-millions-exposed-midwest-northeast-us/",
+      "title": "Maps show wildfire smoke forecast, air quality alerts in swath of U.S.",
+      "bluf": "Maps show wildfire smoke forecast, air quality alerts in swath of U.S.. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T12:03:39.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "cbsnews.com",
+          "label": "CBS News – World",
+          "url": "https://www.cbsnews.com/news/wildfires-smoke-millions-exposed-midwest-northeast-us/",
+          "publishedAt": "2026-07-17T12:03:39.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.cbsnews.com/news/wildfires-smoke-millions-exposed-midwest-northeast-us/",
+      "primaryDomain": "cbsnews.com"
+    },
+    {
+      "id": "https://timesofindia.indiatimes.com/technology/tech-news/volkswagen-employees-allowed-to-question-ceo-oliver-blume-after-memo-informing-of-100000-layoffs-and-closure-of-four-german-plants-union-says-we-will-host-extraordinary-staff-assemblies-to-/articleshow/132460583.cms",
+      "title": "Volkswagen employees to ‘grill’ CEO after memo informing of 100,000 layoffs",
+      "bluf": "Volkswagen employees to ‘grill’ CEO after memo informing of 100,000 layoffs. Classified under Executive Threats. Reported by 1 outlet.",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T11:46:54.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "timesofindia.indiatimes.com",
+          "label": "Times of India – Top Stories",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/volkswagen-employees-allowed-to-question-ceo-oliver-blume-after-memo-informing-of-100000-layoffs-and-closure-of-four-german-plants-union-says-we-will-host-extraordinary-staff-assemblies-to-/articleshow/132460583.cms",
+          "publishedAt": "2026-07-17T11:46:54.000Z"
+        }
+      ],
+      "primaryUrl": "https://timesofindia.indiatimes.com/technology/tech-news/volkswagen-employees-allowed-to-question-ceo-oliver-blume-after-memo-informing-of-100000-layoffs-and-closure-of-four-german-plants-union-says-we-will-host-extraordinary-staff-assemblies-to-/articleshow/132460583.cms",
+      "primaryDomain": "timesofindia.indiatimes.com"
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/west-bengal/tmc-mla-madan-mitra-attends-mamata-camps-assembly-protest-days-after-joining-rebel-faction/article71233596.ece",
+      "title": "TMC MLA Madan Mitra attends Mamata camp's assembly protest days after joining rebel faction",
+      "bluf": "TMC MLA Madan Mitra attends Mamata camp's assembly protest days after joining rebel faction. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T11:44:23.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/national/west-bengal/tmc-mla-madan-mitra-attends-mamata-camps-assembly-protest-days-after-joining-rebel-faction/article71233596.ece",
+          "publishedAt": "2026-07-17T11:44:23.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/west-bengal/tmc-mla-madan-mitra-attends-mamata-camps-assembly-protest-days-after-joining-rebel-faction/article71233596.ece",
+      "primaryDomain": "thehindu.com"
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/gujarat/five-more-arrested-in-gujarat-anti-terrorist-squad-probe-into-alleged-jem-module-total-accused-rises-to-13/article71233601.ece",
+      "title": "Five more arrested in Gujarat Anti-Terrorist Squad probe into alleged JeM module; total accused rises to 13",
+      "bluf": "Five more arrested in Gujarat Anti. Classified under Terrorism. Reported by 1 outlet.",
+      "category": "terrorism",
+      "categoryLabel": "Terrorism",
+      "categoryColor": "#c0392b",
       "severity": "HIGH",
-      "country": "France",
-      "lat": 46.6,
-      "lon": 2.2,
-      "publishedAt": "2026-07-12T12:34:39.167Z",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-24-0",
-          "publishedAt": "2026-07-12T12:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-24-1",
-          "publishedAt": "2026-07-12T12:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-24-2",
-          "publishedAt": "2026-07-12T12:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-24",
-      "primaryDomain": "demo-press.example"
-    },
-    {
-      "id": "evt_25",
-      "title": "[SAMPLE] Ransomware attack disrupts operations at logistics firm — Kenya",
-      "bluf": "Ransomware attack disrupts operations at logistics firm. Classified under Cyber Threats. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "cyber_threats",
-      "categoryLabel": "Cyber Threats",
-      "categoryColor": "#8e6ff2",
-      "severity": "MEDIUM",
-      "country": "Kenya",
-      "lat": -0.02,
-      "lon": 37.9,
-      "publishedAt": "2026-07-14T18:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-25-0",
-          "publishedAt": "2026-07-14T18:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-25-1",
-          "publishedAt": "2026-07-14T18:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-25",
-      "primaryDomain": "sample-bulletin.example"
-    },
-    {
-      "id": "evt_26",
-      "title": "[SAMPLE] Data breach exposes customer records at major retailer — Nigeria",
-      "bluf": "Data breach exposes customer records at major retailer. Classified under Cyber Threats. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "cyber_threats",
-      "categoryLabel": "Cyber Threats",
-      "categoryColor": "#8e6ff2",
-      "severity": "LOW",
-      "country": "Nigeria",
-      "lat": 9.1,
-      "lon": 8.7,
-      "publishedAt": "2026-07-15T07:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-26-0",
-          "publishedAt": "2026-07-15T07:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-26-1",
-          "publishedAt": "2026-07-15T07:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-26",
-      "primaryDomain": "demo-gazette.example"
-    },
-    {
-      "id": "evt_27",
-      "title": "[SAMPLE] Carjacking incidents rise in metropolitan area — Pakistan",
-      "bluf": "Carjacking incidents rise in metropolitan area. Classified under Crime. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "crime",
-      "categoryLabel": "Crime",
-      "categoryColor": "#9aa5b1",
-      "severity": "MEDIUM",
-      "country": "Pakistan",
-      "lat": 30.4,
-      "lon": 69.3,
-      "publishedAt": "2026-07-13T19:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-27-0",
-          "publishedAt": "2026-07-13T19:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-27-1",
-          "publishedAt": "2026-07-13T19:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-27",
-      "primaryDomain": "sample-bulletin.example"
-    },
-    {
-      "id": "evt_28",
-      "title": "[SAMPLE] Carjacking incidents rise in metropolitan area — Philippines",
-      "bluf": "Carjacking incidents rise in metropolitan area. Classified under Crime. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "crime",
-      "categoryLabel": "Crime",
-      "categoryColor": "#9aa5b1",
-      "severity": "MEDIUM",
-      "country": "Philippines",
-      "lat": 12.9,
-      "lon": 121.8,
-      "publishedAt": "2026-07-15T12:34:39.167Z",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T11:43:14.000Z",
       "sourceCount": 1,
       "sources": [
         {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-28-0",
-          "publishedAt": "2026-07-15T12:34:39.167Z"
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/national/gujarat/five-more-arrested-in-gujarat-anti-terrorist-squad-probe-into-alleged-jem-module-total-accused-rises-to-13/article71233601.ece",
+          "publishedAt": "2026-07-17T11:43:14.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-28",
-      "primaryDomain": "demo-gazette.example"
+      "primaryUrl": "https://www.thehindu.com/news/national/gujarat/five-more-arrested-in-gujarat-anti-terrorist-squad-probe-into-alleged-jem-module-total-accused-rises-to-13/article71233601.ece",
+      "primaryDomain": "thehindu.com"
     },
     {
-      "id": "evt_29",
-      "title": "[SAMPLE] Carjacking incidents rise in metropolitan area — France",
-      "bluf": "Carjacking incidents rise in metropolitan area. Classified under Crime. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "crime",
-      "categoryLabel": "Crime",
-      "categoryColor": "#9aa5b1",
-      "severity": "MEDIUM",
-      "country": "France",
-      "lat": 46.6,
-      "lon": 2.2,
-      "publishedAt": "2026-07-15T21:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-29-0",
-          "publishedAt": "2026-07-15T21:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-29-1",
-          "publishedAt": "2026-07-15T21:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-29-2",
-          "publishedAt": "2026-07-15T21:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-29-3",
-          "publishedAt": "2026-07-15T21:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-29",
-      "primaryDomain": "sample-wire.example"
-    },
-    {
-      "id": "evt_30",
-      "title": "[SAMPLE] Local businessman abducted, ransom demanded — Kenya",
-      "bluf": "Local businessman abducted, ransom demanded. Classified under Kidnapping. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "kidnapping",
-      "categoryLabel": "Kidnapping",
-      "categoryColor": "#d16ba5",
-      "severity": "LOW",
-      "country": "Kenya",
-      "lat": -0.02,
-      "lon": 37.9,
-      "publishedAt": "2026-07-12T10:34:39.167Z",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-30-0",
-          "publishedAt": "2026-07-12T10:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-30-1",
-          "publishedAt": "2026-07-12T10:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-30-2",
-          "publishedAt": "2026-07-12T10:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-30",
-      "primaryDomain": "sample-wire.example"
-    },
-    {
-      "id": "evt_31",
-      "title": "[SAMPLE] Kidnapping attempt reported near industrial park — Germany",
-      "bluf": "Kidnapping attempt reported near industrial park. Classified under Kidnapping. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "kidnapping",
-      "categoryLabel": "Kidnapping",
-      "categoryColor": "#d16ba5",
-      "severity": "LOW",
-      "country": "Germany",
-      "lat": 51.2,
-      "lon": 10.4,
-      "publishedAt": "2026-07-11T12:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-31-0",
-          "publishedAt": "2026-07-11T12:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-31-1",
-          "publishedAt": "2026-07-11T12:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-31",
-      "primaryDomain": "sample-wire.example"
-    },
-    {
-      "id": "evt_32",
-      "title": "[SAMPLE] Local businessman abducted, ransom demanded — Ukraine",
-      "bluf": "Local businessman abducted, ransom demanded. Classified under Kidnapping. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "kidnapping",
-      "categoryLabel": "Kidnapping",
-      "categoryColor": "#d16ba5",
-      "severity": "MEDIUM",
-      "country": "Ukraine",
-      "lat": 48.4,
-      "lon": 31.2,
-      "publishedAt": "2026-07-12T23:34:39.167Z",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-32-0",
-          "publishedAt": "2026-07-12T23:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-32-1",
-          "publishedAt": "2026-07-12T23:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-32-2",
-          "publishedAt": "2026-07-12T23:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-32",
-      "primaryDomain": "placeholder-news.example"
-    },
-    {
-      "id": "evt_33",
-      "title": "[SAMPLE] Kidnapping attempt reported near industrial park — France",
-      "bluf": "Kidnapping attempt reported near industrial park. Classified under Kidnapping. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "kidnapping",
-      "categoryLabel": "Kidnapping",
-      "categoryColor": "#d16ba5",
-      "severity": "MEDIUM",
-      "country": "France",
-      "lat": 46.6,
-      "lon": 2.2,
-      "publishedAt": "2026-07-11T02:34:39.167Z",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-33-0",
-          "publishedAt": "2026-07-11T02:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-33-1",
-          "publishedAt": "2026-07-11T02:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-33-2",
-          "publishedAt": "2026-07-11T02:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-33",
-      "primaryDomain": "demo-gazette.example"
-    },
-    {
-      "id": "evt_34",
-      "title": "[SAMPLE] Kidnapping attempt reported near industrial park — Kenya",
-      "bluf": "Kidnapping attempt reported near industrial park. Classified under Kidnapping. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "kidnapping",
-      "categoryLabel": "Kidnapping",
-      "categoryColor": "#d16ba5",
-      "severity": "LOW",
-      "country": "Kenya",
-      "lat": -0.02,
-      "lon": 37.9,
-      "publishedAt": "2026-07-16T17:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-34-0",
-          "publishedAt": "2026-07-16T17:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-34-1",
-          "publishedAt": "2026-07-16T17:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-34-2",
-          "publishedAt": "2026-07-16T17:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-34-3",
-          "publishedAt": "2026-07-16T17:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-34",
-      "primaryDomain": "sample-bulletin.example"
-    },
-    {
-      "id": "evt_35",
-      "title": "[SAMPLE] Kidnapping attempt reported near industrial park — United States",
-      "bluf": "Kidnapping attempt reported near industrial park. Classified under Kidnapping. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "kidnapping",
-      "categoryLabel": "Kidnapping",
-      "categoryColor": "#d16ba5",
-      "severity": "LOW",
-      "country": "United States",
-      "lat": 39.8,
-      "lon": -98.6,
-      "publishedAt": "2026-07-11T07:34:39.167Z",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-35-0",
-          "publishedAt": "2026-07-11T07:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-35-1",
-          "publishedAt": "2026-07-11T07:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-35-2",
-          "publishedAt": "2026-07-11T07:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-35",
-      "primaryDomain": "demo-press.example"
-    },
-    {
-      "id": "evt_36",
-      "title": "[SAMPLE] Flooding disrupts operations at coastal facility — United States",
-      "bluf": "Flooding disrupts operations at coastal facility. Classified under Natural Disaster. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "id": "https://www.channelnewsasia.com/world/northeast-spain-wildfire-destroys-over-12000-hectares-regional-authorities-6261151",
+      "title": "Northeast Spain wildfire destroys over 12,000 hectares: Regional authorities",
+      "bluf": "Northeast Spain wildfire destroys over 12,000 hectares. Classified under Natural Disaster. Reported by 1 outlet.",
       "category": "natural_disaster",
       "categoryLabel": "Natural Disaster",
       "categoryColor": "#5cb85c",
       "severity": "LOW",
-      "country": "United States",
-      "lat": 39.8,
-      "lon": -98.6,
-      "publishedAt": "2026-07-13T23:34:39.167Z",
+      "country": "Spain",
+      "lat": 40.2,
+      "lon": -3.7,
+      "publishedAt": "2026-07-17T11:20:39.000Z",
       "sourceCount": 1,
       "sources": [
         {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-36-0",
-          "publishedAt": "2026-07-13T23:34:39.167Z"
+          "domain": "channelnewsasia.com",
+          "label": "Channel News Asia – Asia",
+          "url": "https://www.channelnewsasia.com/world/northeast-spain-wildfire-destroys-over-12000-hectares-regional-authorities-6261151",
+          "publishedAt": "2026-07-17T11:20:39.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-36",
-      "primaryDomain": "sample-wire.example"
+      "primaryUrl": "https://www.channelnewsasia.com/world/northeast-spain-wildfire-destroys-over-12000-hectares-regional-authorities-6261151",
+      "primaryDomain": "channelnewsasia.com"
     },
     {
-      "id": "evt_37",
-      "title": "[SAMPLE] Wildfire threatens regional supply routes — Philippines",
-      "bluf": "Wildfire threatens regional supply routes. Classified under Natural Disaster. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "natural_disaster",
-      "categoryLabel": "Natural Disaster",
-      "categoryColor": "#5cb85c",
+      "id": "https://www.channelnewsasia.com/business/telstra-ceo-points-undocumented-software-change-outage-in-senate-testimony-6261086",
+      "title": "Telstra CEO points to undocumented software change for outage in Senate testimony",
+      "bluf": "Telstra CEO points to undocumented software change for outage in Senate testimony. Classified under Executive Threats. Reported by 1 outlet.",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
       "severity": "LOW",
-      "country": "Philippines",
-      "lat": 12.9,
-      "lon": 121.8,
-      "publishedAt": "2026-07-11T03:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-37-0",
-          "publishedAt": "2026-07-11T03:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-37-1",
-          "publishedAt": "2026-07-11T03:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-37-2",
-          "publishedAt": "2026-07-11T03:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-37-3",
-          "publishedAt": "2026-07-11T03:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-37",
-      "primaryDomain": "sample-wire.example"
-    },
-    {
-      "id": "evt_38",
-      "title": "[SAMPLE] Wildfire threatens regional supply routes — United Kingdom",
-      "bluf": "Wildfire threatens regional supply routes. Classified under Natural Disaster. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "natural_disaster",
-      "categoryLabel": "Natural Disaster",
-      "categoryColor": "#5cb85c",
-      "severity": "HIGH",
-      "country": "United Kingdom",
-      "lat": 54,
-      "lon": -2.9,
-      "publishedAt": "2026-07-11T16:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-38-0",
-          "publishedAt": "2026-07-11T16:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-38-1",
-          "publishedAt": "2026-07-11T16:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-38-2",
-          "publishedAt": "2026-07-11T16:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-38-3",
-          "publishedAt": "2026-07-11T16:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-38",
-      "primaryDomain": "demo-press.example"
-    },
-    {
-      "id": "evt_39",
-      "title": "[SAMPLE] Flooding disrupts operations at coastal facility — United Kingdom",
-      "bluf": "Flooding disrupts operations at coastal facility. Classified under Natural Disaster. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "natural_disaster",
-      "categoryLabel": "Natural Disaster",
-      "categoryColor": "#5cb85c",
-      "severity": "LOW",
-      "country": "United Kingdom",
-      "lat": 54,
-      "lon": -2.9,
-      "publishedAt": "2026-07-16T09:34:39.167Z",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T11:01:55.000Z",
       "sourceCount": 1,
       "sources": [
         {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-39-0",
-          "publishedAt": "2026-07-16T09:34:39.167Z"
+          "domain": "channelnewsasia.com",
+          "label": "Channel News Asia – Asia",
+          "url": "https://www.channelnewsasia.com/business/telstra-ceo-points-undocumented-software-change-outage-in-senate-testimony-6261086",
+          "publishedAt": "2026-07-17T11:01:55.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-39",
-      "primaryDomain": "placeholder-news.example"
+      "primaryUrl": "https://www.channelnewsasia.com/business/telstra-ceo-points-undocumented-software-change-outage-in-senate-testimony-6261086",
+      "primaryDomain": "channelnewsasia.com"
     },
     {
-      "id": "evt_40",
-      "title": "[SAMPLE] Wildfire threatens regional supply routes — Brazil",
-      "bluf": "Wildfire threatens regional supply routes. Classified under Natural Disaster. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "id": "https://www.scmp.com/news/world/middle-east/article/3360980/chemical-tanker-seized-yemen-coast-suspected-somali-pirate-hijack?utm_source=rss_feed",
+      "title": "Chemical tanker seized off Yemen coast in suspected Somali pirate hijack",
+      "bluf": "Chemical tanker seized off Yemen coast in suspected Somali pirate hijack. Classified under Travel Risk. Reported by 1 outlet.",
+      "category": "travel_risk",
+      "categoryLabel": "Travel Risk",
+      "categoryColor": "#4dd0e1",
+      "severity": "MEDIUM",
+      "country": "Yemen",
+      "lat": 15.6,
+      "lon": 48.5,
+      "publishedAt": "2026-07-17T10:58:33.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "scmp.com",
+          "label": "South China Morning Post – World",
+          "url": "https://www.scmp.com/news/world/middle-east/article/3360980/chemical-tanker-seized-yemen-coast-suspected-somali-pirate-hijack?utm_source=rss_feed",
+          "publishedAt": "2026-07-17T10:58:33.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.scmp.com/news/world/middle-east/article/3360980/chemical-tanker-seized-yemen-coast-suspected-somali-pirate-hijack?utm_source=rss_feed",
+      "primaryDomain": "scmp.com"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/videos/c36d1n6g3x9o?at_medium=RSS&at_campaign=rss",
+      "title": "Bodycam footage shows airlift of girl stranded by Texas floods",
+      "bluf": "Bodycam footage shows airlift of girl stranded by Texas floods. Classified under Natural Disaster. Reported by 1 outlet.",
       "category": "natural_disaster",
       "categoryLabel": "Natural Disaster",
       "categoryColor": "#5cb85c",
       "severity": "LOW",
-      "country": "Brazil",
-      "lat": -10.3,
-      "lon": -53.2,
-      "publishedAt": "2026-07-10T23:34:39.167Z",
-      "sourceCount": 3,
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T10:51:40.000Z",
+      "sourceCount": 1,
       "sources": [
         {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-40-0",
-          "publishedAt": "2026-07-10T23:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-40-1",
-          "publishedAt": "2026-07-10T23:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-40-2",
-          "publishedAt": "2026-07-10T23:34:39.167Z"
+          "domain": "bbc.co.uk",
+          "label": "BBC News – World",
+          "url": "https://www.bbc.co.uk/news/videos/c36d1n6g3x9o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-07-17T10:51:40.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-40",
-      "primaryDomain": "demo-gazette.example"
+      "primaryUrl": "https://www.bbc.co.uk/news/videos/c36d1n6g3x9o?at_medium=RSS&at_campaign=rss",
+      "primaryDomain": "bbc.co.uk"
     },
     {
-      "id": "evt_41",
-      "title": "[SAMPLE] Wildfire threatens regional supply routes — United Kingdom",
-      "bluf": "Wildfire threatens regional supply routes. Classified under Natural Disaster. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "id": "https://www.france24.com/en/trump-reviving-election-fraud-claims-to-contest-midterm-results-say-democrats",
+      "title": "Trump reviving election fraud claims to contest midterm results, say Democrats",
+      "bluf": "Trump reviving election fraud claims to contest midterm results, say Democrats. Classified under Executive Threats. Reported by 1 outlet.",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T10:29:41.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "france24.com",
+          "label": "France 24 – World",
+          "url": "https://www.france24.com/en/trump-reviving-election-fraud-claims-to-contest-midterm-results-say-democrats",
+          "publishedAt": "2026-07-17T10:29:41.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.france24.com/en/trump-reviving-election-fraud-claims-to-contest-midterm-results-say-democrats",
+      "primaryDomain": "france24.com"
+    },
+    {
+      "id": "https://www.hindustantimes.com/india-news/govt-must-listen-not-look-away-pawan-khera-meets-sonam-wangchuk-says-protest-is-a-constitutional-right-101784276494526.html",
+      "title": "'Govt must listen, not look away': Cong's Pawan Khera meets Sonam Wangchuk, says 'protest is a constitutional right'",
+      "bluf": "'Govt must listen, not look away'. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T09:57:49.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "hindustantimes.com",
+          "label": "Hindustan Times – India News",
+          "url": "https://www.hindustantimes.com/india-news/govt-must-listen-not-look-away-pawan-khera-meets-sonam-wangchuk-says-protest-is-a-constitutional-right-101784276494526.html",
+          "publishedAt": "2026-07-17T09:57:49.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.hindustantimes.com/india-news/govt-must-listen-not-look-away-pawan-khera-meets-sonam-wangchuk-says-protest-is-a-constitutional-right-101784276494526.html",
+      "primaryDomain": "hindustantimes.com"
+    },
+    {
+      "id": "https://timesofindia.indiatimes.com/city/bhopal/go-to-your-mla-bjp-legislators-response-to-water-crisis-sparks-protest-angry-villager-places-child-on-car-bonnet/articleshow/132458240.cms",
+      "title": "'Go to your MLA': BJP legislator's response to water crisis sparks protest in MP's Shivpuri",
+      "bluf": "'Go to your MLA'. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T09:57:35.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "timesofindia.indiatimes.com",
+          "label": "Times of India – Top Stories",
+          "url": "https://timesofindia.indiatimes.com/city/bhopal/go-to-your-mla-bjp-legislators-response-to-water-crisis-sparks-protest-angry-villager-places-child-on-car-bonnet/articleshow/132458240.cms",
+          "publishedAt": "2026-07-17T09:57:35.000Z"
+        }
+      ],
+      "primaryUrl": "https://timesofindia.indiatimes.com/city/bhopal/go-to-your-mla-bjp-legislators-response-to-water-crisis-sparks-protest-angry-villager-places-child-on-car-bonnet/articleshow/132458240.cms",
+      "primaryDomain": "timesofindia.indiatimes.com"
+    },
+    {
+      "id": "https://timesofindia.indiatimes.com/world/middle-east/pirates-allegedly-hijack-chemical-tanker-asana-in-gulf-of-aden-off-yemen/articleshow/132456534.cms",
+      "title": "Pirates allegedly hijack chemical tanker Asana in Gulf of Aden off Yemen",
+      "bluf": "Pirates allegedly hijack chemical tanker Asana in Gulf of Aden off Yemen. Classified under Travel Risk. Reported by 1 outlet.",
+      "category": "travel_risk",
+      "categoryLabel": "Travel Risk",
+      "categoryColor": "#4dd0e1",
+      "severity": "LOW",
+      "country": "Yemen",
+      "lat": 15.6,
+      "lon": 48.5,
+      "publishedAt": "2026-07-17T09:57:09.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "timesofindia.indiatimes.com",
+          "label": "Times of India – Top Stories",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/pirates-allegedly-hijack-chemical-tanker-asana-in-gulf-of-aden-off-yemen/articleshow/132456534.cms",
+          "publishedAt": "2026-07-17T09:57:09.000Z"
+        }
+      ],
+      "primaryUrl": "https://timesofindia.indiatimes.com/world/middle-east/pirates-allegedly-hijack-chemical-tanker-asana-in-gulf-of-aden-off-yemen/articleshow/132456534.cms",
+      "primaryDomain": "timesofindia.indiatimes.com"
+    },
+    {
+      "id": "https://www.france24.com/en/like-smoking-cigarettes-all-day-chicago-chokes-in-smoke-heavy-air-from-canadian-fires",
+      "title": "'Like smoking cigarettes all day': Chicago chokes in wildfire smoke-heavy air",
+      "bluf": "'Like smoking cigarettes all day'. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T09:33:30.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "france24.com",
+          "label": "France 24 – World",
+          "url": "https://www.france24.com/en/like-smoking-cigarettes-all-day-chicago-chokes-in-smoke-heavy-air-from-canadian-fires",
+          "publishedAt": "2026-07-17T09:33:30.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.france24.com/en/like-smoking-cigarettes-all-day-chicago-chokes-in-smoke-heavy-air-from-canadian-fires",
+      "primaryDomain": "france24.com"
+    },
+    {
+      "id": "https://www.france24.com/en/election-fraud-claims-and-threats-to-media-what-to-know-about-trump-s-address",
+      "title": "Election fraud claims and threats to media: what to know about Trump's address",
+      "bluf": "Election fraud claims and threats to media. Classified under Executive Threats. Reported by 1 outlet.",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "MEDIUM",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T09:18:46.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "france24.com",
+          "label": "France 24 – World",
+          "url": "https://www.france24.com/en/election-fraud-claims-and-threats-to-media-what-to-know-about-trump-s-address",
+          "publishedAt": "2026-07-17T09:18:46.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.france24.com/en/election-fraud-claims-and-threats-to-media-what-to-know-about-trump-s-address",
+      "primaryDomain": "france24.com"
+    },
+    {
+      "id": "https://www.nytimes.com/2026/07/17/world/americas/venezuela-earthquakes-families-migration.html",
+      "title": "Venezuela Earthquakes Force a Grim Homecoming for Migrants",
+      "bluf": "Venezuela Earthquakes Force a Grim Homecoming for Migrants. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Venezuela",
+      "lat": 6.4,
+      "lon": -66.6,
+      "publishedAt": "2026-07-17T09:01:42.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "nytimes.com",
+          "label": "New York Times – World",
+          "url": "https://www.nytimes.com/2026/07/17/world/americas/venezuela-earthquakes-families-migration.html",
+          "publishedAt": "2026-07-17T09:01:42.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.nytimes.com/2026/07/17/world/americas/venezuela-earthquakes-families-migration.html",
+      "primaryDomain": "nytimes.com"
+    },
+    {
+      "id": "https://www.hindustantimes.com/india-news/she-chased-me-away-madan-mitra-explains-why-he-left-mamatas-side-amid-tmc-crisis-101784276436372.html",
+      "title": "'She chased me away': Madan Mitra explains why he left Mamata's side amid TMC crisis",
+      "bluf": "'She chased me away'. Classified under Terrorism. Reported by 1 outlet.",
+      "category": "terrorism",
+      "categoryLabel": "Terrorism",
+      "categoryColor": "#c0392b",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T09:01:23.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "hindustantimes.com",
+          "label": "Hindustan Times – India News",
+          "url": "https://www.hindustantimes.com/india-news/she-chased-me-away-madan-mitra-explains-why-he-left-mamatas-side-amid-tmc-crisis-101784276436372.html",
+          "publishedAt": "2026-07-17T09:01:23.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.hindustantimes.com/india-news/she-chased-me-away-madan-mitra-explains-why-he-left-mamatas-side-amid-tmc-crisis-101784276436372.html",
+      "primaryDomain": "hindustantimes.com"
+    },
+    {
+      "id": "https://timesofindia.indiatimes.com/india/modi-thinks-way-in-advance-pm-says-hormuz-crisis-didnt-affect-railways-draws-parallel-with-2014/articleshow/132456794.cms",
+      "title": "'Modi thinks way in advance': PM says Hormuz crisis didn't affect railways",
+      "bluf": "'Modi thinks way in advance'. Classified under Terrorism. Reported by 1 outlet.",
+      "category": "terrorism",
+      "categoryLabel": "Terrorism",
+      "categoryColor": "#c0392b",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T08:39:36.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "timesofindia.indiatimes.com",
+          "label": "Times of India – Top Stories",
+          "url": "https://timesofindia.indiatimes.com/india/modi-thinks-way-in-advance-pm-says-hormuz-crisis-didnt-affect-railways-draws-parallel-with-2014/articleshow/132456794.cms",
+          "publishedAt": "2026-07-17T08:39:36.000Z"
+        }
+      ],
+      "primaryUrl": "https://timesofindia.indiatimes.com/india/modi-thinks-way-in-advance-pm-says-hormuz-crisis-didnt-affect-railways-draws-parallel-with-2014/articleshow/132456794.cms",
+      "primaryDomain": "timesofindia.indiatimes.com"
+    },
+    {
+      "id": "https://www.scmp.com/news/china/politics/article/3360928/rescuers-southwest-china-race-extreme-weather-reach-residents-trapped-landslide?utm_source=rss_feed",
+      "title": "Rescuers in southwest China race against time to reach residents trapped by landslide",
+      "bluf": "Rescuers in southwest China race against time to reach residents trapped by landslide. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "China",
+      "lat": 35.9,
+      "lon": 104.2,
+      "publishedAt": "2026-07-17T08:00:19.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "scmp.com",
+          "label": "South China Morning Post – World",
+          "url": "https://www.scmp.com/news/china/politics/article/3360928/rescuers-southwest-china-race-extreme-weather-reach-residents-trapped-landslide?utm_source=rss_feed",
+          "publishedAt": "2026-07-17T08:00:19.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.scmp.com/news/china/politics/article/3360928/rescuers-southwest-china-race-extreme-weather-reach-residents-trapped-landslide?utm_source=rss_feed",
+      "primaryDomain": "scmp.com"
+    },
+    {
+      "id": "https://www.hindustantimes.com/india-news/2020-riots-case-hc-notice-to-delhi-police-on-bail-plea-by-sharjeel-imam-in-uapa-case-101784268268522.html",
+      "title": "2020 riots case: HC notice to Delhi Police on bail plea by Sharjeel Imam in UAPA case",
+      "bluf": "2020 riots case. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "MEDIUM",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T06:04:28.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "hindustantimes.com",
+          "label": "Hindustan Times – India News",
+          "url": "https://www.hindustantimes.com/india-news/2020-riots-case-hc-notice-to-delhi-police-on-bail-plea-by-sharjeel-imam-in-uapa-case-101784268268522.html",
+          "publishedAt": "2026-07-17T06:04:28.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.hindustantimes.com/india-news/2020-riots-case-hc-notice-to-delhi-police-on-bail-plea-by-sharjeel-imam-in-uapa-case-101784268268522.html",
+      "primaryDomain": "hindustantimes.com"
+    },
+    {
+      "id": "https://www.scmp.com/news/people-culture/trending-china/article/3360898/video-capturing-chinese-firefighter-eating-rain-during-flood-relief-goes-viral?utm_source=rss_feed",
+      "title": "Video capturing Chinese firefighter eating in rain during flood relief goes viral",
+      "bluf": "Video capturing Chinese firefighter eating in rain during flood relief goes viral. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T06:00:18.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "scmp.com",
+          "label": "South China Morning Post – World",
+          "url": "https://www.scmp.com/news/people-culture/trending-china/article/3360898/video-capturing-chinese-firefighter-eating-rain-during-flood-relief-goes-viral?utm_source=rss_feed",
+          "publishedAt": "2026-07-17T06:00:18.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.scmp.com/news/people-culture/trending-china/article/3360898/video-capturing-chinese-firefighter-eating-rain-during-flood-relief-goes-viral?utm_source=rss_feed",
+      "primaryDomain": "scmp.com"
+    },
+    {
+      "id": "https://www.hindustantimes.com/india-news/ill-come-back-as-a-ghost-activist-sonam-wangchuk-hunger-strike-cockroach-janta-party-cjp-protest-jantar-mantar-101784262045016.html",
+      "title": "‘Will stay alive, come back as ghost if…’: Sonam Wangchuk urges support for Parliament march on July 20",
+      "bluf": "‘Will stay alive, come back as ghost if…’. Classified under Protests. Reported by 1 outlet.",
+      "category": "protests",
+      "categoryLabel": "Protests",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T05:35:23.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "hindustantimes.com",
+          "label": "Hindustan Times – India News",
+          "url": "https://www.hindustantimes.com/india-news/ill-come-back-as-a-ghost-activist-sonam-wangchuk-hunger-strike-cockroach-janta-party-cjp-protest-jantar-mantar-101784262045016.html",
+          "publishedAt": "2026-07-17T05:35:23.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.hindustantimes.com/india-news/ill-come-back-as-a-ghost-activist-sonam-wangchuk-hunger-strike-cockroach-janta-party-cjp-protest-jantar-mantar-101784262045016.html",
+      "primaryDomain": "hindustantimes.com"
+    },
+    {
+      "id": "https://www.aljazeera.com/video/newsfeed/2026/7/17/texas-floods-ravage-through-southwestern-areas-of-state?traffic_source=rss",
+      "title": "Texas floods ravage through southwestern areas of state",
+      "bluf": "Texas floods ravage through southwestern areas of state. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T05:12:11.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "aljazeera.com",
+          "label": "Al Jazeera – All",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/texas-floods-ravage-through-southwestern-areas-of-state?traffic_source=rss",
+          "publishedAt": "2026-07-17T05:12:11.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/17/texas-floods-ravage-through-southwestern-areas-of-state?traffic_source=rss",
+      "primaryDomain": "aljazeera.com"
+    },
+    {
+      "id": "https://www.scmp.com/news/world/united-states-canada/article/3360884/us-confronts-floods-heatwaves-smoky-skies-all-once-amid-trump-aid-cuts?utm_source=rss_feed",
+      "title": "US confronts floods, heatwaves, smoky skies all at once amid Trump aid cuts",
+      "bluf": "US confronts floods, heatwaves, smoky skies all at once amid Trump aid cuts. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T04:29:17.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "scmp.com",
+          "label": "South China Morning Post – World",
+          "url": "https://www.scmp.com/news/world/united-states-canada/article/3360884/us-confronts-floods-heatwaves-smoky-skies-all-once-amid-trump-aid-cuts?utm_source=rss_feed",
+          "publishedAt": "2026-07-17T04:29:17.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.scmp.com/news/world/united-states-canada/article/3360884/us-confronts-floods-heatwaves-smoky-skies-all-once-amid-trump-aid-cuts?utm_source=rss_feed",
+      "primaryDomain": "scmp.com"
+    },
+    {
+      "id": "https://www.nytimes.com/2026/07/16/world/asia/india-sonam-wangchuk-cockroach-janata-party-hunger-strike.html",
+      "title": "A 59-Year-Old Hunger Striker Joins a Gen Z Protest Movement in India",
+      "bluf": "A 59. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-16T22:43:19.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "nytimes.com",
+          "label": "New York Times – World",
+          "url": "https://www.nytimes.com/2026/07/16/world/asia/india-sonam-wangchuk-cockroach-janata-party-hunger-strike.html",
+          "publishedAt": "2026-07-16T22:43:19.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.nytimes.com/2026/07/16/world/asia/india-sonam-wangchuk-cockroach-janata-party-hunger-strike.html",
+      "primaryDomain": "nytimes.com"
+    },
+    {
+      "id": "https://www.nytimes.com/2026/07/16/world/canada/canada-wildfires-firefighters-heat.html",
+      "title": "Canada’s Wildfires Are Burning Through the Night",
+      "bluf": "Canada’s Wildfires Are Burning Through the Night. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Canada",
+      "lat": 56.1,
+      "lon": -106.3,
+      "publishedAt": "2026-07-16T22:08:16.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "nytimes.com",
+          "label": "New York Times – World",
+          "url": "https://www.nytimes.com/2026/07/16/world/canada/canada-wildfires-firefighters-heat.html",
+          "publishedAt": "2026-07-16T22:08:16.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.nytimes.com/2026/07/16/world/canada/canada-wildfires-firefighters-heat.html",
+      "primaryDomain": "nytimes.com"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
+      "title": "At least one dead in Texas floods ravaging same area where campers died",
+      "bluf": "At least one dead in Texas floods ravaging same area where campers died. Classified under Natural Disaster. Reported by 1 outlet.",
       "category": "natural_disaster",
       "categoryLabel": "Natural Disaster",
       "categoryColor": "#5cb85c",
       "severity": "HIGH",
-      "country": "United Kingdom",
-      "lat": 54,
-      "lon": -2.9,
-      "publishedAt": "2026-07-16T09:34:39.167Z",
-      "sourceCount": 3,
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-16T22:08:13.000Z",
+      "sourceCount": 1,
       "sources": [
         {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-41-0",
-          "publishedAt": "2026-07-16T09:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-41-1",
-          "publishedAt": "2026-07-16T09:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-41-2",
-          "publishedAt": "2026-07-16T09:34:39.167Z"
+          "domain": "bbc.co.uk",
+          "label": "BBC News – World",
+          "url": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-07-16T22:08:13.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-41",
-      "primaryDomain": "demo-gazette.example"
+      "primaryUrl": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
+      "primaryDomain": "bbc.co.uk"
     },
     {
-      "id": "evt_42",
-      "title": "[SAMPLE] Port closure delays regional shipments — Philippines",
-      "bluf": "Port closure delays regional shipments. Classified under Supply Chain. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "supply_chain",
-      "categoryLabel": "Supply Chain",
-      "categoryColor": "#c98a3e",
-      "severity": "MEDIUM",
-      "country": "Philippines",
-      "lat": 12.9,
-      "lon": 121.8,
-      "publishedAt": "2026-07-14T06:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-42-0",
-          "publishedAt": "2026-07-14T06:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-42-1",
-          "publishedAt": "2026-07-14T06:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-42-2",
-          "publishedAt": "2026-07-14T06:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-42-3",
-          "publishedAt": "2026-07-14T06:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-42",
-      "primaryDomain": "demo-gazette.example"
-    },
-    {
-      "id": "evt_43",
-      "title": "[SAMPLE] Port closure delays regional shipments — Philippines",
-      "bluf": "Port closure delays regional shipments. Classified under Supply Chain. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "supply_chain",
-      "categoryLabel": "Supply Chain",
-      "categoryColor": "#c98a3e",
+      "id": "https://www.france24.com/en/tv-shows/a-propos/20260716-canadian-wildfire-sends-hazardous-smoke-spewing-into-us",
+      "title": "Canadian wildfire sends hazardous smoke spewing into US",
+      "bluf": "Canadian wildfire sends hazardous smoke spewing into US. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
       "severity": "LOW",
-      "country": "Philippines",
-      "lat": 12.9,
-      "lon": 121.8,
-      "publishedAt": "2026-07-17T07:34:39.167Z",
-      "sourceCount": 3,
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-16T21:09:27.000Z",
+      "sourceCount": 1,
       "sources": [
         {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-43-0",
-          "publishedAt": "2026-07-17T07:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-43-1",
-          "publishedAt": "2026-07-17T07:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-43-2",
-          "publishedAt": "2026-07-17T07:34:39.167Z"
+          "domain": "france24.com",
+          "label": "France 24 – World",
+          "url": "https://www.france24.com/en/tv-shows/a-propos/20260716-canadian-wildfire-sends-hazardous-smoke-spewing-into-us",
+          "publishedAt": "2026-07-16T21:09:27.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-43",
-      "primaryDomain": "sample-wire.example"
+      "primaryUrl": "https://www.france24.com/en/tv-shows/a-propos/20260716-canadian-wildfire-sends-hazardous-smoke-spewing-into-us",
+      "primaryDomain": "france24.com"
     },
     {
-      "id": "evt_44",
-      "title": "[SAMPLE] Factory fire halts production at key supplier — Ukraine",
-      "bluf": "Factory fire halts production at key supplier. Classified under Supply Chain. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "supply_chain",
-      "categoryLabel": "Supply Chain",
-      "categoryColor": "#c98a3e",
+      "id": "https://www.cbsnews.com/news/us-designates-juarez-cartel-los-viagras-foreign-terrorist-organizations/",
+      "title": "U.S. designates cartel on Texas border as foreign terrorist organization",
+      "bluf": "U.S. designates cartel on Texas border as foreign terrorist organization. Classified under Terrorism. Reported by 1 outlet.",
+      "category": "terrorism",
+      "categoryLabel": "Terrorism",
+      "categoryColor": "#c0392b",
+      "severity": "HIGH",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-16T17:07:45.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "cbsnews.com",
+          "label": "CBS News – World",
+          "url": "https://www.cbsnews.com/news/us-designates-juarez-cartel-los-viagras-foreign-terrorist-organizations/",
+          "publishedAt": "2026-07-16T17:07:45.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.cbsnews.com/news/us-designates-juarez-cartel-los-viagras-foreign-terrorist-organizations/",
+      "primaryDomain": "cbsnews.com"
+    },
+    {
+      "id": "https://www.cbsnews.com/news/climate-extremes-wildfires-canada-us-west/",
+      "title": "Climate extremes fuel explosive wildfires in Canada and western U.S.",
+      "bluf": "Climate extremes fuel explosive wildfires in Canada and western U.S.. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Canada",
+      "lat": 56.1,
+      "lon": -106.3,
+      "publishedAt": "2026-07-16T17:06:08.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "cbsnews.com",
+          "label": "CBS News – World",
+          "url": "https://www.cbsnews.com/news/climate-extremes-wildfires-canada-us-west/",
+          "publishedAt": "2026-07-16T17:06:08.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.cbsnews.com/news/climate-extremes-wildfires-canada-us-west/",
+      "primaryDomain": "cbsnews.com"
+    },
+    {
+      "id": "https://www.hindustantimes.com/india-news/aap-saurabh-bharadwaj-arvind-kejriwal-cjp-protest-sonam-wangchuk-don-t-appoint-smriti-irani-dharmendra-pradhan-101784218486058.html",
+      "title": "'Don't appoint Smriti Irani in place of Dharmendra Pradhan': AAP leader's dig at BJP from CJP protest",
+      "bluf": "'Don't appoint Smriti Irani in place of Dharmendra Pradhan'. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "Iran",
+      "lat": 32.4,
+      "lon": 53.7,
+      "publishedAt": "2026-07-16T16:53:56.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "hindustantimes.com",
+          "label": "Hindustan Times – India News",
+          "url": "https://www.hindustantimes.com/india-news/aap-saurabh-bharadwaj-arvind-kejriwal-cjp-protest-sonam-wangchuk-don-t-appoint-smriti-irani-dharmendra-pradhan-101784218486058.html",
+          "publishedAt": "2026-07-16T16:53:56.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.hindustantimes.com/india-news/aap-saurabh-bharadwaj-arvind-kejriwal-cjp-protest-sonam-wangchuk-don-t-appoint-smriti-irani-dharmendra-pradhan-101784218486058.html",
+      "primaryDomain": "hindustantimes.com"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/articles/cdx76069n3do?at_medium=RSS&at_campaign=rss",
+      "title": "Zelensky's removal of popular defence minister sparks protests in Ukraine",
+      "bluf": "Zelensky's removal of popular defence minister sparks protests in Ukraine. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
       "severity": "LOW",
       "country": "Ukraine",
       "lat": 48.4,
       "lon": 31.2,
-      "publishedAt": "2026-07-12T18:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-44-0",
-          "publishedAt": "2026-07-12T18:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-44-1",
-          "publishedAt": "2026-07-12T18:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-44-2",
-          "publishedAt": "2026-07-12T18:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-44-3",
-          "publishedAt": "2026-07-12T18:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-44",
-      "primaryDomain": "demo-gazette.example"
-    },
-    {
-      "id": "evt_45",
-      "title": "[SAMPLE] Factory fire halts production at key supplier — Ukraine",
-      "bluf": "Factory fire halts production at key supplier. Classified under Supply Chain. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "supply_chain",
-      "categoryLabel": "Supply Chain",
-      "categoryColor": "#c98a3e",
-      "severity": "LOW",
-      "country": "Ukraine",
-      "lat": 48.4,
-      "lon": 31.2,
-      "publishedAt": "2026-07-12T00:34:39.167Z",
+      "publishedAt": "2026-07-16T16:36:21.000Z",
       "sourceCount": 1,
       "sources": [
         {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-45-0",
-          "publishedAt": "2026-07-12T00:34:39.167Z"
+          "domain": "bbc.co.uk",
+          "label": "BBC News – World",
+          "url": "https://www.bbc.co.uk/news/articles/cdx76069n3do?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-07-16T16:36:21.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-45",
-      "primaryDomain": "placeholder-news.example"
+      "primaryUrl": "https://www.bbc.co.uk/news/articles/cdx76069n3do?at_medium=RSS&at_campaign=rss",
+      "primaryDomain": "bbc.co.uk"
     },
     {
-      "id": "evt_46",
-      "title": "[SAMPLE] Port closure delays regional shipments — Pakistan",
-      "bluf": "Port closure delays regional shipments. Classified under Supply Chain. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "supply_chain",
-      "categoryLabel": "Supply Chain",
-      "categoryColor": "#c98a3e",
-      "severity": "MEDIUM",
-      "country": "Pakistan",
-      "lat": 30.4,
-      "lon": 69.3,
-      "publishedAt": "2026-07-17T02:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-46-0",
-          "publishedAt": "2026-07-17T02:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-46-1",
-          "publishedAt": "2026-07-17T02:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-46",
-      "primaryDomain": "demo-gazette.example"
-    },
-    {
-      "id": "evt_47",
-      "title": "[SAMPLE] Factory fire halts production at key supplier — Brazil",
-      "bluf": "Factory fire halts production at key supplier. Classified under Supply Chain. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "supply_chain",
-      "categoryLabel": "Supply Chain",
-      "categoryColor": "#c98a3e",
+      "id": "https://www.bbc.co.uk/news/articles/c5ywdl9ne3yo?at_medium=RSS&at_campaign=rss",
+      "title": "What to know about the Canadian and US wildfires and their impact",
+      "bluf": "What to know about the Canadian and US wildfires and their impact. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
       "severity": "LOW",
-      "country": "Brazil",
-      "lat": -10.3,
-      "lon": -53.2,
-      "publishedAt": "2026-07-16T16:34:39.167Z",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-47-0",
-          "publishedAt": "2026-07-16T16:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-47-1",
-          "publishedAt": "2026-07-16T16:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-47-2",
-          "publishedAt": "2026-07-16T16:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-47",
-      "primaryDomain": "sample-wire.example"
-    },
-    {
-      "id": "evt_48",
-      "title": "[SAMPLE] Shareholder lawsuit filed over disclosure failures — Nigeria",
-      "bluf": "Shareholder lawsuit filed over disclosure failures. Classified under Corporate Reputation. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "corporate_reputation",
-      "categoryLabel": "Corporate Reputation",
-      "categoryColor": "#5b8def",
-      "severity": "HIGH",
-      "country": "Nigeria",
-      "lat": 9.1,
-      "lon": 8.7,
-      "publishedAt": "2026-07-11T20:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-48-0",
-          "publishedAt": "2026-07-11T20:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-48-1",
-          "publishedAt": "2026-07-11T20:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-48",
-      "primaryDomain": "sample-wire.example"
-    },
-    {
-      "id": "evt_49",
-      "title": "[SAMPLE] Shareholder lawsuit filed over disclosure failures — Brazil",
-      "bluf": "Shareholder lawsuit filed over disclosure failures. Classified under Corporate Reputation. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "corporate_reputation",
-      "categoryLabel": "Corporate Reputation",
-      "categoryColor": "#5b8def",
-      "severity": "HIGH",
-      "country": "Brazil",
-      "lat": -10.3,
-      "lon": -53.2,
-      "publishedAt": "2026-07-11T15:34:39.167Z",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-49-0",
-          "publishedAt": "2026-07-11T15:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-49-1",
-          "publishedAt": "2026-07-11T15:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-49-2",
-          "publishedAt": "2026-07-11T15:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-49",
-      "primaryDomain": "sample-bulletin.example"
-    },
-    {
-      "id": "evt_50",
-      "title": "[SAMPLE] Regulatory investigation launched into corporate practices — United Kingdom",
-      "bluf": "Regulatory investigation launched into corporate practices. Classified under Corporate Reputation. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "corporate_reputation",
-      "categoryLabel": "Corporate Reputation",
-      "categoryColor": "#5b8def",
-      "severity": "HIGH",
-      "country": "United Kingdom",
-      "lat": 54,
-      "lon": -2.9,
-      "publishedAt": "2026-07-14T01:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-50-0",
-          "publishedAt": "2026-07-14T01:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-50-1",
-          "publishedAt": "2026-07-14T01:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-50-2",
-          "publishedAt": "2026-07-14T01:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-50-3",
-          "publishedAt": "2026-07-14T01:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-50",
-      "primaryDomain": "demo-gazette.example"
-    },
-    {
-      "id": "evt_51",
-      "title": "[SAMPLE] Shareholder lawsuit filed over disclosure failures — Mexico",
-      "bluf": "Shareholder lawsuit filed over disclosure failures. Classified under Corporate Reputation. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "corporate_reputation",
-      "categoryLabel": "Corporate Reputation",
-      "categoryColor": "#5b8def",
-      "severity": "MEDIUM",
-      "country": "Mexico",
-      "lat": 23.6,
-      "lon": -102.5,
-      "publishedAt": "2026-07-11T10:34:39.167Z",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-16T16:08:40.000Z",
       "sourceCount": 1,
       "sources": [
         {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-51-0",
-          "publishedAt": "2026-07-11T10:34:39.167Z"
+          "domain": "bbc.co.uk",
+          "label": "BBC News – World",
+          "url": "https://www.bbc.co.uk/news/articles/c5ywdl9ne3yo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-07-16T16:08:40.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-51",
-      "primaryDomain": "demo-gazette.example"
+      "primaryUrl": "https://www.bbc.co.uk/news/articles/c5ywdl9ne3yo?at_medium=RSS&at_campaign=rss",
+      "primaryDomain": "bbc.co.uk"
     },
     {
-      "id": "evt_52",
-      "title": "[SAMPLE] Regulatory investigation launched into corporate practices — United States",
-      "bluf": "Regulatory investigation launched into corporate practices. Classified under Corporate Reputation. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "id": "https://www.hindustantimes.com/india-news/everybody-does-naare-baazi-sc-on-plea-to-revive-protest-case-against-bhagwant-mann-101784207588846.html",
+      "title": "‘Everybody does naare-baazi’: SC on plea to revive protest case against Bhagwant Mann",
+      "bluf": "‘Everybody does naare. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-16T13:13:08.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "hindustantimes.com",
+          "label": "Hindustan Times – India News",
+          "url": "https://www.hindustantimes.com/india-news/everybody-does-naare-baazi-sc-on-plea-to-revive-protest-case-against-bhagwant-mann-101784207588846.html",
+          "publishedAt": "2026-07-16T13:13:08.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.hindustantimes.com/india-news/everybody-does-naare-baazi-sc-on-plea-to-revive-protest-case-against-bhagwant-mann-101784207588846.html",
+      "primaryDomain": "hindustantimes.com"
+    },
+    {
+      "id": "https://www.hindustantimes.com/india-news/pm-modi-afraid-of-sonam-wangchuk-kejriwal-recalls-anna-hazare-2011-movement-proposes-activist-for-education-minister-101784204404442.html",
+      "title": "'PM afraid of Wangchuk': Kejriwal recalls Anna Hazare 2011 movement, proposes activist for education minister",
+      "bluf": "'PM afraid of Wangchuk'. Classified under Corporate Reputation. Reported by 1 outlet.",
       "category": "corporate_reputation",
       "categoryLabel": "Corporate Reputation",
       "categoryColor": "#5b8def",
       "severity": "LOW",
-      "country": "United States",
-      "lat": 39.8,
-      "lon": -98.6,
-      "publishedAt": "2026-07-12T02:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-52-0",
-          "publishedAt": "2026-07-12T02:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-52-1",
-          "publishedAt": "2026-07-12T02:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-52",
-      "primaryDomain": "placeholder-news.example"
-    },
-    {
-      "id": "evt_53",
-      "title": "[SAMPLE] Cabinet resignations deepen political crisis — United Kingdom",
-      "bluf": "Cabinet resignations deepen political crisis. Classified under Political Instability. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "political_instability",
-      "categoryLabel": "Political Instability",
-      "categoryColor": "#b06ab3",
-      "severity": "HIGH",
-      "country": "United Kingdom",
-      "lat": 54,
-      "lon": -2.9,
-      "publishedAt": "2026-07-12T20:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-53-0",
-          "publishedAt": "2026-07-12T20:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-53-1",
-          "publishedAt": "2026-07-12T20:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-53-2",
-          "publishedAt": "2026-07-12T20:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-53-3",
-          "publishedAt": "2026-07-12T20:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-53",
-      "primaryDomain": "demo-gazette.example"
-    },
-    {
-      "id": "evt_54",
-      "title": "[SAMPLE] Government declares state of emergency amid unrest — Nigeria",
-      "bluf": "Government declares state of emergency amid unrest. Classified under Political Instability. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "political_instability",
-      "categoryLabel": "Political Instability",
-      "categoryColor": "#b06ab3",
-      "severity": "LOW",
-      "country": "Nigeria",
-      "lat": 9.1,
-      "lon": 8.7,
-      "publishedAt": "2026-07-14T07:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-54-0",
-          "publishedAt": "2026-07-14T07:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-54-1",
-          "publishedAt": "2026-07-14T07:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-54",
-      "primaryDomain": "demo-gazette.example"
-    },
-    {
-      "id": "evt_55",
-      "title": "[SAMPLE] Cabinet resignations deepen political crisis — Philippines",
-      "bluf": "Cabinet resignations deepen political crisis. Classified under Political Instability. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "political_instability",
-      "categoryLabel": "Political Instability",
-      "categoryColor": "#b06ab3",
-      "severity": "LOW",
-      "country": "Philippines",
-      "lat": 12.9,
-      "lon": 121.8,
-      "publishedAt": "2026-07-15T01:34:39.167Z",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-55-0",
-          "publishedAt": "2026-07-15T01:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-55-1",
-          "publishedAt": "2026-07-15T01:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-55-2",
-          "publishedAt": "2026-07-15T01:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-55",
-      "primaryDomain": "demo-gazette.example"
-    },
-    {
-      "id": "evt_56",
-      "title": "[SAMPLE] Government declares state of emergency amid unrest — United Kingdom",
-      "bluf": "Government declares state of emergency amid unrest. Classified under Political Instability. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "political_instability",
-      "categoryLabel": "Political Instability",
-      "categoryColor": "#b06ab3",
-      "severity": "MEDIUM",
-      "country": "United Kingdom",
-      "lat": 54,
-      "lon": -2.9,
-      "publishedAt": "2026-07-11T14:34:39.167Z",
-      "sourceCount": 4,
-      "sources": [
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-56-0",
-          "publishedAt": "2026-07-11T14:34:39.167Z"
-        },
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-56-1",
-          "publishedAt": "2026-07-11T14:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-56-2",
-          "publishedAt": "2026-07-11T14:34:39.167Z"
-        },
-        {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-56-3",
-          "publishedAt": "2026-07-11T14:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-56",
-      "primaryDomain": "placeholder-news.example"
-    },
-    {
-      "id": "evt_57",
-      "title": "[SAMPLE] Government declares state of emergency amid unrest — Brazil",
-      "bluf": "Government declares state of emergency amid unrest. Classified under Political Instability. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "political_instability",
-      "categoryLabel": "Political Instability",
-      "categoryColor": "#b06ab3",
-      "severity": "HIGH",
-      "country": "Brazil",
-      "lat": -10.3,
-      "lon": -53.2,
-      "publishedAt": "2026-07-16T12:34:39.167Z",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "domain": "placeholder-news.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-57-0",
-          "publishedAt": "2026-07-16T12:34:39.167Z"
-        },
-        {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-57-1",
-          "publishedAt": "2026-07-16T12:34:39.167Z"
-        }
-      ],
-      "primaryUrl": "https://sample-wire.example/story-57",
-      "primaryDomain": "sample-wire.example"
-    },
-    {
-      "id": "evt_58",
-      "title": "[SAMPLE] Troop movements reported near contested border — United States",
-      "bluf": "Troop movements reported near contested border. Classified under Geopolitical Events. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "geopolitical",
-      "categoryLabel": "Geopolitical Events",
-      "categoryColor": "#4a7fc9",
-      "severity": "MEDIUM",
-      "country": "United States",
-      "lat": 39.8,
-      "lon": -98.6,
-      "publishedAt": "2026-07-15T15:34:39.167Z",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-16T12:35:48.000Z",
       "sourceCount": 1,
       "sources": [
         {
-          "domain": "sample-bulletin.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-58-0",
-          "publishedAt": "2026-07-15T15:34:39.167Z"
+          "domain": "hindustantimes.com",
+          "label": "Hindustan Times – India News",
+          "url": "https://www.hindustantimes.com/india-news/pm-modi-afraid-of-sonam-wangchuk-kejriwal-recalls-anna-hazare-2011-movement-proposes-activist-for-education-minister-101784204404442.html",
+          "publishedAt": "2026-07-16T12:35:48.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-58",
-      "primaryDomain": "placeholder-news.example"
+      "primaryUrl": "https://www.hindustantimes.com/india-news/pm-modi-afraid-of-sonam-wangchuk-kejriwal-recalls-anna-hazare-2011-movement-proposes-activist-for-education-minister-101784204404442.html",
+      "primaryDomain": "hindustantimes.com"
     },
     {
-      "id": "evt_59",
-      "title": "[SAMPLE] Troop movements reported near contested border — Brazil",
-      "bluf": "Troop movements reported near contested border. Classified under Geopolitical Events. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "geopolitical",
-      "categoryLabel": "Geopolitical Events",
-      "categoryColor": "#4a7fc9",
-      "severity": "HIGH",
-      "country": "Brazil",
-      "lat": -10.3,
-      "lon": -53.2,
-      "publishedAt": "2026-07-14T02:34:39.167Z",
-      "sourceCount": 3,
+      "id": "https://www.bbc.co.uk/news/articles/clyqwkegqk0o?at_medium=RSS&at_campaign=rss",
+      "title": "US strikes first tanker with missiles as it enforces new blockade",
+      "bluf": "US strikes first tanker with missiles as it enforces new blockade. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-16T12:09:26.000Z",
+      "sourceCount": 1,
       "sources": [
         {
-          "domain": "demo-gazette.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-59-0",
-          "publishedAt": "2026-07-14T02:34:39.167Z"
-        },
-        {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-59-1",
-          "publishedAt": "2026-07-14T02:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-59-2",
-          "publishedAt": "2026-07-14T02:34:39.167Z"
+          "domain": "bbc.co.uk",
+          "label": "BBC News – World",
+          "url": "https://www.bbc.co.uk/news/articles/clyqwkegqk0o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-07-16T12:09:26.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-59",
-      "primaryDomain": "demo-press.example"
+      "primaryUrl": "https://www.bbc.co.uk/news/articles/clyqwkegqk0o?at_medium=RSS&at_campaign=rss",
+      "primaryDomain": "bbc.co.uk"
     },
     {
-      "id": "evt_60",
-      "title": "[SAMPLE] New sanctions announced amid diplomatic tensions — Egypt",
-      "bluf": "New sanctions announced amid diplomatic tensions. Classified under Geopolitical Events. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
-      "category": "geopolitical",
-      "categoryLabel": "Geopolitical Events",
-      "categoryColor": "#4a7fc9",
+      "id": "https://www.bbc.co.uk/news/articles/cn4n9q538z2o?at_medium=RSS&at_campaign=rss",
+      "title": "Fraud crackdown on Ghana ID cards makes digital checks compulsory - photocopies banned",
+      "bluf": "Fraud crackdown on Ghana ID cards makes digital checks compulsory. Classified under Executive Threats. Reported by 1 outlet.",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "Ghana",
+      "lat": 7.9,
+      "lon": -1,
+      "publishedAt": "2026-07-16T11:18:51.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "bbc.co.uk",
+          "label": "BBC News – World",
+          "url": "https://www.bbc.co.uk/news/articles/cn4n9q538z2o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-07-16T11:18:51.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.bbc.co.uk/news/articles/cn4n9q538z2o?at_medium=RSS&at_campaign=rss",
+      "primaryDomain": "bbc.co.uk"
+    },
+    {
+      "id": "https://news.sky.com/story/wildfires-force-thousands-to-evacuate-as-skies-darken-over-us-and-canadian-cities-13563962",
+      "title": "Wildfires force thousands to evacuate as smoke darkens skies over major cities",
+      "bluf": "Wildfires force thousands to evacuate as smoke darkens skies over major cities. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
       "severity": "MEDIUM",
-      "country": "Egypt",
-      "lat": 26.8,
-      "lon": 30.8,
-      "publishedAt": "2026-07-15T06:34:39.167Z",
-      "sourceCount": 2,
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-16T10:17:00.000Z",
+      "sourceCount": 1,
       "sources": [
         {
-          "domain": "sample-wire.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-60-0",
-          "publishedAt": "2026-07-15T06:34:39.167Z"
-        },
-        {
-          "domain": "demo-press.example",
-          "label": "Sample Source",
-          "url": "https://sample-wire.example/story-60-1",
-          "publishedAt": "2026-07-15T06:34:39.167Z"
+          "domain": "news.sky.com",
+          "label": "Sky News – World",
+          "url": "https://news.sky.com/story/wildfires-force-thousands-to-evacuate-as-skies-darken-over-us-and-canadian-cities-13563962",
+          "publishedAt": "2026-07-16T10:17:00.000Z"
         }
       ],
-      "primaryUrl": "https://sample-wire.example/story-60",
-      "primaryDomain": "placeholder-news.example"
+      "primaryUrl": "https://news.sky.com/story/wildfires-force-thousands-to-evacuate-as-skies-darken-over-us-and-canadian-cities-13563962",
+      "primaryDomain": "news.sky.com"
+    },
+    {
+      "id": "https://www.hindustantimes.com/india-news/rath-yatra-millions-brave-heavy-rain-as-jagannath-chariots-roll-in-odisha-s-puri-101784191466811.html",
+      "title": "Rath Yatra: Millions brave heavy rain as Jagannath chariots roll in Odisha’s Puri",
+      "bluf": "Rath Yatra. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "MEDIUM",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-16T08:44:26.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "hindustantimes.com",
+          "label": "Hindustan Times – India News",
+          "url": "https://www.hindustantimes.com/india-news/rath-yatra-millions-brave-heavy-rain-as-jagannath-chariots-roll-in-odisha-s-puri-101784191466811.html",
+          "publishedAt": "2026-07-16T08:44:26.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.hindustantimes.com/india-news/rath-yatra-millions-brave-heavy-rain-as-jagannath-chariots-roll-in-odisha-s-puri-101784191466811.html",
+      "primaryDomain": "hindustantimes.com"
+    },
+    {
+      "id": "https://www.bbc.co.uk/news/videos/c62q3kw126xo?at_medium=RSS&at_campaign=rss",
+      "title": "Orange haze from Canada wildfires seen in Ontario and northern US",
+      "bluf": "Orange haze from Canada wildfires seen in Ontario and northern US. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Canada",
+      "lat": 56.1,
+      "lon": -106.3,
+      "publishedAt": "2026-07-16T00:33:23.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "bbc.co.uk",
+          "label": "BBC News – World",
+          "url": "https://www.bbc.co.uk/news/videos/c62q3kw126xo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-07-16T00:33:23.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.bbc.co.uk/news/videos/c62q3kw126xo?at_medium=RSS&at_campaign=rss",
+      "primaryDomain": "bbc.co.uk"
+    },
+    {
+      "id": "https://www.nytimes.com/2026/07/15/world/canada/wildfire-smoke-toronto-ontario-northeast.html",
+      "title": "Wildfires Rage in Ontario as Smoke Affects Toronto’s Air Quality",
+      "bluf": "Wildfires Rage in Ontario as Smoke Affects Toronto’s Air Quality. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-15T20:58:19.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "nytimes.com",
+          "label": "New York Times – World",
+          "url": "https://www.nytimes.com/2026/07/15/world/canada/wildfire-smoke-toronto-ontario-northeast.html",
+          "publishedAt": "2026-07-15T20:58:19.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.nytimes.com/2026/07/15/world/canada/wildfire-smoke-toronto-ontario-northeast.html",
+      "primaryDomain": "nytimes.com"
     }
   ]
 }
