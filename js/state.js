@@ -38,7 +38,11 @@ class Store {
   }
 
   subscribe(fn) { this.listeners.add(fn); return () => this.listeners.delete(fn); }
-  emit(topic) { this.listeners.forEach(fn => fn(topic)); }
+  emit(topic) { this.listeners.forEach(fn => {
+    try {fn(topic); } catch (err) { console.error("Listener error on topic", topic, err); }
+  });
+              }
+                                                  
 
   setEvents(events, meta) {
     this.data.events = events;
