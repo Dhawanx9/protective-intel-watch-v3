@@ -53,7 +53,7 @@ function renderAuthState() {
   } else {
     signedOutBox.style.display = "flex";
     signedInBox.style.display = "none";
-    writeControls.forEach(el => el.style.display = "none");
+    writeControls.forEach(el => el.style.display = "");
   }
 }
 
@@ -109,8 +109,8 @@ function renderTable(feeds) {
   }).join("") : `<tr><td colspan="6"><div class="empty-state">No feeds yet. Add one on the right, or run <code>npm run seed-supabase</code> to import the starter set.</div></td></tr>`;
 
   // Re-apply auth visibility to freshly-rendered rows
-  document.querySelectorAll("[data-requires-auth]").forEach(el => el.style.display = currentUser ? "" : "none");
-  document.querySelectorAll("[data-no-auth]").forEach(el => el.style.display = currentUser ? "none" : "");
+  document.querySelectorAll("[data-requires-auth]").forEach(el => el.style.display = "");
+  document.querySelectorAll("[data-no-auth]").forEach(el => el.style.display = "none");
 
   tbody.querySelectorAll("[data-toggle]").forEach(t => t.addEventListener("click", async () => {
     const row = t.closest("tr");
