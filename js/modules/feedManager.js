@@ -60,11 +60,15 @@ function renderTable(feeds) {
     const lastPull = h?.checkedAt ? timeAgo(h.checkedAt) : "\u2014";
     const count = h?.count ?? "\u2014";
     const errTitle = h?.error ? ` title="${escapeHtml(h.error)}"` : "";
+    const errorLine = (h?.status === "error" && h?.error)
+      ? `<div style="font-size:10.5px;color:var(--high);margin-top:3px;">${escapeHtml(h.error)}</div>`
+      : "";
     return `<tr data-id="${escapeHtml(f.id)}">
       <td${errTitle}><span class="status-dot ${statusClass}"></span>${statusLabel}</td>
       <td>
         <div><b>${escapeHtml(f.label)}</b></div>
         <div class="mono" style="font-size:10.5px;color:var(--text-faint);">${escapeHtml(f.url)}</div>
+        ${errorLine}
       </td>
       <td class="mono">${lastPull}</td>
       <td class="mono">${count}</td>
