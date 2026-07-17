@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-07-17T14:24:54.644Z",
-    "startedAt": "2026-07-17T14:24:53.402Z",
-    "totalEventsCount": 48,
+    "generatedAt": "2026-07-17T14:40:53.641Z",
+    "startedAt": "2026-07-17T14:40:51.597Z",
+    "totalEventsCount": 45,
     "rawArticleCount": 489,
     "feedHealth": [
       {
@@ -11,7 +11,7 @@
         "status": "ok",
         "count": 38,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "guardian-world",
@@ -19,7 +19,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "sky-world",
@@ -27,7 +27,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "ndtv-top",
@@ -35,15 +35,15 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "toi-top",
         "label": "Times of India – Top Stories",
         "status": "ok",
-        "count": 44,
+        "count": 45,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "hindu-national",
@@ -51,7 +51,7 @@
         "status": "ok",
         "count": 60,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "htimes-india",
@@ -59,7 +59,7 @@
         "status": "ok",
         "count": 100,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "npr-world",
@@ -67,7 +67,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "cbs-world",
@@ -75,15 +75,15 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "nyt-world",
         "label": "New York Times – World",
         "status": "ok",
-        "count": 58,
+        "count": 57,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "aljazeera-all",
@@ -91,7 +91,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "dw-world",
@@ -99,7 +99,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "france24-world",
@@ -107,7 +107,7 @@
         "status": "ok",
         "count": 24,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "scmp-world",
@@ -115,7 +115,7 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "cna-asia",
@@ -123,7 +123,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       },
       {
         "id": "ani-news",
@@ -131,14 +131,13 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-17T14:24:54.467Z"
+        "checkedAt": "2026-07-17T14:40:53.413Z"
       }
     ],
     "categoriesPresent": [
+      "terrorism",
       "civil_unrest",
       "facility_threats",
-      "geopolitical",
-      "terrorism",
       "corporate_reputation",
       "protests",
       "natural_disaster",
@@ -147,6 +146,30 @@
     ]
   },
   "events": [
+    {
+      "id": "https://www.scmp.com/news/world/europe/article/3361007/jk-rowling-condemns-amnesty-branding-her-womens-crisis-centre-anti-rights?utm_source=rss_feed",
+      "title": "J.K. Rowling condemns Amnesty for branding her women’s crisis centre anti-rights",
+      "bluf": "J.K. Rowling condemns Amnesty for branding her women’s crisis centre anti. Classified under Terrorism. Reported by 1 outlet.",
+      "category": "terrorism",
+      "categoryLabel": "Terrorism",
+      "categoryColor": "#c0392b",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T14:31:54.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "scmp.com",
+          "label": "South China Morning Post – World",
+          "url": "https://www.scmp.com/news/world/europe/article/3361007/jk-rowling-condemns-amnesty-branding-her-womens-crisis-centre-anti-rights?utm_source=rss_feed",
+          "publishedAt": "2026-07-17T14:31:54.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.scmp.com/news/world/europe/article/3361007/jk-rowling-condemns-amnesty-branding-her-womens-crisis-centre-anti-rights?utm_source=rss_feed",
+      "primaryDomain": "scmp.com"
+    },
     {
       "id": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
       "title": "Jantar Mantar protest LIVE: Sonam Wangchuk dehydrated; fasting student leaders advised not to walk",
@@ -193,30 +216,6 @@
         }
       ],
       "primaryUrl": "https://www.thehindu.com/news/cities/bangalore/handwritten-hoax-bomb-threat-note-delays-indigo-flight-from-bengaluru/article71233394.ece",
-      "primaryDomain": "thehindu.com"
-    },
-    {
-      "id": "https://www.thehindu.com/news/cities/Hyderabad/telangana-government-sanctions-20-cr-for-nac-skill-development-centre-in-manthani/article71234115.ece",
-      "title": "Telangana government sanctions ₹20 cr for NAC Skill Development Centre in Manthani",
-      "bluf": "Telangana government sanctions ₹20 cr for NAC Skill Development Centre in Manthani. Classified under Geopolitical Events. Reported by 1 outlet.",
-      "category": "geopolitical",
-      "categoryLabel": "Geopolitical Events",
-      "categoryColor": "#4a7fc9",
-      "severity": "LOW",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-17T13:21:54.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "thehindu.com",
-          "label": "The Hindu – National",
-          "url": "https://www.thehindu.com/news/cities/Hyderabad/telangana-government-sanctions-20-cr-for-nac-skill-development-centre-in-manthani/article71234115.ece",
-          "publishedAt": "2026-07-17T13:21:54.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.thehindu.com/news/cities/Hyderabad/telangana-government-sanctions-20-cr-for-nac-skill-development-centre-in-manthani/article71234115.ece",
       "primaryDomain": "thehindu.com"
     },
     {
@@ -314,30 +313,6 @@
       ],
       "primaryUrl": "https://www.channelnewsasia.com/business/zoox-recalls-self-driving-cars-because-they-may-not-detect-smoke-6261376",
       "primaryDomain": "channelnewsasia.com"
-    },
-    {
-      "id": "https://www.thehindu.com/news/national/andhra-pradesh/farmers-panel-opposes-proposed-india-us-fta-plans-protests-on-july-22/article71234060.ece",
-      "title": "Farmers’ panel opposes proposed India-U.S. FTA, plans protests on July 22",
-      "bluf": "Farmers’ panel opposes proposed India. Classified under Civil Unrest. Reported by 1 outlet.",
-      "category": "civil_unrest",
-      "categoryLabel": "Civil Unrest",
-      "categoryColor": "#f2b134",
-      "severity": "LOW",
-      "country": "India",
-      "lat": 22,
-      "lon": 79,
-      "publishedAt": "2026-07-17T12:59:48.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "thehindu.com",
-          "label": "The Hindu – National",
-          "url": "https://www.thehindu.com/news/national/andhra-pradesh/farmers-panel-opposes-proposed-india-us-fta-plans-protests-on-july-22/article71234060.ece",
-          "publishedAt": "2026-07-17T12:59:48.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.thehindu.com/news/national/andhra-pradesh/farmers-panel-opposes-proposed-india-us-fta-plans-protests-on-july-22/article71234060.ece",
-      "primaryDomain": "thehindu.com"
     },
     {
       "id": "https://timesofindia.indiatimes.com/india/kattar-beimaan-party-pm-modi-attacks-aap-on-corruption-law-and-order-at-jalandhar-rally/articleshow/132461956.cms",
@@ -580,30 +555,6 @@
       "primaryDomain": "scmp.com"
     },
     {
-      "id": "https://timesofindia.indiatimes.com/technology/tech-news/openai-ceo-sam-altman-admits-he-scared-millions-of-people-around-the-world-by-saying-ai-will-/articleshow/132459608.cms",
-      "title": "OpenAI CEO Sam Altman admits he scared millions of people around the world",
-      "bluf": "OpenAI CEO Sam Altman admits he scared millions of people around the world. Classified under Executive Threats. Reported by 1 outlet.",
-      "category": "executive_threats",
-      "categoryLabel": "Executive Threats",
-      "categoryColor": "#5b8def",
-      "severity": "LOW",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-17T10:52:19.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "timesofindia.indiatimes.com",
-          "label": "Times of India – Top Stories",
-          "url": "https://timesofindia.indiatimes.com/technology/tech-news/openai-ceo-sam-altman-admits-he-scared-millions-of-people-around-the-world-by-saying-ai-will-/articleshow/132459608.cms",
-          "publishedAt": "2026-07-17T10:52:19.000Z"
-        }
-      ],
-      "primaryUrl": "https://timesofindia.indiatimes.com/technology/tech-news/openai-ceo-sam-altman-admits-he-scared-millions-of-people-around-the-world-by-saying-ai-will-/articleshow/132459608.cms",
-      "primaryDomain": "timesofindia.indiatimes.com"
-    },
-    {
       "id": "https://www.bbc.co.uk/news/videos/c36d1n6g3x9o?at_medium=RSS&at_campaign=rss",
       "title": "Bodycam footage shows airlift of girl stranded by Texas floods",
       "bluf": "Bodycam footage shows airlift of girl stranded by Texas floods. Classified under Natural Disaster. Reported by 1 outlet.",
@@ -697,30 +648,6 @@
         }
       ],
       "primaryUrl": "https://timesofindia.indiatimes.com/city/bhopal/go-to-your-mla-bjp-legislators-response-to-water-crisis-sparks-protest-angry-villager-places-child-on-car-bonnet/articleshow/132458240.cms",
-      "primaryDomain": "timesofindia.indiatimes.com"
-    },
-    {
-      "id": "https://timesofindia.indiatimes.com/world/middle-east/pirates-allegedly-hijack-chemical-tanker-asana-in-gulf-of-aden-off-yemen/articleshow/132456534.cms",
-      "title": "Pirates allegedly hijack chemical tanker Asana in Gulf of Aden off Yemen",
-      "bluf": "Pirates allegedly hijack chemical tanker Asana in Gulf of Aden off Yemen. Classified under Travel Risk. Reported by 1 outlet.",
-      "category": "travel_risk",
-      "categoryLabel": "Travel Risk",
-      "categoryColor": "#4dd0e1",
-      "severity": "LOW",
-      "country": "Yemen",
-      "lat": 15.6,
-      "lon": 48.5,
-      "publishedAt": "2026-07-17T09:57:09.000Z",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "domain": "timesofindia.indiatimes.com",
-          "label": "Times of India – Top Stories",
-          "url": "https://timesofindia.indiatimes.com/world/middle-east/pirates-allegedly-hijack-chemical-tanker-asana-in-gulf-of-aden-off-yemen/articleshow/132456534.cms",
-          "publishedAt": "2026-07-17T09:57:09.000Z"
-        }
-      ],
-      "primaryUrl": "https://timesofindia.indiatimes.com/world/middle-east/pirates-allegedly-hijack-chemical-tanker-asana-in-gulf-of-aden-off-yemen/articleshow/132456534.cms",
       "primaryDomain": "timesofindia.indiatimes.com"
     },
     {
