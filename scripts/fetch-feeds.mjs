@@ -50,7 +50,8 @@ function parseFeedXml(xml) {
     const title = textOf(it.title).trim();
     const url = textOf(it.link).trim();
     const pub = textOf(it.pubDate) || textOf(it["dc:date"]);
-    if (title && url) items.push({ title, url, publishedAt: pub ? new Date(pub).toISOString() : null });
+    const description = textOf(it.description).trim();
+    if (title && url) items.push({ title, url, publishedAt: pub ? new Date(pub).toISOString() : null, description });
   }
 
   const atomEntries = asArray(doc?.feed?.entry);
@@ -64,7 +65,8 @@ function parseFeedXml(xml) {
       url = it.link["@_href"] || textOf(it.link);
     }
     const pub = textOf(it.published) || textOf(it.updated);
-    if (title && url) items.push({ title, url, publishedAt: pub ? new Date(pub).toISOString() : null });
+    const description = textOf(it.summary) || textOf(it.content);
+    if (title && url) items.push({ title, url, publishedAt: pub ? new Date(pub).toISOString() : null, description });
   }
 
   return items;
