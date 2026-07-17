@@ -62,6 +62,17 @@ function bindManualRefresh() {
   });
 }
 
+function initScrollTop() {
+  const btn = document.getElementById("scrollTopBtn");
+  if (!btn) return;
+  window.addEventListener("scroll", () => {
+    const show = window.scrollY > 400;
+    btn.style.opacity = show ? "1" : "0";
+    btn.style.pointerEvents = show ? "auto" : "none";
+  });
+  btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+}
+
 async function main() {
   initTheme();
   initRouter({
@@ -77,6 +88,7 @@ async function main() {
   initBrief();
   initSettings({ onRefreshIntervalChange: scheduleRefresh });
   bindManualRefresh();
+  initScrollTop();
 
   setInterval(tickClock, 1000);
   tickClock();
