@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-17T15:02:45.060Z",
-  "startedAt": "2026-07-17T15:02:43.472Z",
-  "totalEventsCount": 43,
-  "rawArticleCount": 488,
+  "generatedAt": "2026-07-17T15:23:38.563Z",
+  "startedAt": "2026-07-17T15:23:36.231Z",
+  "totalEventsCount": 47,
+  "rawArticleCount": 486,
   "feedHealth": [
     {
       "id": "bbc-world",
@@ -10,7 +10,7 @@
       "status": "ok",
       "count": 38,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "guardian-world",
@@ -18,15 +18,15 @@
       "status": "ok",
       "count": 0,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "sky-world",
       "label": "Sky News – World",
       "status": "ok",
-      "count": 10,
+      "count": 9,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "ndtv-top",
@@ -34,7 +34,7 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "toi-top",
@@ -42,7 +42,7 @@
       "status": "ok",
       "count": 45,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "hindu-national",
@@ -50,7 +50,7 @@
       "status": "ok",
       "count": 60,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "htimes-india",
@@ -58,7 +58,7 @@
       "status": "ok",
       "count": 100,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "npr-world",
@@ -66,7 +66,7 @@
       "status": "ok",
       "count": 10,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "cbs-world",
@@ -74,15 +74,15 @@
       "status": "ok",
       "count": 30,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "nyt-world",
       "label": "New York Times – World",
       "status": "ok",
-      "count": 56,
+      "count": 55,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "aljazeera-all",
@@ -90,7 +90,7 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "dw-world",
@@ -98,7 +98,7 @@
       "status": "ok",
       "count": 0,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "france24-world",
@@ -106,7 +106,7 @@
       "status": "ok",
       "count": 24,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "scmp-world",
@@ -114,7 +114,7 @@
       "status": "ok",
       "count": 50,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "cna-asia",
@@ -122,7 +122,7 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
     },
     {
       "id": "ani-news",
@@ -130,16 +130,88 @@
       "status": "error",
       "count": 0,
       "error": "HTTP 403",
-      "checkedAt": "2026-07-17T15:02:44.823Z"
+      "checkedAt": "2026-07-17T15:23:38.358Z"
+    }
+  ],
+  "allCategories": [
+    {
+      "id": "executive_threats",
+      "label": "Executive Threats",
+      "color": "#5b8def"
+    },
+    {
+      "id": "facility_threats",
+      "label": "Facility Threats",
+      "color": "#e5484d"
+    },
+    {
+      "id": "travel_risk",
+      "label": "Travel Risk",
+      "color": "#4dd0e1"
+    },
+    {
+      "id": "civil_unrest",
+      "label": "Civil Unrest",
+      "color": "#f2b134"
+    },
+    {
+      "id": "protests",
+      "label": "Protests",
+      "color": "#f2b134"
+    },
+    {
+      "id": "terrorism",
+      "label": "Terrorism",
+      "color": "#c0392b"
+    },
+    {
+      "id": "cyber_threats",
+      "label": "Cyber Threats",
+      "color": "#8e6ff2"
+    },
+    {
+      "id": "crime",
+      "label": "Crime",
+      "color": "#9aa5b1"
+    },
+    {
+      "id": "kidnapping",
+      "label": "Kidnapping",
+      "color": "#d16ba5"
+    },
+    {
+      "id": "natural_disaster",
+      "label": "Natural Disaster",
+      "color": "#5cb85c"
+    },
+    {
+      "id": "supply_chain",
+      "label": "Supply Chain",
+      "color": "#c98a3e"
+    },
+    {
+      "id": "corporate_reputation",
+      "label": "Corporate Reputation",
+      "color": "#5b8def"
+    },
+    {
+      "id": "political_instability",
+      "label": "Political Instability",
+      "color": "#b06ab3"
+    },
+    {
+      "id": "geopolitical",
+      "label": "Geopolitical Events",
+      "color": "#4a7fc9"
     }
   ],
   "categoriesPresent": [
+    "executive_threats",
+    "civil_unrest",
     "natural_disaster",
     "terrorism",
-    "civil_unrest",
     "corporate_reputation",
     "protests",
-    "executive_threats",
     "travel_risk"
   ]
 }

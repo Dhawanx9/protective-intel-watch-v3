@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-07-17T15:02:45.060Z",
-    "startedAt": "2026-07-17T15:02:43.472Z",
-    "totalEventsCount": 43,
-    "rawArticleCount": 488,
+    "generatedAt": "2026-07-17T15:23:38.563Z",
+    "startedAt": "2026-07-17T15:23:36.231Z",
+    "totalEventsCount": 47,
+    "rawArticleCount": 486,
     "feedHealth": [
       {
         "id": "bbc-world",
@@ -11,7 +11,7 @@
         "status": "ok",
         "count": 38,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "guardian-world",
@@ -19,15 +19,15 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "sky-world",
         "label": "Sky News – World",
         "status": "ok",
-        "count": 10,
+        "count": 9,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "ndtv-top",
@@ -35,7 +35,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "toi-top",
@@ -43,7 +43,7 @@
         "status": "ok",
         "count": 45,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "hindu-national",
@@ -51,7 +51,7 @@
         "status": "ok",
         "count": 60,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "htimes-india",
@@ -59,7 +59,7 @@
         "status": "ok",
         "count": 100,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "npr-world",
@@ -67,7 +67,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "cbs-world",
@@ -75,15 +75,15 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "nyt-world",
         "label": "New York Times – World",
         "status": "ok",
-        "count": 56,
+        "count": 55,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "aljazeera-all",
@@ -91,7 +91,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "dw-world",
@@ -99,7 +99,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "france24-world",
@@ -107,7 +107,7 @@
         "status": "ok",
         "count": 24,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "scmp-world",
@@ -115,7 +115,7 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "cna-asia",
@@ -123,7 +123,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
       },
       {
         "id": "ani-news",
@@ -131,20 +131,188 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-17T15:02:44.823Z"
+        "checkedAt": "2026-07-17T15:23:38.358Z"
+      }
+    ],
+    "allCategories": [
+      {
+        "id": "executive_threats",
+        "label": "Executive Threats",
+        "color": "#5b8def"
+      },
+      {
+        "id": "facility_threats",
+        "label": "Facility Threats",
+        "color": "#e5484d"
+      },
+      {
+        "id": "travel_risk",
+        "label": "Travel Risk",
+        "color": "#4dd0e1"
+      },
+      {
+        "id": "civil_unrest",
+        "label": "Civil Unrest",
+        "color": "#f2b134"
+      },
+      {
+        "id": "protests",
+        "label": "Protests",
+        "color": "#f2b134"
+      },
+      {
+        "id": "terrorism",
+        "label": "Terrorism",
+        "color": "#c0392b"
+      },
+      {
+        "id": "cyber_threats",
+        "label": "Cyber Threats",
+        "color": "#8e6ff2"
+      },
+      {
+        "id": "crime",
+        "label": "Crime",
+        "color": "#9aa5b1"
+      },
+      {
+        "id": "kidnapping",
+        "label": "Kidnapping",
+        "color": "#d16ba5"
+      },
+      {
+        "id": "natural_disaster",
+        "label": "Natural Disaster",
+        "color": "#5cb85c"
+      },
+      {
+        "id": "supply_chain",
+        "label": "Supply Chain",
+        "color": "#c98a3e"
+      },
+      {
+        "id": "corporate_reputation",
+        "label": "Corporate Reputation",
+        "color": "#5b8def"
+      },
+      {
+        "id": "political_instability",
+        "label": "Political Instability",
+        "color": "#b06ab3"
+      },
+      {
+        "id": "geopolitical",
+        "label": "Geopolitical Events",
+        "color": "#4a7fc9"
       }
     ],
     "categoriesPresent": [
+      "executive_threats",
+      "civil_unrest",
       "natural_disaster",
       "terrorism",
-      "civil_unrest",
       "corporate_reputation",
       "protests",
-      "executive_threats",
       "travel_risk"
     ]
   },
   "events": [
+    {
+      "id": "https://www.france24.com/en/video/20260717-trump-doubles-down-on-2020-us-voter-fraud-claims",
+      "title": "Trump doubles down on 2020 US voter fraud claims",
+      "bluf": "Trump doubles down on 2020 US voter fraud claims. Classified under Executive Threats. Reported by 1 outlet.",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "China",
+      "lat": 35.9,
+      "lon": 104.2,
+      "publishedAt": "2026-07-17T15:19:37.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "france24.com",
+          "label": "France 24 – World",
+          "url": "https://www.france24.com/en/video/20260717-trump-doubles-down-on-2020-us-voter-fraud-claims",
+          "publishedAt": "2026-07-17T15:19:37.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.france24.com/en/video/20260717-trump-doubles-down-on-2020-us-voter-fraud-claims",
+      "primaryDomain": "france24.com"
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/kerala/talrop-director-board-member-arrested-in-investment-fraud-case/article71235018.ece",
+      "title": "Talrop director board member arrested in investment fraud case",
+      "bluf": "Talrop director board member arrested in investment fraud case. Classified under Executive Threats. Reported by 1 outlet.",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "MEDIUM",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-17T15:16:35.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/national/kerala/talrop-director-board-member-arrested-in-investment-fraud-case/article71235018.ece",
+          "publishedAt": "2026-07-17T15:16:35.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/kerala/talrop-director-board-member-arrested-in-investment-fraud-case/article71235018.ece",
+      "primaryDomain": "thehindu.com"
+    },
+    {
+      "id": "https://www.thehindu.com/news/cities/bangalore/yediyurappa-joins-bjp-protest-against-bidadi-township-project-party-to-launch-march-from-bidadi-to-bengaluru/article71234229.ece",
+      "title": "Yediyurappa joins BJP protest against Bidadi Township Project; party to launch march from Bidadi to Bengaluru",
+      "bluf": "Yediyurappa joins BJP protest against Bidadi Township Project; party to launch march from Bidadi to Bengaluru. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-17T15:16:26.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/cities/bangalore/yediyurappa-joins-bjp-protest-against-bidadi-township-project-party-to-launch-march-from-bidadi-to-bengaluru/article71234229.ece",
+          "publishedAt": "2026-07-17T15:16:26.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/cities/bangalore/yediyurappa-joins-bjp-protest-against-bidadi-township-project-party-to-launch-march-from-bidadi-to-bengaluru/article71234229.ece",
+      "primaryDomain": "thehindu.com"
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/tamil-nadu/it-employees-protest-corrohealth-layoffs-demand-stronger-regulations-for-the-sector/article71234623.ece",
+      "title": "IT employees protest CorroHealth layoffs, demand stronger regulations for the sector",
+      "bluf": "IT employees protest CorroHealth layoffs, demand stronger regulations for the sector. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-17T15:12:01.000Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "thehindu.com",
+          "label": "The Hindu – National",
+          "url": "https://www.thehindu.com/news/national/tamil-nadu/it-employees-protest-corrohealth-layoffs-demand-stronger-regulations-for-the-sector/article71234623.ece",
+          "publishedAt": "2026-07-17T15:12:01.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/tamil-nadu/it-employees-protest-corrohealth-layoffs-demand-stronger-regulations-for-the-sector/article71234623.ece",
+      "primaryDomain": "thehindu.com"
+    },
     {
       "id": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&at_campaign=rss",
       "title": "At least two dead in Texas floods ravaging same area where campers died",
@@ -242,28 +410,28 @@
       "primaryDomain": "scmp.com"
     },
     {
-      "id": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
-      "title": "Jantar Mantar protest LIVE: Sonam Wangchuk dehydrated; fasting student leaders advised not to walk",
-      "bluf": "Jantar Mantar protest LIVE. Classified under Civil Unrest. Reported by 1 outlet.",
+      "id": "https://www.france24.com/en/tv-shows/spotlight/20260717-europe-bought-gas-oil-from-russia-venice-mayor-sees-contradiction-in-biennale-funding-freeze",
+      "title": "'Not a big deal': Amid protests, Venice's new mayor welcomes US ambassador's 117m superyacht visit",
+      "bluf": "'Not a big deal'. Classified under Civil Unrest. Reported by 1 outlet.",
       "category": "civil_unrest",
       "categoryLabel": "Civil Unrest",
       "categoryColor": "#f2b134",
       "severity": "LOW",
-      "country": "India",
-      "lat": 22,
-      "lon": 79,
-      "publishedAt": "2026-07-17T14:07:55.000Z",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-17T13:49:02.000Z",
       "sourceCount": 1,
       "sources": [
         {
-          "domain": "thehindu.com",
-          "label": "The Hindu – National",
-          "url": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
-          "publishedAt": "2026-07-17T14:07:55.000Z"
+          "domain": "france24.com",
+          "label": "France 24 – World",
+          "url": "https://www.france24.com/en/tv-shows/spotlight/20260717-europe-bought-gas-oil-from-russia-venice-mayor-sees-contradiction-in-biennale-funding-freeze",
+          "publishedAt": "2026-07-17T13:49:02.000Z"
         }
       ],
-      "primaryUrl": "https://www.thehindu.com/news/national/sonam-wangchuk-hunger-strike-cjp-protest-in-delhi-jantar-mantar-cockroach-janta-party-live-updates-july-17-2026/article71232683.ece",
-      "primaryDomain": "thehindu.com"
+      "primaryUrl": "https://www.france24.com/en/tv-shows/spotlight/20260717-europe-bought-gas-oil-from-russia-venice-mayor-sees-contradiction-in-biennale-funding-freeze",
+      "primaryDomain": "france24.com"
     },
     {
       "id": "https://www.aljazeera.com/news/2026/7/17/un-urges-probe-into-deaths-in-pakistani-administered-kashmir-unrest?traffic_source=rss",
