@@ -6,9 +6,7 @@ on:
   workflow_dispatch: {}
   push:
     branches: [main]
-    paths:
-      - "config/**"
-      - "scripts/**"
+    
 
 permissions:
   contents: write
