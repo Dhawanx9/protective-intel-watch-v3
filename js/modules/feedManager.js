@@ -3,9 +3,11 @@ import { timeAgo } from "../utils/time.js";
 import { parseOPML, toOPML, downloadTextFile } from "../utils/opml.js";
 import { supabase, isSupabaseConfigured } from "../supabaseClient.js";
 import { store } from "../state.js";
+import { notify } from "./notifications.js";
 
 let feedHealthByLabelGetter = null;
 let currentFeeds = [];
+let pendingChecks = new Set(); // feed ids added this session, awaiting their first health report
 
 export function initFeedManager({ getFeedHealth }) {
   feedHealthByLabelGetter = getFeedHealth;
@@ -26,8 +28,14 @@ export function initFeedManager({ getFeedHealth }) {
     .subscribe();
 
   // Keeps the health column live whenever the pipeline refreshes data in the
-  // background - previously this only rendered once, on first load.
-  store.subscribe(topic => { if (topic === "events") renderTable(currentFeeds); });
+  // background - previously this only rendered once, on first load. Also
+  // checks whether any newly-added feed has reported back yet.
+  store.subscribe(topic => {
+    if (topic === "events") {
+      renderTable(currentFeeds);
+      checkPendingFeeds();
+    }
+  });
 }
 
 async function loadFeeds() {
@@ -104,14 +112,19 @@ function bindFeedForm() {
     if (!label || !url) { alert("Give the feed a label and an RSS URL."); return; }
 
     const editingId = btn.getAttribute("data-editing-id");
-    let error;
+    let error, newId = null;
     if (editingId) {
       ({ error } = await supabase.from("feeds").update({ label, url, region }).eq("id", editingId));
+      newId = editingId;
     } else {
       const id = label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
       ({ error } = await supabase.from("feeds").insert({ id, label, url, region, enabled: true }));
+      newId = id;
     }
     if (error) { alert("Couldn't save: " + error.message); return; }
+
+    pendingChecks.add(newId);
+    notify({ message: `${label} added — checking whether it's valid RSS on the next pipeline run (~10 min).`, severity: "MEDIUM" });
 
     document.getElementById("newFeedLabel").value = "";
     document.getElementById("newFeedUrl").value = "";
@@ -120,6 +133,24 @@ function bindFeedForm() {
     btn.removeAttribute("data-editing-id");
     loadFeeds(); // refresh the table immediately instead of waiting on Realtime
   });
+}
+
+/** Called whenever fresh pipeline data arrives. Any feed we're watching that
+ *  now has a health result gets a toast - success or a clear "not RSS" error -
+ *  instead of the user having to notice a red dot in the table themselves. */
+function checkPendingFeeds() {
+  if (!pendingChecks.size || !feedHealthByLabelGetter) return;
+  const health = feedHealthByLabelGetter();
+  for (const id of [...pendingChecks]) {
+    const h = health.find(x => x.id === id);
+    if (!h) continue; // not reported yet, keep waiting
+    if (h.status === "ok") {
+      notify({ message: `${h.label}: confirmed working — ${h.count} article(s) pulled.`, severity: "LOW" });
+    } else if (h.status === "error") {
+      notify({ message: `${h.label}: couldn't be read as RSS (${h.error || "unknown error"}). This site is likely out of scope — check the URL or remove it.`, severity: "HIGH" });
+    }
+    pendingChecks.delete(id);
+  }
 }
 
 function bindOPML() {
