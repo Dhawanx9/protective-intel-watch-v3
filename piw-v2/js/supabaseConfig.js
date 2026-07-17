@@ -5,5 +5,5 @@
 //
 // Never put your Supabase "service_role" key here or anywhere in frontend
 // code — that key bypasses RLS entirely.
-export const SUPABASE_URL = "https://YOUR-PROJECT-REF.supabase.co";
-export const SUPABASE_ANON_KEY = "YOUR-ANON-PUBLIC-KEY";
+export const SUPABASE_URL = "https://wqgvocmakjksbkysrapn.supabase.co";
+export const SUPABASE_ANON_KEY = "sb_publishable_pYsFg8uyE5hhrcvMSzr7dw_EdZvmyvc";
