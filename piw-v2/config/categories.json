@@ -1,0 +1,93 @@
+{
+  "categories": [
+    {
+      "id": "executive_threats",
+      "label": "Executive Threats",
+      "color": "#5b8def",
+      "keywords": ["ceo", "chief executive", "executive director", "board member", "chairman", "kidnap", "abduct", "assassinat", "death threat", "threat against", "stalking", "extortion", "scandal", "fraud", "indicted", "embezzlement", "misconduct", "harassment lawsuit"]
+    },
+    {
+      "id": "facility_threats",
+      "label": "Facility Threats",
+      "color": "#e5484d",
+      "keywords": ["forced entry", "security breach", "unauthorized access", "intruder", "trespass", "bomb threat", "evacuated building", "perimeter breach", "active shooter", "workplace shooting", "office shooting", "lockdown"]
+    },
+    {
+      "id": "travel_risk",
+      "label": "Travel Risk",
+      "color": "#4dd0e1",
+      "keywords": ["travel advisory", "airport closure", "border closure", "visa restriction", "flight disruption", "tourist kidnapped", "hijack", "do not travel", "evacuation of nationals"]
+    },
+    {
+      "id": "civil_unrest",
+      "label": "Civil Unrest",
+      "color": "#f2b134",
+      "keywords": ["protest", "riot", "unrest", "demonstration", "clashes", "civil disorder", "strike march", "blockade", "curfew"]
+    },
+    {
+      "id": "protests",
+      "label": "Protests",
+      "color": "#f2b134",
+      "keywords": ["rally", "demonstrators", "picket", "sit-in", "march on", "occupy"]
+    },
+    {
+      "id": "terrorism",
+      "label": "Terrorism",
+      "color": "#c0392b",
+      "keywords": ["terroris", "isis", "al-qaeda", "extremist attack", "suicide bomb", "militant attack", "mass shooting"]
+    },
+    {
+      "id": "cyber_threats",
+      "label": "Cyber Threats",
+      "color": "#8e6ff2",
+      "keywords": ["ransomware", "data breach", "cyberattack", "hacked", "phishing campaign", "ddos", "malware", "zero-day", "vulnerability exploited"]
+    },
+    {
+      "id": "crime",
+      "label": "Crime",
+      "color": "#9aa5b1",
+      "keywords": ["robbery", "burglary", "carjacking", "homicide", "shooting", "stabbing", "arson", "vandalism", "gang violence"]
+    },
+    {
+      "id": "kidnapping",
+      "label": "Kidnapping",
+      "color": "#d16ba5",
+      "keywords": ["kidnapping", "abduction", "hostage", "ransom demand", "missing person feared abducted"]
+    },
+    {
+      "id": "natural_disaster",
+      "label": "Natural Disaster",
+      "color": "#5cb85c",
+      "keywords": ["earthquake", "wildfire", "flood", "hurricane", "typhoon", "tsunami", "landslide", "volcanic eruption", "tornado"]
+    },
+    {
+      "id": "supply_chain",
+      "label": "Supply Chain",
+      "color": "#c98a3e",
+      "keywords": ["port closure", "shipping delay", "supply chain disruption", "factory fire", "logistics halt", "customs strike", "freight disruption"]
+    },
+    {
+      "id": "corporate_reputation",
+      "label": "Corporate Reputation",
+      "color": "#5b8def",
+      "keywords": ["boycott", "recall", "lawsuit against", "investigation into", "regulatory fine", "shareholder revolt", "whistleblower"]
+    },
+    {
+      "id": "political_instability",
+      "label": "Political Instability",
+      "color": "#b06ab3",
+      "keywords": ["coup", "government collapse", "state of emergency", "martial law", "election dispute", "impeachment", "resignation of president"]
+    },
+    {
+      "id": "geopolitical",
+      "label": "Geopolitical Events",
+      "color": "#4a7fc9",
+      "keywords": ["sanctions", "military buildup", "troop deployment", "border dispute", "diplomatic crisis", "airstrike", "naval blockade"]
+    }
+  ],
+  "severity": {
+    "high": ["killed", "dead", "death", "casualt", "explosion", "terroris", "gunman", "hostage", "mass shooting", "fatal", "bomb", "massacre", "assassinat", "coup", "state of emergency"],
+    "medium": ["injured", "wounded", "clash", "arrest", "threat", "warning", "advisory", "suspect", "evacuat", "unrest", "riot", "breach", "hacked", "ransomware"]
+  },
+  "positiveExclude": ["award", "praised", "honou", "celebrat", "donat", " wins ", "named to", "promoted to", "appointed as", "charity gala", "philanthrop"]
+}

@@ -1,0 +1,12 @@
+#mapCanvas{ width:100%; height:calc(100vh - 220px); min-height:440px; border-radius:var(--radius-md); border:1px solid var(--border-soft); }
+.map-legend{ display:flex; gap:16px; align-items:center; flex-wrap:wrap; margin-bottom:12px; font-size:12px; color:var(--text-dim); }
+.map-legend .lg{ display:inline-flex; align-items:center; gap:6px; }
+.map-legend .lg span{ width:9px; height:9px; border-radius:50%; display:inline-block; }
+
+.leaflet-popup-content-wrapper{ background:var(--panel); color:var(--text); border-radius:var(--radius-sm); box-shadow:0 6px 20px rgba(0,0,0,.4); }
+.leaflet-popup-tip{ background:var(--panel); }
+.map-popup{ font-size:12.5px; min-width:220px; }
+.map-popup h4{ margin:0 0 6px; font-size:14px; }
+.map-popup .cat{ font-size:11px; color:var(--text-dim); margin-bottom:6px; }
+.map-popup a.open-link{ display:inline-block; margin-top:6px; color:var(--accent); font-size:12px; }
+.marker-cluster-piw{ background:var(--accent); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-weight:600; font-size:12px; border:2px solid rgba(255,255,255,.5); }

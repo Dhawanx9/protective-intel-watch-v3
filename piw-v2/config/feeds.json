@@ -1,0 +1,21 @@
+{
+  "_comment": "This file is now ONLY a one-time starter list for scripts/seed-supabase.mjs. The LIVE feed configuration lives in Supabase (see supabase/schema.sql) and is managed from the Feed Manager UI in the dashboard — editing this file after initial setup does nothing.",
+  "feeds": [
+    { "id": "bbc-world", "label": "BBC News – World", "url": "http://feeds.bbci.co.uk/news/world/rss.xml", "region": "UK", "enabled": true },
+    { "id": "guardian-world", "label": "The Guardian – World", "url": "https://www.theguardian.com/world/rss", "region": "UK", "enabled": true },
+    { "id": "sky-world", "label": "Sky News – World", "url": "https://feeds.skynews.com/feeds/rss/world.xml", "region": "UK", "enabled": true },
+    { "id": "ndtv-top", "label": "NDTV – Top Stories", "url": "https://feeds.feedburner.com/ndtvnews-top-stories", "region": "India", "enabled": true },
+    { "id": "toi-top", "label": "Times of India – Top Stories", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "region": "India", "enabled": true },
+    { "id": "hindu-national", "label": "The Hindu – National", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "region": "India", "enabled": true },
+    { "id": "htimes-india", "label": "Hindustan Times – India News", "url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml", "region": "India", "enabled": true },
+    { "id": "npr-world", "label": "NPR – World", "url": "https://feeds.npr.org/1004/rss.xml", "region": "USA", "enabled": true },
+    { "id": "cbs-world", "label": "CBS News – World", "url": "https://www.cbsnews.com/latest/rss/world", "region": "USA", "enabled": true },
+    { "id": "nyt-world", "label": "New York Times – World", "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", "region": "USA", "enabled": true },
+    { "id": "aljazeera-all", "label": "Al Jazeera – All", "url": "https://www.aljazeera.com/xml/rss/all.xml", "region": "International", "enabled": true },
+    { "id": "dw-world", "label": "Deutsche Welle – World", "url": "https://rss.dw.com/rdf/rss-en-world", "region": "International", "enabled": true },
+    { "id": "france24-world", "label": "France 24 – World", "url": "https://www.france24.com/en/rss", "region": "International", "enabled": true },
+    { "id": "scmp-world", "label": "South China Morning Post – World", "url": "https://www.scmp.com/rss/91/feed", "region": "International", "enabled": true },
+    { "id": "cna-asia", "label": "Channel News Asia – Asia", "url": "https://www.channelnewsasia.com/rssfeeds/8395986", "region": "International", "enabled": true },
+    { "id": "reuters-world", "label": "Reuters – World (via aggregator mirror)", "url": "https://www.reutersagency.com/feed/?best-topics=world", "region": "International", "enabled": false }
+  ]
+}

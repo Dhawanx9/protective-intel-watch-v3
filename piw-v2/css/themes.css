@@ -1,0 +1,6 @@
+body, .panel, .stat-card, .event-card, .chip, .btn, .sidebar, .topbar, .modal {
+  transition: background-color .15s, border-color .15s, color .15s;
+}
+.theme-toggle-icon{ display:inline-flex; }
+html[data-theme="light"] .theme-toggle-icon .icon-moon{ display:none; }
+html:not([data-theme="light"]) .theme-toggle-icon .icon-sun{ display:none; }

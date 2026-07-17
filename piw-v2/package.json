@@ -1,0 +1,18 @@
+{
+  "name": "protective-intel-watch-v2",
+  "version": "2.0.0",
+  "description": "Static protective intelligence dashboard. Pipeline scripts fetch RSS server-side (via GitHub Actions), the browser only ever reads generated JSON.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "fetch": "node scripts/fetch-feeds.mjs",
+    "seed-supabase": "node scripts/seed-supabase.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.3.6"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

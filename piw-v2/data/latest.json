@@ -1,0 +1,2136 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-17T11:34:39.167Z",
+    "startedAt": "2026-07-17T11:33:54.167Z",
+    "totalEventsCount": 60,
+    "rawArticleCount": 120,
+    "feedHealth": [
+      {
+        "id": "bbc-world",
+        "label": "BBC News – World",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "guardian-world",
+        "label": "The Guardian – World",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "sky-world",
+        "label": "Sky News – World",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "ndtv-top",
+        "label": "NDTV – Top Stories",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "toi-top",
+        "label": "Times of India – Top Stories",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "hindu-national",
+        "label": "The Hindu – National",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "htimes-india",
+        "label": "Hindustan Times – India News",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "npr-world",
+        "label": "NPR – World",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "cbs-world",
+        "label": "CBS News – World",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "nyt-world",
+        "label": "New York Times – World",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "aljazeera-all",
+        "label": "Al Jazeera – All",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "dw-world",
+        "label": "Deutsche Welle – World",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "france24-world",
+        "label": "France 24 – World",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "scmp-world",
+        "label": "South China Morning Post – World",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "cna-asia",
+        "label": "Channel News Asia – Asia",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      },
+      {
+        "id": "reuters-world",
+        "label": "Reuters – World (via aggregator mirror)",
+        "status": "disabled",
+        "count": 0,
+        "error": "Awaiting first pipeline run",
+        "checkedAt": "2026-07-17T11:34:39.168Z"
+      }
+    ],
+    "categoriesPresent": [
+      "executive_threats",
+      "facility_threats",
+      "travel_risk",
+      "civil_unrest",
+      "terrorism",
+      "cyber_threats",
+      "crime",
+      "kidnapping",
+      "natural_disaster",
+      "supply_chain",
+      "corporate_reputation",
+      "political_instability",
+      "geopolitical"
+    ],
+    "isSampleData": true
+  },
+  "events": [
+    {
+      "id": "evt_1",
+      "title": "[SAMPLE] Board chairman targeted in extortion attempt — United States",
+      "bluf": "Board chairman targeted in extortion attempt. Classified under Executive Threats. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "MEDIUM",
+      "country": "United States",
+      "lat": 39.8,
+      "lon": -98.6,
+      "publishedAt": "2026-07-14T08:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-1-0",
+          "publishedAt": "2026-07-14T08:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-1",
+      "primaryDomain": "demo-press.example"
+    },
+    {
+      "id": "evt_2",
+      "title": "[SAMPLE] Corporate CEO receives death threats amid restructuring dispute — France",
+      "bluf": "Corporate CEO receives death threats amid restructuring dispute. Classified under Executive Threats. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "France",
+      "lat": 46.6,
+      "lon": 2.2,
+      "publishedAt": "2026-07-13T03:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-2-0",
+          "publishedAt": "2026-07-13T03:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-2",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_3",
+      "title": "[SAMPLE] Board chairman targeted in extortion attempt — Israel",
+      "bluf": "Board chairman targeted in extortion attempt. Classified under Executive Threats. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "MEDIUM",
+      "country": "Israel",
+      "lat": 31,
+      "lon": 34.9,
+      "publishedAt": "2026-07-13T01:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-3-0",
+          "publishedAt": "2026-07-13T01:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-3-1",
+          "publishedAt": "2026-07-13T01:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-3-2",
+          "publishedAt": "2026-07-13T01:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-3",
+      "primaryDomain": "demo-press.example"
+    },
+    {
+      "id": "evt_4",
+      "title": "[SAMPLE] Corporate CEO receives death threats amid restructuring dispute — Egypt",
+      "bluf": "Corporate CEO receives death threats amid restructuring dispute. Classified under Executive Threats. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "HIGH",
+      "country": "Egypt",
+      "lat": 26.8,
+      "lon": 30.8,
+      "publishedAt": "2026-07-12T09:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-4-0",
+          "publishedAt": "2026-07-12T09:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-4-1",
+          "publishedAt": "2026-07-12T09:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-4-2",
+          "publishedAt": "2026-07-12T09:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-4-3",
+          "publishedAt": "2026-07-12T09:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-4",
+      "primaryDomain": "placeholder-news.example"
+    },
+    {
+      "id": "evt_5",
+      "title": "[SAMPLE] Corporate CEO receives death threats amid restructuring dispute — Pakistan",
+      "bluf": "Corporate CEO receives death threats amid restructuring dispute. Classified under Executive Threats. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "Pakistan",
+      "lat": 30.4,
+      "lon": 69.3,
+      "publishedAt": "2026-07-13T08:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-5-0",
+          "publishedAt": "2026-07-13T08:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-5-1",
+          "publishedAt": "2026-07-13T08:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-5-2",
+          "publishedAt": "2026-07-13T08:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-5",
+      "primaryDomain": "sample-bulletin.example"
+    },
+    {
+      "id": "evt_6",
+      "title": "[SAMPLE] Unauthorized access reported at manufacturing facility — France",
+      "bluf": "Unauthorized access reported at manufacturing facility. Classified under Facility Threats. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "facility_threats",
+      "categoryLabel": "Facility Threats",
+      "categoryColor": "#e5484d",
+      "severity": "MEDIUM",
+      "country": "France",
+      "lat": 46.6,
+      "lon": 2.2,
+      "publishedAt": "2026-07-17T08:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-6-0",
+          "publishedAt": "2026-07-17T08:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-6-1",
+          "publishedAt": "2026-07-17T08:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-6",
+      "primaryDomain": "sample-wire.example"
+    },
+    {
+      "id": "evt_7",
+      "title": "[SAMPLE] Perimeter breach detected at logistics hub — United States",
+      "bluf": "Perimeter breach detected at logistics hub. Classified under Facility Threats. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "facility_threats",
+      "categoryLabel": "Facility Threats",
+      "categoryColor": "#e5484d",
+      "severity": "HIGH",
+      "country": "United States",
+      "lat": 39.8,
+      "lon": -98.6,
+      "publishedAt": "2026-07-16T03:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-7-0",
+          "publishedAt": "2026-07-16T03:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-7-1",
+          "publishedAt": "2026-07-16T03:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-7-2",
+          "publishedAt": "2026-07-16T03:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-7",
+      "primaryDomain": "placeholder-news.example"
+    },
+    {
+      "id": "evt_8",
+      "title": "[SAMPLE] Unauthorized access reported at manufacturing facility — Brazil",
+      "bluf": "Unauthorized access reported at manufacturing facility. Classified under Facility Threats. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "facility_threats",
+      "categoryLabel": "Facility Threats",
+      "categoryColor": "#e5484d",
+      "severity": "LOW",
+      "country": "Brazil",
+      "lat": -10.3,
+      "lon": -53.2,
+      "publishedAt": "2026-07-15T07:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-8-0",
+          "publishedAt": "2026-07-15T07:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-8-1",
+          "publishedAt": "2026-07-15T07:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-8",
+      "primaryDomain": "sample-bulletin.example"
+    },
+    {
+      "id": "evt_9",
+      "title": "[SAMPLE] Bomb threat forces evacuation of corporate headquarters — Brazil",
+      "bluf": "Bomb threat forces evacuation of corporate headquarters. Classified under Facility Threats. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "facility_threats",
+      "categoryLabel": "Facility Threats",
+      "categoryColor": "#e5484d",
+      "severity": "HIGH",
+      "country": "Brazil",
+      "lat": -10.3,
+      "lon": -53.2,
+      "publishedAt": "2026-07-17T02:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-9-0",
+          "publishedAt": "2026-07-17T02:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-9-1",
+          "publishedAt": "2026-07-17T02:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-9",
+      "primaryDomain": "sample-bulletin.example"
+    },
+    {
+      "id": "evt_10",
+      "title": "[SAMPLE] Airport closure disrupts regional business travel — United States",
+      "bluf": "Airport closure disrupts regional business travel. Classified under Travel Risk. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "travel_risk",
+      "categoryLabel": "Travel Risk",
+      "categoryColor": "#4dd0e1",
+      "severity": "LOW",
+      "country": "United States",
+      "lat": 39.8,
+      "lon": -98.6,
+      "publishedAt": "2026-07-16T03:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-10-0",
+          "publishedAt": "2026-07-16T03:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-10",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_11",
+      "title": "[SAMPLE] Airport closure disrupts regional business travel — Pakistan",
+      "bluf": "Airport closure disrupts regional business travel. Classified under Travel Risk. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "travel_risk",
+      "categoryLabel": "Travel Risk",
+      "categoryColor": "#4dd0e1",
+      "severity": "HIGH",
+      "country": "Pakistan",
+      "lat": 30.4,
+      "lon": 69.3,
+      "publishedAt": "2026-07-17T00:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-11-0",
+          "publishedAt": "2026-07-17T00:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-11",
+      "primaryDomain": "sample-wire.example"
+    },
+    {
+      "id": "evt_12",
+      "title": "[SAMPLE] Airport closure disrupts regional business travel — France",
+      "bluf": "Airport closure disrupts regional business travel. Classified under Travel Risk. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "travel_risk",
+      "categoryLabel": "Travel Risk",
+      "categoryColor": "#4dd0e1",
+      "severity": "LOW",
+      "country": "France",
+      "lat": 46.6,
+      "lon": 2.2,
+      "publishedAt": "2026-07-12T08:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-12-0",
+          "publishedAt": "2026-07-12T08:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-12-1",
+          "publishedAt": "2026-07-12T08:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-12",
+      "primaryDomain": "placeholder-news.example"
+    },
+    {
+      "id": "evt_13",
+      "title": "[SAMPLE] Government issues new travel advisory for the region — Brazil",
+      "bluf": "Government issues new travel advisory for the region. Classified under Travel Risk. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "travel_risk",
+      "categoryLabel": "Travel Risk",
+      "categoryColor": "#4dd0e1",
+      "severity": "MEDIUM",
+      "country": "Brazil",
+      "lat": -10.3,
+      "lon": -53.2,
+      "publishedAt": "2026-07-11T02:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-13-0",
+          "publishedAt": "2026-07-11T02:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-13-1",
+          "publishedAt": "2026-07-11T02:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-13-2",
+          "publishedAt": "2026-07-11T02:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-13",
+      "primaryDomain": "placeholder-news.example"
+    },
+    {
+      "id": "evt_14",
+      "title": "[SAMPLE] Airport closure disrupts regional business travel — Mexico",
+      "bluf": "Airport closure disrupts regional business travel. Classified under Travel Risk. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "travel_risk",
+      "categoryLabel": "Travel Risk",
+      "categoryColor": "#4dd0e1",
+      "severity": "MEDIUM",
+      "country": "Mexico",
+      "lat": 23.6,
+      "lon": -102.5,
+      "publishedAt": "2026-07-13T11:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-14-0",
+          "publishedAt": "2026-07-13T11:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-14-1",
+          "publishedAt": "2026-07-13T11:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-14-2",
+          "publishedAt": "2026-07-13T11:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-14-3",
+          "publishedAt": "2026-07-13T11:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-14",
+      "primaryDomain": "demo-press.example"
+    },
+    {
+      "id": "evt_15",
+      "title": "[SAMPLE] Government issues new travel advisory for the region — Brazil",
+      "bluf": "Government issues new travel advisory for the region. Classified under Travel Risk. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "travel_risk",
+      "categoryLabel": "Travel Risk",
+      "categoryColor": "#4dd0e1",
+      "severity": "LOW",
+      "country": "Brazil",
+      "lat": -10.3,
+      "lon": -53.2,
+      "publishedAt": "2026-07-13T00:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-15-0",
+          "publishedAt": "2026-07-13T00:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-15-1",
+          "publishedAt": "2026-07-13T00:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-15-2",
+          "publishedAt": "2026-07-13T00:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-15-3",
+          "publishedAt": "2026-07-13T00:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-15",
+      "primaryDomain": "sample-bulletin.example"
+    },
+    {
+      "id": "evt_16",
+      "title": "[SAMPLE] Demonstrators clash with police outside government building — Israel",
+      "bluf": "Demonstrators clash with police outside government building. Classified under Civil Unrest. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "MEDIUM",
+      "country": "Israel",
+      "lat": 31,
+      "lon": 34.9,
+      "publishedAt": "2026-07-11T21:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-16-0",
+          "publishedAt": "2026-07-11T21:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-16",
+      "primaryDomain": "sample-bulletin.example"
+    },
+    {
+      "id": "evt_17",
+      "title": "[SAMPLE] Demonstrators clash with police outside government building — Ukraine",
+      "bluf": "Demonstrators clash with police outside government building. Classified under Civil Unrest. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "Ukraine",
+      "lat": 48.4,
+      "lon": 31.2,
+      "publishedAt": "2026-07-16T18:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-17-0",
+          "publishedAt": "2026-07-16T18:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-17-1",
+          "publishedAt": "2026-07-16T18:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-17-2",
+          "publishedAt": "2026-07-16T18:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-17-3",
+          "publishedAt": "2026-07-16T18:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-17",
+      "primaryDomain": "sample-bulletin.example"
+    },
+    {
+      "id": "evt_18",
+      "title": "[SAMPLE] Demonstrators clash with police outside government building — Nigeria",
+      "bluf": "Demonstrators clash with police outside government building. Classified under Civil Unrest. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "MEDIUM",
+      "country": "Nigeria",
+      "lat": 9.1,
+      "lon": 8.7,
+      "publishedAt": "2026-07-10T20:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-18-0",
+          "publishedAt": "2026-07-10T20:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-18-1",
+          "publishedAt": "2026-07-10T20:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-18-2",
+          "publishedAt": "2026-07-10T20:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-18",
+      "primaryDomain": "demo-press.example"
+    },
+    {
+      "id": "evt_19",
+      "title": "[SAMPLE] Militant group claims responsibility for regional attack — France",
+      "bluf": "Militant group claims responsibility for regional attack. Classified under Terrorism. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "terrorism",
+      "categoryLabel": "Terrorism",
+      "categoryColor": "#c0392b",
+      "severity": "LOW",
+      "country": "France",
+      "lat": 46.6,
+      "lon": 2.2,
+      "publishedAt": "2026-07-11T13:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-19-0",
+          "publishedAt": "2026-07-11T13:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-19",
+      "primaryDomain": "demo-press.example"
+    },
+    {
+      "id": "evt_20",
+      "title": "[SAMPLE] Security forces thwart planned attack on public venue — Pakistan",
+      "bluf": "Security forces thwart planned attack on public venue. Classified under Terrorism. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "terrorism",
+      "categoryLabel": "Terrorism",
+      "categoryColor": "#c0392b",
+      "severity": "LOW",
+      "country": "Pakistan",
+      "lat": 30.4,
+      "lon": 69.3,
+      "publishedAt": "2026-07-11T11:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-20-0",
+          "publishedAt": "2026-07-11T11:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-20",
+      "primaryDomain": "sample-bulletin.example"
+    },
+    {
+      "id": "evt_21",
+      "title": "[SAMPLE] Security forces thwart planned attack on public venue — United States",
+      "bluf": "Security forces thwart planned attack on public venue. Classified under Terrorism. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "terrorism",
+      "categoryLabel": "Terrorism",
+      "categoryColor": "#c0392b",
+      "severity": "MEDIUM",
+      "country": "United States",
+      "lat": 39.8,
+      "lon": -98.6,
+      "publishedAt": "2026-07-12T07:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-21-0",
+          "publishedAt": "2026-07-12T07:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-21-1",
+          "publishedAt": "2026-07-12T07:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-21-2",
+          "publishedAt": "2026-07-12T07:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-21-3",
+          "publishedAt": "2026-07-12T07:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-21",
+      "primaryDomain": "sample-bulletin.example"
+    },
+    {
+      "id": "evt_22",
+      "title": "[SAMPLE] Ransomware attack disrupts operations at logistics firm — Brazil",
+      "bluf": "Ransomware attack disrupts operations at logistics firm. Classified under Cyber Threats. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "cyber_threats",
+      "categoryLabel": "Cyber Threats",
+      "categoryColor": "#8e6ff2",
+      "severity": "MEDIUM",
+      "country": "Brazil",
+      "lat": -10.3,
+      "lon": -53.2,
+      "publishedAt": "2026-07-12T01:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-22-0",
+          "publishedAt": "2026-07-12T01:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-22",
+      "primaryDomain": "demo-press.example"
+    },
+    {
+      "id": "evt_23",
+      "title": "[SAMPLE] Data breach exposes customer records at major retailer — United Kingdom",
+      "bluf": "Data breach exposes customer records at major retailer. Classified under Cyber Threats. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "cyber_threats",
+      "categoryLabel": "Cyber Threats",
+      "categoryColor": "#8e6ff2",
+      "severity": "LOW",
+      "country": "United Kingdom",
+      "lat": 54,
+      "lon": -2.9,
+      "publishedAt": "2026-07-13T13:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-23-0",
+          "publishedAt": "2026-07-13T13:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-23",
+      "primaryDomain": "placeholder-news.example"
+    },
+    {
+      "id": "evt_24",
+      "title": "[SAMPLE] Ransomware attack disrupts operations at logistics firm — France",
+      "bluf": "Ransomware attack disrupts operations at logistics firm. Classified under Cyber Threats. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "cyber_threats",
+      "categoryLabel": "Cyber Threats",
+      "categoryColor": "#8e6ff2",
+      "severity": "HIGH",
+      "country": "France",
+      "lat": 46.6,
+      "lon": 2.2,
+      "publishedAt": "2026-07-12T12:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-24-0",
+          "publishedAt": "2026-07-12T12:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-24-1",
+          "publishedAt": "2026-07-12T12:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-24-2",
+          "publishedAt": "2026-07-12T12:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-24",
+      "primaryDomain": "demo-press.example"
+    },
+    {
+      "id": "evt_25",
+      "title": "[SAMPLE] Ransomware attack disrupts operations at logistics firm — Kenya",
+      "bluf": "Ransomware attack disrupts operations at logistics firm. Classified under Cyber Threats. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "cyber_threats",
+      "categoryLabel": "Cyber Threats",
+      "categoryColor": "#8e6ff2",
+      "severity": "MEDIUM",
+      "country": "Kenya",
+      "lat": -0.02,
+      "lon": 37.9,
+      "publishedAt": "2026-07-14T18:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-25-0",
+          "publishedAt": "2026-07-14T18:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-25-1",
+          "publishedAt": "2026-07-14T18:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-25",
+      "primaryDomain": "sample-bulletin.example"
+    },
+    {
+      "id": "evt_26",
+      "title": "[SAMPLE] Data breach exposes customer records at major retailer — Nigeria",
+      "bluf": "Data breach exposes customer records at major retailer. Classified under Cyber Threats. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "cyber_threats",
+      "categoryLabel": "Cyber Threats",
+      "categoryColor": "#8e6ff2",
+      "severity": "LOW",
+      "country": "Nigeria",
+      "lat": 9.1,
+      "lon": 8.7,
+      "publishedAt": "2026-07-15T07:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-26-0",
+          "publishedAt": "2026-07-15T07:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-26-1",
+          "publishedAt": "2026-07-15T07:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-26",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_27",
+      "title": "[SAMPLE] Carjacking incidents rise in metropolitan area — Pakistan",
+      "bluf": "Carjacking incidents rise in metropolitan area. Classified under Crime. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "crime",
+      "categoryLabel": "Crime",
+      "categoryColor": "#9aa5b1",
+      "severity": "MEDIUM",
+      "country": "Pakistan",
+      "lat": 30.4,
+      "lon": 69.3,
+      "publishedAt": "2026-07-13T19:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-27-0",
+          "publishedAt": "2026-07-13T19:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-27-1",
+          "publishedAt": "2026-07-13T19:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-27",
+      "primaryDomain": "sample-bulletin.example"
+    },
+    {
+      "id": "evt_28",
+      "title": "[SAMPLE] Carjacking incidents rise in metropolitan area — Philippines",
+      "bluf": "Carjacking incidents rise in metropolitan area. Classified under Crime. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "crime",
+      "categoryLabel": "Crime",
+      "categoryColor": "#9aa5b1",
+      "severity": "MEDIUM",
+      "country": "Philippines",
+      "lat": 12.9,
+      "lon": 121.8,
+      "publishedAt": "2026-07-15T12:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-28-0",
+          "publishedAt": "2026-07-15T12:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-28",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_29",
+      "title": "[SAMPLE] Carjacking incidents rise in metropolitan area — France",
+      "bluf": "Carjacking incidents rise in metropolitan area. Classified under Crime. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "crime",
+      "categoryLabel": "Crime",
+      "categoryColor": "#9aa5b1",
+      "severity": "MEDIUM",
+      "country": "France",
+      "lat": 46.6,
+      "lon": 2.2,
+      "publishedAt": "2026-07-15T21:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-29-0",
+          "publishedAt": "2026-07-15T21:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-29-1",
+          "publishedAt": "2026-07-15T21:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-29-2",
+          "publishedAt": "2026-07-15T21:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-29-3",
+          "publishedAt": "2026-07-15T21:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-29",
+      "primaryDomain": "sample-wire.example"
+    },
+    {
+      "id": "evt_30",
+      "title": "[SAMPLE] Local businessman abducted, ransom demanded — Kenya",
+      "bluf": "Local businessman abducted, ransom demanded. Classified under Kidnapping. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "kidnapping",
+      "categoryLabel": "Kidnapping",
+      "categoryColor": "#d16ba5",
+      "severity": "LOW",
+      "country": "Kenya",
+      "lat": -0.02,
+      "lon": 37.9,
+      "publishedAt": "2026-07-12T10:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-30-0",
+          "publishedAt": "2026-07-12T10:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-30-1",
+          "publishedAt": "2026-07-12T10:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-30-2",
+          "publishedAt": "2026-07-12T10:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-30",
+      "primaryDomain": "sample-wire.example"
+    },
+    {
+      "id": "evt_31",
+      "title": "[SAMPLE] Kidnapping attempt reported near industrial park — Germany",
+      "bluf": "Kidnapping attempt reported near industrial park. Classified under Kidnapping. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "kidnapping",
+      "categoryLabel": "Kidnapping",
+      "categoryColor": "#d16ba5",
+      "severity": "LOW",
+      "country": "Germany",
+      "lat": 51.2,
+      "lon": 10.4,
+      "publishedAt": "2026-07-11T12:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-31-0",
+          "publishedAt": "2026-07-11T12:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-31-1",
+          "publishedAt": "2026-07-11T12:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-31",
+      "primaryDomain": "sample-wire.example"
+    },
+    {
+      "id": "evt_32",
+      "title": "[SAMPLE] Local businessman abducted, ransom demanded — Ukraine",
+      "bluf": "Local businessman abducted, ransom demanded. Classified under Kidnapping. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "kidnapping",
+      "categoryLabel": "Kidnapping",
+      "categoryColor": "#d16ba5",
+      "severity": "MEDIUM",
+      "country": "Ukraine",
+      "lat": 48.4,
+      "lon": 31.2,
+      "publishedAt": "2026-07-12T23:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-32-0",
+          "publishedAt": "2026-07-12T23:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-32-1",
+          "publishedAt": "2026-07-12T23:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-32-2",
+          "publishedAt": "2026-07-12T23:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-32",
+      "primaryDomain": "placeholder-news.example"
+    },
+    {
+      "id": "evt_33",
+      "title": "[SAMPLE] Kidnapping attempt reported near industrial park — France",
+      "bluf": "Kidnapping attempt reported near industrial park. Classified under Kidnapping. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "kidnapping",
+      "categoryLabel": "Kidnapping",
+      "categoryColor": "#d16ba5",
+      "severity": "MEDIUM",
+      "country": "France",
+      "lat": 46.6,
+      "lon": 2.2,
+      "publishedAt": "2026-07-11T02:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-33-0",
+          "publishedAt": "2026-07-11T02:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-33-1",
+          "publishedAt": "2026-07-11T02:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-33-2",
+          "publishedAt": "2026-07-11T02:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-33",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_34",
+      "title": "[SAMPLE] Kidnapping attempt reported near industrial park — Kenya",
+      "bluf": "Kidnapping attempt reported near industrial park. Classified under Kidnapping. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "kidnapping",
+      "categoryLabel": "Kidnapping",
+      "categoryColor": "#d16ba5",
+      "severity": "LOW",
+      "country": "Kenya",
+      "lat": -0.02,
+      "lon": 37.9,
+      "publishedAt": "2026-07-16T17:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-34-0",
+          "publishedAt": "2026-07-16T17:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-34-1",
+          "publishedAt": "2026-07-16T17:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-34-2",
+          "publishedAt": "2026-07-16T17:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-34-3",
+          "publishedAt": "2026-07-16T17:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-34",
+      "primaryDomain": "sample-bulletin.example"
+    },
+    {
+      "id": "evt_35",
+      "title": "[SAMPLE] Kidnapping attempt reported near industrial park — United States",
+      "bluf": "Kidnapping attempt reported near industrial park. Classified under Kidnapping. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "kidnapping",
+      "categoryLabel": "Kidnapping",
+      "categoryColor": "#d16ba5",
+      "severity": "LOW",
+      "country": "United States",
+      "lat": 39.8,
+      "lon": -98.6,
+      "publishedAt": "2026-07-11T07:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-35-0",
+          "publishedAt": "2026-07-11T07:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-35-1",
+          "publishedAt": "2026-07-11T07:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-35-2",
+          "publishedAt": "2026-07-11T07:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-35",
+      "primaryDomain": "demo-press.example"
+    },
+    {
+      "id": "evt_36",
+      "title": "[SAMPLE] Flooding disrupts operations at coastal facility — United States",
+      "bluf": "Flooding disrupts operations at coastal facility. Classified under Natural Disaster. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "United States",
+      "lat": 39.8,
+      "lon": -98.6,
+      "publishedAt": "2026-07-13T23:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-36-0",
+          "publishedAt": "2026-07-13T23:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-36",
+      "primaryDomain": "sample-wire.example"
+    },
+    {
+      "id": "evt_37",
+      "title": "[SAMPLE] Wildfire threatens regional supply routes — Philippines",
+      "bluf": "Wildfire threatens regional supply routes. Classified under Natural Disaster. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Philippines",
+      "lat": 12.9,
+      "lon": 121.8,
+      "publishedAt": "2026-07-11T03:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-37-0",
+          "publishedAt": "2026-07-11T03:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-37-1",
+          "publishedAt": "2026-07-11T03:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-37-2",
+          "publishedAt": "2026-07-11T03:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-37-3",
+          "publishedAt": "2026-07-11T03:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-37",
+      "primaryDomain": "sample-wire.example"
+    },
+    {
+      "id": "evt_38",
+      "title": "[SAMPLE] Wildfire threatens regional supply routes — United Kingdom",
+      "bluf": "Wildfire threatens regional supply routes. Classified under Natural Disaster. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "HIGH",
+      "country": "United Kingdom",
+      "lat": 54,
+      "lon": -2.9,
+      "publishedAt": "2026-07-11T16:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-38-0",
+          "publishedAt": "2026-07-11T16:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-38-1",
+          "publishedAt": "2026-07-11T16:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-38-2",
+          "publishedAt": "2026-07-11T16:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-38-3",
+          "publishedAt": "2026-07-11T16:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-38",
+      "primaryDomain": "demo-press.example"
+    },
+    {
+      "id": "evt_39",
+      "title": "[SAMPLE] Flooding disrupts operations at coastal facility — United Kingdom",
+      "bluf": "Flooding disrupts operations at coastal facility. Classified under Natural Disaster. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "United Kingdom",
+      "lat": 54,
+      "lon": -2.9,
+      "publishedAt": "2026-07-16T09:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-39-0",
+          "publishedAt": "2026-07-16T09:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-39",
+      "primaryDomain": "placeholder-news.example"
+    },
+    {
+      "id": "evt_40",
+      "title": "[SAMPLE] Wildfire threatens regional supply routes — Brazil",
+      "bluf": "Wildfire threatens regional supply routes. Classified under Natural Disaster. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Brazil",
+      "lat": -10.3,
+      "lon": -53.2,
+      "publishedAt": "2026-07-10T23:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-40-0",
+          "publishedAt": "2026-07-10T23:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-40-1",
+          "publishedAt": "2026-07-10T23:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-40-2",
+          "publishedAt": "2026-07-10T23:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-40",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_41",
+      "title": "[SAMPLE] Wildfire threatens regional supply routes — United Kingdom",
+      "bluf": "Wildfire threatens regional supply routes. Classified under Natural Disaster. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "HIGH",
+      "country": "United Kingdom",
+      "lat": 54,
+      "lon": -2.9,
+      "publishedAt": "2026-07-16T09:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-41-0",
+          "publishedAt": "2026-07-16T09:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-41-1",
+          "publishedAt": "2026-07-16T09:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-41-2",
+          "publishedAt": "2026-07-16T09:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-41",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_42",
+      "title": "[SAMPLE] Port closure delays regional shipments — Philippines",
+      "bluf": "Port closure delays regional shipments. Classified under Supply Chain. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "supply_chain",
+      "categoryLabel": "Supply Chain",
+      "categoryColor": "#c98a3e",
+      "severity": "MEDIUM",
+      "country": "Philippines",
+      "lat": 12.9,
+      "lon": 121.8,
+      "publishedAt": "2026-07-14T06:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-42-0",
+          "publishedAt": "2026-07-14T06:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-42-1",
+          "publishedAt": "2026-07-14T06:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-42-2",
+          "publishedAt": "2026-07-14T06:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-42-3",
+          "publishedAt": "2026-07-14T06:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-42",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_43",
+      "title": "[SAMPLE] Port closure delays regional shipments — Philippines",
+      "bluf": "Port closure delays regional shipments. Classified under Supply Chain. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "supply_chain",
+      "categoryLabel": "Supply Chain",
+      "categoryColor": "#c98a3e",
+      "severity": "LOW",
+      "country": "Philippines",
+      "lat": 12.9,
+      "lon": 121.8,
+      "publishedAt": "2026-07-17T07:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-43-0",
+          "publishedAt": "2026-07-17T07:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-43-1",
+          "publishedAt": "2026-07-17T07:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-43-2",
+          "publishedAt": "2026-07-17T07:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-43",
+      "primaryDomain": "sample-wire.example"
+    },
+    {
+      "id": "evt_44",
+      "title": "[SAMPLE] Factory fire halts production at key supplier — Ukraine",
+      "bluf": "Factory fire halts production at key supplier. Classified under Supply Chain. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "supply_chain",
+      "categoryLabel": "Supply Chain",
+      "categoryColor": "#c98a3e",
+      "severity": "LOW",
+      "country": "Ukraine",
+      "lat": 48.4,
+      "lon": 31.2,
+      "publishedAt": "2026-07-12T18:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-44-0",
+          "publishedAt": "2026-07-12T18:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-44-1",
+          "publishedAt": "2026-07-12T18:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-44-2",
+          "publishedAt": "2026-07-12T18:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-44-3",
+          "publishedAt": "2026-07-12T18:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-44",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_45",
+      "title": "[SAMPLE] Factory fire halts production at key supplier — Ukraine",
+      "bluf": "Factory fire halts production at key supplier. Classified under Supply Chain. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "supply_chain",
+      "categoryLabel": "Supply Chain",
+      "categoryColor": "#c98a3e",
+      "severity": "LOW",
+      "country": "Ukraine",
+      "lat": 48.4,
+      "lon": 31.2,
+      "publishedAt": "2026-07-12T00:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-45-0",
+          "publishedAt": "2026-07-12T00:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-45",
+      "primaryDomain": "placeholder-news.example"
+    },
+    {
+      "id": "evt_46",
+      "title": "[SAMPLE] Port closure delays regional shipments — Pakistan",
+      "bluf": "Port closure delays regional shipments. Classified under Supply Chain. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "supply_chain",
+      "categoryLabel": "Supply Chain",
+      "categoryColor": "#c98a3e",
+      "severity": "MEDIUM",
+      "country": "Pakistan",
+      "lat": 30.4,
+      "lon": 69.3,
+      "publishedAt": "2026-07-17T02:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-46-0",
+          "publishedAt": "2026-07-17T02:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-46-1",
+          "publishedAt": "2026-07-17T02:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-46",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_47",
+      "title": "[SAMPLE] Factory fire halts production at key supplier — Brazil",
+      "bluf": "Factory fire halts production at key supplier. Classified under Supply Chain. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "supply_chain",
+      "categoryLabel": "Supply Chain",
+      "categoryColor": "#c98a3e",
+      "severity": "LOW",
+      "country": "Brazil",
+      "lat": -10.3,
+      "lon": -53.2,
+      "publishedAt": "2026-07-16T16:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-47-0",
+          "publishedAt": "2026-07-16T16:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-47-1",
+          "publishedAt": "2026-07-16T16:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-47-2",
+          "publishedAt": "2026-07-16T16:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-47",
+      "primaryDomain": "sample-wire.example"
+    },
+    {
+      "id": "evt_48",
+      "title": "[SAMPLE] Shareholder lawsuit filed over disclosure failures — Nigeria",
+      "bluf": "Shareholder lawsuit filed over disclosure failures. Classified under Corporate Reputation. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "corporate_reputation",
+      "categoryLabel": "Corporate Reputation",
+      "categoryColor": "#5b8def",
+      "severity": "HIGH",
+      "country": "Nigeria",
+      "lat": 9.1,
+      "lon": 8.7,
+      "publishedAt": "2026-07-11T20:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-48-0",
+          "publishedAt": "2026-07-11T20:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-48-1",
+          "publishedAt": "2026-07-11T20:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-48",
+      "primaryDomain": "sample-wire.example"
+    },
+    {
+      "id": "evt_49",
+      "title": "[SAMPLE] Shareholder lawsuit filed over disclosure failures — Brazil",
+      "bluf": "Shareholder lawsuit filed over disclosure failures. Classified under Corporate Reputation. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "corporate_reputation",
+      "categoryLabel": "Corporate Reputation",
+      "categoryColor": "#5b8def",
+      "severity": "HIGH",
+      "country": "Brazil",
+      "lat": -10.3,
+      "lon": -53.2,
+      "publishedAt": "2026-07-11T15:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-49-0",
+          "publishedAt": "2026-07-11T15:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-49-1",
+          "publishedAt": "2026-07-11T15:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-49-2",
+          "publishedAt": "2026-07-11T15:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-49",
+      "primaryDomain": "sample-bulletin.example"
+    },
+    {
+      "id": "evt_50",
+      "title": "[SAMPLE] Regulatory investigation launched into corporate practices — United Kingdom",
+      "bluf": "Regulatory investigation launched into corporate practices. Classified under Corporate Reputation. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "corporate_reputation",
+      "categoryLabel": "Corporate Reputation",
+      "categoryColor": "#5b8def",
+      "severity": "HIGH",
+      "country": "United Kingdom",
+      "lat": 54,
+      "lon": -2.9,
+      "publishedAt": "2026-07-14T01:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-50-0",
+          "publishedAt": "2026-07-14T01:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-50-1",
+          "publishedAt": "2026-07-14T01:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-50-2",
+          "publishedAt": "2026-07-14T01:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-50-3",
+          "publishedAt": "2026-07-14T01:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-50",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_51",
+      "title": "[SAMPLE] Shareholder lawsuit filed over disclosure failures — Mexico",
+      "bluf": "Shareholder lawsuit filed over disclosure failures. Classified under Corporate Reputation. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "corporate_reputation",
+      "categoryLabel": "Corporate Reputation",
+      "categoryColor": "#5b8def",
+      "severity": "MEDIUM",
+      "country": "Mexico",
+      "lat": 23.6,
+      "lon": -102.5,
+      "publishedAt": "2026-07-11T10:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-51-0",
+          "publishedAt": "2026-07-11T10:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-51",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_52",
+      "title": "[SAMPLE] Regulatory investigation launched into corporate practices — United States",
+      "bluf": "Regulatory investigation launched into corporate practices. Classified under Corporate Reputation. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "corporate_reputation",
+      "categoryLabel": "Corporate Reputation",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "United States",
+      "lat": 39.8,
+      "lon": -98.6,
+      "publishedAt": "2026-07-12T02:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-52-0",
+          "publishedAt": "2026-07-12T02:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-52-1",
+          "publishedAt": "2026-07-12T02:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-52",
+      "primaryDomain": "placeholder-news.example"
+    },
+    {
+      "id": "evt_53",
+      "title": "[SAMPLE] Cabinet resignations deepen political crisis — United Kingdom",
+      "bluf": "Cabinet resignations deepen political crisis. Classified under Political Instability. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "political_instability",
+      "categoryLabel": "Political Instability",
+      "categoryColor": "#b06ab3",
+      "severity": "HIGH",
+      "country": "United Kingdom",
+      "lat": 54,
+      "lon": -2.9,
+      "publishedAt": "2026-07-12T20:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-53-0",
+          "publishedAt": "2026-07-12T20:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-53-1",
+          "publishedAt": "2026-07-12T20:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-53-2",
+          "publishedAt": "2026-07-12T20:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-53-3",
+          "publishedAt": "2026-07-12T20:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-53",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_54",
+      "title": "[SAMPLE] Government declares state of emergency amid unrest — Nigeria",
+      "bluf": "Government declares state of emergency amid unrest. Classified under Political Instability. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "political_instability",
+      "categoryLabel": "Political Instability",
+      "categoryColor": "#b06ab3",
+      "severity": "LOW",
+      "country": "Nigeria",
+      "lat": 9.1,
+      "lon": 8.7,
+      "publishedAt": "2026-07-14T07:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-54-0",
+          "publishedAt": "2026-07-14T07:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-54-1",
+          "publishedAt": "2026-07-14T07:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-54",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_55",
+      "title": "[SAMPLE] Cabinet resignations deepen political crisis — Philippines",
+      "bluf": "Cabinet resignations deepen political crisis. Classified under Political Instability. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "political_instability",
+      "categoryLabel": "Political Instability",
+      "categoryColor": "#b06ab3",
+      "severity": "LOW",
+      "country": "Philippines",
+      "lat": 12.9,
+      "lon": 121.8,
+      "publishedAt": "2026-07-15T01:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-55-0",
+          "publishedAt": "2026-07-15T01:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-55-1",
+          "publishedAt": "2026-07-15T01:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-55-2",
+          "publishedAt": "2026-07-15T01:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-55",
+      "primaryDomain": "demo-gazette.example"
+    },
+    {
+      "id": "evt_56",
+      "title": "[SAMPLE] Government declares state of emergency amid unrest — United Kingdom",
+      "bluf": "Government declares state of emergency amid unrest. Classified under Political Instability. Reported by 4 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "political_instability",
+      "categoryLabel": "Political Instability",
+      "categoryColor": "#b06ab3",
+      "severity": "MEDIUM",
+      "country": "United Kingdom",
+      "lat": 54,
+      "lon": -2.9,
+      "publishedAt": "2026-07-11T14:34:39.167Z",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-56-0",
+          "publishedAt": "2026-07-11T14:34:39.167Z"
+        },
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-56-1",
+          "publishedAt": "2026-07-11T14:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-56-2",
+          "publishedAt": "2026-07-11T14:34:39.167Z"
+        },
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-56-3",
+          "publishedAt": "2026-07-11T14:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-56",
+      "primaryDomain": "placeholder-news.example"
+    },
+    {
+      "id": "evt_57",
+      "title": "[SAMPLE] Government declares state of emergency amid unrest — Brazil",
+      "bluf": "Government declares state of emergency amid unrest. Classified under Political Instability. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "political_instability",
+      "categoryLabel": "Political Instability",
+      "categoryColor": "#b06ab3",
+      "severity": "HIGH",
+      "country": "Brazil",
+      "lat": -10.3,
+      "lon": -53.2,
+      "publishedAt": "2026-07-16T12:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "placeholder-news.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-57-0",
+          "publishedAt": "2026-07-16T12:34:39.167Z"
+        },
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-57-1",
+          "publishedAt": "2026-07-16T12:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-57",
+      "primaryDomain": "sample-wire.example"
+    },
+    {
+      "id": "evt_58",
+      "title": "[SAMPLE] Troop movements reported near contested border — United States",
+      "bluf": "Troop movements reported near contested border. Classified under Geopolitical Events. Reported by 1 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "geopolitical",
+      "categoryLabel": "Geopolitical Events",
+      "categoryColor": "#4a7fc9",
+      "severity": "MEDIUM",
+      "country": "United States",
+      "lat": 39.8,
+      "lon": -98.6,
+      "publishedAt": "2026-07-15T15:34:39.167Z",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "domain": "sample-bulletin.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-58-0",
+          "publishedAt": "2026-07-15T15:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-58",
+      "primaryDomain": "placeholder-news.example"
+    },
+    {
+      "id": "evt_59",
+      "title": "[SAMPLE] Troop movements reported near contested border — Brazil",
+      "bluf": "Troop movements reported near contested border. Classified under Geopolitical Events. Reported by 3 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "geopolitical",
+      "categoryLabel": "Geopolitical Events",
+      "categoryColor": "#4a7fc9",
+      "severity": "HIGH",
+      "country": "Brazil",
+      "lat": -10.3,
+      "lon": -53.2,
+      "publishedAt": "2026-07-14T02:34:39.167Z",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "domain": "demo-gazette.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-59-0",
+          "publishedAt": "2026-07-14T02:34:39.167Z"
+        },
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-59-1",
+          "publishedAt": "2026-07-14T02:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-59-2",
+          "publishedAt": "2026-07-14T02:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-59",
+      "primaryDomain": "demo-press.example"
+    },
+    {
+      "id": "evt_60",
+      "title": "[SAMPLE] New sanctions announced amid diplomatic tensions — Egypt",
+      "bluf": "New sanctions announced amid diplomatic tensions. Classified under Geopolitical Events. Reported by 2 outlet(s). (Synthetic placeholder data - replace once the pipeline runs.)",
+      "category": "geopolitical",
+      "categoryLabel": "Geopolitical Events",
+      "categoryColor": "#4a7fc9",
+      "severity": "MEDIUM",
+      "country": "Egypt",
+      "lat": 26.8,
+      "lon": 30.8,
+      "publishedAt": "2026-07-15T06:34:39.167Z",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "domain": "sample-wire.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-60-0",
+          "publishedAt": "2026-07-15T06:34:39.167Z"
+        },
+        {
+          "domain": "demo-press.example",
+          "label": "Sample Source",
+          "url": "https://sample-wire.example/story-60-1",
+          "publishedAt": "2026-07-15T06:34:39.167Z"
+        }
+      ],
+      "primaryUrl": "https://sample-wire.example/story-60",
+      "primaryDomain": "placeholder-news.example"
+    }
+  ]
+}
