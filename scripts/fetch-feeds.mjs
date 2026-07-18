@@ -45,6 +45,17 @@ function textOf(node) {
   return "";
 }
 
+/** Accepts whatever a user typed - "tribune.com", "www.tribune.com",
+ *  "http://tribune.com" - and normalizes it into a proper absolute URL with
+ *  a scheme, so the rest of the pipeline can always call new URL()/fetch()
+ *  on it safely. This is what lets someone add a feed by just typing a bare
+ *  domain instead of needing to know it has to be a full https:// URL. */
+function normalizeUrl(input) {
+  let u = (input || "").trim();
+  if (!/^https?:\/\//i.test(u)) u = "https://" + u;
+  return u;
+}
+
 /** Reads the active feed list from Supabase (public read policy - see supabase/schema.sql). */
 async function fetchFeedListFromSupabase() {
   if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
@@ -117,6 +128,17 @@ function discoverFeedUrl(html, baseUrl) {
   return null;
 }
 
+/** Common paths where a working feed lives even when a site doesn't advertise
+ *  it via a <link> tag - this covers most WordPress sites ("/feed"), Blogger
+ *  ("/feeds/posts/default"), and other common CMS defaults. Tried in order,
+ *  first one that actually returns valid RSS/Atom XML wins. This is what
+ *  makes "just add the homepage, no RSS-hunting required" actually work for
+ *  the majority of news sites, not just the ones with a visible <link> tag. */
+const COMMON_FEED_PATHS = [
+  "/feed", "/feed/", "/rss", "/rss/", "/rss.xml", "/atom.xml",
+  "/feeds/posts/default", "/index.xml", "/feed.xml", "/rss/index.xml"
+];
+
 async function fetchWithTimeout(url, timeoutMs, controller) {
   const res = await fetch(url, {
     signal: controller.signal,
@@ -127,18 +149,43 @@ async function fetchWithTimeout(url, timeoutMs, controller) {
 }
 
 /** Fetches feed.url as-is; if it's not actually XML (e.g. someone pasted a
- *  homepage instead of a feed URL), auto-discovers the real feed link from
- *  the page's own <link> tag and fetches that instead. */
-async function resolveAndFetchXml(url, timeoutMs, controller) {
+ *  bare homepage instead of a feed URL), auto-discovers the real feed link
+ *  from the page's own <link> tag, and if that's not present either, tries
+ *  a list of common feed paths before giving up. This three-step cascade is
+ *  what lets someone add "tribune.com" and get working articles without
+ *  ever having to find the actual RSS URL themselves. */
+async function resolveAndFetchXml(rawUrl, timeoutMs, controller) {
+  const url = normalizeUrl(rawUrl);
   const text = await fetchWithTimeout(url, timeoutMs, controller);
   if (looksLikeFeed(text)) return text;
 
+  // Step 2: look for the site's own <link rel="alternate"> tag.
   const discovered = discoverFeedUrl(text, url);
-  if (!discovered) throw new Error("No RSS/Atom feed found on this page (no <link rel=\"alternate\"> tag) - this site may not publish RSS at all.");
+  if (discovered) {
+    try {
+      const feedText = await fetchWithTimeout(discovered, timeoutMs, controller);
+      if (looksLikeFeed(feedText)) return feedText;
+    } catch {
+      // fall through to common-path guessing below
+    }
+  }
 
-  const feedText = await fetchWithTimeout(discovered, timeoutMs, controller);
-  if (!looksLikeFeed(feedText)) throw new Error(`Discovered link (${discovered}) didn't return valid RSS/Atom either.`);
-  return feedText;
+  // Step 3: try common feed paths off the same origin.
+  let origin;
+  try { origin = new URL(url).origin; } catch { origin = null; }
+  if (origin) {
+    for (const path of COMMON_FEED_PATHS) {
+      try {
+        const candidate = origin + path;
+        const feedText = await fetchWithTimeout(candidate, timeoutMs, controller);
+        if (looksLikeFeed(feedText)) return feedText;
+      } catch {
+        // try the next path
+      }
+    }
+  }
+
+  throw new Error("No RSS/Atom feed found - checked the page's own <link> tag and common feed paths (/feed, /rss, /rss.xml, etc). This site may not publish RSS, or its feed lives somewhere non-standard.");
 }
 
 export async function fetchAllFeeds({ timeoutMs = 15000 } = {}) {
