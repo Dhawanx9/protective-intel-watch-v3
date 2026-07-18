@@ -11,20 +11,11 @@
 // category forever. This is the single source of truth for classification;
 // nothing else should reimplement it.
 import { readFile } from "node:fs/promises";
-import { analyzeCorporateSignal } from "./corporate-signals.mjs";
+import { analyzeCorporateSignal, hasExecutiveIncidentNearby } from "./corporate-signals.mjs";
 
 const CATEGORIES_PATH = new URL("../config/categories.json", import.meta.url);
 const COUNTRIES_PATH = new URL("../config/countries.json", import.meta.url);
 const NATIONALITY_ALIASES_PATH = new URL("../config/nationality-aliases.json", import.meta.url);
-
-// Categories where, if the story ALSO names an actual executive title
-// (CEO, Chairman, Director, etc.), it should be reclassified as an Executive
-// Threat instead - e.g. "CEO kidnapped" belongs in Executive Threats, not
-// just Kidnapping. Without an executive title present, these categories
-// keep their own natural classification.
-const RECLASSIFY_TO_EXECUTIVE_IF_TITLED = new Set([
-  "kidnapping", "crime", "terrorism", "political_instability", "geopolitical",
-]);
 
 const REGION_FALLBACK = { India: "India", UK: "United Kingdom", USA: "United States" };
 
@@ -122,6 +113,17 @@ export async function loadClassifierConfigs() {
  * Classifies a single article. Returns null if the article should be dropped
  * (noise, satire, narrative piece, or no relevant category matched).
  *
+ * IMPORTANT: Executive Threats is deliberately NOT part of the normal
+ * keyword-matching pool (see classify() call below, which excludes it).
+ * A bare incident word like "extortion" or "misconduct" matches all sorts of
+ * unrelated stories (police corruption, random crime, celebrity gossip) -
+ * it only means something as an EXECUTIVE threat when paired with an actual
+ * executive title AND genuine corporate context AND isn't reading as
+ * political. All three conditions are required together; none of them
+ * alone is sufficient. This was the repeated source of false positives
+ * (bare "chairman"/"ceo" mentions, then bare "extortion"/"kidnap" mentions) -
+ * fixing it structurally here instead of patching one keyword at a time.
+ *
  * @param {object} article - { title, description, domain, region, existingCountry }
  * @param {object} configs - result of loadClassifierConfigs()
  */
@@ -134,23 +136,34 @@ export function classifyArticle(article, configs) {
   if (isNarrativeNoise(title, narrativeExclude)) return null;
   if (isSatireSource(domain, satireDomains)) return null;
 
-  let category = classify(title, categories);
-  if (!category) return null; // not relevant to protective intelligence - drop it
-
-  const regionFallback = region ? (REGION_FALLBACK[region] || null) : null;
-  const country = detectCountry(title, description, countries, nationalityAliases, regionFallback || existingCountry);
+  // Executive Threats is excluded from the normal candidate pool - it's only
+  // ever assigned below, via the strict three-part check.
+  const nonExecutiveCategories = categories.filter(c => c.id !== "executive_threats");
+  let category = classify(title, nonExecutiveCategories);
 
   const { hasExecutiveTitle, corporateScore, isCorporate, isLikelyPolitical } =
     analyzeCorporateSignal(title, description);
 
-  // Reclassify into Executive Threats only when the story actually names an
-  // executive title AND has real corporate context (isCorporate) AND isn't
-  // reading as political (isLikelyPolitical) - e.g. "CEO kidnapped at
-  // company headquarters" qualifies, but a politician's speech that happens
-  // to mention "President" somewhere in the body does not.
-  if (hasExecutiveTitle && isCorporate && !isLikelyPolitical && executiveThreatsCategory && RECLASSIFY_TO_EXECUTIVE_IF_TITLED.has(category.id)) {
+  // The title and the incident phrase must appear NEAR each other in the
+  // text (not just anywhere in the same article) - this is what stops a
+  // police "Director" mentioned in an unrelated paragraph of a terrorism
+  // story from ever counting as an executive incident.
+  const fullText = `${title} ${description}`;
+  const hasExecutiveIncidentNear = executiveThreatsCategory
+    ? hasExecutiveIncidentNearby(fullText, executiveThreatsCategory.keywords)
+    : false;
+
+  const isGenuineExecutiveThreat =
+    hasExecutiveIncidentNear && isCorporate && !isLikelyPolitical;
+
+  if (isGenuineExecutiveThreat && executiveThreatsCategory) {
     category = executiveThreatsCategory;
   }
+
+  if (!category) return null; // not relevant to protective intelligence - drop it
+
+  const regionFallback = region ? (REGION_FALLBACK[region] || null) : null;
+  const country = detectCountry(title, description, countries, nationalityAliases, regionFallback || existingCountry);
 
   return {
     category: category.id,
