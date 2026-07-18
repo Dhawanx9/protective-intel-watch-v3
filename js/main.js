@@ -24,7 +24,6 @@ function tickClock() {
 async function loadData({ isRefresh = false } = {}) {
   try {
     const { events, meta } = await loadIntelligenceData();
-
     if (isRefresh && previousEventIds.size) {
       const newOnes = events.filter(e => !previousEventIds.has(e.id));
       if (newOnes.length && store.data.settings.notificationsEnabled) {
@@ -38,7 +37,6 @@ async function loadData({ isRefresh = false } = {}) {
       }
       events.forEach(e => { e.isNew = !previousEventIds.has(e.id); });
     }
-
     previousEventIds = new Set(events.map(e => e.id));
     store.setEvents(events, meta);
     const banner = document.getElementById("sampleDataBanner");
@@ -73,10 +71,25 @@ function initScrollTop() {
   btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 }
 
+/** The global search box only actually filters something on the Live Feed
+ *  view - on every other view (Executive Summary, Map, Analytics, Daily
+ *  Brief, Feed Manager, Settings) typing into it does nothing, which is
+ *  confusing. Hide it everywhere except Live Feed instead of showing a
+ *  non-functional input on every page. */
+function toggleSearchBoxVisibility(view) {
+  const box = document.querySelector(".search-box");
+  if (!box) return;
+  box.style.display = view === "feed" ? "" : "none";
+}
+
 async function main() {
   initTheme();
+  toggleSearchBoxVisibility("dashboard"); // matches the default active view in index.html
   initRouter({
-    onChange: (view) => { if (view === "map") onMapViewShown(); }
+    onChange: (view) => {
+      if (view === "map") onMapViewShown();
+      toggleSearchBoxVisibility(view);
+    }
   });
   initFilters();
   initSummary();
@@ -89,10 +102,8 @@ async function main() {
   initSettings({ onRefreshIntervalChange: scheduleRefresh });
   bindManualRefresh();
   initScrollTop();
-
   setInterval(tickClock, 1000);
   tickClock();
-
   await loadData();
   scheduleRefresh(store.data.settings.refreshIntervalMinutes);
 }
