@@ -84,9 +84,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-      - name: Deploy to Cloudflare Pages (Direct Upload, doesn't count as a "build")
+      - name: Deploy to Cloudflare (Workers with static assets, Direct Upload - doesn't count as a "build")
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy . --project-name=protective-intel-watch --branch=main
+          command: deploy
