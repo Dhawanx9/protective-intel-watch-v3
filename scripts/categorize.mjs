@@ -6,15 +6,13 @@ import { analyzeCorporateSignal } from "./corporate-signals.mjs";
 
 const CATEGORIES_PATH = new URL("../config/categories.json", import.meta.url);
 const COUNTRIES_PATH = new URL("../config/countries.json", import.meta.url);
+const NATIONALITY_ALIASES_PATH = new URL("../config/nationality-aliases.json", import.meta.url);
 
 // Categories where, if the story ALSO names an actual executive title
 // (CEO, Chairman, Director, etc.), it should be reclassified as an Executive
 // Threat instead - e.g. "CEO kidnapped" belongs in Executive Threats, not
 // just Kidnapping. Without an executive title present, these categories
-// keep their own natural classification (an insurgency kidnapping story, an
-// oligarch assassination attempt, or a romance-scam fraud story are real
-// news but not executive-specific, so they should NOT land in Executive
-// Threats just because they share a generic word like "kidnap" or "fraud").
+// keep their own natural classification.
 const RECLASSIFY_TO_EXECUTIVE_IF_TITLED = new Set([
   "kidnapping", "crime", "terrorism", "political_instability", "geopolitical",
 ]);
@@ -31,6 +29,23 @@ function isPositiveNoise(title, positiveExclude) {
 function isIrrelevantNoise(title, irrelevantExclude) {
   const low = title.toLowerCase();
   return (irrelevantExclude || []).some(w => low.includes(w));
+}
+
+/** First-person essays, memoirs, and op-eds often use dramatic threat-adjacent
+ *  language ("I survived...", "I evaded...") but aren't news events at all -
+ *  they're personal narrative pieces, sometimes published years after the
+ *  fact. Filtered out the same way as sports/entertainment noise. */
+function isNarrativeNoise(title, narrativeExclude) {
+  const low = title.toLowerCase();
+  return (narrativeExclude || []).some(w => low.includes(w));
+}
+
+/** Satire sites occasionally get picked up by RSS aggregation the same way
+ *  real news does. Checked by domain rather than title text, since satire
+ *  headlines are deliberately written to sound like real news. */
+function isSatireSource(primaryDomain, satireDomains) {
+  if (!primaryDomain) return false;
+  return (satireDomains || []).some(d => primaryDomain.toLowerCase().includes(d));
 }
 
 function classify(title, categories) {
@@ -61,49 +76,50 @@ function generateBLUF(cluster, category) {
 
 const REGION_FALLBACK = { India: "India", UK: "United Kingdom", USA: "United States" };
 
-function detectCountry(cluster, countries) {
+/** Detects country by: (1) exact country name mention, (2) nationality
+ *  adjective or major city name via the alias map (e.g. "Iranian", "Tehran"
+ *  -> Iran), (3) the feed's own region as a last-resort approximation. This
+ *  catches the large share of stories that reference a country indirectly
+ *  ("Iranian officials said...") rather than naming it outright. */
+function detectCountry(cluster, countries, nationalityAliases) {
   const names = Object.keys(countries);
   const hay = (cluster.title + " " + (cluster.items[0]?.description || "")).toLowerCase();
+
   for (const name of names) {
     if (hay.includes(name.toLowerCase())) return name;
   }
-  // No explicit country mentioned - fall back to the feed's own region as an
-  // approximation, so Threats-by-Country and the map get something instead
-  // of piling everything into "Unknown".
+
+  for (const [alias, country] of Object.entries(nationalityAliases || {})) {
+    if (hay.includes(alias)) return country;
+  }
+
   return REGION_FALLBACK[cluster.items[0]?.region] || null;
 }
 
 export async function categorizeClusters(clusters) {
-  const { categories, severity, positiveExclude, irrelevantExclude } = JSON.parse(await readFile(CATEGORIES_PATH, "utf8"));
+  const { categories, severity, positiveExclude, irrelevantExclude, narrativeExclude, satireDomains } =
+    JSON.parse(await readFile(CATEGORIES_PATH, "utf8"));
   const countries = JSON.parse(await readFile(COUNTRIES_PATH, "utf8"));
+  const nationalityAliases = JSON.parse(await readFile(NATIONALITY_ALIASES_PATH, "utf8"));
   const executiveThreatsCategory = categories.find(c => c.id === "executive_threats");
   const out = [];
 
   for (const cluster of clusters) {
     if (isPositiveNoise(cluster.title, positiveExclude)) continue;
     if (isIrrelevantNoise(cluster.title, irrelevantExclude)) continue;
+    if (isNarrativeNoise(cluster.title, narrativeExclude)) continue;
+    if (isSatireSource(cluster.items[0]?.domain, satireDomains)) continue;
 
     let category = classify(cluster.title, categories);
     if (!category) continue; // not relevant to protective intelligence - drop it
 
-    const country = detectCountry(cluster, countries);
+    const country = detectCountry(cluster, countries, nationalityAliases);
     const coords = country ? countries[country] : null;
 
-    // Corporate/MNC signal - applies across every category, not just Executive
-    // Threats. We are a corporate-focused team: when the same words could be
-    // read either politically or corporately (e.g. "President", "Director"),
-    // corporate context should rank first. Political/other stories are never
-    // hidden - they're just deprioritized relative to corporate ones.
     const description = cluster.items[0]?.description || "";
     const { hasExecutiveTitle, corporateScore, isCorporate, isLikelyPolitical } =
       analyzeCorporateSignal(cluster.title, description);
 
-    // Reclassify into Executive Threats only when the story actually names an
-    // executive title AND landed in one of the generic categories that used
-    // to leak into Executive Threats via shared words (kidnap, assassinat,
-    // fraud, etc). A Nigerian insurgency story or an oligarch assassination
-    // attempt with no executive title stays in its natural category instead
-    // of cluttering Executive Threats.
     if (hasExecutiveTitle && executiveThreatsCategory && RECLASSIFY_TO_EXECUTIVE_IF_TITLED.has(category.id)) {
       category = executiveThreatsCategory;
     }
@@ -124,8 +140,6 @@ export async function categorizeClusters(clusters) {
       sources: cluster.items.map(it => ({ domain: it.domain, label: it.sourceLabel, url: it.url, publishedAt: it.publishedAt })),
       primaryUrl: cluster.items[0].url,
       primaryDomain: cluster.items[0].domain,
-      // New fields for corporate prioritization - safe to ignore if the
-      // frontend doesn't read them yet, nothing existing is removed.
       hasExecutiveTitle,
       corporateScore,
       isCorporate,
@@ -133,11 +147,6 @@ export async function categorizeClusters(clusters) {
     });
   }
 
-  // Corporate-first ordering: within the already-assembled list, push higher
-  // corporateScore items earlier. Array.prototype.sort in Node is stable, so
-  // stories with equal scores keep their original relative order (which
-  // reflects recency from the clustering step) - political/other stories
-  // still appear, just further down.
   out.sort((a, b) => b.corporateScore - a.corporateScore);
 
   return out;
