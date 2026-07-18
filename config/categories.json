@@ -4,7 +4,7 @@
       "id": "executive_threats",
       "label": "Executive Threats",
       "color": "#5b8def",
-      "keywords": ["ceo", "chief executive", "executive director", "board member", "chairman", "death threat", "threat against", "stalking", "extortion", "indicted", "embezzlement", "misconduct", "harassment lawsuit"]
+      "keywords": ["death threat", "threat against", "stalking", "extortion", "indicted", "embezzlement", "misconduct", "harassment lawsuit"]
     },
     {
       "id": "facility_threats",
@@ -90,7 +90,7 @@
     "medium": ["injured", "wounded", "clash", "arrest", "threat", "warning", "advisory", "suspect", "evacuat", "unrest", "riot", "breach", "hacked", "ransomware"]
   },
   "positiveExclude": ["award", "praised", "honou", "celebrat", "donat", " wins ", "named to", "promoted to", "appointed as", "charity gala", "philanthrop"],
-  "irrelevantExclude": ["golf", "pga tour", "birdie", "bogey", "tee shot", "box office", "movie review", "album chart", "red carpet", "fashion week", "runway show", "tv series finale", "season premiere", "world cup match", "premier league table", "nba game", "nhl game", "mlb game", "cricket score", "tennis match", "olympic medal", "grammy award", "oscar nomination", "celebrity couple", "reality show"],
+  "irrelevantExclude": ["golf", "pga tour", "the open", "birdie", "bogey", "tee shot", "box office", "movie review", "album chart", "red carpet", "fashion week", "runway show", "tv series finale", "season premiere", "world cup match", "premier league table", "nba game", "nhl game", "mlb game", "cricket score", "tennis match", "olympic medal", "grammy award", "oscar nomination", "celebrity couple", "reality show"],
   "narrativeExclude": ["i was in", "i recorded", "i survived", "my story:", "opinion:", "op-ed:", "analysis:", "how i escaped", "the day i", "in my own words", "first person:", "i evaded", "i witnessed"],
   "satireDomains": ["theonion.com", "babylonbee.com", "reductress.com", "thedailymash.co.uk", "waterfordwhispersnews.com", "clickhole.com", "thebeaverton.com"]
 }
