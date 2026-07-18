@@ -108,6 +108,54 @@ function countMatches(haystack, needles) {
   return needles.reduce((count, n) => lower.includes(n.toLowerCase()) ? count + 1 : count, 0);
 }
 
+// --- Proximity matching --------------------------------------------------
+// A word appearing ANYWHERE in an article is weak evidence - "Director"
+// could be in an unrelated sentence three paragraphs away from the actual
+// incident being reported. This is the root cause of most false positives
+// we've hit (a police "Director" mentioned in a terrorism story, a
+// politician's "President" title mentioned in passing). Proximity matching
+// fixes this permanently and for free: it only counts as a real signal when
+// an executive title and an incident phrase appear close together in the
+// text - the way they actually would if the article is really about a
+// threat TO that executive, rather than the two concepts being unrelated
+// mentions in the same piece.
+const PROXIMITY_WINDOW_CHARS = 80;
+
+function findAllPositions(lowerText, phraseLower) {
+  const positions = [];
+  let idx = lowerText.indexOf(phraseLower);
+  while (idx !== -1) {
+    positions.push(idx);
+    idx = lowerText.indexOf(phraseLower, idx + 1);
+  }
+  return positions;
+}
+
+/**
+ * Returns true only if an executive title AND one of the given incident
+ * phrases both appear in the text, AND at least one occurrence of each is
+ * within PROXIMITY_WINDOW_CHARS characters of the other - i.e. they're
+ * plausibly talking about the same thing, not just two unrelated mentions
+ * anywhere in a long article.
+ */
+export function hasExecutiveIncidentNearby(text, incidentPhrases) {
+  const lower = (text || "").toLowerCase();
+
+  const titlePositions = [];
+  for (const t of EXECUTIVE_TITLES) {
+    titlePositions.push(...findAllPositions(lower, t.toLowerCase()));
+  }
+  if (!titlePositions.length) return false;
+
+  const incidentPositions = [];
+  for (const w of incidentPhrases || []) {
+    incidentPositions.push(...findAllPositions(lower, w.toLowerCase()));
+  }
+  if (!incidentPositions.length) return false;
+
+  return titlePositions.some(tp => incidentPositions.some(ip => Math.abs(tp - ip) <= PROXIMITY_WINDOW_CHARS));
+}
+
 /**
  * Analyzes an article's title + description and returns a corporate-signal
  * score plus a boolean flag the frontend/pipeline can use for sorting.
@@ -140,7 +188,7 @@ export function analyzeCorporateSignal(title = "", description = "") {
   // Political wins only if political signals clearly outweigh corporate ones.
   const isLikelyPolitical = politicalContextHits > 0 && politicalContextHits >= corporateContextHits + (hasCorporateSuffix ? 1 : 0);
 
-  const isCorporate = !isLikelyPolitical && (hasCorporateSuffix || corporateContextHits > 0 || (hasExecutiveTitle && politicalContextHits === 0));
+  const isCorporate = !isLikelyPolitical && (hasCorporateSuffix || corporateContextHits > 0);
 
   return {
     hasExecutiveTitle,
