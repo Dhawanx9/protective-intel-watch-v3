@@ -120,7 +120,16 @@ export async function categorizeClusters(clusters) {
     const { hasExecutiveTitle, corporateScore, isCorporate, isLikelyPolitical } =
       analyzeCorporateSignal(cluster.title, description);
 
-    if (hasExecutiveTitle && executiveThreatsCategory && RECLASSIFY_TO_EXECUTIVE_IF_TITLED.has(category.id)) {
+    // Reclassify into Executive Threats only when the story actually names an
+    // executive title AND has real corporate context (isCorporate) AND isn't
+    // reading as political (isLikelyPolitical) - e.g. "CEO kidnapped at
+    // company headquarters" qualifies, but a politician's speech that happens
+    // to mention "President" somewhere in the body does not. Checking
+    // hasExecutiveTitle alone was too loose - it let political statements
+    // and routine news attributions ("said the Chairman") leak into
+    // Executive Threats just because a title-sounding word appeared anywhere
+    // in the text, regardless of context.
+    if (hasExecutiveTitle && isCorporate && !isLikelyPolitical && executiveThreatsCategory && RECLASSIFY_TO_EXECUTIVE_IF_TITLED.has(category.id)) {
       category = executiveThreatsCategory;
     }
 
