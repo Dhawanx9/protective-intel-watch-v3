@@ -12,6 +12,15 @@ function isPositiveNoise(title, positiveExclude) {
   return positiveExclude.some(w => low.includes(w));
 }
 
+/** Sports/entertainment stories often share vocabulary with real threat
+ *  keywords by coincidence (golf "shooting a round", box-office "explosive
+ *  opening", etc). This is a second, independent noise filter alongside
+ *  positiveExclude, specifically for that category of false positive. */
+function isIrrelevantNoise(title, irrelevantExclude) {
+  const low = title.toLowerCase();
+  return (irrelevantExclude || []).some(w => low.includes(w));
+}
+
 function classify(title, categories) {
   const low = title.toLowerCase();
   let best = null, bestHits = 0;
@@ -53,12 +62,13 @@ function detectCountry(cluster, countries) {
 }
 
 export async function categorizeClusters(clusters) {
-  const { categories, severity, positiveExclude } = JSON.parse(await readFile(CATEGORIES_PATH, "utf8"));
+  const { categories, severity, positiveExclude, irrelevantExclude } = JSON.parse(await readFile(CATEGORIES_PATH, "utf8"));
   const countries = JSON.parse(await readFile(COUNTRIES_PATH, "utf8"));
   const out = [];
 
   for (const cluster of clusters) {
     if (isPositiveNoise(cluster.title, positiveExclude)) continue;
+    if (isIrrelevantNoise(cluster.title, irrelevantExclude)) continue;
 
     const category = classify(cluster.title, categories);
     if (!category) continue; // not relevant to protective intelligence - drop it
