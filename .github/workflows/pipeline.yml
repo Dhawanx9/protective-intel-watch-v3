@@ -13,7 +13,47 @@ concurrency:
   group: "pipeline"
   cancel-in-progress: false
 jobs:
+  # Runs FIRST, always (even on the 10-minute schedule) - its own internal
+  # check decides whether real reclassification work is needed. build-data
+  # depends on this finishing, so data/latest.json can never be generated
+  # from an archive that's mid-correction - the JSON the site actually reads
+  # always reflects whatever this job just fixed, same run, no race.
+  reclassify-archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Check if classifier files changed (or manually triggered)
+        id: check
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Manually triggered - reclassifying regardless of what changed."
+          elif [ "${{ github.event_name }}" = "push" ] && git diff --name-only HEAD^ HEAD | grep -E '^(scripts/categorize\.mjs|scripts/corporate-signals\.mjs|config/categories\.json|config/nationality-aliases\.json)$'; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Set up Node
+        if: steps.check.outputs.changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install dependencies
+        if: steps.check.outputs.changed == 'true'
+        run: npm install --no-audit --no-fund
+      - name: Reclassify entire archive
+        if: steps.check.outputs.changed == 'true'
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
+        run: node scripts/reclassify-archive.mjs
+
   build-data:
+    needs: reclassify-archive
+    if: always() && needs.reclassify-archive.result == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -61,48 +101,9 @@ jobs:
             sleep 3
           done
 
-  # Runs automatically whenever the classification logic itself changes -
-  # reprocesses every article already stored in Supabase against the new
-  # rules, so a classifier fix always applies retroactively across the whole
-  # site. No manual SQL cleanup ever needed again. Uses `paths` so this only
-  # fires on the relevant commits, not every single push.
-  reclassify-archive:
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-      - name: Check if classifier files changed (or manually triggered)
-        id: check
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "Manually triggered - reclassifying regardless of what changed."
-          elif git diff --name-only HEAD^ HEAD | grep -E '^(scripts/categorize\.mjs|scripts/corporate-signals\.mjs|config/categories\.json|config/nationality-aliases\.json)$'; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          fi
-      - name: Set up Node
-        if: steps.check.outputs.changed == 'true'
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - name: Install dependencies
-        if: steps.check.outputs.changed == 'true'
-        run: npm install --no-audit --no-fund
-      - name: Reclassify entire archive
-        if: steps.check.outputs.changed == 'true'
-        env:
-          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
-          SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
-        run: node scripts/reclassify-archive.mjs
-
   deploy-pages:
-    needs: [build-data, reclassify-archive]
-    if: always() && needs.build-data.result == 'success'
+    needs: build-data
+    if: needs.build-data.result == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -123,8 +124,8 @@ jobs:
         uses: actions/deploy-pages@v4
 
   deploy-cloudflare:
-    needs: [build-data, reclassify-archive]
-    if: always() && needs.build-data.result == 'success'
+    needs: build-data
+    if: needs.build-data.result == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout (latest, post-commit)
