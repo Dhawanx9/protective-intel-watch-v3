@@ -1,10 +1,13 @@
 {
-  // Tells Cloudflare this Worker just serves a folder of static files - no
-  // custom server code needed, matching how GitHub Pages already serves this
-  // same repo root as a plain static site.
+  // Tells Cloudflare this Worker serves a folder of static files, with
+  // worker.js as the required entry-point (just hands requests to ASSETS -
+  // see worker.js). Matches how GitHub Pages already serves this same repo
+  // root as a plain static site.
   "name": "protective-intel-watch",
   "compatibility_date": "2026-07-18",
+  "main": "worker.js",
   "assets": {
-    "directory": "./"
+    "directory": "./",
+    "binding": "ASSETS"
   }
 }
