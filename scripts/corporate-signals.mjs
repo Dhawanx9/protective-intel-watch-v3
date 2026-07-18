@@ -98,14 +98,45 @@ const CORPORATE_SUFFIXES = [
   "Technologies", "Solutions", "Systems", "Co.",
 ];
 
+function escapeRegex(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/** Whole-word match only - "cto" will NOT match inside "inspector", "vp"
+ *  will NOT match inside an unrelated word, etc. This is the permanent fix
+ *  for the class of bug where a short acronym (CTO, VP, COO, CFO, CRO...)
+ *  happens to be a substring of a completely unrelated ordinary word.
+ *  Plain .includes() has no concept of word boundaries; lookaround
+ *  assertions do, and unlike \b they correctly treat things like
+ *  apostrophes or accented letters as non-word characters too. Used for
+ *  every phrase check in this file, not just short ones - multi-word
+ *  phrases benefit from the same safety. */
+function wordBoundaryTest(lowerText, phraseLower) {
+  const escaped = escapeRegex(phraseLower);
+  const re = new RegExp(`(?<![a-z0-9])${escaped}(?![a-z0-9])`, "i");
+  return re.test(lowerText);
+}
+
+function findAllWordBoundaryPositions(lowerText, phraseLower) {
+  const escaped = escapeRegex(phraseLower);
+  const re = new RegExp(`(?<![a-z0-9])${escaped}(?![a-z0-9])`, "gi");
+  const positions = [];
+  let match;
+  while ((match = re.exec(lowerText)) !== null) {
+    positions.push(match.index);
+    if (match[0].length === 0) re.lastIndex++; // safety against zero-length matches
+  }
+  return positions;
+}
+
 function containsAny(haystack, needles) {
   const lower = haystack.toLowerCase();
-  return needles.some(n => lower.includes(n.toLowerCase()));
+  return needles.some(n => wordBoundaryTest(lower, n.toLowerCase()));
 }
 
 function countMatches(haystack, needles) {
   const lower = haystack.toLowerCase();
-  return needles.reduce((count, n) => lower.includes(n.toLowerCase()) ? count + 1 : count, 0);
+  return needles.reduce((count, n) => wordBoundaryTest(lower, n.toLowerCase()) ? count + 1 : count, 0);
 }
 
 // --- Proximity matching --------------------------------------------------
@@ -121,35 +152,25 @@ function countMatches(haystack, needles) {
 // mentions in the same piece.
 const PROXIMITY_WINDOW_CHARS = 80;
 
-function findAllPositions(lowerText, phraseLower) {
-  const positions = [];
-  let idx = lowerText.indexOf(phraseLower);
-  while (idx !== -1) {
-    positions.push(idx);
-    idx = lowerText.indexOf(phraseLower, idx + 1);
-  }
-  return positions;
-}
-
 /**
  * Returns true only if an executive title AND one of the given incident
- * phrases both appear in the text, AND at least one occurrence of each is
- * within PROXIMITY_WINDOW_CHARS characters of the other - i.e. they're
- * plausibly talking about the same thing, not just two unrelated mentions
- * anywhere in a long article.
+ * phrases both appear in the text as WHOLE WORDS (not substrings hiding
+ * inside unrelated words - e.g. "cto" no longer matches inside
+ * "inspector"), AND at least one occurrence of each is within
+ * PROXIMITY_WINDOW_CHARS characters of the other.
  */
 export function hasExecutiveIncidentNearby(text, incidentPhrases) {
   const lower = (text || "").toLowerCase();
 
   const titlePositions = [];
   for (const t of EXECUTIVE_TITLES) {
-    titlePositions.push(...findAllPositions(lower, t.toLowerCase()));
+    titlePositions.push(...findAllWordBoundaryPositions(lower, t.toLowerCase()));
   }
   if (!titlePositions.length) return false;
 
   const incidentPositions = [];
   for (const w of incidentPhrases || []) {
-    incidentPositions.push(...findAllPositions(lower, w.toLowerCase()));
+    incidentPositions.push(...findAllWordBoundaryPositions(lower, w.toLowerCase()));
   }
   if (!incidentPositions.length) return false;
 
