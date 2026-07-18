@@ -73,7 +73,11 @@ function renderTable(feeds) {
       <td class="mono">${lastPull}</td>
       <td class="mono">${count}</td>
       <td><div class="toggle${f.enabled ? " on" : ""}" data-toggle></div></td>
-      <td class="row-actions"><button class="btn small" data-edit>Edit</button> <button class="btn small danger" data-remove>Delete</button></td>
+      <td class="row-actions">
+        <button class="btn small" data-test>Test now</button>
+        <button class="btn small" data-edit>Edit</button>
+        <button class="btn small danger" data-remove>Delete</button>
+      </td>
     </tr>`;
   }).join("") : `<tr><td colspan="6"><div class="empty-state">No feeds yet. Add one on the right.</div></td></tr>`;
 
@@ -105,6 +109,51 @@ function renderTable(feeds) {
     document.getElementById("addFeedBtn").textContent = "Save changes";
     document.getElementById("addFeedBtn").setAttribute("data-editing-id", id);
   }));
+
+  tbody.querySelectorAll("[data-test]").forEach(b => b.addEventListener("click", () => {
+    const row = b.closest("tr");
+    const id = row.getAttribute("data-id");
+    const feed = feeds.find(f => f.id === id);
+    testFeedNow(feed, b);
+  }));
+}
+
+/** Instant, on-demand feed check - calls the "test-feed" Supabase Edge Function
+ *  so the browser never hits the target RSS URL directly (avoids CORS), and the
+ *  user gets a pass/fail toast in seconds instead of waiting for the next
+ *  10-minute pipeline run. */
+async function testFeedNow(feed, btn) {
+  const originalLabel = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = "Testing\u2026";
+
+  try {
+    const { data, error } = await supabase.functions.invoke("test-feed", {
+      body: { url: feed.url },
+    });
+
+    if (error) throw error;
+
+    if (data?.ok) {
+      notify({
+        message: `${feed.label}: \u2713 ${data.itemCount} item(s) found. Latest: "${data.firstTitle || "\u2014"}"`,
+        severity: "LOW",
+      });
+    } else {
+      notify({
+        message: `${feed.label}: \u2717 ${data?.error || "Unknown error"}`,
+        severity: "HIGH",
+      });
+    }
+  } catch (err) {
+    notify({
+      message: `${feed.label}: couldn't reach the test service (${err.message || err}).`,
+      severity: "HIGH",
+    });
+  } finally {
+    btn.disabled = false;
+    btn.textContent = originalLabel;
+  }
 }
 
 function bindFeedForm() {
