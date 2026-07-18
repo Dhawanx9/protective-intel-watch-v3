@@ -20,9 +20,28 @@ function asArray(x) {
   return Array.isArray(x) ? x : [x];
 }
 
+/** Decodes HTML entities left in feed text after XML parsing. Many RSS feeds
+ *  double-escape their titles in the source XML (e.g. "&amp;#8217;"), so the
+ *  XML parser only unescapes the outer "&amp;" -> "&", leaving a literal
+ *  "&#8217;" string in the text instead of the actual character ('). This
+ *  runs a second pass to catch both numeric character references (&#8217;,
+ *  &#x2019;) and the common named entities. */
+function decodeEntities(str) {
+  if (!str) return str;
+  return str
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, dec) => String.fromCharCode(parseInt(dec, 10)))
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, "\"")
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&nbsp;/g, " ");
+}
+
 function textOf(node) {
-  if (typeof node === "string") return node;
-  if (node && typeof node === "object" && "#text" in node) return String(node["#text"]);
+  if (typeof node === "string") return decodeEntities(node);
+  if (node && typeof node === "object" && "#text" in node) return decodeEntities(String(node["#text"]));
   return "";
 }
 
