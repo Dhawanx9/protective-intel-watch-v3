@@ -50,18 +50,23 @@ async function fetchAllRows() {
  *  keyword was removed, or a new noise filter now catches them) are DELETED
  *  from the archive rather than left with a stale category - this is exactly
  *  the "golf story", "satire piece", "political statement" cleanup that used
- *  to require manual SQL, now handled automatically. */
-async function deleteRows(ids) {
-  if (!ids.length) return;
-  const CHUNK_SIZE = 100;
-  for (let i = 0; i < ids.length; i += CHUNK_SIZE) {
-    const chunk = ids.slice(i, i + CHUNK_SIZE);
-    const filter = chunk.map(id => encodeURIComponent(id)).join(",");
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/articles?id=in.(${filter})`, {
+ *  to require manual SQL, now handled automatically.
+ *
+ *  Deletes one row at a time via `id=eq.<url>` rather than a batched
+ *  `id=in.(...)` filter - article IDs are raw article URLs, which can
+ *  contain characters (commas, parentheses) that make PostgREST's `in.()`
+ *  list syntax ambiguous even after encodeURIComponent. `eq` on a single
+ *  value has no such ambiguity. Slower for large batches, but deletions are
+ *  infrequent and small in volume, so correctness matters more than speed
+ *  here. */
+async function deleteRows(rowsToDelete) {
+  for (const row of rowsToDelete) {
+    console.log(`[reclassify] deleting (no longer relevant): "${row.title}"`);
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/articles?id=eq.${encodeURIComponent(row.id)}`, {
       method: "DELETE",
       headers: supabaseHeaders({ Prefer: "return=minimal" })
     });
-    if (!res.ok) throw new Error(`Failed to delete stale rows: HTTP ${res.status} ${await res.text()}`);
+    if (!res.ok) throw new Error(`Failed to delete "${row.title}": HTTP ${res.status} ${await res.text()}`);
   }
 }
 
@@ -105,7 +110,7 @@ async function main() {
     }, configs);
 
     if (!result) {
-      toDelete.push(row.id);
+      toDelete.push({ id: row.id, title: row.title });
       continue;
     }
 
@@ -117,6 +122,8 @@ async function main() {
       result.isLikelyPolitical !== row.is_likely_political;
 
     if (!changed) { unchanged++; continue; }
+
+    console.log(`[reclassify] updating "${row.title}": ${row.category} -> ${result.category}`);
 
     toUpdate.push({
       id: row.id,
