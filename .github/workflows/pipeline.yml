@@ -35,14 +35,22 @@ jobs:
         run: |
           git config user.name "piw-pipeline-bot"
           git config user.email "actions@users.noreply.github.com"
+
+          # data/latest.json and data/meta.json are fully regenerated every
+          # run - if a competing push landed on main in between our checkout
+          # and push, there's no sensible line-by-line merge for these files
+          # (that's what caused the rebase conflict). So instead of merging,
+          # we keep our freshly-built copy aside, and if the push is rejected
+          # we sync main to the remote's latest state and just reapply our
+          # own version of these two files on top - no conflict possible,
+          # since we always want our own freshly computed data to win.
+          mkdir -p /tmp/piw-data-backup
+          cp data/latest.json /tmp/piw-data-backup/latest.json
+          cp data/meta.json /tmp/piw-data-backup/meta.json
+
           git add data/latest.json data/meta.json
           git diff --cached --quiet && echo "No data changes" || git commit -m "chore: refresh intelligence data [skip ci]"
 
-          # Retry the push a few times, rebasing on top of the remote each time.
-          # This handles the race where a manual commit (e.g. a code fix pushed
-          # by hand) lands on main in the few seconds between this job's
-          # checkout and its push - instead of failing outright, we pull the
-          # newer commits in, replay our data commit on top, and push again.
           attempt=1
           max_attempts=5
           until git push; do
@@ -50,9 +58,13 @@ jobs:
               echo "Push failed after $max_attempts attempts, giving up."
               exit 1
             fi
-            echo "Push rejected (attempt $attempt/$max_attempts) - pulling and retrying..."
+            echo "Push rejected (attempt $attempt/$max_attempts) - syncing with remote and reapplying our data..."
             git fetch origin main
-            git rebase origin/main
+            git reset --hard origin/main
+            cp /tmp/piw-data-backup/latest.json data/latest.json
+            cp /tmp/piw-data-backup/meta.json data/meta.json
+            git add data/latest.json data/meta.json
+            git diff --cached --quiet && echo "No data changes after resync" || git commit -m "chore: refresh intelligence data [skip ci]"
             attempt=$((attempt + 1))
             sleep 3
           done
