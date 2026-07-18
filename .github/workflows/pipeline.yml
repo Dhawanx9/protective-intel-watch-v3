@@ -76,3 +76,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+  deploy-cloudflare:
+    needs: build-data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (latest, post-commit)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Deploy to Cloudflare Pages (Direct Upload, doesn't count as a "build")
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy . --project-name=protective-intel-watch --branch=main
