@@ -1,0 +1,10 @@
+{
+  // Tells Cloudflare this Worker just serves a folder of static files - no
+  // custom server code needed, matching how GitHub Pages already serves this
+  // same repo root as a plain static site.
+  "name": "protective-intel-watch",
+  "compatibility_date": "2026-07-18",
+  "assets": {
+    "directory": "./"
+  }
+}
