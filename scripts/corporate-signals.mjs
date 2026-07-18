@@ -1,0 +1,144 @@
+// scripts/corporate-signals.mjs
+//
+// Detects whether an article is about CORPORATE / MNC leadership and business
+// context, vs. political or other unrelated use of the same job-sounding words
+// (e.g. "President" of a country vs. "President" of a company).
+//
+// Used to boost priority within every category (Executive Threats, and any
+// other section) so corporate-relevant stories always rank above non-corporate
+// ones that happen to match the same category keywords - without hiding the
+// non-corporate stories entirely.
+
+// --- 1. Executive / leadership titles -------------------------------------
+// Matched case-insensitively, as whole phrases, against title + description.
+export const EXECUTIVE_TITLES = [
+  "Chairperson", "Chairman", "Vice Chairperson",
+  "Board of Directors", "Independent Director",
+  "Chief Executive Officer", "CEO",
+  "President", "Chief Operating Officer", "COO",
+  "Chief Financial Officer", "CFO",
+  "Chief Technology Officer", "CTO",
+  "Chief Information Officer", "CIO",
+  "Chief Information Security Officer", "CISO",
+  "Chief Risk Officer", "CRO",
+  "Chief Legal Officer", "CLO",
+  "General Counsel",
+  "Chief Compliance Officer",
+  "Chief Human Resources Officer", "CHRO",
+  "Chief Marketing Officer", "CMO",
+  "Chief Communications Officer", "CCO",
+  "Chief Strategy Officer", "CSO",
+  "Chief Product Officer", "CPO",
+  "Chief Revenue Officer",
+  "Chief Data Officer", "CDO",
+  "Chief Privacy Officer",
+  "Chief Procurement Officer",
+  "Chief Supply Chain Officer",
+  "Chief Administrative Officer", "CAO",
+  "Chief Experience Officer", "CXO",
+  "Managing Director", "Executive Director",
+  "Regional President", "Regional Director",
+  "Country Head", "Business Unit Head", "Division Head",
+  "Executive Vice President", "EVP",
+  "Senior Vice President", "SVP",
+  "Vice President", "VP",
+  "Associate Vice President", "AVP",
+  "Director", "Senior Director", "Assistant Director",
+  "General Manager", "Senior General Manager",
+  "Deputy General Manager", "Assistant General Manager",
+  "Senior Manager", "Manager", "Assistant Manager",
+  "Program Manager", "Project Manager", "Operations Manager",
+  "Security Manager", "Facility Manager", "Site Leader",
+  "Office Head", "Branch Manager", "Plant Manager",
+  "Data Center Manager",
+  "Security Operations Center Manager", "SOC Manager",
+  "Incident Response Manager",
+  "Protective Intelligence Manager",
+  "Executive Protection Manager",
+  "Corporate Security Director",
+  "Corporate Security Manager",
+];
+
+// --- 2. Corporate / business context words ---------------------------------
+// Presence of these alongside a title is a strong signal the title is being
+// used in a company context, not a political or governmental one.
+const CORPORATE_CONTEXT_WORDS = [
+  "company", "corporation", "corporate", "firm", "enterprise",
+  "shareholders", "shareholder", "board meeting", "earnings",
+  "quarterly results", "acquisition", "merger", "headquarters", "hq",
+  "subsidiary", "conglomerate", "multinational", "mnc",
+  "stock", "shares", "ipo", "revenue", "fortune 500", "fortune500",
+  "workforce", "employees", "staff", "layoffs", "office", "campus",
+  "plant", "factory", "facility", "supply chain", "vendor", "client",
+  "customers", "investor", "investors", "board of directors",
+];
+
+// --- 3. Political / government context words --------------------------------
+// Presence of these (without corporate context words) suggests the title is
+// being used politically, not corporately - used to DEPRIORITIZE, never hide.
+const POLITICAL_CONTEXT_WORDS = [
+  "president of the united states", "prime minister", "parliament",
+  "senate", "congress", "election", "campaign", "governor", "mayor",
+  "cabinet", "ministry", "government", "administration", "white house",
+  "party leader", "opposition", "legislature", "president trump",
+  "president biden", "head of state", "diplomat", "embassy",
+];
+
+// --- 4. Common corporate suffixes / company-name patterns -------------------
+const CORPORATE_SUFFIXES = [
+  "Inc.", "Inc", "Corp.", "Corp", "Corporation", "Ltd.", "Ltd", "LLC",
+  "PLC", "Plc", "Group", "Holdings", "Industries", "Enterprises",
+  "Technologies", "Solutions", "Systems", "Co.",
+];
+
+function containsAny(haystack, needles) {
+  const lower = haystack.toLowerCase();
+  return needles.some(n => lower.includes(n.toLowerCase()));
+}
+
+function countMatches(haystack, needles) {
+  const lower = haystack.toLowerCase();
+  return needles.reduce((count, n) => lower.includes(n.toLowerCase()) ? count + 1 : count, 0);
+}
+
+/**
+ * Analyzes an article's title + description and returns a corporate-signal
+ * score plus a boolean flag the frontend/pipeline can use for sorting.
+ *
+ * @param {string} title
+ * @param {string} description
+ * @returns {{
+ *   hasExecutiveTitle: boolean,
+ *   corporateScore: number,
+ *   isCorporate: boolean,
+ *   isLikelyPolitical: boolean
+ * }}
+ */
+export function analyzeCorporateSignal(title = "", description = "") {
+  const text = `${title} ${description}`;
+
+  const hasExecutiveTitle = containsAny(text, EXECUTIVE_TITLES);
+  const corporateContextHits = countMatches(text, CORPORATE_CONTEXT_WORDS);
+  const politicalContextHits = countMatches(text, POLITICAL_CONTEXT_WORDS);
+  const hasCorporateSuffix = containsAny(text, CORPORATE_SUFFIXES);
+
+  // Score: weighted so a title + real corporate context clearly outranks a
+  // title alone (which is often ambiguous, e.g. "Director" could be anything).
+  let corporateScore = 0;
+  if (hasExecutiveTitle) corporateScore += 1;
+  if (hasCorporateSuffix) corporateScore += 2;
+  corporateScore += corporateContextHits * 2;
+  corporateScore -= politicalContextHits * 2;
+
+  // Political wins only if political signals clearly outweigh corporate ones.
+  const isLikelyPolitical = politicalContextHits > 0 && politicalContextHits >= corporateContextHits + (hasCorporateSuffix ? 1 : 0);
+
+  const isCorporate = !isLikelyPolitical && (hasCorporateSuffix || corporateContextHits > 0 || (hasExecutiveTitle && politicalContextHits === 0));
+
+  return {
+    hasExecutiveTitle,
+    corporateScore: Math.max(0, corporateScore),
+    isCorporate,
+    isLikelyPolitical,
+  };
+}
