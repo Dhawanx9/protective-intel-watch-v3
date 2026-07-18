@@ -1,6 +1,8 @@
 // Step 3: assign each clustered story to a threat category, score its severity,
-// and drop anything that isn't relevant to protective intelligence at all.
+// detect whether it's corporate/MNC-relevant vs. political/other, and drop
+// anything that isn't relevant to protective intelligence at all.
 import { readFile } from "node:fs/promises";
+import { analyzeCorporateSignal } from "./corporate-signals.mjs";
 
 const CATEGORIES_PATH = new URL("../config/categories.json", import.meta.url);
 const COUNTRIES_PATH = new URL("../config/countries.json", import.meta.url);
@@ -53,15 +55,25 @@ function detectCountry(cluster, countries) {
 export async function categorizeClusters(clusters) {
   const { categories, severity, positiveExclude } = JSON.parse(await readFile(CATEGORIES_PATH, "utf8"));
   const countries = JSON.parse(await readFile(COUNTRIES_PATH, "utf8"));
-
   const out = [];
+
   for (const cluster of clusters) {
     if (isPositiveNoise(cluster.title, positiveExclude)) continue;
+
     const category = classify(cluster.title, categories);
     if (!category) continue; // not relevant to protective intelligence - drop it
 
     const country = detectCountry(cluster, countries);
     const coords = country ? countries[country] : null;
+
+    // Corporate/MNC signal - applies across every category, not just Executive
+    // Threats. We are a corporate-focused team: when the same words could be
+    // read either politically or corporately (e.g. "President", "Director"),
+    // corporate context should rank first. Political/other stories are never
+    // hidden - they're just deprioritized relative to corporate ones.
+    const description = cluster.items[0]?.description || "";
+    const { hasExecutiveTitle, corporateScore, isCorporate, isLikelyPolitical } =
+      analyzeCorporateSignal(cluster.title, description);
 
     out.push({
       id: cluster.id,
@@ -78,8 +90,22 @@ export async function categorizeClusters(clusters) {
       sourceCount: cluster.sourceCount,
       sources: cluster.items.map(it => ({ domain: it.domain, label: it.sourceLabel, url: it.url, publishedAt: it.publishedAt })),
       primaryUrl: cluster.items[0].url,
-      primaryDomain: cluster.items[0].domain
+      primaryDomain: cluster.items[0].domain,
+      // New fields for corporate prioritization - safe to ignore if the
+      // frontend doesn't read them yet, nothing existing is removed.
+      hasExecutiveTitle,
+      corporateScore,
+      isCorporate,
+      isLikelyPolitical,
     });
   }
+
+  // Corporate-first ordering: within the already-assembled list, push higher
+  // corporateScore items earlier. Array.prototype.sort in Node is stable, so
+  // stories with equal scores keep their original relative order (which
+  // reflects recency from the clustering step) - political/other stories
+  // still appear, just further down.
+  out.sort((a, b) => b.corporateScore - a.corporateScore);
+
   return out;
 }
