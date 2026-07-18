@@ -7,6 +7,18 @@ import { analyzeCorporateSignal } from "./corporate-signals.mjs";
 const CATEGORIES_PATH = new URL("../config/categories.json", import.meta.url);
 const COUNTRIES_PATH = new URL("../config/countries.json", import.meta.url);
 
+// Categories where, if the story ALSO names an actual executive title
+// (CEO, Chairman, Director, etc.), it should be reclassified as an Executive
+// Threat instead - e.g. "CEO kidnapped" belongs in Executive Threats, not
+// just Kidnapping. Without an executive title present, these categories
+// keep their own natural classification (an insurgency kidnapping story, an
+// oligarch assassination attempt, or a romance-scam fraud story are real
+// news but not executive-specific, so they should NOT land in Executive
+// Threats just because they share a generic word like "kidnap" or "fraud").
+const RECLASSIFY_TO_EXECUTIVE_IF_TITLED = new Set([
+  "kidnapping", "crime", "terrorism", "political_instability", "geopolitical",
+]);
+
 function isPositiveNoise(title, positiveExclude) {
   const low = title.toLowerCase();
   return positiveExclude.some(w => low.includes(w));
@@ -64,13 +76,14 @@ function detectCountry(cluster, countries) {
 export async function categorizeClusters(clusters) {
   const { categories, severity, positiveExclude, irrelevantExclude } = JSON.parse(await readFile(CATEGORIES_PATH, "utf8"));
   const countries = JSON.parse(await readFile(COUNTRIES_PATH, "utf8"));
+  const executiveThreatsCategory = categories.find(c => c.id === "executive_threats");
   const out = [];
 
   for (const cluster of clusters) {
     if (isPositiveNoise(cluster.title, positiveExclude)) continue;
     if (isIrrelevantNoise(cluster.title, irrelevantExclude)) continue;
 
-    const category = classify(cluster.title, categories);
+    let category = classify(cluster.title, categories);
     if (!category) continue; // not relevant to protective intelligence - drop it
 
     const country = detectCountry(cluster, countries);
@@ -84,6 +97,16 @@ export async function categorizeClusters(clusters) {
     const description = cluster.items[0]?.description || "";
     const { hasExecutiveTitle, corporateScore, isCorporate, isLikelyPolitical } =
       analyzeCorporateSignal(cluster.title, description);
+
+    // Reclassify into Executive Threats only when the story actually names an
+    // executive title AND landed in one of the generic categories that used
+    // to leak into Executive Threats via shared words (kidnap, assassinat,
+    // fraud, etc). A Nigerian insurgency story or an oligarch assassination
+    // attempt with no executive title stays in its natural category instead
+    // of cluttering Executive Threats.
+    if (hasExecutiveTitle && executiveThreatsCategory && RECLASSIFY_TO_EXECUTIVE_IF_TITLED.has(category.id)) {
+      category = executiveThreatsCategory;
+    }
 
     out.push({
       id: cluster.id,
