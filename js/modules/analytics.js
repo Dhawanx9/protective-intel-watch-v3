@@ -6,7 +6,7 @@ export function initAnalytics() {
   render();
 }
 
-function getCss(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+export function getCss(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
 
 function render() {
   if (!store.data.loaded) return;
@@ -94,7 +94,7 @@ function renderTrendChart(events) {
   drawLineChart(canvas, buckets.map(b => b.count));
 }
 
-function drawDonut(canvas, segments) {
+export function drawDonut(canvas, segments) {
   const ctx = setupCanvas(canvas);
   if (!ctx) return;
   const w = canvas.clientWidth, h = canvas.clientHeight || 160;
@@ -121,7 +121,9 @@ function drawDonut(canvas, segments) {
   ctx.globalCompositeOperation = "source-over";
 }
 
-function drawLineChart(canvas, values) {
+/** Exported so other modules (e.g. the Executive Summary panel) can draw a
+ *  trend line without duplicating canvas setup/drawing code. */
+export function drawLineChart(canvas, values) {
   const ctx = setupCanvas(canvas);
   if (!ctx) return;
   const w = canvas.clientWidth, h = canvas.clientHeight || 140;
@@ -141,7 +143,7 @@ function drawLineChart(canvas, values) {
   ctx.lineTo(w - pad, h - pad); ctx.lineTo(pad, h - pad); ctx.closePath(); ctx.fill();
 }
 
-function setupCanvas(canvas) {
+export function setupCanvas(canvas) {
   const dpr = window.devicePixelRatio || 1;
   const rect = canvas.getBoundingClientRect();
   if (rect.width <= 0) return null; // canvas is hidden (wrong tab) - skip drawing, don't crash
