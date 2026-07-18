@@ -46,7 +46,7 @@
       "id": "crime",
       "label": "Crime",
       "color": "#9aa5b1",
-      "keywords": ["robbery", "burglary", "carjacking", "homicide", "shooting", "stabbing", "arson", "vandalism", "gang violence"]
+      "keywords": ["robbery", "burglary", "carjacking", "homicide", "fatal shooting", "shooting incident", "shooting outside", "shooting near", "shooting at", "drive-by shooting", "gun shooting", "shot dead", "shot and killed", "stabbing", "arson", "vandalism", "gang violence"]
     },
     {
       "id": "kidnapping",
@@ -89,5 +89,6 @@
     "high": ["killed", "dead", "death", "casualt", "explosion", "terroris", "gunman", "hostage", "mass shooting", "fatal", "bomb", "massacre", "assassinat", "coup", "state of emergency"],
     "medium": ["injured", "wounded", "clash", "arrest", "threat", "warning", "advisory", "suspect", "evacuat", "unrest", "riot", "breach", "hacked", "ransomware"]
   },
-  "positiveExclude": ["award", "praised", "honou", "celebrat", "donat", " wins ", "named to", "promoted to", "appointed as", "charity gala", "philanthrop"]
+  "positiveExclude": ["award", "praised", "honou", "celebrat", "donat", " wins ", "named to", "promoted to", "appointed as", "charity gala", "philanthrop"],
+  "irrelevantExclude": ["golf", "pga tour", "birdie", "bogey", "tee shot", "box office", "movie review", "album chart", "red carpet", "fashion week", "runway show", "tv series finale", "season premiere", "world cup match", "premier league table", "nba game", "nhl game", "mlb game", "cricket score", "tennis match", "olympic medal", "grammy award", "oscar nomination", "celebrity couple", "reality show"]
 }
