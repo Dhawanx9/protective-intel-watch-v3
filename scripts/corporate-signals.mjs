@@ -75,13 +75,20 @@ const CORPORATE_CONTEXT_WORDS = [
 
 // --- 3. Political / government context words --------------------------------
 // Presence of these (without corporate context words) suggests the title is
-// being used politically, not corporately - used to DEPRIORITIZE, never hide.
+// being used politically, not corporately - used to DEPRIORITIZE and to
+// block the Executive Threats reclassification, never to hide the story.
 const POLITICAL_CONTEXT_WORDS = [
   "president of the united states", "prime minister", "parliament",
   "senate", "congress", "election", "campaign", "governor", "mayor",
   "cabinet", "ministry", "government", "administration", "white house",
   "party leader", "opposition", "legislature", "president trump",
   "president biden", "head of state", "diplomat", "embassy",
+  "defence minister", "defense minister", "home minister", "foreign minister",
+  "finance minister", "union minister", "chief minister", "minister of",
+  "member of parliament", "lok sabha", "rajya sabha", "parliament house",
+  "state department", "foreign ministry", "national security adviser",
+  "president of india", "president of pakistan", "president of china",
+  "supreme leader", "president putin", "president xi", "president zelensky",
 ];
 
 // --- 4. Common corporate suffixes / company-name patterns -------------------

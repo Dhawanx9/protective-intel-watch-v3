@@ -9,6 +9,11 @@
 // so a story that later rotates out of a publisher's own RSS feed stays
 // visible on the site (until it ages past 90 days) instead of disappearing
 // the moment the source feed moves on.
+//
+// NOTE: this file only classifies NEWLY fetched articles. Existing archive
+// rows are NOT reprocessed here - that's what scripts/reclassify-archive.mjs
+// is for, which runs automatically whenever the classifier itself changes
+// (see .github/workflows/pipeline.yml).
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fetchAllFeeds } from "./fetch-feeds.mjs";
 import { dedupeArticles } from "./dedupe.mjs";
@@ -40,6 +45,7 @@ function eventToRow(event, existingFirstSeenAt, nowIso) {
   return {
     id: event.id,
     title: event.title,
+    description: event.description || null,
     bluf: event.bluf,
     category: event.category,
     category_label: event.categoryLabel,
@@ -68,6 +74,7 @@ function rowToEvent(row) {
   return {
     id: row.id,
     title: row.title,
+    description: row.description,
     bluf: row.bluf,
     category: row.category,
     categoryLabel: row.category_label,
@@ -185,10 +192,6 @@ async function main() {
   events.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
   console.log(`[build] archive now holds ${events.length} events total (last ${RETENTION_DAYS} days)`);
 
-  // Full static category list (id/label/color only, no keyword lists) so the
-  // sidebar always shows every category - including ones with zero events in
-  // this particular run - instead of a category silently vanishing whenever
-  // no matching story happened to come through.
   const { categories } = JSON.parse(await readFile(CATEGORIES_PATH, "utf8"));
   const allCategories = categories.map(c => ({ id: c.id, label: c.label, color: c.color }));
 
