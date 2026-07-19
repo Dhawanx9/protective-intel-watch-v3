@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-07-19T06:57:13.820Z",
-    "startedAt": "2026-07-19T06:56:41.629Z",
-    "totalEventsCount": 492,
-    "newEventsThisRun": 310,
-    "rawArticleCount": 3954,
+    "generatedAt": "2026-07-19T07:00:04.943Z",
+    "startedAt": "2026-07-19T06:59:45.451Z",
+    "totalEventsCount": 496,
+    "newEventsThisRun": 172,
+    "rawArticleCount": 1919,
     "feedHealth": [
       {
         "id": "bbc-world",
         "label": "BBC News – World",
-        "status": "ok",
-        "count": 31,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.826Z"
       },
       {
         "id": "guardian-world",
@@ -20,7 +20,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "sky-world",
@@ -28,7 +28,7 @@
         "status": "ok",
         "count": 6,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "ndtv-top",
@@ -36,7 +36,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "toi-top",
@@ -44,7 +44,7 @@
         "status": "ok",
         "count": 45,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "hindu-national",
@@ -52,7 +52,7 @@
         "status": "ok",
         "count": 60,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "htimes-india",
@@ -60,7 +60,7 @@
         "status": "ok",
         "count": 100,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "npr-world",
@@ -68,7 +68,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "cbs-world",
@@ -76,7 +76,7 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "nyt-world",
@@ -84,7 +84,7 @@
         "status": "ok",
         "count": 58,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "aljazeera-all",
@@ -92,7 +92,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "dw-world",
@@ -100,7 +100,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "france24-world",
@@ -108,23 +108,23 @@
         "status": "ok",
         "count": 24,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "scmp-world",
         "label": "South China Morning Post – World",
-        "status": "ok",
-        "count": 50,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "cna-asia",
         "label": "Channel News Asia – Asia",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "cnn-top-stories-usa",
@@ -132,7 +132,7 @@
         "status": "ok",
         "count": 69,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "cnn-world-usa",
@@ -140,23 +140,23 @@
         "status": "ok",
         "count": 29,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "abc-news-top-stories-usa",
         "label": "ABC News Top Stories (USA)",
-        "status": "ok",
-        "count": 25,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "abc-news-us-headlines-usa",
         "label": "ABC News US Headlines (USA)",
-        "status": "ok",
-        "count": 25,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "nbc-news-usa",
@@ -164,23 +164,23 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "fox-news-latest-usa",
         "label": "Fox News Latest (USA)",
-        "status": "ok",
+        "status": "error",
         "count": 0,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "fox-news-national-usa",
         "label": "Fox News National (USA)",
-        "status": "ok",
+        "status": "error",
         "count": 0,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "politico-usa",
@@ -188,15 +188,15 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-hill-usa",
         "label": "The Hill (USA)",
-        "status": "ok",
-        "count": 15,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "wsj-world-news-usa",
@@ -204,7 +204,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "wsj-us-business-usa",
@@ -212,7 +212,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "la-times-usa",
@@ -220,7 +220,7 @@
         "status": "ok",
         "count": 96,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "ny-post-usa",
@@ -228,7 +228,7 @@
         "status": "ok",
         "count": 23,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "ny-daily-news-usa",
@@ -236,15 +236,15 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "newsweek-usa",
         "label": "Newsweek (USA)",
-        "status": "error",
-        "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "ok",
+        "count": 20,
+        "error": null,
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-atlantic-usa",
@@ -252,7 +252,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "orlando-sentinel-usa",
@@ -260,7 +260,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "baltimore-sun-usa",
@@ -268,7 +268,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "hartford-courant-usa",
@@ -276,7 +276,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "miami-herald-usa",
@@ -284,7 +284,7 @@
         "status": "error",
         "count": 0,
         "error": "This operation was aborted",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "denver-post-usa",
@@ -292,15 +292,15 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "star-tribune-minneapolis-usa",
         "label": "Star Tribune Minneapolis (USA)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "houston-chronicle-usa",
@@ -308,7 +308,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "boston-globe-usa",
@@ -316,7 +316,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "cbc-news-top-stories-canada",
@@ -324,7 +324,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "cbc-news-world-canada",
@@ -332,7 +332,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "global-news-canada-canada",
@@ -340,47 +340,47 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "toronto-star-canada",
         "label": "Toronto Star (Canada)",
         "status": "error",
         "count": 0,
-        "error": "No RSS/Atom feed found - checked the page's own <link> tag and common feed paths (/feed, /rss, /rss.xml, etc). This site may not publish RSS, or its feed lives somewhere non-standard.",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "bbc-uk-uk",
         "label": "BBC UK (UK)",
-        "status": "ok",
-        "count": 29,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "bbc-business-uk",
         "label": "BBC Business (UK)",
-        "status": "ok",
-        "count": 54,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "bbc-technology-uk",
         "label": "BBC Technology (UK)",
-        "status": "ok",
-        "count": 21,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "bbc-england-uk",
         "label": "BBC England (UK)",
-        "status": "ok",
-        "count": 22,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-guardian-uk-uk",
@@ -388,7 +388,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-guardian-business-uk",
@@ -396,7 +396,7 @@
         "status": "ok",
         "count": 38,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-independent-uk",
@@ -404,7 +404,7 @@
         "status": "ok",
         "count": 100,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-telegraph-uk",
@@ -412,7 +412,7 @@
         "status": "ok",
         "count": 120,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "metro-uk-uk",
@@ -420,7 +420,7 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "evening-standard-uk",
@@ -428,15 +428,15 @@
         "status": "ok",
         "count": 91,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "daily-mail-uk-news-uk",
         "label": "Daily Mail UK News (UK)",
-        "status": "ok",
-        "count": 150,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-mirror-uk",
@@ -444,7 +444,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "city-am-uk",
@@ -452,7 +452,7 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "manchester-evening-news-uk",
@@ -460,7 +460,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "liverpool-echo-uk",
@@ -468,7 +468,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "birmingham-live-uk",
@@ -476,7 +476,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "wales-online-uk",
@@ -484,7 +484,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "glasgow-live-uk",
@@ -492,7 +492,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "belfast-live-uk",
@@ -500,7 +500,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "euronews-emea",
@@ -508,7 +508,7 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "politico-europe-emea",
@@ -516,7 +516,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "dw-europe-emea",
@@ -524,7 +524,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "times-of-israel-emea",
@@ -532,7 +532,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "jerusalem-post-emea",
@@ -540,7 +540,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "al-arabiya-english-emea",
@@ -548,7 +548,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "arab-news-emea",
@@ -556,15 +556,15 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-national-uae-emea",
         "label": "The National UAE (EMEA)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "error": "This operation was aborted",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "egypt-independent-emea",
@@ -572,15 +572,15 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "news24-south-africa-emea",
         "label": "News24 South Africa (EMEA)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "allafrica-headlines-emea",
@@ -588,7 +588,7 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "daily-maverick-south-africa-emea",
@@ -596,7 +596,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "der-spiegel-international-emea",
@@ -604,15 +604,15 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "swiss-info-english-emea",
         "label": "Swiss Info English (EMEA)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 410",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "error": "This operation was aborted",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "rfi-english-emea",
@@ -620,7 +620,7 @@
         "status": "ok",
         "count": 21,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-moscow-times-emea",
@@ -628,7 +628,7 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "kyiv-independent-emea",
@@ -636,7 +636,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "middle-east-eye-emea",
@@ -644,15 +644,15 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "premium-times-nigeria-emea",
         "label": "Premium Times Nigeria (EMEA)",
-        "status": "error",
-        "count": 0,
-        "error": "No RSS/Atom feed found - checked the page's own <link> tag and common feed paths (/feed, /rss, /rss.xml, etc). This site may not publish RSS, or its feed lives somewhere non-standard.",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "status": "ok",
+        "count": 15,
+        "error": null,
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "nation-africa-kenya-emea",
@@ -660,7 +660,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "japan-times-apac",
@@ -668,7 +668,7 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-straits-times-singapore-apac",
@@ -676,15 +676,15 @@
         "status": "ok",
         "count": 36,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-straits-times-asia-apac",
         "label": "The Straits Times Asia (APAC)",
         "status": "ok",
-        "count": 45,
+        "count": 44,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "abc-news-australia-apac",
@@ -692,7 +692,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "sydney-morning-herald-apac",
@@ -700,7 +700,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.132Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-age-australia-apac",
@@ -708,7 +708,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "bangkok-post-top-stories-apac",
@@ -716,7 +716,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "jakarta-post-apac",
@@ -724,15 +724,15 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "philippine-daily-inquirer-apac",
         "label": "Philippine Daily Inquirer (APAC)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "This operation was aborted",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "taipei-times-apac",
@@ -740,7 +740,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "dawn-pakistan-apac",
@@ -748,7 +748,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-news-international-pakistan-apac",
@@ -756,15 +756,15 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "hindustan-times-world-apac",
         "label": "Hindustan Times World (APAC)",
         "status": "ok",
-        "count": 100,
+        "count": 99,
         "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "deccan-herald-apac",
@@ -772,7 +772,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-star-malaysia-apac",
@@ -780,7 +780,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "new-zealand-herald-apac",
@@ -788,455 +788,455 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "china-daily-apac",
         "label": "China Daily (APAC)",
-        "status": "ok",
-        "count": 100,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "korea-herald-apac",
         "label": "Korea Herald (APAC)",
-        "status": "ok",
+        "status": "error",
         "count": 0,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "mercopress-argentina-latam",
         "label": "MercoPress Argentina (LatAm)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "mercopress-brazil-latam",
         "label": "MercoPress Brazil (LatAm)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "mercopress-international-latam",
         "label": "MercoPress International (LatAm)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "mercopress-latin-america-latam",
         "label": "MercoPress Latin America (LatAm)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "mercopress-mercosur-latam",
         "label": "MercoPress Mercosur (LatAm)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "mercopress-paraguay-latam",
         "label": "MercoPress Paraguay (LatAm)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "mercopress-uruguay-latam",
         "label": "MercoPress Uruguay (LatAm)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "mercopress-venezuela-latam",
         "label": "MercoPress Venezuela (LatAm)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "mercopress-falkland-islands-latam",
         "label": "MercoPress Falkland Islands (LatAm)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "rio-times-brazil-latam",
         "label": "Rio Times Brazil (LatAm)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "mexico-news-daily-latam",
         "label": "Mexico News Daily (LatAm)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "buenos-aires-times-latam",
         "label": "Buenos Aires Times (LatAm)",
-        "status": "ok",
-        "count": 100,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "anadolu-agency-english-mena",
         "label": "Anadolu Agency English (MENA)",
-        "status": "ok",
-        "count": 26,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "trt-world-mena",
         "label": "TRT World (MENA)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "egypt-today-mena",
         "label": "Egypt Today (MENA)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "morocco-world-news-mena",
         "label": "Morocco World News (MENA)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-north-africa-post-mena",
         "label": "The North Africa Post (MENA)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "vanguard-nigeria-africa",
         "label": "Vanguard Nigeria (Africa)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "punch-nigeria-africa",
         "label": "Punch Nigeria (Africa)",
-        "status": "ok",
-        "count": 30,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-local-germany-europe",
         "label": "The Local Germany (Europe)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-local-france-europe",
         "label": "The Local France (Europe)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-local-sweden-europe",
         "label": "The Local Sweden (Europe)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-local-italy-europe",
         "label": "The Local Italy (Europe)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-local-spain-europe",
         "label": "The Local Spain (Europe)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "prague-morning-europe",
         "label": "Prague Morning (Europe)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "times-of-malta-europe",
         "label": "Times of Malta (Europe)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "cyprus-mail-europe",
         "label": "Cyprus Mail (Europe)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "yonhap-news-english-apac",
         "label": "Yonhap News English (APAC)",
-        "status": "ok",
-        "count": 100,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "kyodo-news-english-apac",
         "label": "Kyodo News English (APAC)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "ndtv-india-news-india",
         "label": "NDTV India News (India)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "ndtv-world-news-india",
         "label": "NDTV World News (India)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "ndtv-latest-india",
         "label": "NDTV Latest (India)",
-        "status": "ok",
-        "count": 100,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "indian-express-all-india",
         "label": "Indian Express All (India)",
-        "status": "ok",
-        "count": 200,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "indian-express-india-section-india",
         "label": "Indian Express India Section (India)",
-        "status": "ok",
-        "count": 200,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "financial-express-india",
         "label": "Financial Express (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "business-standard-latest-india",
         "label": "Business Standard Latest (India)",
-        "status": "ok",
-        "count": 100,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "livemint-news-india",
         "label": "LiveMint News (India)",
-        "status": "ok",
-        "count": 35,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "moneycontrol-latest-india",
         "label": "Moneycontrol Latest (India)",
-        "status": "ok",
-        "count": 15,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "economic-times-top-stories-india",
         "label": "Economic Times Top Stories (India)",
-        "status": "ok",
-        "count": 50,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "dna-india-india",
         "label": "DNA India (India)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-telegraph-india-india",
         "label": "The Telegraph India (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-print-india",
         "label": "The Print (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "scroll-in-india",
         "label": "Scroll.in (India)",
-        "status": "ok",
-        "count": 100,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "firstpost-india-india",
         "label": "Firstpost India (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "the-statesman-india",
         "label": "The Statesman (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "tribune-india-india",
         "label": "Tribune India (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "free-press-journal-india",
         "label": "Free Press Journal (India)",
-        "status": "ok",
-        "count": 44,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "outlook-india-national-india",
         "label": "Outlook India National (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "india-today-home-india",
         "label": "India Today Home (India)",
-        "status": "ok",
-        "count": 136,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "zee-news-india-india",
         "label": "Zee News India (India)",
-        "status": "ok",
+        "status": "error",
         "count": 0,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "news18-india-india",
         "label": "News18 India (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "cnbc-tv18-india-india",
         "label": "CNBC TV18 India (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "reuters",
         "label": "Reuters",
         "status": "error",
         "count": 0,
-        "error": "HTTP 401",
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       },
       {
         "id": "propublica",
         "label": "propublica",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-19T06:56:57.133Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-19T07:00:00.827Z"
       }
     ],
     "allCategories": [
@@ -1318,8 +1318,8 @@
     ],
     "categoriesPresent": [
       "terrorism",
-      "civil_unrest",
       "natural_disaster",
+      "civil_unrest",
       "crime",
       "political_instability",
       "protests",
@@ -1361,6 +1361,41 @@
       "corporateScore": 0,
       "isCorporate": false,
       "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/jammu-and-kashmir/amarnath-yatra-2026-live-updates-temporary-suspension-pahalgam-baltal-routes-jammu-and-kashmir-heavy-rains/article71240667.ece",
+      "title": "Jammu and Kashmir rains LIVE: Flash floods, landslips wreak havoc in Poonch-Rajouri; eight dead, six missing",
+      "description": "Union Home Minister Amit Shah spoke to Jammu and Kashmir L-G Manoj Sinha and CM Omar Abdullah to take stock of the flood situation in Rajouri district.",
+      "bluf": "Jammu and Kashmir rains LIVE. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "HIGH",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-19T06:43:47+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/amarnath-yatra-2026-live-updates-temporary-suspension-pahalgam-baltal-routes-jammu-and-kashmir-heavy-rains/article71240667.ece",
+          "label": "The Hindu – National",
+          "domain": "thehindu.com",
+          "publishedAt": "2026-07-19T06:43:47.000Z"
+        },
+        {
+          "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/flash-floods-hit-jks-rajouri-town-hundreds-shifted-to-safer-places-amid-heavy-rainfall/article71240596.ece",
+          "label": "The Hindu – National",
+          "domain": "thehindu.com",
+          "publishedAt": "2026-07-19T06:43:36.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/jammu-and-kashmir/amarnath-yatra-2026-live-updates-temporary-suspension-pahalgam-baltal-routes-jammu-and-kashmir-heavy-rains/article71240667.ece",
+      "primaryDomain": "thehindu.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": true
     },
     {
       "id": "https://indianexpress.com/article/opinion/columns/when-i-see-sonam-i-see-not-a-protester-but-an-educator-pulled-away-from-his-work-10793437/",
@@ -1787,6 +1822,35 @@
       "isLikelyPolitical": false
     },
     {
+      "id": "https://www.hindustantimes.com/india-news/jammu-kashmir-flash-floods-heavy-rain-poonch-rajouri-deaths-cm-omar-abdullah-amarnath-yatra-101784436032064.html",
+      "title": "8 dead, six missing as flash floods, heavy rain batter J&K; Amarnath Yatra suspended, CM Omar cuts Delhi trip short",
+      "description": "The worst-affected in Poonch was Surankote tehsil, where authorities have deployed rescue teams and intensified relief operations to reach stranded residents.",
+      "bluf": "8 dead, six missing as flash floods, heavy rain batter J&K; Amarnath Yatra suspended, CM Omar cuts Delhi trip short. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "HIGH",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-19T04:58:42+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.hindustantimes.com/india-news/jammu-kashmir-flash-floods-heavy-rain-poonch-rajouri-deaths-cm-omar-abdullah-amarnath-yatra-101784436032064.html",
+          "label": "Hindustan Times – India News",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-19T04:58:42.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.hindustantimes.com/india-news/jammu-kashmir-flash-floods-heavy-rain-poonch-rajouri-deaths-cm-omar-abdullah-amarnath-yatra-101784436032064.html",
+      "primaryDomain": "hindustantimes.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
       "id": "https://www.independent.co.uk/news/chongqing-china-chinese-cctv-hubei-b3017580.html",
       "title": "Rescuers in China search the rubble for survivors of landslide that killed 8 and left 34 missing",
       "description": "Rescue crews are using excavators on Sunday to search the rubble for survivors of a landslide in the southwestern Chinese city of Chongqing that killed at least eight people and left another 34 missing",
@@ -2166,35 +2230,6 @@
       ],
       "primaryUrl": "https://www.indiatoday.in/india/story/dhanbad-residential-school-abuse-allegations-parents-protest-hostel-conditions-2951093-2026-07-19?utm_source=rss",
       "primaryDomain": "indiatoday.in",
-      "hasExecutiveTitle": false,
-      "corporateScore": 0,
-      "isCorporate": false,
-      "isLikelyPolitical": false
-    },
-    {
-      "id": "https://www.freepressjournal.in/india/flash-floods-hit-jammu-kashmirs-rajouri-hundreds-evacuated-as-rivers-overflow",
-      "title": "Flash Floods Hit Jammu & Kashmir's Rajouri, Hundreds Evacuated As Rivers Overflow",
-      "description": null,
-      "bluf": "Flash Floods Hit Jammu & Kashmir's Rajouri, Hundreds Evacuated As Rivers Overflow. Classified under Natural Disaster. Reported by 1 outlet.",
-      "category": "natural_disaster",
-      "categoryLabel": "Natural Disaster",
-      "categoryColor": "#5cb85c",
-      "severity": "MEDIUM",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-19T03:01:43+00:00",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.freepressjournal.in/india/flash-floods-hit-jammu-kashmirs-rajouri-hundreds-evacuated-as-rivers-overflow",
-          "label": "Free Press Journal (India)",
-          "domain": "freepressjournal.in",
-          "publishedAt": "2026-07-19T03:01:43.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.freepressjournal.in/india/flash-floods-hit-jammu-kashmirs-rajouri-hundreds-evacuated-as-rivers-overflow",
-      "primaryDomain": "freepressjournal.in",
       "hasExecutiveTitle": false,
       "corporateScore": 0,
       "isCorporate": false,
@@ -4118,8 +4153,8 @@
       "primaryUrl": "https://www.standard.co.uk/shopping/doritos-urgent-recall-popular-snack-b1290489.html",
       "primaryDomain": "standard.co.uk",
       "hasExecutiveTitle": false,
-      "corporateScore": 2,
-      "isCorporate": true,
+      "corporateScore": 0,
+      "isCorporate": false,
       "isLikelyPolitical": false
     },
     {
@@ -4628,6 +4663,59 @@
       ],
       "primaryUrl": "https://www.latimes.com/california/story/2026-07-18/fourth-of-july-compton-party-shooting-kills-two",
       "primaryDomain": "latimes.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.cbc.ca/news/world/air-quality-world-cup-final-9.7275472?cmp=rss",
+      "title": "Hazy skies from wildfire smoke unlikely to cancel World Cup final in New Jersey",
+      "description": "<img src='https://i.cbc.ca/ais/0b431064-3bca-41ba-a91d-eb89185cfe56,1784397148585/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C596%2C5722%2C3218%29%3BResize%3D%28620%29' alt='People take part in activities in a park with a hazy sky in the background.' width='620' height='349' title='People play in Hunter's Point South Park Athletic Field as the New York City skyline is obscured during poor air quality due to smoke from Canadian wildfires on Thursday, July 16, 2026, in the Queens borough of New York.'/><p>While hazy skies and poor air quality continue to impact a wide swath of Canada and the U.S., forecasts show conditions are expected to improve in time for the FIFA World Cup final in New Jersey on Sunday.</p>",
+      "bluf": "Hazy skies from wildfire smoke unlikely to cancel World Cup final in New Jersey. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Canada",
+      "lat": 56.1,
+      "lon": -106.3,
+      "publishedAt": "2026-07-18T18:43:24+00:00",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "url": "https://www.cbc.ca/news/world/air-quality-world-cup-final-9.7275472?cmp=rss",
+          "label": "CBC News Top Stories (Canada)",
+          "domain": "cbc.ca",
+          "publishedAt": "2026-07-18T18:43:24.000Z"
+        },
+        {
+          "url": "https://www.independent.co.uk/bulletin/news/wildfire-smoke-world-cup-final-spain-v-argentina-forecast-b3017515.html",
+          "label": "The Independent (UK)",
+          "domain": "independent.co.uk",
+          "publishedAt": "2026-07-18T20:37:22.000Z"
+        },
+        {
+          "url": "http://www.euronews.com/2026/07/17/world-cup-organisers-monitor-wildfire-smoke-ahead-of-new-jersey-final",
+          "label": "Euronews (EMEA)",
+          "domain": "euronews.com",
+          "publishedAt": "2026-07-17T15:52:56.000Z"
+        },
+        {
+          "url": "https://www.independent.co.uk/news/smoke-state-police-spain-united-states-argentina-b3017471.html",
+          "label": "The Independent (UK)",
+          "domain": "independent.co.uk",
+          "publishedAt": "2026-07-18T17:20:53.000Z"
+        },
+        {
+          "url": "https://www.hindustantimes.com/world-news/fifa-world-cup-final-could-be-delayed-due-to-wildfire-smoke-us-warns-canada-101784367408955.html",
+          "label": "Hindustan Times World (APAC)",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-18T09:36:48.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.cbc.ca/news/world/air-quality-world-cup-final-9.7275472?cmp=rss",
+      "primaryDomain": "cbc.ca",
       "hasExecutiveTitle": false,
       "corporateScore": 0,
       "isCorporate": false,
@@ -6604,7 +6692,7 @@
       "category": "civil_unrest",
       "categoryLabel": "Civil Unrest",
       "categoryColor": "#f2b134",
-      "severity": "MEDIUM",
+      "severity": "LOW",
       "country": "United States",
       "lat": 39.8,
       "lon": -98.6,
@@ -6627,8 +6715,8 @@
       "primaryUrl": "https://www.dailymail.com/news/article-15986199/brandon-booth-arrested-ice-murder-colorado.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
       "primaryDomain": "dailymail.com",
       "hasExecutiveTitle": false,
-      "corporateScore": 4,
-      "isCorporate": true,
+      "corporateScore": 0,
+      "isCorporate": false,
       "isLikelyPolitical": false
     },
     {
@@ -11472,6 +11560,53 @@
       "isLikelyPolitical": false
     },
     {
+      "id": "https://www.cbsnews.com/news/earthquake-mexico-guatemala-tsunami-alert/",
+      "title": "Strong earthquake hits Mexico-Guatemala border, tsunami alert lifted",
+      "description": "The U.S. Geological Survey reported that the earthquake had a magnitude of 7.3 with the epicenter 30 miles southwest of Aquiles Serdan, Mexico.",
+      "bluf": "Strong earthquake hits Mexico. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Mexico",
+      "lat": 23.6,
+      "lon": -102.5,
+      "publishedAt": "2026-07-17T22:34:10+00:00",
+      "sourceCount": 4,
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/news/earthquake-mexico-guatemala-tsunami-alert/",
+          "label": "CBS News – World",
+          "domain": "cbsnews.com",
+          "publishedAt": "2026-07-17T22:34:10.000Z"
+        },
+        {
+          "url": "http://www.euronews.com/2026/07/17/magnitude-73-earthquake-strikes-mexico-and-guatemala-coasts-tsunami-alert-issued",
+          "label": "Euronews (EMEA)",
+          "domain": "euronews.com",
+          "publishedAt": "2026-07-17T15:59:33.000Z"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/07/17/world/americas/earthquake-tsunami-warning-mexico-guatemala.html",
+          "label": "New York Times – World",
+          "domain": "nytimes.com",
+          "publishedAt": "2026-07-17T19:54:11.000Z"
+        },
+        {
+          "url": "https://www.hindustantimes.com/world-news/us-news/mexico-earthquake-7-4-magnitude-quake-strikes-near-puerto-madero-tremors-felt-in-guatemala-el-salvador-101784300716679.html",
+          "label": "Hindustan Times World (APAC)",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-17T15:07:32.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.cbsnews.com/news/earthquake-mexico-guatemala-tsunami-alert/",
+      "primaryDomain": "cbsnews.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
       "id": "https://www.startribune.com/boundary-waters-forest-service-closure-heat/601867527",
       "title": "The latest: Crews make progress on wildfires but conditions still ‘unprecedented’",
       "description": null,
@@ -11851,6 +11986,59 @@
       "primaryDomain": "mexiconewsdaily.com",
       "hasExecutiveTitle": false,
       "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.cbc.ca/news/politics/us-complaints-trump-widlfire-smoke-9.7274466?cmp=rss",
+      "title": "Trump threatens increased tariffs for wildfire smoke that has 'unnecessarily invaded' U.S.",
+      "description": "<img src='https://i.cbc.ca/ais/94a0eedc-13aa-4f5f-8d09-83494e54030b,1784318383915/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C211%2C5816%2C3271%29%3BResize%3D%28620%29' alt='A person walks along a path.' width='620' height='349' title='A pedestrian walks along the Detroit River during poor air quality due to smoke from Canadian wildfires Thursday, July 16, 2026, in Detroit.'/><p>U.S. President Donald Trump is adding his voice to the chorus of Republican politicians who are blaming Canada for wildfire smoke drifting across the border.</p>",
+      "bluf": "Trump threatens increased tariffs for wildfire smoke that has 'unnecessarily invaded' U.S.. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "MEDIUM",
+      "country": "Canada",
+      "lat": 56.1,
+      "lon": -106.3,
+      "publishedAt": "2026-07-17T19:07:15+00:00",
+      "sourceCount": 5,
+      "sources": [
+        {
+          "url": "https://www.cbc.ca/news/politics/us-complaints-trump-widlfire-smoke-9.7274466?cmp=rss",
+          "label": "CBC News World (Canada)",
+          "domain": "cbc.ca",
+          "publishedAt": "2026-07-17T19:07:15.000Z"
+        },
+        {
+          "url": "https://www.hindustantimes.com/world-news/us-news/trump-to-impose-tariffs-on-canada-over-wildfire-smoke-all-we-know-as-us-unnecessarily-invaded-with-filthy-air-101784375094038.html",
+          "label": "Hindustan Times World (APAC)",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-18T12:15:51.000Z"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/07/17/canada-wildfires-smoke-trump-01002976?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "label": "Politico Europe (EMEA)",
+          "domain": "politico.com",
+          "publishedAt": "2026-07-18T17:48:02.000Z"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/trump-tariffs-canada-wildfire-smoke/",
+          "label": "CBS News – World",
+          "domain": "cbsnews.com",
+          "publishedAt": "2026-07-18T01:02:08.000Z"
+        },
+        {
+          "url": "https://www.theage.com.au/world/north-america/trump-blames-canada-for-wildfire-smoke-as-us-forests-also-burn-20260719-p60gl8.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
+          "label": "The Age Australia (APAC)",
+          "domain": "theage.com.au",
+          "publishedAt": "2026-07-19T05:31:57.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.cbc.ca/news/politics/us-complaints-trump-widlfire-smoke-9.7274466?cmp=rss",
+      "primaryDomain": "cbc.ca",
+      "hasExecutiveTitle": true,
+      "corporateScore": 1,
       "isCorporate": false,
       "isLikelyPolitical": false
     },
