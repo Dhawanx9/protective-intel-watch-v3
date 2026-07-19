@@ -7,7 +7,7 @@
 .stat-card.tone-high .value{ color:var(--high); }
 .stat-card.tone-medium .value{ color:var(--medium); }
 .stat-card.tone-accent .value{ color:var(--accent); }
-.analytics-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:16px; margin-bottom:18px; align-items:start; }
+.analytics-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:16px; margin-bottom:18px; align-items:start !important; }
 @media (max-width:960px){ .analytics-grid{ grid-template-columns:1fr; } }
 .bar-row{ display:flex; align-items:center; gap:10px; margin-bottom:9px; font-size:12px; }
 .bar-row .name{ width:170px; flex-shrink:0; color:var(--text-dim); }
