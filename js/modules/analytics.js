@@ -1,5 +1,6 @@
 import { store } from "../state.js";
 import { escapeHtml } from "../utils/dom.js";
+import { drillDownTo } from "../utils/drilldown.js";
 
 export function initAnalytics() {
   store.subscribe(topic => { if (topic === "events" || topic === "filters") render(); });
@@ -24,12 +25,17 @@ function renderCategoryBars(events) {
   if (!root) return;
   const counts = {};
   events.forEach(e => { counts[e.category] = counts[e.category] || { label: e.categoryLabel, color: e.categoryColor, n: 0 }; counts[e.category].n++; });
-  const rows = Object.values(counts).sort((a, b) => b.n - a.n);
+  const rows = Object.entries(counts).map(([id, r]) => ({ id, ...r })).sort((a, b) => b.n - a.n);
   const max = Math.max(1, ...rows.map(r => r.n));
   root.innerHTML = rows.length ? rows.map(r => `
-    <div class="bar-row"><span class="name">${escapeHtml(r.label)}</span>
+    <div class="bar-row" data-drill-category="${escapeHtml(r.id)}" style="cursor:pointer;" title="${r.n} ${escapeHtml(r.label)} event${r.n === 1 ? "" : "s"} - click to view them">
+      <span class="name">${escapeHtml(r.label)}</span>
       <div class="bar-track"><div class="bar-fill" style="width:${(r.n / max * 100).toFixed(0)}%;background:${r.color}"></div></div>
       <span class="num">${r.n}</span></div>`).join("") : '<div class="empty-state">No data yet.</div>';
+
+  root.querySelectorAll("[data-drill-category]").forEach(rowEl => {
+    rowEl.addEventListener("click", () => drillDownTo({ category: rowEl.getAttribute("data-drill-category") }));
+  });
 }
 
 function renderSeverityDonut(events) {
@@ -46,10 +52,15 @@ function renderSeverityDonut(events) {
     { value: low, color: getCss("--low") }
   ]);
 
-  document.getElementById("severityLegend").innerHTML = `
-    <div title="Titles mentioning deaths, casualties, explosions, terrorism, hostages, or mass-casualty language."><span class="sw" style="background:${getCss("--high")}"></span>High<b>${high}</b></div>
-    <div title="Titles mentioning injuries, clashes, arrests, threats, warnings, or advisories."><span class="sw" style="background:${getCss("--medium")}"></span>Medium<b>${medium}</b></div>
-    <div title="Everything else that matched a category but not a high/medium keyword."><span class="sw" style="background:${getCss("--low")}"></span>Low<b>${low}</b></div>`;
+  const legendRoot = document.getElementById("severityLegend");
+  legendRoot.innerHTML = `
+    <div data-drill-severity="HIGH" style="cursor:pointer;" title="${high} high-severity event${high === 1 ? "" : "s"} (${total ? Math.round(high / total * 100) : 0}% of all events) - click to view them"><span class="sw" style="background:${getCss("--high")}"></span>High<b>${high}</b></div>
+    <div data-drill-severity="MEDIUM" style="cursor:pointer;" title="${medium} medium-severity event${medium === 1 ? "" : "s"} (${total ? Math.round(medium / total * 100) : 0}% of all events) - click to view them"><span class="sw" style="background:${getCss("--medium")}"></span>Medium<b>${medium}</b></div>
+    <div data-drill-severity="LOW" style="cursor:pointer;" title="${low} low-severity event${low === 1 ? "" : "s"} (${total ? Math.round(low / total * 100) : 0}% of all events) - click to view them"><span class="sw" style="background:${getCss("--low")}"></span>Low<b>${low}</b></div>`;
+
+  legendRoot.querySelectorAll("[data-drill-severity]").forEach(elm => {
+    elm.addEventListener("click", () => drillDownTo({ severity: elm.getAttribute("data-drill-severity") }));
+  });
 }
 
 function renderCountryBars(events) {
@@ -60,9 +71,14 @@ function renderCountryBars(events) {
   const rows = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 8);
   const max = Math.max(1, ...rows.map(r => r[1]));
   root.innerHTML = rows.length ? rows.map(([c, n]) => `
-    <div class="bar-row"><span class="name">${escapeHtml(c)}</span>
+    <div class="bar-row" data-drill-country="${escapeHtml(c)}" style="cursor:pointer;" title="${n} event${n === 1 ? "" : "s"} in ${escapeHtml(c)} - click to view them">
+      <span class="name">${escapeHtml(c)}</span>
       <div class="bar-track"><div class="bar-fill" style="width:${(n / max * 100).toFixed(0)}%;background:${getCss("--accent")}"></div></div>
       <span class="num">${n}</span></div>`).join("") : '<div class="empty-state">No country data yet.</div>';
+
+  root.querySelectorAll("[data-drill-country]").forEach(rowEl => {
+    rowEl.addEventListener("click", () => drillDownTo({ country: rowEl.getAttribute("data-drill-country") }));
+  });
 }
 
 function renderSourceBars(events) {
@@ -73,9 +89,14 @@ function renderSourceBars(events) {
   const rows = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 8);
   const max = Math.max(1, ...rows.map(r => r[1]));
   root.innerHTML = rows.length ? rows.map(([d, n]) => `
-    <div class="bar-row"><span class="name">${escapeHtml(d)}</span>
+    <div class="bar-row" data-drill-source="${escapeHtml(d)}" style="cursor:pointer;" title="${n} event${n === 1 ? "" : "s"} from ${escapeHtml(d)} - click to view them">
+      <span class="name">${escapeHtml(d)}</span>
       <div class="bar-track"><div class="bar-fill" style="width:${(n / max * 100).toFixed(0)}%;background:${getCss("--low")}"></div></div>
       <span class="num">${n}</span></div>`).join("") : '<div class="empty-state">No source data yet.</div>';
+
+  root.querySelectorAll("[data-drill-source]").forEach(rowEl => {
+    rowEl.addEventListener("click", () => drillDownTo({ source: rowEl.getAttribute("data-drill-source") }));
+  });
 }
 
 function renderTrendChart(events) {
@@ -92,6 +113,7 @@ function renderTrendChart(events) {
     if (bucket) bucket.count++;
   });
   drawLineChart(canvas, buckets.map(b => b.count));
+  attachLineChartTooltip(canvas, buckets);
 }
 
 export function drawDonut(canvas, segments) {
@@ -141,6 +163,55 @@ export function drawLineChart(canvas, values) {
   ctx.stroke();
   ctx.fillStyle = getCss("--accent-bg");
   ctx.lineTo(w - pad, h - pad); ctx.lineTo(pad, h - pad); ctx.closePath(); ctx.fill();
+}
+
+let activeTooltipEl = null;
+
+/** Attaches a hover tooltip to a line chart canvas - shows the exact date
+ *  and count for whichever point the cursor is nearest to. Without this,
+ *  a line chart is exactly the "eye-pleasing but useless" problem: a shape
+ *  with no way to know what any point on it actually means. Reused by both
+ *  the Analytics 14-day trend and the Executive Summary 7-day trend, since
+ *  they share the same canvas-drawing approach. */
+export function attachLineChartTooltip(canvas, buckets) {
+  if (!activeTooltipEl) {
+    activeTooltipEl = document.createElement("div");
+    activeTooltipEl.style.cssText = "position:fixed;pointer-events:none;background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:6px 10px;font-size:12px;color:var(--text);box-shadow:var(--shadow);z-index:1000;display:none;white-space:nowrap;";
+    document.body.appendChild(activeTooltipEl);
+  }
+  const tooltip = activeTooltipEl;
+
+  // Store the current bucket data ON the canvas element itself, so the
+  // mousemove listener (bound only once, below) always reads fresh data on
+  // every render instead of closing over whatever buckets existed the
+  // first time this was called - otherwise the tooltip would silently show
+  // stale counts after every data refresh past the first one.
+  canvas._tooltipBuckets = buckets;
+
+  if (canvas.dataset.tooltipBound === "true") return;
+  canvas.dataset.tooltipBound = "true";
+
+  canvas.addEventListener("mousemove", (e) => {
+    const currentBuckets = canvas._tooltipBuckets;
+    if (!currentBuckets) return;
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const pad = 10;
+    const w = rect.width;
+    const idx = Math.round(((x - pad) / (w - pad * 2)) * (currentBuckets.length - 1));
+    const bucket = currentBuckets[Math.max(0, Math.min(currentBuckets.length - 1, idx))];
+    if (!bucket) return;
+
+    const dateLabel = bucket.date.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+    tooltip.textContent = `${dateLabel}: ${bucket.count} event${bucket.count === 1 ? "" : "s"}`;
+    tooltip.style.left = `${e.clientX + 12}px`;
+    tooltip.style.top = `${e.clientY - 28}px`;
+    tooltip.style.display = "block";
+  });
+
+  canvas.addEventListener("mouseleave", () => {
+    tooltip.style.display = "none";
+  });
 }
 
 export function setupCanvas(canvas) {
