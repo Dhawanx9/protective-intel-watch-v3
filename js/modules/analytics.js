@@ -360,11 +360,20 @@ export function attachLineChartTooltip(canvas, buckets) {
 
 export function setupCanvas(canvas) {
   const dpr = window.devicePixelRatio || 1;
-  const rect = canvas.getBoundingClientRect();
-  if (rect.width <= 0) return null; // canvas is hidden (wrong tab) - skip drawing, don't crash
-  const h = rect.height || 160;
-  canvas.width = rect.width * dpr;
+  // Read size from the PARENT wrapper's actual layout box, not the canvas
+  // element's own getBoundingClientRect() - the canvas's self-measurement
+  // can latch onto a stale smaller value from an earlier render (e.g. one
+  // that happened before the final CSS size settled) and then keep
+  // re-confirming that same wrong size on every subsequent redraw. The
+  // wrapper div's dimensions are set directly and explicitly in HTML/CSS,
+  // so reading from it every time is reliable regardless of render timing.
+  const parent = canvas.parentElement;
+  const w = parent ? parent.clientWidth : canvas.clientWidth;
+  const h = parent ? parent.clientHeight : (canvas.clientHeight || 160);
+  if (w <= 0 || h <= 0) return null; // still genuinely hidden (wrong tab) - skip, don't crash
+  canvas.width = w * dpr;
   canvas.height = h * dpr;
+  canvas.style.width = w + "px";
   canvas.style.height = h + "px";
   const ctx = canvas.getContext("2d");
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
