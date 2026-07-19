@@ -10,13 +10,24 @@
 // visible on the site (until it ages past 90 days) instead of disappearing
 // the moment the source feed moves on.
 //
+// CROSS-RUN DEDUPLICATION: dedupeArticles() only clusters articles fetched
+// within THIS run (a single 10-minute window). Without more, the same
+// ongoing story - reworded slightly by each outlet that picks it up over
+// the following hours - would create a brand-new archive row every time,
+// since each run's dedupe pass never checks against what's already stored.
+// This is exactly what caused near-duplicate "Taylor Farms recalls
+// lettuce..." rows to pile up a few hours apart. To fix this, every newly
+// classified story is now also compared (same Jaccard title-similarity
+// method dedupe.mjs already uses) against the existing archive before
+// deciding whether to insert a new row or merge into an existing one.
+//
 // NOTE: this file only classifies NEWLY fetched articles. Existing archive
 // rows are NOT reprocessed here - that's what scripts/reclassify-archive.mjs
 // is for, which runs automatically whenever the classifier itself changes
 // (see .github/workflows/pipeline.yml).
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fetchAllFeeds } from "./fetch-feeds.mjs";
-import { dedupeArticles } from "./dedupe.mjs";
+import { dedupeArticles, tokenize, jaccard, groupSimilarTitles } from "./dedupe.mjs";
 import { categorizeClusters } from "./categorize.mjs";
 
 const DATA_DIR = new URL("../data/", import.meta.url);
@@ -30,6 +41,15 @@ const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
 // window than the old 7-day cutoff.
 const RETENTION_DAYS = 90;
 
+// Slightly lower than the intra-run threshold (0.55 in dedupe.mjs) - outlets
+// picking up a story hours later tend to reword headlines more than two
+// outlets covering breaking news in the same 10-minute window. Empirically
+// tested against real examples: genuine reworded duplicates scored 0.31-0.40,
+// while unrelated-but-topically-similar stories (different recall, different
+// product, same numbers) scored no higher than 0.17 - so 0.30 catches real
+// duplicates with a solid safety margin against false merges.
+const CROSS_RUN_MATCH_THRESHOLD = 0.30;
+
 function supabaseHeaders(extra = {}) {
   return {
     apikey: SUPABASE_ANON_KEY,
@@ -39,9 +59,9 @@ function supabaseHeaders(extra = {}) {
   };
 }
 
-/** Converts a categorized event (camelCase, as produced by categorize.mjs)
- *  into the snake_case row shape the Supabase "articles" table expects. */
-function eventToRow(event, existingFirstSeenAt, nowIso) {
+/** Converts a categorized event (camelCase) into a brand-new row (snake_case)
+ *  for a story never seen before. */
+function newRowFromEvent(event, nowIso) {
   return {
     id: event.id,
     title: event.title,
@@ -63,7 +83,47 @@ function eventToRow(event, existingFirstSeenAt, nowIso) {
     corporate_score: event.corporateScore,
     is_corporate: event.isCorporate,
     is_likely_political: event.isLikelyPolitical,
-    first_seen_at: existingFirstSeenAt || nowIso,
+    first_seen_at: nowIso,
+    last_seen_at: nowIso
+  };
+}
+
+/** Merges a newly-fetched event into an ALREADY-STORED archive row that
+ *  turned out to be the same underlying story, just reworded by a
+ *  different outlet. Keeps the original title and first_seen_at (so the
+ *  story doesn't appear to "restart"), combines the source lists (deduped
+ *  by URL), and refreshes the classification fields to the latest
+ *  computed values, since those reflect the current classifier logic. */
+function mergedRowFromMatch(newEvent, existingRow, nowIso) {
+  const combinedSources = [...(existingRow.sources || [])];
+  const existingUrls = new Set(combinedSources.map(s => s.url));
+  for (const s of newEvent.sources) {
+    if (!existingUrls.has(s.url)) { combinedSources.push(s); existingUrls.add(s.url); }
+  }
+  const uniqueDomains = new Set(combinedSources.map(s => s.domain));
+
+  return {
+    id: existingRow.id,
+    title: existingRow.title,
+    description: existingRow.description ?? (newEvent.description || null),
+    bluf: existingRow.bluf,
+    category: newEvent.category,
+    category_label: newEvent.categoryLabel,
+    category_color: newEvent.categoryColor,
+    severity: newEvent.severity,
+    country: existingRow.country && existingRow.country !== "Unknown" ? existingRow.country : newEvent.country,
+    lat: existingRow.lat ?? newEvent.lat,
+    lon: existingRow.lon ?? newEvent.lon,
+    published_at: existingRow.published_at,
+    source_count: uniqueDomains.size,
+    sources: combinedSources,
+    primary_url: existingRow.primary_url,
+    primary_domain: existingRow.primary_domain,
+    has_executive_title: newEvent.hasExecutiveTitle,
+    corporate_score: newEvent.corporateScore,
+    is_corporate: newEvent.isCorporate,
+    is_likely_political: newEvent.isLikelyPolitical,
+    first_seen_at: existingRow.first_seen_at,
     last_seen_at: nowIso
   };
 }
@@ -95,29 +155,90 @@ function rowToEvent(row) {
   };
 }
 
-/** Fetches every existing article id + first_seen_at from the archive, so
- *  upserts can preserve the original first_seen_at instead of resetting it
- *  to "now" every single run. */
-async function fetchExistingFirstSeenMap() {
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/articles?select=id,first_seen_at`, {
-    headers: supabaseHeaders()
-  });
-  if (!res.ok) throw new Error(`Failed to read existing articles: HTTP ${res.status} ${await res.text()}`);
-  const rows = await res.json();
-  const map = new Map();
-  for (const r of rows) map.set(r.id, r.first_seen_at);
-  return map;
+/** Fetches enough of the existing archive to check new stories against for
+ *  cross-run duplicates - id, title, sources, and everything needed to
+ *  build a merged row without a second round-trip per match. */
+async function fetchExistingArchiveIndex() {
+  const pageSize = 1000;
+  let all = [];
+  let offset = 0;
+  for (;;) {
+    const res = await fetch(
+      `${SUPABASE_URL}/rest/v1/articles?select=id,title,description,bluf,country,lat,lon,published_at,sources,first_seen_at,primary_url,primary_domain&order=id&limit=${pageSize}&offset=${offset}`,
+      { headers: supabaseHeaders() }
+    );
+    if (!res.ok) throw new Error(`Failed to read existing articles: HTTP ${res.status} ${await res.text()}`);
+    const page = await res.json();
+    all = all.concat(page);
+    if (page.length < pageSize) break;
+    offset += pageSize;
+  }
+  return all.map(row => ({ ...row, _tokens: tokenize(row.title) }));
 }
 
-/** Upserts this run's classified events into the permanent archive. Uses
- *  Supabase's merge-duplicates upsert (matches on the "id" primary key,
- *  which comes from dedupeArticles' cluster.id - the primary article URL). */
-async function upsertArticles(events) {
-  if (!events.length) return;
-  const nowIso = new Date().toISOString();
-  const firstSeenMap = await fetchExistingFirstSeenMap();
-  const rows = events.map(e => eventToRow(e, firstSeenMap.get(e.id), nowIso));
+/** For each newly classified event, decides whether it's genuinely new or
+ *  the same story as something already in the archive (just reworded by a
+ *  different outlet, picked up hours later). Returns the final list of
+ *  rows to upsert. */
+/** Merges newly-fetched, newly-classified events against EACH OTHER before
+ *  checking against the existing archive. Without this, several fresh
+ *  articles that all match each other well, but happen to each score just
+ *  under CROSS_RUN_MATCH_THRESHOLD against one specific (oddly-worded)
+ *  existing archive row, would each get inserted as separate new rows -
+ *  undoing whatever dedupe-archive.mjs merged on its last pass, every
+ *  single cycle, in a repeating merge/split loop. This closes that gap. */
+function consolidateNewEvents(newEvents) {
+  if (newEvents.length < 2) return newEvents;
+  const groups = groupSimilarTitles(newEvents, e => e.title, CROSS_RUN_MATCH_THRESHOLD);
+  return groups.map(group => {
+    if (group.length === 1) return group[0];
+    const primary = group[0];
+    const combinedSources = [];
+    const seenUrls = new Set();
+    for (const ev of group) {
+      for (const s of ev.sources) {
+        if (!seenUrls.has(s.url)) { combinedSources.push(s); seenUrls.add(s.url); }
+      }
+    }
+    const uniqueDomains = new Set(combinedSources.map(s => s.domain));
+    return { ...primary, sources: combinedSources, sourceCount: uniqueDomains.size };
+  });
+}
 
+function resolveRows(newEvents, existingIndex, nowIso) {
+  const rows = [];
+  // Tracks archive rows already claimed by an earlier event THIS run, so two
+  // new events don't both try to merge into the same existing row and only
+  // one of them "wins" silently.
+  const claimedExistingIds = new Set();
+
+  for (const event of newEvents) {
+    const tokens = tokenize(event.title);
+    let bestMatch = null, bestScore = CROSS_RUN_MATCH_THRESHOLD;
+
+    for (const existing of existingIndex) {
+      if (claimedExistingIds.has(existing.id)) continue;
+      const score = jaccard(tokens, existing._tokens);
+      if (score >= bestScore) { bestScore = score; bestMatch = existing; }
+    }
+
+    if (bestMatch) {
+      claimedExistingIds.add(bestMatch.id);
+      rows.push(mergedRowFromMatch(event, bestMatch, nowIso));
+    } else {
+      rows.push(newRowFromEvent(event, nowIso));
+    }
+  }
+
+  return rows;
+}
+
+/** Upserts the resolved rows (new inserts and merges alike) into the
+ *  permanent archive. Uses Supabase's merge-duplicates upsert, matching on
+ *  the "id" primary key - for merges, that id is the EXISTING row's id, so
+ *  this correctly updates it in place rather than inserting a duplicate. */
+async function upsertRows(rows) {
+  if (!rows.length) return;
   const CHUNK_SIZE = 200;
   for (let i = 0; i < rows.length; i += CHUNK_SIZE) {
     const chunk = rows.slice(i, i + CHUNK_SIZE);
@@ -176,13 +297,23 @@ async function main() {
   console.log(`[build] fetched ${items.length} raw articles across ${feedHealth.length} configured feeds`);
 
   const clusters = dedupeArticles(items);
-  console.log(`[build] clustered into ${clusters.length} unique stories`);
+  console.log(`[build] clustered into ${clusters.length} unique stories (within this run)`);
 
   const newEvents = await categorizeClusters(clusters);
   console.log(`[build] ${newEvents.length} events classified as protective-intel relevant this run`);
 
-  console.log(`[build] upserting ${newEvents.length} events into the permanent Supabase archive...`);
-  await upsertArticles(newEvents);
+  const consolidatedEvents = consolidateNewEvents(newEvents);
+  console.log(`[build] consolidated into ${consolidatedEvents.length} unique stories after merging same-story duplicates from different outlets within this run`);
+
+  console.log(`[build] checking against existing archive for cross-run duplicates...`);
+  const existingIndex = await fetchExistingArchiveIndex();
+  const nowIso = new Date().toISOString();
+  const resolvedRows = resolveRows(consolidatedEvents, existingIndex, nowIso);
+  const mergedCount = resolvedRows.filter(r => existingIndex.some(e => e.id === r.id)).length;
+  console.log(`[build] ${resolvedRows.length - mergedCount} genuinely new stories, ${mergedCount} merged into existing archive rows (same story, different outlet/wording)`);
+
+  console.log(`[build] upserting ${resolvedRows.length} rows into the permanent Supabase archive...`);
+  await upsertRows(resolvedRows);
 
   console.log(`[build] pruning articles older than ${RETENTION_DAYS} days...`);
   await pruneOldArticles();

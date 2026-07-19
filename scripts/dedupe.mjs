@@ -14,6 +14,51 @@ export function jaccard(a, b) {
   sa.forEach(x => { if (sb.has(x)) inter++; });
   return inter / new Set([...sa, ...sb]).size;
 }
+
+/** Generic transitive similarity clustering: groups items where similarity
+ *  chains (if A matches B, and B matches C, then A/B/C are one group, even
+ *  if A and C don't score above threshold directly against each other).
+ *  Used by build.mjs to group newly-fetched articles against EACH OTHER
+ *  before comparing against the existing archive - without this, several
+ *  fresh articles that all match each other but happen to score too low
+ *  against one specific existing archive row (an oddly-worded title) would
+ *  each get inserted as separate new rows, undoing any earlier merge on
+ *  the very next pipeline run. */
+export function groupSimilarTitles(items, titleOf, threshold) {
+  const tokensList = items.map(it => tokenize(titleOf(it)));
+  const n = items.length;
+  const adjacency = Array.from({ length: n }, () => []);
+
+  for (let i = 0; i < n; i++) {
+    for (let j = i + 1; j < n; j++) {
+      if (jaccard(tokensList[i], tokensList[j]) >= threshold) {
+        adjacency[i].push(j);
+        adjacency[j].push(i);
+      }
+    }
+  }
+
+  const visited = new Set();
+  const groups = [];
+
+  for (let i = 0; i < n; i++) {
+    if (visited.has(i)) continue;
+    const group = [];
+    const queue = [i];
+    visited.add(i);
+    while (queue.length) {
+      const current = queue.shift();
+      group.push(items[current]);
+      for (const neighbor of adjacency[current]) {
+        if (!visited.has(neighbor)) { visited.add(neighbor); queue.push(neighbor); }
+      }
+    }
+    groups.push(group);
+  }
+
+  return groups;
+}
+
 const SPAM_PATTERNS = [
   /^advertisement$/i, /^sponsored/i, /^\[?paid content\]?$/i, /click here/i,
   /^subscribe to/i, /^\s*$/
