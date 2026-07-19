@@ -13,12 +13,35 @@ concurrency:
   group: "pipeline"
   cancel-in-progress: false
 jobs:
-  # Runs FIRST, always (even on the 10-minute schedule) - its own internal
+  # Runs FIRST, every single run (unlike reclassify-archive, this has no
+  # conditional skip - duplicate detection should always be checked, not
+  # only when specific files change). Merges any duplicate stories sitting
+  # in the archive before anything else reads it.
+  dedupe-archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Merge duplicate stories in the archive
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
+        run: node scripts/dedupe-archive.mjs
+
+  # Runs SECOND, always (even on the 10-minute schedule) - its own internal
   # check decides whether real reclassification work is needed. build-data
   # depends on this finishing, so data/latest.json can never be generated
   # from an archive that's mid-correction - the JSON the site actually reads
   # always reflects whatever this job just fixed, same run, no race.
   reclassify-archive:
+    needs: dedupe-archive
+    if: needs.dedupe-archive.result == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
