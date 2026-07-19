@@ -177,7 +177,7 @@ export function drawDonut(canvas, segments) {
   const w = canvas.clientWidth, h = canvas.clientHeight || 160;
   const cx = w / 2, cy = h / 2;
   const rOuter = Math.max(6, Math.min(w, h) / 2 - 6);
-  const rInner = rOuter * 0.6;
+  const rInner = rOuter * 0.68;
   const total = Math.max(1, segments.reduce((s, x) => s + x.value, 0));
   let start = -Math.PI / 2;
   ctx.clearRect(0, 0, w, h);
