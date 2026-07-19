@@ -174,7 +174,16 @@
           <div class="panel"><h2>Source Distribution</h2><div class="panel-body" id="sourceBars"></div></div>
         </div>
         <div class="panel">
-          <h2>14-Day Threat Trend</h2>
+          <div class="panel-head" style="display:flex;align-items:center;justify-content:space-between;">
+            <span>Threat Trend</span>
+            <select id="trendRangeSelect" style="width:auto;">
+              <option value="3">Last 3 days</option>
+              <option value="7">Last 7 days</option>
+              <option value="14" selected>Last 14 days</option>
+              <option value="30">Last 30 days</option>
+              <option value="90">Last 90 days</option>
+            </select>
+          </div>
           <div class="panel-body"><div class="chart-wrap"><canvas id="trendChart" style="height:160px;"></canvas></div></div>
         </div>
       </section>

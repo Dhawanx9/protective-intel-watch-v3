@@ -4,7 +4,20 @@ import { drillDownTo } from "../utils/drilldown.js";
 
 export function initAnalytics() {
   store.subscribe(topic => { if (topic === "events" || topic === "filters") render(); });
+  bindTrendRangeSelect();
   render();
+}
+
+let trendRangeDays = 14;
+
+function bindTrendRangeSelect() {
+  const select = document.getElementById("trendRangeSelect");
+  if (!select) return;
+  select.value = String(trendRangeDays);
+  select.addEventListener("change", () => {
+    trendRangeDays = parseInt(select.value, 10) || 14;
+    render();
+  });
 }
 
 /** Canvas-based charts (the severity donut, the trend line) only get their
@@ -157,7 +170,7 @@ function renderSourceBars(events) {
 function renderTrendChart(events) {
   const canvas = document.getElementById("trendChart");
   if (!canvas) return;
-  const days = 14;
+  const days = trendRangeDays;
   const buckets = Array.from({ length: days }, (_, i) => {
     const d = new Date(); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() - (days - 1 - i));
     return { date: d, count: 0 };
