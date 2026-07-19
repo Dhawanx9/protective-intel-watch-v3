@@ -59,15 +59,20 @@ function renderSeverityDonut(events) {
   const low = events.filter(e => e.severity === "LOW").length;
   const total = high + medium + low;
   const safeTotal = Math.max(1, total);
+  const pct = n => total ? Math.round(n / safeTotal * 100) : 0;
 
   drawDonut(canvas, [
-    { value: high, color: getCss("--high") },
-    { value: medium, color: getCss("--medium") },
-    { value: low, color: getCss("--low") }
+    { value: high, color: getCss("--high"), label: "High" },
+    { value: medium, color: getCss("--medium"), label: "Medium" },
+    { value: low, color: getCss("--low"), label: "Low" }
+  ]);
+  attachDonutTooltip(canvas, [
+    { value: high, label: "High", pct: pct(high), severity: "HIGH" },
+    { value: medium, label: "Medium", pct: pct(medium), severity: "MEDIUM" },
+    { value: low, label: "Low", pct: pct(low), severity: "LOW" }
   ]);
 
   const legendRoot = document.getElementById("severityLegend");
-  const pct = n => total ? Math.round(n / safeTotal * 100) : 0;
   legendRoot.innerHTML = `
     <div data-drill-severity="HIGH" style="cursor:pointer;" title="${high} high-severity event${high === 1 ? "" : "s"} (${pct(high)}% of all events) - click to view them"><span class="sw" style="background:${getCss("--high")}"></span>High<b>${high}</b><span class="pct">${pct(high)}%</span></div>
     <div data-drill-severity="MEDIUM" style="cursor:pointer;" title="${medium} medium-severity event${medium === 1 ? "" : "s"} (${pct(medium)}% of all events) - click to view them"><span class="sw" style="background:${getCss("--medium")}"></span>Medium<b>${medium}</b><span class="pct">${pct(medium)}%</span></div>
@@ -164,6 +169,91 @@ function renderTrendChart(events) {
   });
   drawLineChart(canvas, buckets.map(b => b.count));
   attachLineChartTooltip(canvas, buckets);
+}
+
+let activeDonutTooltipEl = null;
+
+/** Hover tooltip directly on the donut ring itself - detects which colored
+ *  segment the cursor is over (by angle from center, same start-angle
+ *  convention as drawDonut) and shows its label/count/percentage. Without
+ *  this, the only way to see a percentage was reading the legend text -
+ *  hovering the actual visual ring showed nothing, which is the "the chart
+ *  I'm looking at doesn't respond to me" problem. */
+function attachDonutTooltip(canvas, segments) {
+  if (!activeDonutTooltipEl) {
+    activeDonutTooltipEl = document.createElement("div");
+    activeDonutTooltipEl.style.cssText = "position:fixed;pointer-events:none;background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:6px 10px;font-size:12px;color:var(--text);box-shadow:var(--shadow);z-index:1000;display:none;white-space:nowrap;";
+    document.body.appendChild(activeDonutTooltipEl);
+  }
+  const tooltip = activeDonutTooltipEl;
+  canvas._donutSegments = segments;
+
+  if (canvas.dataset.donutTooltipBound === "true") return;
+  canvas.dataset.donutTooltipBound = "true";
+
+  canvas.addEventListener("mousemove", (e) => {
+    const segs = canvas._donutSegments;
+    if (!segs) return;
+    const rect = canvas.getBoundingClientRect();
+    const cx = rect.width / 2, cy = rect.height / 2;
+    const x = e.clientX - rect.left - cx;
+    const y = e.clientY - rect.top - cy;
+    const dist = Math.sqrt(x * x + y * y);
+    const rOuter = Math.min(rect.width, rect.height) / 2 - 6;
+    const rInner = rOuter * 0.62;
+
+    if (dist < rInner || dist > rOuter) { tooltip.style.display = "none"; return; }
+
+    let angle = Math.atan2(y, x) + Math.PI / 2;
+    if (angle < 0) angle += Math.PI * 2;
+
+    const total = Math.max(1, segs.reduce((s, x) => s + x.value, 0));
+    const visible = segs.filter(s => s.value > 0);
+    const gapAngle = 0.045;
+    const totalGap = visible.length > 1 ? gapAngle * visible.length : 0;
+    const availableAngle = Math.PI * 2 - totalGap;
+
+    let cursor = 0;
+    let found = null;
+    for (const seg of visible) {
+      const segAngle = (seg.value / total) * availableAngle;
+      if (angle >= cursor && angle <= cursor + segAngle) { found = seg; break; }
+      cursor += segAngle + gapAngle;
+    }
+
+    if (found) {
+      tooltip.textContent = `${found.label}: ${found.value} event${found.value === 1 ? "" : "s"} (${found.pct}%)`;
+      tooltip.style.left = `${e.clientX + 12}px`;
+      tooltip.style.top = `${e.clientY - 28}px`;
+      tooltip.style.display = "block";
+      canvas.style.cursor = "pointer";
+    } else {
+      tooltip.style.display = "none";
+      canvas.style.cursor = "default";
+    }
+  });
+
+  canvas.addEventListener("mouseleave", () => { tooltip.style.display = "none"; });
+
+  canvas.addEventListener("click", (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const cx = rect.width / 2, cy = rect.height / 2;
+    const x = e.clientX - rect.left - cx;
+    const y = e.clientY - rect.top - cy;
+    let angle = Math.atan2(y, x) + Math.PI / 2;
+    if (angle < 0) angle += Math.PI * 2;
+    const segs = canvas._donutSegments || [];
+    const total = Math.max(1, segs.reduce((s, x) => s + x.value, 0));
+    const visible = segs.filter(s => s.value > 0);
+    const gapAngle = 0.045;
+    const availableAngle = Math.PI * 2 - (visible.length > 1 ? gapAngle * visible.length : 0);
+    let cursor = 0;
+    for (const seg of visible) {
+      const segAngle = (seg.value / total) * availableAngle;
+      if (angle >= cursor && angle <= cursor + segAngle) { drillDownTo({ severity: seg.severity }); break; }
+      cursor += segAngle + gapAngle;
+    }
+  });
 }
 
 export function drawDonut(canvas, segments) {

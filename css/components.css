@@ -1,4 +1,4 @@
-.panel{ background:var(--panel); border:1px solid var(--border-soft); border-radius:var(--radius-md); box-shadow:var(--shadow); display:flex; flex-direction:column; }
+.panel{ background:var(--panel); border:1px solid var(--border-soft); border-radius:var(--radius-md); box-shadow:var(--shadow); display:flex; flex-direction:column; min-height:260px; }
 .panel > h2, .panel-head{ font-size:12.5px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:var(--text-dim); margin:0; padding:13px 16px; border-bottom:1px solid var(--border-soft); flex-shrink:0; }
 .panel-body{ padding:15px 16px; flex:1; }
 /* For panels whose content is naturally short (a small donut, a couple of
@@ -8,6 +8,13 @@
    it. Applied per-panel via this modifier class, not globally, since most
    panel bodies (lists, bar charts) should stay top-aligned. */
 .panel-body.center-content{ display:flex; align-items:center; }
+/* For panels with exactly two natural sections (a chart, then a breakdown
+   below it) sitting in a stretched grid row - distributes them evenly top
+   and bottom instead of leaving one arbitrary gap wherever the shorter
+   content happens to end. Scoped to this specific class, not applied to
+   .panel-body generally, since most panels (long bar-row lists, tables)
+   should NOT have their many children spread apart like this. */
+.panel-body.space-between{ display:flex; flex-direction:column; justify-content:space-between; }
 .btn{ display:inline-flex; align-items:center; gap:6px; font-family:var(--font-ui); font-weight:600; font-size:12.5px; background:transparent; color:var(--text); border:1px solid var(--border); border-radius:var(--radius-sm); padding:8px 13px; transition:all .12s; }
 .btn:hover{ border-color:var(--accent-dim); color:var(--accent); }
 .btn.primary{ background:var(--accent); color:#fff; border-color:var(--accent); }
