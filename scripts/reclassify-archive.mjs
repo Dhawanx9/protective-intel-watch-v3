@@ -61,12 +61,23 @@ async function fetchAllRows() {
  *  here. */
 async function deleteRows(rowsToDelete) {
   for (const row of rowsToDelete) {
-    console.log(`[reclassify] deleting (no longer relevant): "${row.title}"`);
+    console.log(`[reclassify] deleting (no longer relevant): "${row.title}" (id: ${row.id})`);
     const res = await fetch(`${SUPABASE_URL}/rest/v1/articles?id=eq.${encodeURIComponent(row.id)}`, {
       method: "DELETE",
-      headers: supabaseHeaders({ Prefer: "return=minimal" })
+      // return=representation (not minimal) so we get back exactly which
+      // rows were deleted - this is what lets us DETECT the silent-failure
+      // case where the filter matched zero rows (a mismatched/malformed id)
+      // instead of blindly trusting a 200 OK that deleted nothing.
+      headers: supabaseHeaders({ Prefer: "return=representation" })
     });
     if (!res.ok) throw new Error(`Failed to delete "${row.title}": HTTP ${res.status} ${await res.text()}`);
+
+    const deletedRows = await res.json();
+    if (deletedRows.length === 0) {
+      console.warn(`[reclassify] WARNING: delete request for "${row.title}" matched ZERO rows - id may not exactly match what's stored. id was: ${JSON.stringify(row.id)}`);
+    } else {
+      console.log(`[reclassify] confirmed deleted (${deletedRows.length} row(s)): "${row.title}"`);
+    }
   }
 }
 
