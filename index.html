@@ -163,7 +163,10 @@
           <div class="panel"><h2>Threats by Category</h2><div class="panel-body" id="categoryBars"></div></div>
           <div class="panel"><h2>Severity Distribution</h2><div class="panel-body center-content">
             <div class="donut-layout">
-              <div class="chart-wrap" style="width:200px;height:200px;flex-shrink:0;"><canvas id="severityDonut"></canvas></div>
+              <div class="chart-wrap" style="width:240px;height:240px;flex-shrink:0;position:relative;">
+                <canvas id="severityDonut"></canvas>
+                <div class="chart-center-label" id="severityCenterLabel"></div>
+              </div>
               <div class="donut-legend" id="severityLegend"></div>
             </div>
           </div></div>

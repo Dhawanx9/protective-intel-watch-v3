@@ -57,7 +57,8 @@ function renderSeverityDonut(events) {
   const high = events.filter(e => e.severity === "HIGH").length;
   const medium = events.filter(e => e.severity === "MEDIUM").length;
   const low = events.filter(e => e.severity === "LOW").length;
-  const total = Math.max(1, high + medium + low);
+  const total = high + medium + low;
+  const safeTotal = Math.max(1, total);
 
   drawDonut(canvas, [
     { value: high, color: getCss("--high") },
@@ -65,11 +66,17 @@ function renderSeverityDonut(events) {
     { value: low, color: getCss("--low") }
   ]);
 
+  const centerLabel = document.getElementById("severityCenterLabel");
+  if (centerLabel) {
+    centerLabel.innerHTML = `<div class="num">${total}</div><div class="label">Total Events</div>`;
+  }
+
   const legendRoot = document.getElementById("severityLegend");
+  const pct = n => total ? Math.round(n / safeTotal * 100) : 0;
   legendRoot.innerHTML = `
-    <div data-drill-severity="HIGH" style="cursor:pointer;" title="${high} high-severity event${high === 1 ? "" : "s"} (${total ? Math.round(high / total * 100) : 0}% of all events) - click to view them"><span class="sw" style="background:${getCss("--high")}"></span>High<b>${high}</b></div>
-    <div data-drill-severity="MEDIUM" style="cursor:pointer;" title="${medium} medium-severity event${medium === 1 ? "" : "s"} (${total ? Math.round(medium / total * 100) : 0}% of all events) - click to view them"><span class="sw" style="background:${getCss("--medium")}"></span>Medium<b>${medium}</b></div>
-    <div data-drill-severity="LOW" style="cursor:pointer;" title="${low} low-severity event${low === 1 ? "" : "s"} (${total ? Math.round(low / total * 100) : 0}% of all events) - click to view them"><span class="sw" style="background:${getCss("--low")}"></span>Low<b>${low}</b></div>`;
+    <div data-drill-severity="HIGH" style="cursor:pointer;" title="${high} high-severity event${high === 1 ? "" : "s"} (${pct(high)}% of all events) - click to view them"><span class="sw" style="background:${getCss("--high")}"></span>High<b>${high}</b><span class="pct">${pct(high)}%</span></div>
+    <div data-drill-severity="MEDIUM" style="cursor:pointer;" title="${medium} medium-severity event${medium === 1 ? "" : "s"} (${pct(medium)}% of all events) - click to view them"><span class="sw" style="background:${getCss("--medium")}"></span>Medium<b>${medium}</b><span class="pct">${pct(medium)}%</span></div>
+    <div data-drill-severity="LOW" style="cursor:pointer;" title="${low} low-severity event${low === 1 ? "" : "s"} (${pct(low)}% of all events) - click to view them"><span class="sw" style="background:${getCss("--low")}"></span>Low<b>${low}</b><span class="pct">${pct(low)}%</span></div>`;
 
   legendRoot.querySelectorAll("[data-drill-severity]").forEach(elm => {
     elm.addEventListener("click", () => drillDownTo({ severity: elm.getAttribute("data-drill-severity") }));
