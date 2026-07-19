@@ -1,6 +1,15 @@
-.panel{ background:var(--panel); border:1px solid var(--border-soft); border-radius:var(--radius-md); box-shadow:var(--shadow); display:flex; flex-direction:column; min-height:260px; }
+.panel{ background:var(--panel); border:1px solid var(--border-soft); border-radius:var(--radius-md); box-shadow:var(--shadow); display:flex; flex-direction:column; min-height:260px; align-self:start; }
 .panel > h2, .panel-head{ font-size:12.5px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:var(--text-dim); margin:0; padding:13px 16px; border-bottom:1px solid var(--border-soft); flex-shrink:0; }
-.panel-body{ padding:15px 16px; flex:1; }
+/* Caps how tall any panel's content can grow before scrolling - this is
+   what actually guarantees visual uniformity across the site: a 12-row
+   category list and a 3-row severity summary can sit side by side without
+   one forcing the other to match its height, or leaving a giant empty gap.
+   Scrolling only activates when content genuinely exceeds this height -
+   short content is completely unaffected. */
+.panel-body{ padding:15px 16px; flex:1; max-height:440px; overflow-y:auto; scrollbar-width:thin; scrollbar-color:var(--border) transparent; }
+.panel-body::-webkit-scrollbar{ width:6px; }
+.panel-body::-webkit-scrollbar-track{ background:transparent; }
+.panel-body::-webkit-scrollbar-thumb{ background:var(--border); border-radius:3px; }
 /* For panels whose content is naturally short (a small donut, a couple of
    stats) sitting inside a row where a neighbor panel is much taller - this
    centers the sparse content in the available stretched space instead of
