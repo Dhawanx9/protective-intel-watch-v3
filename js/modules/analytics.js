@@ -66,11 +66,6 @@ function renderSeverityDonut(events) {
     { value: low, color: getCss("--low") }
   ]);
 
-  const centerLabel = document.getElementById("severityCenterLabel");
-  if (centerLabel) {
-    centerLabel.innerHTML = `<div class="num">${total}</div><div class="label">Total Events</div>`;
-  }
-
   const legendRoot = document.getElementById("severityLegend");
   const pct = n => total ? Math.round(n / safeTotal * 100) : 0;
   legendRoot.innerHTML = `
