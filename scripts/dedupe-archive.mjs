@@ -50,27 +50,57 @@ async function fetchAllRows() {
 }
 
 /** Groups rows into duplicate clusters using the same Jaccard similarity
- *  approach as dedupe.mjs/build.mjs. Since rows are pre-sorted oldest-first,
- *  the first row added to each cluster is always the earliest-seen one. */
+ *  approach as dedupe.mjs/build.mjs - but unlike a simple "compare everything
+ *  to the first row" pass, this finds TRANSITIVE groups: if story A matches
+ *  story B, and story B matches story C, then A/B/C are all one cluster,
+ *  even if A and C don't directly score above the threshold against each
+ *  other. This matters in practice: a story reworded multiple times over
+ *  several hours often drifts enough that the first and last versions don't
+ *  match directly, but each is close to its neighbors in between. Without
+ *  transitive grouping, a story like that gets split - the middle versions
+ *  merge into the first, but the last one is left stranded alone, exactly
+ *  the bug that let "Taylor Farms reveals its full recall list..." sit
+ *  unmerged despite being the same story as three other rows. */
 function findDuplicateClusters(rows) {
+  const n = rows.length;
+  const adjacency = Array.from({ length: n }, () => []);
+
+  for (let i = 0; i < n; i++) {
+    for (let j = i + 1; j < n; j++) {
+      if (jaccard(rows[i]._tokens, rows[j]._tokens) >= MATCH_THRESHOLD) {
+        adjacency[i].push(j);
+        adjacency[j].push(i);
+      }
+    }
+  }
+
+  const visited = new Set();
   const clusters = [];
-  const assigned = new Set();
 
-  for (let i = 0; i < rows.length; i++) {
-    if (assigned.has(rows[i].id)) continue;
-    const cluster = [rows[i]];
-    assigned.add(rows[i].id);
+  for (let i = 0; i < n; i++) {
+    if (visited.has(i)) continue;
+    const group = [];
+    const queue = [i];
+    visited.add(i);
 
-    for (let j = i + 1; j < rows.length; j++) {
-      if (assigned.has(rows[j].id)) continue;
-      const score = jaccard(rows[i]._tokens, rows[j]._tokens);
-      if (score >= MATCH_THRESHOLD) {
-        cluster.push(rows[j]);
-        assigned.add(rows[j].id);
+    while (queue.length) {
+      const current = queue.shift();
+      group.push(rows[current]);
+      for (const neighbor of adjacency[current]) {
+        if (!visited.has(neighbor)) {
+          visited.add(neighbor);
+          queue.push(neighbor);
+        }
       }
     }
 
-    if (cluster.length > 1) clusters.push(cluster);
+    if (group.length > 1) {
+      // Keep the earliest-seen row first within the group, since rows[]
+      // itself is sorted oldest-first but BFS traversal order doesn't
+      // preserve that - mergeCluster() expects group[0] to be the primary.
+      group.sort((a, b) => new Date(a.first_seen_at) - new Date(b.first_seen_at));
+      clusters.push(group);
+    }
   }
 
   return clusters;
