@@ -16,6 +16,7 @@ class Store {
         categories: new Set(),   // empty set = all
         severities: new Set(),   // empty set = all
         countries: new Set(),    // empty set = all
+        sources: new Set(),      // empty set = all - matches e.primaryDomain
         range: "7d",             // 24h | 48h | 72h | 7d | all
         sort: "recent"           // recent | severity | sources
       },
@@ -63,7 +64,7 @@ class Store {
 
   updateFilters(patch) { Object.assign(this.data.filters, patch); this.data.feedVisiblePage = 1; this.emit("filters"); }
   resetFilters() {
-    this.data.filters = { search: "", categories: new Set(), severities: new Set(), countries: new Set(), range: "7d", sort: "recent" };
+    this.data.filters = { search: "", categories: new Set(), severities: new Set(), countries: new Set(), sources: new Set(), range: "7d", sort: "recent" };
     this.data.feedVisiblePage = 1;
     this.emit("filters");
   }
@@ -99,6 +100,7 @@ class Store {
       if (f.categories.size && !f.categories.has(e.category)) return false;
       if (f.severities.size && !f.severities.has(e.severity)) return false;
       if (f.countries.size && !f.countries.has(e.country)) return false;
+      if (f.sources.size && !f.sources.has(e.primaryDomain)) return false;
       if (q) {
         const hay = `${e.title} ${e.bluf} ${e.country} ${e.primaryDomain} ${e.categoryLabel}`.toLowerCase();
         if (!hay.includes(q)) return false;
