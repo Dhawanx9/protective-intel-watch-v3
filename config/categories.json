@@ -10,7 +10,7 @@
       "id": "facility_threats",
       "label": "Facility Threats",
       "color": "#e5484d",
-      "keywords": ["forced entry", "security breach", "unauthorized access", "intruder", "trespass", "bomb threat", "evacuated building", "perimeter breach", "active shooter", "workplace shooting", "office shooting", "lockdown", "broke into the office", "forced his way into", "forced her way into", "forced their way into", "stormed the building", "stormed into the office", "gained entry to the building", "entered the building illegally", "breached security at", "man entered the office", "unauthorized entry", "tailgated into", "scaled the fence", "climbed the fence at"]
+      "keywords": ["forced entry", "security breach", "unauthorized access", "intruder", "trespass", "bomb threat", "evacuated building", "perimeter breach", "active shooter", "workplace shooting", "office shooting", "lockdown", "broke into the office", "forced his way into", "forced her way into", "forced their way into", "stormed the building", "stormed into the office", "gained entry to the building", "entered the building illegally", "breached security at", "man entered the office", "unauthorized entry", "tailgated into", "scaled the fence", "climbed the fence at", "car ramming", "rammed his car into", "rammed her car into", "rammed the gate", "rammed through the gate", "crashed through the gate", "drove into the gate", "drove through the gates", "vehicle rammed", "ramming attack", "smashed through the gate", "crashed his car into", "crashed her car into", "rammed into the mansion", "rammed into the residence", "car crashed into the property", "vehicle crashed into the gate", "home invasion", "broke into the home", "broke into the residence", "intruder at the home of", "intruder at the residence of", "trespasser arrested at the home", "fan broke into", "obsessed fan arrested", "scaled the wall at", "jumped the wall at", "drone spotted over the residence", "drone hovering over the mansion", "unauthorized drone over", "suspicious package found at the home", "suspicious package delivered to the residence", "shots fired outside the home", "gunfire outside the residence", "arson at the home of", "set fire to the residence", "protesters gathered outside the home", "protesters outside the residence", "crowd gathered outside the mansion", "mall takeover", "teen takeover", "teens flood the mall", "teens swarm the mall", "stormed the mall", "chaos erupts at the mall", "evacuated after teens", "large group of teens", "mall closed early after", "store closed after crowd", "flash mob at the mall", "viral tiktok trend leads to"]
     },
     {
       "id": "travel_risk",
@@ -22,7 +22,7 @@
       "id": "civil_unrest",
       "label": "Civil Unrest",
       "color": "#f2b134",
-      "keywords": ["protest", "riot", "unrest", "demonstration", "clashes", "civil disorder", "strike march", "blockade", "curfew"]
+      "keywords": ["protest", "riot", "unrest", "demonstration", "clashes", "civil disorder", "strike march", "blockade", "curfew", "tiktok-fueled", "social media fueled unrest", "viral trend riot", "organized via social media", "coordinated via tiktok"]
     },
     {
       "id": "protests",
@@ -46,13 +46,13 @@
       "id": "crime",
       "label": "Crime",
       "color": "#9aa5b1",
-      "keywords": ["robbery", "burglary", "carjacking", "homicide", "fatal shooting", "shooting incident", "shooting outside", "shooting near", "shooting at", "drive-by shooting", "gun shooting", "shot dead", "shot and killed", "stabbing", "arson", "vandalism", "gang violence", "fraud", "fraudster", "scammed", "scam", "extortion", "stalking", "harassment"]
+      "keywords": ["robbery", "burglary", "carjacking", "homicide", "fatal shooting", "shooting incident", "shooting outside", "shooting near", "shooting at", "drive-by shooting", "gun shooting", "shot dead", "shot and killed", "stabbing", "arson", "vandalism", "gang violence", "fraud", "fraudster", "scammed", "scam", "extortion", "stalking", "harassment", "doxxed", "doxxing", "restraining order violation", "violated a restraining order", "showed up uninvited at the home", "repeatedly followed her", "repeatedly followed him", "swatting", "swatted", "hoax call led police to", "personal address leaked online", "home address posted online", "flash mob", "flash rob", "smash and grab", "organized retail theft", "coordinated looting", "looters ransacked", "ransacked the store", "mob ransacked", "group looted the store"]
     },
     {
       "id": "kidnapping",
       "label": "Kidnapping",
       "color": "#d16ba5",
-      "keywords": ["kidnapping", "kidnap", "abduction", "abduct", "hostage", "ransom demand", "missing person feared abducted"]
+      "keywords": ["kidnapping", "kidnap", "abduction", "abduct", "hostage", "ransom demand", "missing person feared abducted", "attempted kidnapping", "attempted abduction", "tried to abduct", "tried to kidnap", "abduction attempt foiled", "kidnapping attempt foiled", "foiled kidnapping plot"]
     },
     {
       "id": "natural_disaster",
@@ -83,6 +83,12 @@
       "label": "Geopolitical Events",
       "color": "#4a7fc9",
       "keywords": ["sanctions", "military buildup", "troop deployment", "border dispute", "diplomatic crisis", "airstrike", "naval blockade"]
+    },
+    {
+      "id": "viral_trend_safety",
+      "label": "Viral Trend Safety",
+      "color": "#06d6a0",
+      "keywords": ["subway surfing", "subway surfer challenge", "train surfing", "car surfing", "viral challenge death", "viral challenge injures", "dangerous tiktok challenge", "tiktok challenge death", "choking challenge", "blackout challenge", "skull breaker challenge", "fire challenge", "benadryl challenge", "nyquil chicken challenge", "hot water challenge", "tide pod challenge", "milk crate challenge", "viral stunt death", "viral stunt injury", "died attempting the challenge", "teen dies attempting", "died while filming a tiktok", "died filming a video", "dangerous trend injures", "dangerous trend kills", "internet challenge gone wrong", "social media challenge death"]
     }
   ],
   "severity": {
