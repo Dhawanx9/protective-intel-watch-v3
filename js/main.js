@@ -6,7 +6,7 @@ import { initSummary } from "./modules/summary.js";
 import { initFeed } from "./modules/feed.js";
 import { initFilters } from "./modules/filters.js";
 import { initMap, onMapViewShown } from "./modules/map.js";
-import { initAnalytics } from "./modules/analytics.js";
+import { initAnalytics, onAnalyticsViewShown } from "./modules/analytics.js";
 import { initNotifications, notify } from "./modules/notifications.js";
 import { initFeedManager } from "./modules/feedManager.js";
 import { initBrief } from "./modules/brief.js";
@@ -88,6 +88,7 @@ async function main() {
   initRouter({
     onChange: (view) => {
       if (view === "map") onMapViewShown();
+      if (view === "analytics") onAnalyticsViewShown();
       toggleSearchBoxVisibility(view);
     }
   });
