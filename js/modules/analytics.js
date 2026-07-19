@@ -7,6 +7,19 @@ export function initAnalytics() {
   render();
 }
 
+/** Canvas-based charts (the severity donut, the trend line) only get their
+ *  correct pixel dimensions if the canvas is actually visible (non-zero
+ *  width) at the moment they're drawn. If the page loads on a different
+ *  default tab, these canvases get drawn once while hidden behind
+ *  display:none, silently produce nothing, and never redraw again until
+ *  the next unrelated data/filter change happens to occur. Call this when
+ *  the Analytics tab becomes visible (same pattern as onMapViewShown for
+ *  the Map tab) so the charts always render correctly the moment you
+ *  actually look at them. */
+export function onAnalyticsViewShown() {
+  render();
+}
+
 export function getCss(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
 
 function render() {
