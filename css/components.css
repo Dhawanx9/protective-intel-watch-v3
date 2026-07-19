@@ -1,4 +1,4 @@
-.panel{ background:var(--panel); border:1px solid var(--border-soft); border-radius:var(--radius-md); box-shadow:var(--shadow); display:flex; flex-direction:column; min-height:260px; align-self:start !important; }
+.panel{ background:var(--panel); border:1px solid var(--border-soft); border-radius:var(--radius-md); box-shadow:var(--shadow); display:flex; flex-direction:column; min-height:260px; }
 .panel > h2, .panel-head{ font-size:12.5px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:var(--text-dim); margin:0; padding:13px 16px; border-bottom:1px solid var(--border-soft); flex-shrink:0; }
 /* Caps how tall any panel's content can grow before scrolling - this is
    what actually guarantees visual uniformity across the site: a 12-row
