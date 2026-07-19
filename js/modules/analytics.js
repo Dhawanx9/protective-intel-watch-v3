@@ -177,25 +177,29 @@ export function drawDonut(canvas, segments) {
   const w = canvas.clientWidth, h = canvas.clientHeight || 160;
   const cx = w / 2, cy = h / 2;
   const rOuter = Math.max(6, Math.min(w, h) / 2 - 6);
-  const rInner = rOuter * 0.6;
+  const rInner = rOuter * 0.62;
   const total = Math.max(1, segments.reduce((s, x) => s + x.value, 0));
-  let start = -Math.PI / 2;
+
+  // Small gap between segments - this is what separates a clean, modern
+  // donut (Stripe/Chart.js style) from flat touching arcs. Gap size is
+  // proportional to the circle's radius so it scales sensibly at any size.
+  const gapAngle = 0.045;
+  const visibleSegments = segments.filter(s => s.value > 0);
+  const totalGap = visibleSegments.length > 1 ? gapAngle * visibleSegments.length : 0;
+  const availableAngle = Math.PI * 2 - totalGap;
+
   ctx.clearRect(0, 0, w, h);
-  segments.forEach(seg => {
-    const angle = (seg.value / total) * Math.PI * 2;
-    if (seg.value > 0) {
-      ctx.beginPath();
-      ctx.moveTo(cx, cy);
-      ctx.arc(cx, cy, rOuter, start, start + angle);
-      ctx.closePath();
-      ctx.fillStyle = seg.color;
-      ctx.fill();
-    }
-    start += angle;
+  let start = -Math.PI / 2;
+  visibleSegments.forEach(seg => {
+    const angle = (seg.value / total) * availableAngle;
+    ctx.beginPath();
+    ctx.arc(cx, cy, rOuter, start + gapAngle / 2, start + angle - gapAngle / 2);
+    ctx.arc(cx, cy, rInner, start + angle - gapAngle / 2, start + gapAngle / 2, true);
+    ctx.closePath();
+    ctx.fillStyle = seg.color;
+    ctx.fill();
+    start += angle + gapAngle;
   });
-  ctx.globalCompositeOperation = "destination-out";
-  ctx.beginPath(); ctx.arc(cx, cy, rInner, 0, Math.PI * 2); ctx.fill();
-  ctx.globalCompositeOperation = "source-over";
 }
 
 /** Exported so other modules (e.g. the Executive Summary panel) can draw a
