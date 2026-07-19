@@ -161,14 +161,15 @@
       <section class="view" id="view-analytics">
         <div class="analytics-grid">
           <div class="panel"><h2>Threats by Category</h2><div class="panel-body" id="categoryBars"></div></div>
-          <div class="panel"><h2>Severity Distribution</h2><div class="panel-body center-content">
+          <div class="panel"><h2>Severity Distribution</h2><div class="panel-body">
             <div class="donut-layout">
-              <div class="chart-wrap" style="width:240px;height:240px;flex-shrink:0;position:relative;">
+              <div class="chart-wrap" style="width:180px;height:180px;flex-shrink:0;position:relative;">
                 <canvas id="severityDonut"></canvas>
                 <div class="chart-center-label" id="severityCenterLabel"></div>
               </div>
               <div class="donut-legend" id="severityLegend"></div>
             </div>
+            <div id="severityTopCategories" style="margin-top:20px;"></div>
           </div></div>
         </div>
         <div class="analytics-grid">

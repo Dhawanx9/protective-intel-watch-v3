@@ -81,6 +81,41 @@ function renderSeverityDonut(events) {
   legendRoot.querySelectorAll("[data-drill-severity]").forEach(elm => {
     elm.addEventListener("click", () => drillDownTo({ severity: elm.getAttribute("data-drill-severity") }));
   });
+
+  renderTopHighSeverityCategories(events);
+}
+
+/** Fills the remaining vertical space in the Severity panel with an actual
+ *  useful breakdown - which categories are driving the HIGH-severity count -
+ *  instead of leaving dead space below a small chart. Real information, not
+ *  decoration. */
+function renderTopHighSeverityCategories(events) {
+  const root = document.getElementById("severityTopCategories");
+  if (!root) return;
+  const highEvents = events.filter(e => e.severity === "HIGH");
+  const counts = {};
+  highEvents.forEach(e => { counts[e.category] = counts[e.category] || { label: e.categoryLabel, color: e.categoryColor, n: 0 }; counts[e.category].n++; });
+  const rows = Object.entries(counts).map(([id, r]) => ({ id, ...r })).sort((a, b) => b.n - a.n).slice(0, 5);
+
+  if (!rows.length) {
+    root.innerHTML = "";
+    return;
+  }
+
+  const max = Math.max(1, ...rows.map(r => r.n));
+  root.innerHTML = `<div class="severity-breakdown-title">Top High-Severity Categories</div>` +
+    rows.map(r => `
+      <div class="bar-row" data-drill-category="${escapeHtml(r.id)}" data-drill-severity="HIGH" style="cursor:pointer;" title="${r.n} high-severity ${escapeHtml(r.label)} event${r.n === 1 ? "" : "s"} - click to view them">
+        <span class="name">${escapeHtml(r.label)}</span>
+        <div class="bar-track"><div class="bar-fill" style="width:${(r.n / max * 100).toFixed(0)}%;background:${r.color}"></div></div>
+        <span class="num">${r.n}</span></div>`).join("");
+
+  root.querySelectorAll("[data-drill-category]").forEach(rowEl => {
+    rowEl.addEventListener("click", () => drillDownTo({
+      category: rowEl.getAttribute("data-drill-category"),
+      severity: rowEl.getAttribute("data-drill-severity")
+    }));
+  });
 }
 
 function renderCountryBars(events) {
