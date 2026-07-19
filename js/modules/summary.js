@@ -1,7 +1,8 @@
 import { store } from "../state.js";
 import { formatClock, timeAgo } from "../utils/time.js";
 import { escapeHtml } from "../utils/dom.js";
-import { drawLineChart, getCss } from "./analytics.js";
+import { drawLineChart, getCss, attachLineChartTooltip } from "./analytics.js";
+import { drillDownTo } from "../utils/drilldown.js";
 
 export function initSummary() {
   render();
@@ -45,17 +46,24 @@ function renderCategorySnapshot(events) {
   if (!root) return;
   const counts = {};
   events.forEach(e => { counts[e.category] = counts[e.category] || { label: e.categoryLabel, color: e.categoryColor, n: 0 }; counts[e.category].n++; });
-  const rows = Object.values(counts).sort((a, b) => b.n - a.n).slice(0, 6);
+  const rows = Object.entries(counts).map(([id, r]) => ({ id, ...r })).sort((a, b) => b.n - a.n).slice(0, 6);
   const max = Math.max(1, ...rows.map(r => r.n));
   root.innerHTML = rows.length ? rows.map(r => `
-    <div class="bar-row"><span class="name">${escapeHtml(r.label)}</span>
+    <div class="bar-row" data-drill-category="${escapeHtml(r.id)}" style="cursor:pointer;" title="${r.n} ${escapeHtml(r.label)} event${r.n === 1 ? "" : "s"} (last 90 days) - click to view them">
+      <span class="name">${escapeHtml(r.label)}</span>
       <div class="bar-track"><div class="bar-fill" style="width:${(r.n / max * 100).toFixed(0)}%;background:${r.color}"></div></div>
       <span class="num">${r.n}</span></div>`).join("") : '<div class="empty-state">No data yet.</div>';
+
+  root.querySelectorAll("[data-drill-category]").forEach(rowEl => {
+    rowEl.addEventListener("click", () => drillDownTo({ category: rowEl.getAttribute("data-drill-category") }));
+  });
 }
 
 /** 7-day activity trend, same rendering approach as the 14-day chart on the
- *  Analytics tab (reuses drawLineChart from analytics.js) but scoped shorter
- *  since this is meant as an at-a-glance summary, not the detailed view. */
+ *  Analytics tab (reuses drawLineChart + attachLineChartTooltip from
+ *  analytics.js) but scoped shorter since this is meant as an at-a-glance
+ *  summary, not the detailed view. Hover shows the exact date and count -
+ *  a line with no way to read its values is decoration, not data. */
 function renderWeeklyTrend(events) {
   const canvas = document.getElementById("dashboardTrendChart");
   if (!canvas) return;
@@ -70,6 +78,7 @@ function renderWeeklyTrend(events) {
     if (bucket) bucket.count++;
   });
   drawLineChart(canvas, buckets.map(b => b.count));
+  attachLineChartTooltip(canvas, buckets);
 
   const labelRoot = document.getElementById("dashboardTrendLabels");
   if (labelRoot) {
@@ -89,9 +98,14 @@ function renderTopCountries(events) {
   const rows = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 5);
   const max = Math.max(1, ...rows.map(r => r[1]));
   root.innerHTML = rows.length ? rows.map(([c, n]) => `
-    <div class="bar-row"><span class="name">${escapeHtml(c)}</span>
+    <div class="bar-row" data-drill-country="${escapeHtml(c)}" style="cursor:pointer;" title="${n} event${n === 1 ? "" : "s"} in ${escapeHtml(c)} (last 90 days) - click to view them">
+      <span class="name">${escapeHtml(c)}</span>
       <div class="bar-track"><div class="bar-fill" style="width:${(n / max * 100).toFixed(0)}%;background:${getCss("--accent")}"></div></div>
       <span class="num">${n}</span></div>`).join("") : '<div class="empty-state">No country data yet.</div>';
+
+  root.querySelectorAll("[data-drill-country]").forEach(rowEl => {
+    rowEl.addEventListener("click", () => drillDownTo({ country: rowEl.getAttribute("data-drill-country") }));
+  });
 }
 
 function setVal(id, val) {
