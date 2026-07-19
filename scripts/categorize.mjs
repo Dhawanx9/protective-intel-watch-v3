@@ -147,14 +147,20 @@ export function classifyArticle(article, configs) {
   // The title and the incident phrase must appear NEAR each other in the
   // text (not just anywhere in the same article) - this is what stops a
   // police "Director" mentioned in an unrelated paragraph of a terrorism
-  // story from ever counting as an executive incident.
+  // story from ever counting as an executive incident. Combined with
+  // !isLikelyPolitical, this is sufficient on its own - requiring isCorporate
+  // as a THIRD condition on top turned out to be too strict: most real
+  // executive-threat headlines ("Infosys CEO receives death threat") don't
+  // contain a company suffix (Inc./Corp./Ltd.) or a generic word like
+  // "company"/"headquarters" at all, they just name the specific company -
+  // so isCorporate was blocking genuine stories, not just false ones.
   const fullText = `${title} ${description}`;
   const hasExecutiveIncidentNear = executiveThreatsCategory
     ? hasExecutiveIncidentNearby(fullText, executiveThreatsCategory.keywords)
     : false;
 
   const isGenuineExecutiveThreat =
-    hasExecutiveIncidentNear && isCorporate && !isLikelyPolitical;
+    hasExecutiveIncidentNear && !isLikelyPolitical;
 
   if (isGenuineExecutiveThreat && executiveThreatsCategory) {
     category = executiveThreatsCategory;
