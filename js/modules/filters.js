@@ -22,7 +22,18 @@ export function initFilters() {
     store.resetFilters();
     document.getElementById("globalSearchInput").value = "";
   });
-  store.subscribe(topic => { if (topic === "events") { buildCategoryChips(); buildCountryChips(); buildSidebarCategoryList(); } });
+  // Rebuilding on "events" alone meant clicking a chip updated the actual
+  // filter (so the feed list itself did filter correctly) but the chip's
+  // own highlighted/"on" state never got redrawn afterward - it just sat
+  // there looking unclicked forever, since nothing told it to re-check
+  // itself against the current filter state. Also rebuilding on "filters"
+  // fixes that, AND makes the Reset filters button and sidebar category
+  // clicks correctly clear/update every chip's visual state too, not just
+  // the underlying data.
+  store.subscribe(topic => {
+    if (topic === "events") { buildCategoryChips(); buildCountryChips(); buildSidebarCategoryList(); }
+    if (topic === "filters") { buildCategoryChips(); buildSeverityChips(); }
+  });
 }
 
 function buildSidebarCategoryList() {
@@ -31,7 +42,8 @@ function buildSidebarCategoryList() {
   root.innerHTML = "";
   store.data.categories.forEach(cat => {
     const count = store.data.events.filter(e => e.category === cat.id).length;
-    const row = el("div", { class: "nav-item" }, [
+    const isActive = store.data.filters.categories.size === 1 && store.data.filters.categories.has(cat.id);
+    const row = el("div", { class: `nav-item${isActive ? " active" : ""}` }, [
       el("span", { style: `display:inline-block;width:8px;height:8px;border-radius:2px;background:${cat.color};flex-shrink:0;` }),
       cat.label,
       el("span", { class: "count" }, String(count))
@@ -57,6 +69,10 @@ function buildCategoryChips() {
     chip.addEventListener("click", () => {
       const set = store.data.filters.categories;
       set.has(cat.id) ? set.delete(cat.id) : set.add(cat.id);
+      // Toggle this chip's own visual state immediately, synchronously -
+      // don't wait for the store subscription round-trip, so the click
+      // feels instant rather than possibly-delayed.
+      chip.classList.toggle("on");
       store.updateFilters({ categories: set });
     });
     root.appendChild(chip);
@@ -73,6 +89,7 @@ function buildSeverityChips() {
     chip.addEventListener("click", () => {
       const set = store.data.filters.severities;
       set.has(sev) ? set.delete(sev) : set.add(sev);
+      chip.classList.toggle("on");
       store.updateFilters({ severities: set });
     });
     root.appendChild(chip);
