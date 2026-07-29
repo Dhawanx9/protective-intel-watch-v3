@@ -1,18 +1,18 @@
 {
   "meta": {
-    "generatedAt": "2026-07-29T07:18:57.602Z",
-    "startedAt": "2026-07-29T07:18:16.649Z",
-    "totalEventsCount": 4817,
-    "newEventsThisRun": 471,
-    "rawArticleCount": 3759,
+    "generatedAt": "2026-07-29T10:00:57.429Z",
+    "startedAt": "2026-07-29T10:00:27.439Z",
+    "totalEventsCount": 4855,
+    "newEventsThisRun": 248,
+    "rawArticleCount": 2231,
     "feedHealth": [
       {
         "id": "bbc-world",
         "label": "BBC News – World",
-        "status": "ok",
-        "count": 22,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "guardian-world",
@@ -20,15 +20,15 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "sky-world",
         "label": "Sky News – World",
         "status": "ok",
-        "count": 2,
+        "count": 3,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "ndtv-top",
@@ -36,15 +36,15 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "toi-top",
         "label": "Times of India – Top Stories",
         "status": "ok",
-        "count": 44,
+        "count": 43,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "hindu-national",
@@ -52,7 +52,7 @@
         "status": "ok",
         "count": 60,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "htimes-india",
@@ -60,7 +60,7 @@
         "status": "ok",
         "count": 100,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "npr-world",
@@ -68,7 +68,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "cbs-world",
@@ -76,7 +76,7 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "nyt-world",
@@ -84,7 +84,7 @@
         "status": "ok",
         "count": 53,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "aljazeera-all",
@@ -92,7 +92,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "dw-world",
@@ -100,7 +100,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "france24-world",
@@ -108,23 +108,23 @@
         "status": "ok",
         "count": 23,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "scmp-world",
         "label": "South China Morning Post – World",
-        "status": "ok",
-        "count": 50,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "cna-asia",
         "label": "Channel News Asia – Asia",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "cnn-top-stories-usa",
@@ -132,7 +132,7 @@
         "status": "ok",
         "count": 69,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "cnn-world-usa",
@@ -140,23 +140,23 @@
         "status": "ok",
         "count": 29,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "abc-news-top-stories-usa",
         "label": "ABC News Top Stories (USA)",
-        "status": "ok",
-        "count": 25,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "abc-news-us-headlines-usa",
         "label": "ABC News US Headlines (USA)",
-        "status": "ok",
-        "count": 25,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "nbc-news-usa",
@@ -164,23 +164,23 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "fox-news-latest-usa",
         "label": "Fox News Latest (USA)",
-        "status": "ok",
+        "status": "error",
         "count": 0,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "fox-news-national-usa",
         "label": "Fox News National (USA)",
-        "status": "ok",
+        "status": "error",
         "count": 0,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "politico-usa",
@@ -188,15 +188,15 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-hill-usa",
         "label": "The Hill (USA)",
-        "status": "ok",
-        "count": 15,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "wsj-world-news-usa",
@@ -204,7 +204,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "wsj-us-business-usa",
@@ -212,7 +212,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "la-times-usa",
@@ -220,15 +220,15 @@
         "status": "ok",
         "count": 96,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "ny-post-usa",
         "label": "NY Post (USA)",
         "status": "ok",
-        "count": 22,
+        "count": 21,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "ny-daily-news-usa",
@@ -236,15 +236,15 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "newsweek-usa",
         "label": "Newsweek (USA)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "HTTP 406",
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-atlantic-usa",
@@ -252,7 +252,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "orlando-sentinel-usa",
@@ -260,7 +260,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "baltimore-sun-usa",
@@ -268,7 +268,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "hartford-courant-usa",
@@ -276,7 +276,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "miami-herald-usa",
@@ -284,7 +284,7 @@
         "status": "error",
         "count": 0,
         "error": "This operation was aborted",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "denver-post-usa",
@@ -292,15 +292,15 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "star-tribune-minneapolis-usa",
         "label": "Star Tribune Minneapolis (USA)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "houston-chronicle-usa",
@@ -308,7 +308,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "boston-globe-usa",
@@ -316,7 +316,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "cbc-news-top-stories-canada",
@@ -324,7 +324,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "cbc-news-world-canada",
@@ -332,7 +332,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "global-news-canada-canada",
@@ -340,31 +340,31 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "toronto-star-canada",
         "label": "Toronto Star (Canada)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "HTTP 429",
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "bbc-uk-uk",
         "label": "BBC UK (UK)",
         "status": "ok",
-        "count": 41,
+        "count": 38,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "bbc-business-uk",
         "label": "BBC Business (UK)",
         "status": "ok",
-        "count": 41,
+        "count": 42,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "bbc-technology-uk",
@@ -372,15 +372,15 @@
         "status": "ok",
         "count": 21,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "bbc-england-uk",
         "label": "BBC England (UK)",
         "status": "ok",
-        "count": 25,
+        "count": 27,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-guardian-uk-uk",
@@ -388,7 +388,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-guardian-business-uk",
@@ -396,7 +396,7 @@
         "status": "ok",
         "count": 41,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-independent-uk",
@@ -404,7 +404,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-telegraph-uk",
@@ -412,15 +412,15 @@
         "status": "ok",
         "count": 120,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "metro-uk-uk",
         "label": "Metro UK (UK)",
         "status": "ok",
-        "count": 30,
+        "count": 16,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "evening-standard-uk",
@@ -428,15 +428,15 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "daily-mail-uk-news-uk",
         "label": "Daily Mail UK News (UK)",
-        "status": "ok",
-        "count": 150,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "This operation was aborted",
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-mirror-uk",
@@ -444,7 +444,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "city-am-uk",
@@ -452,7 +452,7 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "manchester-evening-news-uk",
@@ -460,7 +460,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "liverpool-echo-uk",
@@ -468,7 +468,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "birmingham-live-uk",
@@ -476,7 +476,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "wales-online-uk",
@@ -484,7 +484,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "glasgow-live-uk",
@@ -492,7 +492,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "belfast-live-uk",
@@ -500,7 +500,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "euronews-emea",
@@ -508,7 +508,7 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "politico-europe-emea",
@@ -516,7 +516,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "dw-europe-emea",
@@ -524,7 +524,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "times-of-israel-emea",
@@ -532,7 +532,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "jerusalem-post-emea",
@@ -540,7 +540,7 @@
         "status": "ok",
         "count": 26,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "al-arabiya-english-emea",
@@ -548,7 +548,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "arab-news-emea",
@@ -556,7 +556,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-national-uae-emea",
@@ -564,7 +564,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "egypt-independent-emea",
@@ -572,7 +572,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "news24-south-africa-emea",
@@ -580,7 +580,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "allafrica-headlines-emea",
@@ -588,7 +588,7 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "daily-maverick-south-africa-emea",
@@ -596,7 +596,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "der-spiegel-international-emea",
@@ -604,7 +604,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "swiss-info-english-emea",
@@ -612,7 +612,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 410",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "rfi-english-emea",
@@ -620,7 +620,7 @@
         "status": "ok",
         "count": 22,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-moscow-times-emea",
@@ -628,7 +628,7 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "kyiv-independent-emea",
@@ -636,15 +636,15 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "middle-east-eye-emea",
         "label": "Middle East Eye (EMEA)",
         "status": "ok",
-        "count": 20,
+        "count": 0,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "premium-times-nigeria-emea",
@@ -652,7 +652,7 @@
         "status": "ok",
         "count": 15,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "nation-africa-kenya-emea",
@@ -660,7 +660,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "japan-times-apac",
@@ -668,15 +668,15 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-straits-times-singapore-apac",
         "label": "The Straits Times Singapore (APAC)",
         "status": "ok",
-        "count": 45,
+        "count": 46,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-straits-times-asia-apac",
@@ -684,7 +684,7 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "abc-news-australia-apac",
@@ -692,7 +692,7 @@
         "status": "ok",
         "count": 25,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "sydney-morning-herald-apac",
@@ -700,7 +700,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-age-australia-apac",
@@ -708,7 +708,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "bangkok-post-top-stories-apac",
@@ -716,7 +716,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "jakarta-post-apac",
@@ -724,7 +724,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "philippine-daily-inquirer-apac",
@@ -732,7 +732,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "taipei-times-apac",
@@ -740,7 +740,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "dawn-pakistan-apac",
@@ -748,7 +748,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-news-international-pakistan-apac",
@@ -756,7 +756,7 @@
         "status": "ok",
         "count": 50,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "hindustan-times-world-apac",
@@ -764,7 +764,7 @@
         "status": "ok",
         "count": 100,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "deccan-herald-apac",
@@ -772,7 +772,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "the-star-malaysia-apac",
@@ -780,7 +780,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "new-zealand-herald-apac",
@@ -788,7 +788,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "china-daily-apac",
@@ -796,7 +796,7 @@
         "status": "ok",
         "count": 100,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "korea-herald-apac",
@@ -804,7 +804,7 @@
         "status": "ok",
         "count": 0,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "mercopress-argentina-latam",
@@ -812,7 +812,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "mercopress-brazil-latam",
@@ -820,7 +820,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "mercopress-international-latam",
@@ -828,7 +828,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "mercopress-latin-america-latam",
@@ -836,7 +836,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "mercopress-mercosur-latam",
@@ -844,7 +844,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "mercopress-paraguay-latam",
@@ -852,7 +852,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "mercopress-uruguay-latam",
@@ -860,7 +860,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "mercopress-venezuela-latam",
@@ -868,7 +868,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "mercopress-falkland-islands-latam",
@@ -876,7 +876,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.165Z"
       },
       {
         "id": "rio-times-brazil-latam",
@@ -884,7 +884,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "mexico-news-daily-latam",
@@ -892,7 +892,7 @@
         "status": "ok",
         "count": 10,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "buenos-aires-times-latam",
@@ -900,15 +900,15 @@
         "status": "ok",
         "count": 100,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "anadolu-agency-english-mena",
         "label": "Anadolu Agency English (MENA)",
-        "status": "ok",
-        "count": 24,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "trt-world-mena",
@@ -916,7 +916,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "egypt-today-mena",
@@ -924,7 +924,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "morocco-world-news-mena",
@@ -932,15 +932,15 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "the-north-africa-post-mena",
         "label": "The North Africa Post (MENA)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "HTTP 403",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "vanguard-nigeria-africa",
@@ -948,7 +948,7 @@
         "status": "ok",
         "count": 20,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "punch-nigeria-africa",
@@ -956,7 +956,7 @@
         "status": "ok",
         "count": 30,
         "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "the-local-germany-europe",
@@ -964,7 +964,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "the-local-france-europe",
@@ -972,7 +972,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "the-local-sweden-europe",
@@ -980,7 +980,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "the-local-italy-europe",
@@ -988,7 +988,7 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "the-local-spain-europe",
@@ -996,247 +996,247 @@
         "status": "error",
         "count": 0,
         "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "prague-morning-europe",
         "label": "Prague Morning (Europe)",
-        "status": "ok",
-        "count": 10,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "times-of-malta-europe",
         "label": "Times of Malta (Europe)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "cyprus-mail-europe",
         "label": "Cyprus Mail (Europe)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "yonhap-news-english-apac",
         "label": "Yonhap News English (APAC)",
-        "status": "ok",
-        "count": 87,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "kyodo-news-english-apac",
         "label": "Kyodo News English (APAC)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "ndtv-india-news-india",
         "label": "NDTV India News (India)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "ndtv-world-news-india",
         "label": "NDTV World News (India)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "ndtv-latest-india",
         "label": "NDTV Latest (India)",
-        "status": "ok",
-        "count": 100,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "indian-express-all-india",
         "label": "Indian Express All (India)",
-        "status": "ok",
-        "count": 200,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "indian-express-india-section-india",
         "label": "Indian Express India Section (India)",
-        "status": "ok",
-        "count": 200,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "financial-express-india",
         "label": "Financial Express (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "business-standard-latest-india",
         "label": "Business Standard Latest (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "livemint-news-india",
         "label": "LiveMint News (India)",
-        "status": "ok",
-        "count": 35,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "moneycontrol-latest-india",
         "label": "Moneycontrol Latest (India)",
-        "status": "ok",
-        "count": 15,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "economic-times-top-stories-india",
         "label": "Economic Times Top Stories (India)",
-        "status": "ok",
-        "count": 51,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "dna-india-india",
         "label": "DNA India (India)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "the-telegraph-india-india",
         "label": "The Telegraph India (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "the-print-india",
         "label": "The Print (India)",
         "status": "error",
         "count": 0,
-        "error": "No RSS/Atom feed found - checked the page's own <link> tag and common feed paths (/feed, /rss, /rss.xml, etc). This site may not publish RSS, or its feed lives somewhere non-standard.",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "scroll-in-india",
         "label": "Scroll.in (India)",
-        "status": "ok",
-        "count": 100,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "firstpost-india-india",
         "label": "Firstpost India (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "the-statesman-india",
         "label": "The Statesman (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "tribune-india-india",
         "label": "Tribune India (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "free-press-journal-india",
         "label": "Free Press Journal (India)",
-        "status": "ok",
-        "count": 70,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "outlook-india-national-india",
         "label": "Outlook India National (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "india-today-home-india",
         "label": "India Today Home (India)",
-        "status": "ok",
-        "count": 135,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "zee-news-india-india",
         "label": "Zee News India (India)",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "news18-india-india",
         "label": "News18 India (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 403",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "cnbc-tv18-india-india",
         "label": "CNBC TV18 India (India)",
         "status": "error",
         "count": 0,
-        "error": "HTTP 404",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "reuters",
         "label": "Reuters",
         "status": "error",
         "count": 0,
-        "error": "HTTP 401",
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       },
       {
         "id": "propublica",
         "label": "propublica",
-        "status": "ok",
-        "count": 20,
-        "error": null,
-        "checkedAt": "2026-07-29T07:18:32.380Z"
+        "status": "error",
+        "count": 0,
+        "error": "fetch failed",
+        "checkedAt": "2026-07-29T10:00:43.166Z"
       }
     ],
     "allCategories": [
@@ -1317,24 +1317,1075 @@
       }
     ],
     "categoriesPresent": [
-      "terrorism",
       "civil_unrest",
-      "kidnapping",
-      "natural_disaster",
-      "crime",
-      "geopolitical",
+      "terrorism",
       "corporate_reputation",
+      "natural_disaster",
       "political_instability",
+      "kidnapping",
+      "crime",
       "executive_threats",
-      "protests",
-      "cyber_threats",
       "facility_threats",
+      "protests",
+      "geopolitical",
+      "cyber_threats",
       "travel_risk",
       "supply_chain",
       "viral_trend_safety"
     ]
   },
   "events": [
+    {
+      "id": "https://www.thehindu.com/news/national/parliament-monsoon-lok-sabha-live-updates-2026-july-29-2026/article71279779.ece",
+      "title": "Parliament Monsoon Session Day 8 LIVE: Protests erupt in LS over Rahul Gandhi's statement that Amit Shah ordered firing against students",
+      "description": "Protests rocked both the Houses on Wednesday, as the Opposition demanded discussions and accountability on the police brutality during the Jantar Mantar protests leading to brief adjournments",
+      "bluf": "Parliament Monsoon Session Day 8 LIVE. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T09:55:39+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.thehindu.com/news/national/parliament-monsoon-lok-sabha-live-updates-2026-july-29-2026/article71279779.ece",
+          "label": "The Hindu – National",
+          "domain": "thehindu.com",
+          "publishedAt": "2026-07-29T09:55:39.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/parliament-monsoon-lok-sabha-live-updates-2026-july-29-2026/article71279779.ece",
+      "primaryDomain": "thehindu.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": true
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/goa/goa-neet-protest-umar-khalid-support-placards-cm-pramod-sawant-remarks/article71280926.ece",
+      "title": "Goa NEET protest stooped to 'lowest intellectual level’, says CM Sawant; questions Umar Khalid placards",
+      "description": "The Goa police last week detained two youth in Panaji for allegedly expressing support for jailed student activist Umar Khalid during celebrations over Union Education Minister Dharmendra Pradhan’s resignation",
+      "bluf": "Goa NEET protest stooped to 'lowest intellectual level’, says CM Sawant; questions Umar Khalid placards. Classified under Civil Unrest. Reported by 2 outlets.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T09:54:33+00:00",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "url": "https://www.thehindu.com/news/national/goa/goa-neet-protest-umar-khalid-support-placards-cm-pramod-sawant-remarks/article71280926.ece",
+          "label": "The Hindu – National",
+          "domain": "thehindu.com",
+          "publishedAt": "2026-07-29T09:54:33.000Z"
+        },
+        {
+          "url": "https://www.hindustantimes.com/india-news/goa-neet-protest-stooped-to-lowest-intellectual-level-cm-sawant-questions-umar-khalid-placards-101785314844554.html",
+          "label": "Hindustan Times – India News",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-29T08:47:24.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/goa/goa-neet-protest-umar-khalid-support-placards-cm-pramod-sawant-remarks/article71280926.ece",
+      "primaryDomain": "thehindu.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://allafrica.com/stories/202607290145.html",
+      "title": "Kenya: Ruto, Africom Commander Discuss Regional Security, Counter-Terrorism",
+      "description": "[Capital FM] Nairobi -- President William Ruto on Wednesday reaffirmed Kenya's strategic security partnership with the United States during talks with United States Africa Command (AFRICOM) Commander General Dagvin Anderson at State House, Nairobi.",
+      "bluf": "Kenya. Classified under Terrorism. Reported by 1 outlet.",
+      "category": "terrorism",
+      "categoryLabel": "Terrorism",
+      "categoryColor": "#c0392b",
+      "severity": "HIGH",
+      "country": "United States",
+      "lat": 39.8,
+      "lon": -98.6,
+      "publishedAt": "2026-07-29T09:53:03+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://allafrica.com/stories/202607290145.html",
+          "label": "AllAfrica Headlines (EMEA)",
+          "domain": "allafrica.com",
+          "publishedAt": "2026-07-29T09:53:03.000Z"
+        }
+      ],
+      "primaryUrl": "https://allafrica.com/stories/202607290145.html",
+      "primaryDomain": "allafrica.com",
+      "hasExecutiveTitle": true,
+      "corporateScore": 1,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://metro.co.uk/2026/07/29/happened-naga-munchettys-bullying-probe-inside-scandal-bbc-breakfast-exit-29249878/",
+      "title": "What happened in Naga Munchetty’s bullying probe? Inside scandal before BBC Breakfast exit",
+      "description": "The BBC drafted in a PwC consultant to help review the culture around the Breakfast show.",
+      "bluf": "What happened in Naga Munchetty’s bullying probe? Inside scandal before BBC Breakfast exit. Classified under Corporate Reputation. Reported by 1 outlet.",
+      "category": "corporate_reputation",
+      "categoryLabel": "Corporate Reputation",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-29T09:42:48+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://metro.co.uk/2026/07/29/happened-naga-munchettys-bullying-probe-inside-scandal-bbc-breakfast-exit-29249878/",
+          "label": "Metro UK (UK)",
+          "domain": "metro.co.uk",
+          "publishedAt": "2026-07-29T09:42:48.000Z"
+        }
+      ],
+      "primaryUrl": "https://metro.co.uk/2026/07/29/happened-naga-munchettys-bullying-probe-inside-scandal-bbc-breakfast-exit-29249878/",
+      "primaryDomain": "metro.co.uk",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.nytimes.com/2026/07/28/world/asia/japan-earthquake-kumamoto-damage.html",
+      "title": "What to know about the earthquake's aftermath in Japan",
+      "description": "Five people have been confirmed dead in a factory damaged by a major earthquake in Japan, here part of a red-and-white smokestack collapsed in the quake. At least 13 died after a shopping mall was badly damaged, as the search for survivors is ongoing. The earthquake flattened homes, triggered fires, ruptured bridges and left thousands of people with no power. FRANCE 24's Gavin Blair tells us more from Tokyo.",
+      "bluf": "What to know about the earthquake's aftermath in Japan. Classified under Natural Disaster. Reported by 2 outlets.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "France",
+      "lat": 46.6,
+      "lon": 2.2,
+      "publishedAt": "2026-07-29T09:41:10+00:00",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "url": "https://www.france24.com/en/what-to-know-about-the-earthquake-s-aftermath-in-japan",
+          "label": "France 24 – World",
+          "domain": "france24.com",
+          "publishedAt": "2026-07-29T09:41:10.000Z"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/07/28/world/asia/japan-earthquake-kumamoto-damage.html",
+          "label": "New York Times – World",
+          "domain": "nytimes.com",
+          "publishedAt": "2026-07-29T04:37:33.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.france24.com/en/what-to-know-about-the-earthquake-s-aftermath-in-japan",
+      "primaryDomain": "france24.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 2,
+      "isCorporate": true,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/odisha/north-odisha-floods-125-lakh-people-affected-schools-closed-in-10-districts-situation-grim/article71280428.ece",
+      "title": "North Odisha floods: 1.25 lakh people affected; schools closed in 10 districts; situation grim",
+      "description": "The IMD has forecast heavy to very heavy rainfall at several places in Odisha over the next 24 hours",
+      "bluf": "North Odisha floods. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T09:29:47+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.thehindu.com/news/national/odisha/north-odisha-floods-125-lakh-people-affected-schools-closed-in-10-districts-situation-grim/article71280428.ece",
+          "label": "The Hindu – National",
+          "domain": "thehindu.com",
+          "publishedAt": "2026-07-29T09:29:47.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/odisha/north-odisha-floods-125-lakh-people-affected-schools-closed-in-10-districts-situation-grim/article71280428.ece",
+      "primaryDomain": "thehindu.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.independent.co.uk/bulletin/news/heathrow-airport-london-expansion-flights-b3023637.html",
+      "title": "Ticket prices to rise as Heathrow cleared to recoup £320m runway costs",
+      "description": null,
+      "bluf": "Ticket prices to rise as Heathrow cleared to recoup £320m runway costs. Classified under Political Instability. Reported by 1 outlet.",
+      "category": "political_instability",
+      "categoryLabel": "Political Instability",
+      "categoryColor": "#b06ab3",
+      "severity": "HIGH",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-29T09:26:13+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.independent.co.uk/bulletin/news/heathrow-airport-london-expansion-flights-b3023637.html",
+          "label": "The Independent (UK)",
+          "domain": "independent.co.uk",
+          "publishedAt": "2026-07-29T09:26:13.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.independent.co.uk/bulletin/news/heathrow-airport-london-expansion-flights-b3023637.html",
+      "primaryDomain": "independent.co.uk",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.ndtv.com/world-news/massive-earthquake-triggers-explosion-at-southern-japan-mall-several-dead-11836972#publisher=newsstand",
+      "title": "After Earthquake Came The Blast: Inside Japan's Shopping Mall Disaster",
+      "description": "A massive 7.1-magnitude quake rattled the building on Tuesday.",
+      "bluf": "After Earthquake Came The Blast. Classified under Natural Disaster. Reported by 2 outlets.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Japan",
+      "lat": 36.2,
+      "lon": 138.3,
+      "publishedAt": "2026-07-29T09:25:16+00:00",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "url": "https://www.ndtv.com/world-news/massive-earthquake-triggers-explosion-at-southern-japan-mall-several-dead-11836972#publisher=newsstand",
+          "label": "NDTV – Top Stories",
+          "domain": "ndtv.com",
+          "publishedAt": "2026-07-29T09:25:16.000Z"
+        },
+        {
+          "url": "https://www.straitstimes.com/asia/east-asia/after-the-quake-came-the-blast-inside-japans-shopping-mall-disaster",
+          "label": "The Straits Times Asia (APAC)",
+          "domain": "straitstimes.com",
+          "publishedAt": "2026-07-29T07:11:17.000Z"
+        },
+        {
+          "url": "https://www.straitstimes.com/asia/east-asia/extremely-strong-earthquake-hits-japans-kyushu-island",
+          "label": "The Straits Times Asia (APAC)",
+          "domain": "straitstimes.com",
+          "publishedAt": "2026-07-28T07:42:39.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.ndtv.com/world-news/massive-earthquake-triggers-explosion-at-southern-japan-mall-several-dead-11836972#publisher=newsstand",
+      "primaryDomain": "ndtv.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.hindustantimes.com/india-news/nepalese-man-sentenced-to-10-years-ri-for-kidnapping-and-sexually-assaulting-palghar-girl-in-2018-101785317013459.html",
+      "title": "Nepalese man sentenced to 10 years RI for kidnapping and sexually assaulting Palghar girl in 2018",
+      "description": "Nepalese man sentenced to 10 years RI for kidnapping and sexually assaulting Palghar girl in 2018",
+      "bluf": "Nepalese man sentenced to 10 years RI for kidnapping and sexually assaulting Palghar girl in 2018. Classified under Kidnapping. Reported by 1 outlet.",
+      "category": "kidnapping",
+      "categoryLabel": "Kidnapping",
+      "categoryColor": "#d16ba5",
+      "severity": "LOW",
+      "country": "Nepal",
+      "lat": 28.4,
+      "lon": 84.1,
+      "publishedAt": "2026-07-29T09:23:32+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.hindustantimes.com/india-news/nepalese-man-sentenced-to-10-years-ri-for-kidnapping-and-sexually-assaulting-palghar-girl-in-2018-101785317013459.html",
+          "label": "Hindustan Times – India News",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-29T09:23:32.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.hindustantimes.com/india-news/nepalese-man-sentenced-to-10-years-ri-for-kidnapping-and-sexually-assaulting-palghar-girl-in-2018-101785317013459.html",
+      "primaryDomain": "hindustantimes.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/enough-evidence-in-coal-scam-case-says-cbi/article60405925.ece1",
+      "title": "Enough evidence in coal scam case, says CBI",
+      "description": "Earlier, on October 21, CBI had filed a \"detailed and comprehensive\" report before the court in the case.",
+      "bluf": "Enough evidence in coal scam case, says CBI. Classified under Crime. Reported by 1 outlet.",
+      "category": "crime",
+      "categoryLabel": "Crime",
+      "categoryColor": "#9aa5b1",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T09:09:42+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.thehindu.com/news/national/enough-evidence-in-coal-scam-case-says-cbi/article60405925.ece1",
+          "label": "The Hindu – National",
+          "domain": "thehindu.com",
+          "publishedAt": "2026-07-29T09:09:42.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/enough-evidence-in-coal-scam-case-says-cbi/article60405925.ece1",
+      "primaryDomain": "thehindu.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.thehindu.com/business/Industry/cbi-to-probe-role-of-vijay-darda-in-coal-scam/article60405927.ece1",
+      "title": "Coal scam: CBI told to probe further into Rajya Sabha MP Vijay Darda's role",
+      "description": "In a closure report, the CBI had said that nothing substantial emerged to establish cheating and criminal conspiracy among Coal Ministry officials and JLD Yavatmal Energy",
+      "bluf": "Coal scam. Classified under Crime. Reported by 1 outlet.",
+      "category": "crime",
+      "categoryLabel": "Crime",
+      "categoryColor": "#9aa5b1",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T09:07:49+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.thehindu.com/business/Industry/cbi-to-probe-role-of-vijay-darda-in-coal-scam/article60405927.ece1",
+          "label": "The Hindu – National",
+          "domain": "thehindu.com",
+          "publishedAt": "2026-07-29T09:07:49.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/business/Industry/cbi-to-probe-role-of-vijay-darda-in-coal-scam/article60405927.ece1",
+      "primaryDomain": "thehindu.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": true
+    },
+    {
+      "id": "https://www.japantimes.co.jp/business/2026/07/29/companies/businesses-impacted-kumamoto-quake/",
+      "title": "Kumamoto Prefecture gripped by massive economic fallout after earthquake",
+      "description": "A mall and a Nippon Paper Industries' plant have collapsed, causing fatalities, as factories shut down and communications and transportation remain disrupted in the region.",
+      "bluf": "Kumamoto Prefecture gripped by massive economic fallout after earthquake. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-29T09:06:00+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.japantimes.co.jp/business/2026/07/29/companies/businesses-impacted-kumamoto-quake/",
+          "label": "Japan Times (APAC)",
+          "domain": "japantimes.co.jp",
+          "publishedAt": "2026-07-29T09:06:00.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.japantimes.co.jp/business/2026/07/29/companies/businesses-impacted-kumamoto-quake/",
+      "primaryDomain": "japantimes.co.jp",
+      "hasExecutiveTitle": false,
+      "corporateScore": 4,
+      "isCorporate": true,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.smh.com.au/national/police-officer-recovering-after-alleged-stabbing-20260729-p60js8.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
+      "title": "Police officer recovering after alleged stabbing",
+      "description": "A police officer is recovering in hospital after allegedly being stabbed in the neck at Elizabeth East in Adelaide's northern suburbs.",
+      "bluf": "Police officer recovering after alleged stabbing. Classified under Crime. Reported by 2 outlets.",
+      "category": "crime",
+      "categoryLabel": "Crime",
+      "categoryColor": "#9aa5b1",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-29T09:00:10+00:00",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "url": "https://www.smh.com.au/national/police-officer-recovering-after-alleged-stabbing-20260729-p60js8.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
+          "label": "Sydney Morning Herald (APAC)",
+          "domain": "smh.com.au",
+          "publishedAt": "2026-07-29T09:00:10.000Z"
+        },
+        {
+          "url": "https://www.theage.com.au/national/police-officer-recovering-after-alleged-stabbing-20260729-p60js8.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
+          "label": "The Age Australia (APAC)",
+          "domain": "theage.com.au",
+          "publishedAt": "2026-07-29T09:00:10.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.smh.com.au/national/police-officer-recovering-after-alleged-stabbing-20260729-p60js8.html?ref=rss&utm_medium=rss&utm_source=rss_feed",
+      "primaryDomain": "smh.com.au",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/kerala/wayanad-landslide-rehabilitation-despite-housing-survivors-struggle-with-infrastructure-needs-and-livelihood/article71280210.ece",
+      "title": "Wayanad landslide rehabilitation: Despite housing, survivors struggle with infrastructure needs and livelihood",
+      "description": "Two years after the Chooralmala disaster, relocated families at Kalpetta in Wayanad say permanent homes bring relief, but poor roads, waste management and rising cost hinder full recovery",
+      "bluf": "Wayanad landslide rehabilitation. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T08:58:28+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.thehindu.com/news/national/kerala/wayanad-landslide-rehabilitation-despite-housing-survivors-struggle-with-infrastructure-needs-and-livelihood/article71280210.ece",
+          "label": "The Hindu – National",
+          "domain": "thehindu.com",
+          "publishedAt": "2026-07-29T08:58:28.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/kerala/wayanad-landslide-rehabilitation-despite-housing-survivors-struggle-with-infrastructure-needs-and-livelihood/article71280210.ece",
+      "primaryDomain": "thehindu.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.straitstimes.com/asia/man-stages-own-kidnapping-in-malaysia-to-trick-parents-into-paying-loanshark-debt",
+      "title": "Man stages own kidnapping in Malaysia to trick parents into paying loanshark debt",
+      "description": "<p>He had previously accumulated RM45,000 in debts to loan sharks, which his father settled in early May.</p>",
+      "bluf": "Man stages own kidnapping in Malaysia to trick parents into paying loanshark debt. Classified under Kidnapping. Reported by 1 outlet.",
+      "category": "kidnapping",
+      "categoryLabel": "Kidnapping",
+      "categoryColor": "#d16ba5",
+      "severity": "LOW",
+      "country": "Malaysia",
+      "lat": 4.2,
+      "lon": 101.9,
+      "publishedAt": "2026-07-29T08:54:09+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.straitstimes.com/asia/man-stages-own-kidnapping-in-malaysia-to-trick-parents-into-paying-loanshark-debt",
+          "label": "The Straits Times Asia (APAC)",
+          "domain": "straitstimes.com",
+          "publishedAt": "2026-07-29T08:54:09.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.straitstimes.com/asia/man-stages-own-kidnapping-in-malaysia-to-trick-parents-into-paying-loanshark-debt",
+      "primaryDomain": "straitstimes.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/coal-scam-chronology-of-events/article60434742.ece1",
+      "title": "Coal scam: Chronology of events",
+      "description": null,
+      "bluf": "Coal scam. Classified under Crime. Reported by 1 outlet.",
+      "category": "crime",
+      "categoryLabel": "Crime",
+      "categoryColor": "#9aa5b1",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T08:52:09+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.thehindu.com/news/national/coal-scam-chronology-of-events/article60434742.ece1",
+          "label": "The Hindu – National",
+          "domain": "thehindu.com",
+          "publishedAt": "2026-07-29T08:52:09.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/coal-scam-chronology-of-events/article60434742.ece1",
+      "primaryDomain": "thehindu.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.walesonline.co.uk/sport/football/football-news/world-cup-boycott-fifa-uefa-34368661",
+      "title": "World Cup boycott threat as 55 countries could pull out and world leader weighs in",
+      "description": "FIFA's controversial plans are threatening to rip up international game",
+      "bluf": "World Cup boycott threat as 55 countries could pull out and world leader weighs in. Classified under Corporate Reputation. Reported by 1 outlet.",
+      "category": "corporate_reputation",
+      "categoryLabel": "Corporate Reputation",
+      "categoryColor": "#5b8def",
+      "severity": "MEDIUM",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-29T08:51:42+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.walesonline.co.uk/sport/football/football-news/world-cup-boycott-fifa-uefa-34368661",
+          "label": "Wales Online (UK)",
+          "domain": "walesonline.co.uk",
+          "publishedAt": "2026-07-29T08:51:42.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.walesonline.co.uk/sport/football/football-news/world-cup-boycott-fifa-uefa-34368661",
+      "primaryDomain": "walesonline.co.uk",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://newsinfo.inquirer.net/2273703/money-recovered-from-flood-control-kickbacks-reaches-p841-million-doj",
+      "title": "Money recovered from flood control kickbacks reaches P841 million – DOJ",
+      "description": "MANILA, Philippines – The Department of Justice (DOJ) on Wednesday said a total of P841 million in cash has been recovered and remitted to the Bureau of Treasury (BTr) since the start of the restitution in the flood control scandal last year. Latest data provided by DOJ spokesperson Polo Martinez showed that the total money returned to the government through the Land Bank of the Philippines as of June 3 came from four individuals accepted into the department’s Witness Protection Program (WPP). The biggest chunk came from dismissed Department of Public Works (DPWH) undersecretary Roberto Bernardo, who gave back a [&hellip;]...<br/><br/>Keep on reading: <a href=\"https://newsinfo.inquirer.net/2273703/money-recovered-from-flood-control-kickbacks-reaches-p841-million-doj\">Money recovered from flood control kickbacks reaches P841 million – DOJ</a>",
+      "bluf": "Money recovered from flood control kickbacks reaches P841 million. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Philippines",
+      "lat": 12.9,
+      "lon": 121.8,
+      "publishedAt": "2026-07-29T08:47:41+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://newsinfo.inquirer.net/2273703/money-recovered-from-flood-control-kickbacks-reaches-p841-million-doj",
+          "label": "Philippine Daily Inquirer (APAC)",
+          "domain": "newsinfo.inquirer.net",
+          "publishedAt": "2026-07-29T08:47:41.000Z"
+        }
+      ],
+      "primaryUrl": "https://newsinfo.inquirer.net/2273703/money-recovered-from-flood-control-kickbacks-reaches-p841-million-doj",
+      "primaryDomain": "newsinfo.inquirer.net",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": true
+    },
+    {
+      "id": "https://www.mirror.co.uk/sport/football/news/fa-world-cup-gianni-infantino-37488803",
+      "title": "FA 'deeply concerned' as they issue statement on FIFA's plan to sell off World Cup",
+      "description": "FIFA president Gianni Infantino is under fire amid plans to sell shares in the World Cup, sparking anger from fans and confederations such as UEFA, who have accused him of 'crossing a line'",
+      "bluf": "FA 'deeply concerned' as they issue statement on FIFA's plan to sell off World Cup. Classified under Executive Threats. Reported by 1 outlet.",
+      "category": "executive_threats",
+      "categoryLabel": "Executive Threats",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "Unknown",
+      "lat": null,
+      "lon": null,
+      "publishedAt": "2026-07-29T08:40:38+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.mirror.co.uk/sport/football/news/fa-world-cup-gianni-infantino-37488803",
+          "label": "The Mirror (UK)",
+          "domain": "mirror.co.uk",
+          "publishedAt": "2026-07-29T08:40:38.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.mirror.co.uk/sport/football/news/fa-world-cup-gianni-infantino-37488803",
+      "primaryDomain": "mirror.co.uk",
+      "hasExecutiveTitle": true,
+      "corporateScore": 3,
+      "isCorporate": true,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.birminghammail.co.uk/news/midlands-news/inside-birmingham-catcalling-crisis-runners-34368293",
+      "title": "Inside Birmingham catcalling crisis with runners left 'shaking' after being hounded",
+      "description": "\"It's sad to say it's our reality - but it shouldn't be that way\"",
+      "bluf": "Inside Birmingham catcalling crisis with runners left 'shaking' after being hounded. Classified under Terrorism. Reported by 1 outlet.",
+      "category": "terrorism",
+      "categoryLabel": "Terrorism",
+      "categoryColor": "#c0392b",
+      "severity": "LOW",
+      "country": "United Kingdom",
+      "lat": 54,
+      "lon": -2.9,
+      "publishedAt": "2026-07-29T08:36:21+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.birminghammail.co.uk/news/midlands-news/inside-birmingham-catcalling-crisis-runners-34368293",
+          "label": "Birmingham Live (UK)",
+          "domain": "birminghammail.co.uk",
+          "publishedAt": "2026-07-29T08:36:21.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.birminghammail.co.uk/news/midlands-news/inside-birmingham-catcalling-crisis-runners-34368293",
+      "primaryDomain": "birminghammail.co.uk",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://timesofindia.indiatimes.com/city/delhi/shorts-protest-at-delhis-st-stephens-dress-code-or-personal-freedom/articleshow/132706519.cms",
+      "title": "Shorts protest at Delhi's St Stephen's: Dress code or personal freedom?",
+      "description": "A St Stephen's College shorts ban ignites a debate on student freedom and institutional rules.  Students protest the new dress code, which restricts attire in classrooms and other college spaces.  This controversy highlights a broader trend of disputes over personal appearance on Indian campuses.  Colleges face challenges balancing tradition with students' growing expectations of personal autonomy.  The situation tests how Indian campuses manage institutional identity and individual liberty.",
+      "bluf": "Shorts protest at Delhi's St Stephen's. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T08:35:18+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://timesofindia.indiatimes.com/city/delhi/shorts-protest-at-delhis-st-stephens-dress-code-or-personal-freedom/articleshow/132706519.cms",
+          "label": "Times of India – Top Stories",
+          "domain": "timesofindia.indiatimes.com",
+          "publishedAt": "2026-07-29T08:35:18.000Z"
+        }
+      ],
+      "primaryUrl": "https://timesofindia.indiatimes.com/city/delhi/shorts-protest-at-delhis-st-stephens-dress-code-or-personal-freedom/articleshow/132706519.cms",
+      "primaryDomain": "timesofindia.indiatimes.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://newsinfo.inquirer.net/2273684/police-act-on-47-bomb-threats-in-central-luzon-schools-2-nabbed",
+      "title": "Police act on 47 bomb threats in Central Luzon schools, 2 nabbed",
+      "description": "CITY OF SAN FERNANDO—The police in Central Luzon on Wednesday reported it has been responding to 47 bomb threats in several schools in the region since May 1. Brig Gen. Jess B. Mendez, regional police director, said lawmen dealt with or have successfully thwarted what he called malicious acts through heightened security measures. READ: Pampanga solon seeks charges vs minors behind school attack threats “Police units have promptly validated every report, strengthened police visibility in and around school campuses, and worked closely with school officials, local government units, and partner agencies to safeguard students, teachers, and school personnel,” Mendez said [&hellip;]...<br/><br/>Keep on reading: <a href=\"https://newsinfo.inquirer.net/2273684/police-act-on-47-bomb-threats-in-central-luzon-schools-2-nabbed\">Police act on 47 bomb threats in Central Luzon schools, 2 nabbed</a>",
+      "bluf": "Police act on 47 bomb threats in Central Luzon schools, 2 nabbed. Classified under Facility Threats. Reported by 1 outlet.",
+      "category": "facility_threats",
+      "categoryLabel": "Facility Threats",
+      "categoryColor": "#e5484d",
+      "severity": "HIGH",
+      "country": "Mali",
+      "lat": 17.6,
+      "lon": -4,
+      "publishedAt": "2026-07-29T08:34:46+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://newsinfo.inquirer.net/2273684/police-act-on-47-bomb-threats-in-central-luzon-schools-2-nabbed",
+          "label": "Philippine Daily Inquirer (APAC)",
+          "domain": "newsinfo.inquirer.net",
+          "publishedAt": "2026-07-29T08:34:46.000Z"
+        }
+      ],
+      "primaryUrl": "https://newsinfo.inquirer.net/2273684/police-act-on-47-bomb-threats-in-central-luzon-schools-2-nabbed",
+      "primaryDomain": "newsinfo.inquirer.net",
+      "hasExecutiveTitle": true,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": true
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/karnataka/bjp-to-stage-protest-in-mandya-on-cauvery-water-issue-by-vijayendra/article71280507.ece",
+      "title": "BJP to stage protest in Mandya on Cauvery water issue: B.Y. Vijayendra",
+      "description": "He alleged that Chief Minister D.K. Shivakumar had appealed to farmers in Karnataka not to cultivate crops because of inadequate water availability while simultaneously releasing Cauvery water to Tamil Nadu ‘to please the CM of that State’",
+      "bluf": "BJP to stage protest in Mandya on Cauvery water issue. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T08:32:37+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.thehindu.com/news/national/karnataka/bjp-to-stage-protest-in-mandya-on-cauvery-water-issue-by-vijayendra/article71280507.ece",
+          "label": "The Hindu – National",
+          "domain": "thehindu.com",
+          "publishedAt": "2026-07-29T08:32:37.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/karnataka/bjp-to-stage-protest-in-mandya-on-cauvery-water-issue-by-vijayendra/article71280507.ece",
+      "primaryDomain": "thehindu.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": true
+    },
+    {
+      "id": "https://www.mirror.co.uk/news/world-news/france-wildfires-evacuation-brits-holiday-37488609",
+      "title": "British family left sleeping in tent and on beach after France wildfire evacuation on holiday to see grandma",
+      "description": "Melissa Sood and her family had been visiting her grandmother in Biscarrossee, 40 miles outside of Bordeaux, and were out for dinner when police told them they would have to evacuate",
+      "bluf": "British family left sleeping in tent and on beach after France wildfire evacuation on holiday to see grandma. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "MEDIUM",
+      "country": "France",
+      "lat": 46.6,
+      "lon": 2.2,
+      "publishedAt": "2026-07-29T08:32:07+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.mirror.co.uk/news/world-news/france-wildfires-evacuation-brits-holiday-37488609",
+          "label": "The Mirror (UK)",
+          "domain": "mirror.co.uk",
+          "publishedAt": "2026-07-29T08:32:07.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.mirror.co.uk/news/world-news/france-wildfires-evacuation-brits-holiday-37488609",
+      "primaryDomain": "mirror.co.uk",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.hindustantimes.com/india-news/normal-law-and-order-nadda-backs-police-action-against-protestors-recalls-his-own-emergency-arrest-101785308963885.html",
+      "title": "'Normal law and order': Nadda backs police action against protestors, recalls his own emergency arrest",
+      "description": "The union minister backed police action against the protestors and even recalled his own arrest during the emergency period.",
+      "bluf": "'Normal law and order'. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "MEDIUM",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T08:30:23+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.hindustantimes.com/india-news/normal-law-and-order-nadda-backs-police-action-against-protestors-recalls-his-own-emergency-arrest-101785308963885.html",
+          "label": "Hindustan Times – India News",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-29T08:30:23.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.hindustantimes.com/india-news/normal-law-and-order-nadda-backs-police-action-against-protestors-recalls-his-own-emergency-arrest-101785308963885.html",
+      "primaryDomain": "hindustantimes.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": true
+    },
+    {
+      "id": "https://www.aljazeera.com/news/2026/7/29/why-is-uganda-experiencing-a-food-crisis?traffic_source=rss",
+      "title": "Why is Uganda experiencing a food crisis?",
+      "description": "At least 19 people have died of starvation in the country and 1.5 million are at risk of malnutrition, experts warn.",
+      "bluf": "Why is Uganda experiencing a food crisis?. Classified under Terrorism. Reported by 1 outlet.",
+      "category": "terrorism",
+      "categoryLabel": "Terrorism",
+      "categoryColor": "#c0392b",
+      "severity": "LOW",
+      "country": "Uganda",
+      "lat": 1.4,
+      "lon": 32.3,
+      "publishedAt": "2026-07-29T08:04:25+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/7/29/why-is-uganda-experiencing-a-food-crisis?traffic_source=rss",
+          "label": "Al Jazeera – All",
+          "domain": "aljazeera.com",
+          "publishedAt": "2026-07-29T08:04:25.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.aljazeera.com/news/2026/7/29/why-is-uganda-experiencing-a-food-crisis?traffic_source=rss",
+      "primaryDomain": "aljazeera.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.cbc.ca/news/science/pyrocumulonimbus-explainer-9.7287545?cmp=rss",
+      "title": "You can only see these fire clouds during huge wildfires",
+      "description": "<img src='https://i.cbc.ca/ais/58c452e7-9f2a-4147-af31-e570df0f06d9,1785262594066/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C375%2C4000%2C2250%29%3BResize%3D%28620%29' alt='Big fluffy clouds reflecting orange light.' width='620' height='349' title='Pyrocumulus clouds, seen from Coquitlam, B.C., are pictured forming above the Boston Bar wildfire on July 21, 2026.'/><p>A huge fire in southwest France has generated the country's first recorded pyrocumulonimbus fire cloud, which are far more common in Canada. Here's why these clouds are special, how they form and how they make wildfires worse.</p>",
+      "bluf": "You can only see these fire clouds during huge wildfires. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Canada",
+      "lat": 56.1,
+      "lon": -106.3,
+      "publishedAt": "2026-07-29T08:00:00+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.cbc.ca/news/science/pyrocumulonimbus-explainer-9.7287545?cmp=rss",
+          "label": "CBC News Top Stories (Canada)",
+          "domain": "cbc.ca",
+          "publishedAt": "2026-07-29T08:00:00.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.cbc.ca/news/science/pyrocumulonimbus-explainer-9.7287545?cmp=rss",
+      "primaryDomain": "cbc.ca",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.walesonline.co.uk/news/wales-news/workers-subjected-abuse-harassment-welsh-34368059",
+      "title": "Workers subjected to abuse and harassment on Welsh bridge",
+      "description": "Traffic operatives are on the bridge to ensure compliance with a weight restriction",
+      "bluf": "Workers subjected to abuse and harassment on Welsh bridge. Classified under Crime. Reported by 1 outlet.",
+      "category": "crime",
+      "categoryLabel": "Crime",
+      "categoryColor": "#9aa5b1",
+      "severity": "LOW",
+      "country": "United Kingdom",
+      "lat": 54,
+      "lon": -2.9,
+      "publishedAt": "2026-07-29T07:59:35+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.walesonline.co.uk/news/wales-news/workers-subjected-abuse-harassment-welsh-34368059",
+          "label": "Wales Online (UK)",
+          "domain": "walesonline.co.uk",
+          "publishedAt": "2026-07-29T07:59:35.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.walesonline.co.uk/news/wales-news/workers-subjected-abuse-harassment-welsh-34368059",
+      "primaryDomain": "walesonline.co.uk",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.egyptindependent.com/france-sends-boats-to-evacuate-tourist-hotspot-cap-ferret-as-wildfires-rage/",
+      "title": "France sends boats to evacuate tourist hotspot Cap Ferret as wildfires rage",
+      "description": "<p>French authorities ordered the complete evacuation of the Cap Ferret peninsula on Friday, launching boats to help rescue people from the popular tourist destination as wildfires tear across western Europe. Evacuation boats operated from three piers on the peninsula, which is situated about 70 kilometers (43 miles) west of Bordeaux in southwestern France, the province’s …</p>\n<p>The post <a href=\"https://www.egyptindependent.com/france-sends-boats-to-evacuate-tourist-hotspot-cap-ferret-as-wildfires-rage/\">France sends boats to evacuate tourist hotspot Cap Ferret as wildfires rage</a> appeared first on <a href=\"https://www.egyptindependent.com\">Egypt Independent</a>.</p>",
+      "bluf": "France sends boats to evacuate tourist hotspot Cap Ferret as wildfires rage. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "MEDIUM",
+      "country": "France",
+      "lat": 46.6,
+      "lon": 2.2,
+      "publishedAt": "2026-07-29T07:51:52+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.egyptindependent.com/france-sends-boats-to-evacuate-tourist-hotspot-cap-ferret-as-wildfires-rage/",
+          "label": "Egypt Independent (EMEA)",
+          "domain": "egyptindependent.com",
+          "publishedAt": "2026-07-29T07:51:52.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.egyptindependent.com/france-sends-boats-to-evacuate-tourist-hotspot-cap-ferret-as-wildfires-rage/",
+      "primaryDomain": "egyptindependent.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://en.mercopress.com/2026/07/29/wildfires-in-spain-and-france-hit-the-world-s-two-largest-wine-growing-nations?utm_source=feed&utm_medium=rss&utm_content=international&utm_campaign=rss",
+      "title": "Wildfires in Spain and France hit the world's two largest wine-growing nations",
+      "description": "<p>\n\t   \t      <img src=\"https://en.mercopress.com/data/cache/noticias/110951/100x80/ince.jpeg\" alt=\"In France, more than 160,000 hectares have burned and some 13,566 fires or outbreaks have been recorded so far this season\" width=\"100\" height=\"80\" style=\"float:left;margin:0 12px 6px 0;border:1px solid #333\" />\n\t         The wildfires affecting Spain and France since mid-July have reached an unprecedented scale in both countries, which together account for nearly a quarter of the world's vineyard area. Spain declared a national wildfire emergency for the first time, while French President Emmanuel Macron described the situation as the most severe recorded in his country since the Second World War.</p>",
+      "bluf": "Wildfires in Spain and France hit the world's two largest wine. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "France",
+      "lat": 46.6,
+      "lon": 2.2,
+      "publishedAt": "2026-07-29T07:46:00+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://en.mercopress.com/2026/07/29/wildfires-in-spain-and-france-hit-the-world-s-two-largest-wine-growing-nations?utm_source=feed&utm_medium=rss&utm_content=international&utm_campaign=rss",
+          "label": "MercoPress International (LatAm)",
+          "domain": "en.mercopress.com",
+          "publishedAt": "2026-07-29T07:46:00.000Z"
+        }
+      ],
+      "primaryUrl": "https://en.mercopress.com/2026/07/29/wildfires-in-spain-and-france-hit-the-world-s-two-largest-wine-growing-nations?utm_source=feed&utm_medium=rss&utm_content=international&utm_campaign=rss",
+      "primaryDomain": "en.mercopress.com",
+      "hasExecutiveTitle": true,
+      "corporateScore": 1,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://timesofindia.indiatimes.com/india/watch-stormy-scenes-in-rajya-sabha-as-kharge-nadda-clash-over-police-action-against-student-protesters/articleshow/132703434.cms",
+      "title": "Watch: Kharge, Nadda clash over police action against student protesters",
+      "description": "Rajya Sabha saw a sharp exchange between opposition and ruling party leaders. Mallikarjun Kharge alleged an assault on democracy and demanded action. J.P. Nadda defended police action as a routine law and order measure. He stated student activists face consequences for overriding public order. The government maintained police acted within legal boundaries to prevent unauthorized marches.",
+      "bluf": "Watch. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "MEDIUM",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T07:39:53+00:00",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "url": "https://timesofindia.indiatimes.com/india/watch-stormy-scenes-in-rajya-sabha-as-kharge-nadda-clash-over-police-action-against-student-protesters/articleshow/132703434.cms",
+          "label": "Times of India – Top Stories",
+          "domain": "timesofindia.indiatimes.com",
+          "publishedAt": "2026-07-29T07:39:53.000Z"
+        },
+        {
+          "url": "https://www.thehindu.com/news/national/rahul-gandhi-targets-amit-shah-in-lok-sabha-over-police-action-against-student-protesters/article71280820.ece",
+          "label": "The Hindu – National",
+          "domain": "thehindu.com",
+          "publishedAt": "2026-07-29T09:36:18.000Z"
+        }
+      ],
+      "primaryUrl": "https://timesofindia.indiatimes.com/india/watch-stormy-scenes-in-rajya-sabha-as-kharge-nadda-clash-over-police-action-against-student-protesters/articleshow/132703434.cms",
+      "primaryDomain": "timesofindia.indiatimes.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": true
+    },
+    {
+      "id": "https://www.thehindu.com/news/national/daily-quiz-on-protest-movements-in-recent-times-in-india/article71261025.ece",
+      "title": "Daily Quiz | on protest movements in recent times in India",
+      "description": "Test your knowledge with The Hindu’s quiz on recent protest movements in India",
+      "bluf": "Daily Quiz | on protest movements in recent times in India. Classified under Civil Unrest. Reported by 1 outlet.",
+      "category": "civil_unrest",
+      "categoryLabel": "Civil Unrest",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T07:34:36+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.thehindu.com/news/national/daily-quiz-on-protest-movements-in-recent-times-in-india/article71261025.ece",
+          "label": "The Hindu – National",
+          "domain": "thehindu.com",
+          "publishedAt": "2026-07-29T07:34:36.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.thehindu.com/news/national/daily-quiz-on-protest-movements-in-recent-times-in-india/article71261025.ece",
+      "primaryDomain": "thehindu.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://timesofindia.indiatimes.com/business/india-business/indian-it-stocks-rally-why-tcs-infosys-wipro-are-rising-as-global-ai-stocks-plunge/articleshow/132705298.cms",
+      "title": "Indian IT stocks rally: Why TCS, Infosys, Wipro are rising as global AI stocks plunge",
+      "description": "The gains came even as India's IT sector continues to face headwinds, including subdued discretionary technology spending, pricing pressure, higher employee costs and uncertainty over how artificial intelligence could affect conventional outsourcing revenues.",
+      "bluf": "Indian IT stocks rally. Classified under Protests. Reported by 1 outlet.",
+      "category": "protests",
+      "categoryLabel": "Protests",
+      "categoryColor": "#f2b134",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T07:31:28+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://timesofindia.indiatimes.com/business/india-business/indian-it-stocks-rally-why-tcs-infosys-wipro-are-rising-as-global-ai-stocks-plunge/articleshow/132705298.cms",
+          "label": "Times of India – Top Stories",
+          "domain": "timesofindia.indiatimes.com",
+          "publishedAt": "2026-07-29T07:31:28.000Z"
+        }
+      ],
+      "primaryUrl": "https://timesofindia.indiatimes.com/business/india-business/indian-it-stocks-rally-why-tcs-infosys-wipro-are-rising-as-global-ai-stocks-plunge/articleshow/132705298.cms",
+      "primaryDomain": "timesofindia.indiatimes.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://timesofindia.indiatimes.com/india/coal-block-scam-case-in-supreme-court-ex-pm-manmohan-singh-gets-clean-chit-two-years-after-his-death/articleshow/132705195.cms",
+      "title": "Coal block scam case in SC: Ex-PM Manmohan Singh gets clean chit 2 years after his death",
+      "description": null,
+      "bluf": "Coal block scam case in SC. Classified under Crime. Reported by 1 outlet.",
+      "category": "crime",
+      "categoryLabel": "Crime",
+      "categoryColor": "#9aa5b1",
+      "severity": "HIGH",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T07:30:02+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://timesofindia.indiatimes.com/india/coal-block-scam-case-in-supreme-court-ex-pm-manmohan-singh-gets-clean-chit-two-years-after-his-death/articleshow/132705195.cms",
+          "label": "Times of India – Top Stories",
+          "domain": "timesofindia.indiatimes.com",
+          "publishedAt": "2026-07-29T07:30:02.000Z"
+        }
+      ],
+      "primaryUrl": "https://timesofindia.indiatimes.com/india/coal-block-scam-case-in-supreme-court-ex-pm-manmohan-singh-gets-clean-chit-two-years-after-his-death/articleshow/132705195.cms",
+      "primaryDomain": "timesofindia.indiatimes.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "http://www.euronews.com/video/2026/07/29/wisconsin-tornado-leaves-homes-damaged-and-streets-covered-in-debris",
+      "title": "Wisconsin tornado leaves homes damaged and streets covered in debris",
+      "description": "Residents in Menasha, Wisconsin, survey tornado damage as crews assess destroyed homes, fallen trees and damaged power lines after the storm.",
+      "bluf": "Wisconsin tornado leaves homes damaged and streets covered in debris. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "United States",
+      "lat": 39.8,
+      "lon": -98.6,
+      "publishedAt": "2026-07-29T07:29:11+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "http://www.euronews.com/video/2026/07/29/wisconsin-tornado-leaves-homes-damaged-and-streets-covered-in-debris",
+          "label": "Euronews (EMEA)",
+          "domain": "euronews.com",
+          "publishedAt": "2026-07-29T07:29:11.000Z"
+        }
+      ],
+      "primaryUrl": "http://www.euronews.com/video/2026/07/29/wisconsin-tornado-leaves-homes-damaged-and-streets-covered-in-debris",
+      "primaryDomain": "euronews.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
     {
       "id": "https://zeenews.india.com/india/india-s-education-crisis-thousands-of-crores-spent-but-where-are-the-jobs-3063596.html",
       "title": "India’s education crisis: Thousands of crores spent, but where are the jobs?",
@@ -1406,13 +2457,19 @@
       "lat": null,
       "lon": null,
       "publishedAt": "2026-07-29T07:15:20+00:00",
-      "sourceCount": 1,
+      "sourceCount": 2,
       "sources": [
         {
           "url": "https://www.mirror.co.uk/news/politics/burnham-speech-social-care-updates-37487466",
           "label": "The Mirror (UK)",
           "domain": "mirror.co.uk",
           "publishedAt": "2026-07-29T07:15:20.000Z"
+        },
+        {
+          "url": "https://www.standard.co.uk/news/politics/andy-burnham-prime-minister-yvette-cooper-parliament-b1291665.html",
+          "label": "Evening Standard (UK)",
+          "domain": "standard.co.uk",
+          "publishedAt": "2026-07-29T09:50:25.000Z"
         }
       ],
       "primaryUrl": "https://www.mirror.co.uk/news/politics/burnham-speech-social-care-updates-37487466",
@@ -1435,7 +2492,7 @@
       "lat": 22,
       "lon": 79,
       "publishedAt": "2026-07-29T07:14:23+00:00",
-      "sourceCount": 1,
+      "sourceCount": 3,
       "sources": [
         {
           "url": "https://www.indiatoday.in/world/story/pok-violence-protesters-enemies-india-pakistan-hypocrisy-2958771-2026-07-29?utm_source=rss",
@@ -1454,6 +2511,18 @@
           "label": "India Today Home (India)",
           "domain": "indiatoday.in",
           "publishedAt": "2026-07-29T07:14:23.000Z"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/world/pakistan/theyre-enemies-like-india-pakistan-minister-khawaja-asif-justifies-killing-of-over-30-protesters-in-pok/articleshow/132701608.cms",
+          "label": "Times of India – Top Stories",
+          "domain": "timesofindia.indiatimes.com",
+          "publishedAt": "2026-07-29T07:22:49.000Z"
+        },
+        {
+          "url": "https://www.hindustantimes.com/world-news/enemies-like-india-pakistan-minister-khawaja-asif-pok-protests-amnesty-international-lethal-force-killed-injured-101785302153276.html",
+          "label": "Hindustan Times World (APAC)",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-29T06:13:19.000Z"
         }
       ],
       "primaryUrl": "https://www.indiatoday.in/world/story/pok-violence-protesters-enemies-india-pakistan-hypocrisy-2958771-2026-07-29?utm_source=rss",
@@ -1493,35 +2562,6 @@
       ],
       "primaryUrl": "https://www.indiatoday.in/world/story/thailand-india-travel-kidnapped-cheap-tour-packages-indian-pakistan-gang-torture-ransom-pattaya-2958730-2026-07-29?utm_source=rss",
       "primaryDomain": "indiatoday.in",
-      "hasExecutiveTitle": false,
-      "corporateScore": 0,
-      "isCorporate": false,
-      "isLikelyPolitical": false
-    },
-    {
-      "id": "https://www.nytimes.com/2026/07/28/world/asia/japan-earthquake-kumamoto-rescue-survivors.html",
-      "title": "Japan Races to Reach People Trapped After Earthquake Kills at Least 13",
-      "description": "Rescue personnel are working to free those trapped in collapsed buildings after a 6.8-magnitude earthquake struck Kumamoto on Tuesday.",
-      "bluf": "Japan Races to Reach People Trapped After Earthquake Kills at Least 13. Classified under Natural Disaster. Reported by 1 outlet.",
-      "category": "natural_disaster",
-      "categoryLabel": "Natural Disaster",
-      "categoryColor": "#5cb85c",
-      "severity": "LOW",
-      "country": "Japan",
-      "lat": 36.2,
-      "lon": 138.3,
-      "publishedAt": "2026-07-29T07:10:43+00:00",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.nytimes.com/2026/07/28/world/asia/japan-earthquake-kumamoto-rescue-survivors.html",
-          "label": "New York Times – World",
-          "domain": "nytimes.com",
-          "publishedAt": "2026-07-29T07:10:43.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.nytimes.com/2026/07/28/world/asia/japan-earthquake-kumamoto-rescue-survivors.html",
-      "primaryDomain": "nytimes.com",
       "hasExecutiveTitle": false,
       "corporateScore": 0,
       "isCorporate": false,
@@ -1919,7 +2959,7 @@
     {
       "id": "https://www.aa.com.tr/en/eurasia/russia-charges-telegram-founder-durov-with-aiding-terrorism/4012127",
       "title": "Russia charges Telegram founder Pavel Durov with aiding terrorism",
-      "description": null,
+      "description": "Moscow on Wednesday said it had issued an international wanted notice for Russian-born Telegram CEO Pavel Durov for \"complicity in terrorism\". Russian security services accused Durov of failing to remove \"channels, chats and bots\" on the popular messaging platform allegedly used by Ukraine to recruit people for deadly sabotage operations across Russia.",
       "bluf": "Russia charges Telegram founder Pavel Durov with aiding terrorism. Classified under Terrorism. Reported by 2 outlets.",
       "category": "terrorism",
       "categoryLabel": "Terrorism",
@@ -1929,7 +2969,7 @@
       "lat": 61.5,
       "lon": 105.3,
       "publishedAt": "2026-07-29T06:44:04+00:00",
-      "sourceCount": 2,
+      "sourceCount": 6,
       "sources": [
         {
           "url": "https://indianexpress.com/article/world/russia-charges-telegram-founder-pavel-durov-with-aiding-terrorism-10808557/",
@@ -1942,12 +2982,36 @@
           "label": "Anadolu Agency English (MENA)",
           "domain": "aa.com.tr",
           "publishedAt": "2026-07-29T06:28:52.000Z"
+        },
+        {
+          "url": "https://www.france24.com/en/europe/20260729-russia-issues-international-wanted-notice-against-telegram-founder-pavel-durov-for-aiding-terrorism",
+          "label": "France 24 – World",
+          "domain": "france24.com",
+          "publishedAt": "2026-07-29T08:45:34.000Z"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/world/europe/russias-telegram-crackdown-pavel-durov-charged-with-aiding-terrorism-puts-him-on-international-wanted-list/articleshow/132705911.cms",
+          "label": "Times of India – Top Stories",
+          "domain": "timesofindia.indiatimes.com",
+          "publishedAt": "2026-07-29T08:46:03.000Z"
+        },
+        {
+          "url": "https://nypost.com/2026/07/29/world-news/telegram-founder-pavel-durov-charged-with-aiding-terrorism-russia-puts-him-on-wanted-list/",
+          "label": "NY Post (USA)",
+          "domain": "nypost.com",
+          "publishedAt": "2026-07-29T07:20:21.000Z"
+        },
+        {
+          "url": "https://www.themoscowtimes.com/2026/07/29/fsb-issues-arrest-warrant-for-pavel-durov-for-aiding-terrorism-a93364",
+          "label": "The Moscow Times (EMEA)",
+          "domain": "themoscowtimes.com",
+          "publishedAt": "2026-07-29T07:50:26.000Z"
         }
       ],
       "primaryUrl": "https://indianexpress.com/article/world/russia-charges-telegram-founder-pavel-durov-with-aiding-terrorism-10808557/",
       "primaryDomain": "indianexpress.com",
-      "hasExecutiveTitle": false,
-      "corporateScore": 0,
+      "hasExecutiveTitle": true,
+      "corporateScore": 1,
       "isCorporate": false,
       "isLikelyPolitical": false
     },
@@ -2091,6 +3155,35 @@
       ],
       "primaryUrl": "https://www.vanguardngr.com/2026/07/gunmen-abduct-inec-staff-in-anambra-shoot-businessman-demand-n40m/",
       "primaryDomain": "vanguardngr.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": true
+    },
+    {
+      "id": "https://www.france24.com/en/europe/20260729-live-massive-wildfire-in-southwest-france-remains-under-control",
+      "title": "Live: Next 12 hours will be 'decisive' for ending wildfire near Madrid, Spanish PM Sanchez says",
+      "description": "Spain's Prime Minister Pedro Sanchez said Wednesday that efforts to extinguish a major wildfire near Madrid were progressing \"favourably\" and the next 12 hours would be \"decisive\". Tens of thousands of people began to return to their homes as firefighters work to contain some of the worst fires the country has faced. Follow our liveblog for all the latest updates.",
+      "bluf": "Live. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Spain",
+      "lat": 40.2,
+      "lon": -3.7,
+      "publishedAt": "2026-07-29T06:36:53+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.france24.com/en/europe/20260729-live-massive-wildfire-in-southwest-france-remains-under-control",
+          "label": "France 24 – World",
+          "domain": "france24.com",
+          "publishedAt": "2026-07-29T06:36:53.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.france24.com/en/europe/20260729-live-massive-wildfire-in-southwest-france-remains-under-control",
+      "primaryDomain": "france24.com",
       "hasExecutiveTitle": false,
       "corporateScore": 0,
       "isCorporate": false,
@@ -2583,6 +3676,12 @@
           "label": "Politico Europe (EMEA)",
           "domain": "politico.com",
           "publishedAt": "2026-07-29T00:53:17.000Z"
+        },
+        {
+          "url": "https://www.hindustantimes.com/india-news/india-china-main-culprits-key-targets-of-russia-sanctions-bill-us-senator-roger-wicker-modi-trump-xi-jinping-putin-101785309967526.html",
+          "label": "Hindustan Times – India News",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-29T07:36:43.000Z"
         }
       ],
       "primaryUrl": "https://www.ndtv.com/world-news/us-senate-passes-russia-sanctions-bill-calling-for-100-tariffs-on-india-china-11836241#publisher=newsstand",
@@ -2590,7 +3689,7 @@
       "hasExecutiveTitle": false,
       "corporateScore": 0,
       "isCorporate": false,
-      "isLikelyPolitical": true
+      "isLikelyPolitical": false
     },
     {
       "id": "https://www.aa.com.tr/en/middle-east/israeli-occupiers-torch-home-abduct-2-palestinians-in-west-bank-attacks/4012108",
@@ -4213,35 +5312,6 @@
       "isLikelyPolitical": false
     },
     {
-      "id": "https://scroll.in/latest/1094616/after-assam-and-bihar-bengal-and-maharashtra-to-stop-coercive-action-against-protesters?utm_source=rss&utm_medium=public",
-      "title": "After Assam and Bihar, Bengal and Maharashtra to stop coercive action against protesters",
-      "description": "Twenty cases were registered in Mumbai in which more than 1,000 persons had been booked.",
-      "bluf": "After Assam and Bihar, Bengal and Maharashtra to stop coercive action against protesters. Classified under Civil Unrest. Reported by 1 outlet.",
-      "category": "civil_unrest",
-      "categoryLabel": "Civil Unrest",
-      "categoryColor": "#f2b134",
-      "severity": "LOW",
-      "country": "India",
-      "lat": 22,
-      "lon": 79,
-      "publishedAt": "2026-07-29T02:37:52+00:00",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://scroll.in/latest/1094616/after-assam-and-bihar-bengal-and-maharashtra-to-stop-coercive-action-against-protesters?utm_source=rss&utm_medium=public",
-          "label": "Scroll.in (India)",
-          "domain": "scroll.in",
-          "publishedAt": "2026-07-29T02:37:52.000Z"
-        }
-      ],
-      "primaryUrl": "https://scroll.in/latest/1094616/after-assam-and-bihar-bengal-and-maharashtra-to-stop-coercive-action-against-protesters?utm_source=rss&utm_medium=public",
-      "primaryDomain": "scroll.in",
-      "hasExecutiveTitle": false,
-      "corporateScore": 0,
-      "isCorporate": false,
-      "isLikelyPolitical": false
-    },
-    {
       "id": "https://timesofindia.indiatimes.com/city/delhi/cjp-protest-dcp-ordered-raf-to-use-force-pellets-delhi-cops-probe-diary-entry/articleshow/132698067.cms",
       "title": "CJP protest: Cops probe diary entry that DCP ordered RAF to use force, pellets",
       "description": "Delhi Police is investigating a back-dated general diary entry concerning protester actions.  The entry claims a deputy commander used plastic pellets on July twentieth.  This incident may mark the first use of pellet guns in Delhi.  Senior officials refuted the use of pellet guns by Delhi Police.  Reports of similar orders from another DCP are also being examined.",
@@ -4666,6 +5736,41 @@
       "isLikelyPolitical": false
     },
     {
+      "id": "https://www.hindustantimes.com/india-news/us-senate-russia-sanctions-bill-india-others-at-risk-of-100-tariffs-101785285487242.html",
+      "title": "India, others at risk of up to 100% tariffs as US Senate votes to advance Russia sanctions bill",
+      "description": "The sweeping sanctions bill, authored by the late Senator Lindsey Graham, was moved on Tuesday when Ukrainian President Volodymyr Zelensky visited Capitol.",
+      "bluf": "India, others at risk of up to 100% tariffs as US Senate votes to advance Russia sanctions bill. Classified under Geopolitical Events. Reported by 1 outlet.",
+      "category": "geopolitical",
+      "categoryLabel": "Geopolitical Events",
+      "categoryColor": "#4a7fc9",
+      "severity": "LOW",
+      "country": "India",
+      "lat": 22,
+      "lon": 79,
+      "publishedAt": "2026-07-29T00:40:45+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.hindustantimes.com/india-news/us-senate-russia-sanctions-bill-india-others-at-risk-of-100-tariffs-101785285487242.html",
+          "label": "Hindustan Times – India News",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-29T00:40:45.000Z"
+        },
+        {
+          "url": "https://www.hindustantimes.com/world-news/moral-signal-zelensky-thanks-us-senators-for-russia-sanctions-bill-that-risks-100-percent-tariffs-on-india-4-others-101785304748800.html",
+          "label": "Hindustan Times World (APAC)",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-29T06:21:54.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.hindustantimes.com/india-news/us-senate-russia-sanctions-bill-india-others-at-risk-of-100-tariffs-101785285487242.html",
+      "primaryDomain": "hindustantimes.com",
+      "hasExecutiveTitle": true,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": true
+    },
+    {
       "id": "https://www.cbc.ca/player/play/9.7288388?cmp=rss",
       "title": "Fact check: Is this Japan Costco earthquake video from 2016 or 2026?",
       "description": "<img src='https://i.cbc.ca/ais/414607b1-efd8-4dd9-9dc9-5c0cb141d67f,1785285541956/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1280%2C720%29%3BResize%3D%28620%29' alt='Inside a Costco in Japan during an earthquake.' width='620' height='349' title='Inside a Costco in Japan during an earthquake.'/><p>This video of a Costco in Japan has gone viral after a major earthquake hit the country’s southern Kyushu island. Here’s how we verified the video.</p>",
@@ -4727,6 +5832,113 @@
       "hasExecutiveTitle": false,
       "corporateScore": 0,
       "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.straitstimes.com/asia/east-asia/live-strong-quake-hits-japan-at-least-two-killed-in-kumamoto-mall-blast",
+      "title": "Live: Japan earthquake: Rescuers in ‘race against time’ as death tolls rises to 13",
+      "description": "<p>The search for survivors is ongoing at the damaged Aeon Mall and Nippon Paper Industries factory in Kumamoto.</p>",
+      "bluf": "Live. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "HIGH",
+      "country": "Japan",
+      "lat": 36.2,
+      "lon": 138.3,
+      "publishedAt": "2026-07-29T00:07:16+00:00",
+      "sourceCount": 12,
+      "sources": [
+        {
+          "url": "https://www.straitstimes.com/asia/east-asia/live-strong-quake-hits-japan-at-least-two-killed-in-kumamoto-mall-blast",
+          "label": "The Straits Times Asia (APAC)",
+          "domain": "straitstimes.com",
+          "publishedAt": "2026-07-29T00:07:16.000Z"
+        },
+        {
+          "url": "https://www.npr.org/2026/07/29/nx-s1-5911613/japan-earthquake-updates",
+          "label": "NPR – World",
+          "domain": "npr.org",
+          "publishedAt": "2026-07-29T05:34:42.000Z"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/asia/least-13-killed-japan-earthquake-others-trapped-rubble-rcna589771",
+          "label": "NBC News (USA)",
+          "domain": "nbcnews.com",
+          "publishedAt": "2026-07-29T05:42:18.000Z"
+        },
+        {
+          "url": "https://www.cbc.ca/news/world/japan-earthquake-missing-9.7288522?cmp=rss",
+          "label": "CBC News Top Stories (Canada)",
+          "domain": "cbc.ca",
+          "publishedAt": "2026-07-29T08:50:39.000Z"
+        },
+        {
+          "url": "https://www.independent.co.uk/asia/japan/japan-earthquake-live-kumamoto-shopping-mall-deaths-map-b3023453.html",
+          "label": "The Independent (UK)",
+          "domain": "independent.co.uk",
+          "publishedAt": "2026-07-29T09:54:24.000Z"
+        },
+        {
+          "url": "https://www.mirror.co.uk/news/world-news/japan-earthquake-kumamoto-tsunami-warning-37483971",
+          "label": "The Mirror (UK)",
+          "domain": "mirror.co.uk",
+          "publishedAt": "2026-07-29T09:06:34.000Z"
+        },
+        {
+          "url": "https://www.cbc.ca/news/world/japan-earthquake-9.7286947?cmp=rss",
+          "label": "CBC News Top Stories (Canada)",
+          "domain": "cbc.ca",
+          "publishedAt": "2026-07-28T12:59:43.000Z"
+        },
+        {
+          "url": "https://www.france24.com/en/at-least-13-dead-in-japan-after-powerful-earthquake",
+          "label": "France 24 – World",
+          "domain": "france24.com",
+          "publishedAt": "2026-07-29T08:54:25.000Z"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/07/28/world/asia/japan-earthquake-kumamoto-rescue-survivors.html",
+          "label": "New York Times – World",
+          "domain": "nytimes.com",
+          "publishedAt": "2026-07-29T07:50:22.000Z"
+        },
+        {
+          "url": "https://www.egyptindependent.com/at-least-13-people-dead-following-earthquake-japans-leader-says/",
+          "label": "Egypt Independent (EMEA)",
+          "domain": "egyptindependent.com",
+          "publishedAt": "2026-07-29T07:48:50.000Z"
+        },
+        {
+          "url": "https://www.cbsnews.com/video/dozens-injured-buildings-damaged-after-powerful-earthquake-strikes-japan/",
+          "label": "CBS News – World",
+          "domain": "cbsnews.com",
+          "publishedAt": "2026-07-28T14:00:57.000Z"
+        },
+        {
+          "url": "https://www.nbcnews.com/nightly-news/video/powerful-earthquake-in-japan-causes-widespread-damage-267413573878",
+          "label": "NBC News (USA)",
+          "domain": "nbcnews.com",
+          "publishedAt": "2026-07-28T22:40:44.000Z"
+        },
+        {
+          "url": "http://www.euronews.com/video/2026/07/28/tsunami-alert-follows-powerful-earthquake-in-southwest-japan",
+          "label": "Euronews (EMEA)",
+          "domain": "euronews.com",
+          "publishedAt": "2026-07-28T12:40:56.000Z"
+        },
+        {
+          "url": "https://www.hindustantimes.com/world-news/japan-hit-by-7-1-magnitude-earthquake-tsunami-alert-issued-101785225168459.html",
+          "label": "Hindustan Times World (APAC)",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-28T07:53:39.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.straitstimes.com/asia/east-asia/live-strong-quake-hits-japan-at-least-two-killed-in-kumamoto-mall-blast",
+      "primaryDomain": "straitstimes.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 4,
+      "isCorporate": true,
       "isLikelyPolitical": false
     },
     {
@@ -5307,6 +6519,35 @@
       "primaryDomain": "hindustantimes.com",
       "hasExecutiveTitle": false,
       "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.cbc.ca/player/play/9.7287915?cmp=rss",
+      "title": "B.C. ranch shelters dozens of horses as wildfire forces evacuations",
+      "description": "<img src='https://i.cbc.ca/ais/b8bf4070-d65d-4d0c-84d2-5dbc04eeb697,1785270304892/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D%28620%29' alt='Double Seven Ranch manager Jessica Heikes.' width='620' height='349' title='Double Seven Ranch manager Jessica Heikes.'/><p>A ranch in British Columbia has taken in nearly 30 horses after wildfires forced families to evacuate. Jessica Heikes, manager of Double Seven Ranch near Cache Creek, says opening the ranch to evacuees and their animals was never a question.</p>",
+      "bluf": "B.C. ranch shelters dozens of horses as wildfire forces evacuations. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "MEDIUM",
+      "country": "United Kingdom",
+      "lat": 54,
+      "lon": -2.9,
+      "publishedAt": "2026-07-28T20:26:20+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.cbc.ca/player/play/9.7287915?cmp=rss",
+          "label": "CBC News Top Stories (Canada)",
+          "domain": "cbc.ca",
+          "publishedAt": "2026-07-28T20:26:20.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.cbc.ca/player/play/9.7287915?cmp=rss",
+      "primaryDomain": "cbc.ca",
+      "hasExecutiveTitle": true,
+      "corporateScore": 1,
       "isCorporate": false,
       "isLikelyPolitical": false
     },
@@ -6101,21 +7342,33 @@
       "lat": 61.5,
       "lon": 105.3,
       "publishedAt": "2026-07-28T18:20:40+00:00",
-      "sourceCount": 1,
+      "sourceCount": 3,
       "sources": [
         {
           "url": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-trump-putin-zelensky-ceasefire-b3022719.html",
           "label": "The Independent (UK)",
           "domain": "independent.co.uk",
           "publishedAt": "2026-07-28T18:20:40.000Z"
+        },
+        {
+          "url": "https://www.rfi.fr/en/international/20260729-zelensky-hails-good-meeting-with-trump-as-ukraine-seeks-patriot-missile-deal",
+          "label": "RFI English (EMEA)",
+          "domain": "rfi.fr",
+          "publishedAt": "2026-07-29T07:04:09.000Z"
+        },
+        {
+          "url": "https://www.hindustantimes.com/world-news/ukraine-president-zelensky-hails-good-trump-talks-on-patriot-air-defenses-101785257810726.html",
+          "label": "Hindustan Times World (APAC)",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-28T17:03:47.000Z"
         }
       ],
       "primaryUrl": "https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-trump-putin-zelensky-ceasefire-b3022719.html",
       "primaryDomain": "independent.co.uk",
-      "hasExecutiveTitle": false,
+      "hasExecutiveTitle": true,
       "corporateScore": 0,
       "isCorporate": false,
-      "isLikelyPolitical": false
+      "isLikelyPolitical": true
     },
     {
       "id": "https://timesofindia.indiatimes.com/city/delhi/st-stephens-bans-shorts-on-campus-students-turn-up-wearing-them-in-protest/articleshow/132692732.cms",
@@ -6983,6 +8236,47 @@
       ],
       "primaryUrl": "https://www.thehindu.com/news/national/pakistans-gen-z-should-take-note-of-islamabads-support-for-terrorism-against-india-mea/article71277721.ece",
       "primaryDomain": "thehindu.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.nytimes.com/2026/07/28/world/asia/japan-earthquake-kumamoto-castle-damage.html",
+      "title": "Kumamoto Castle, a Famed Landmark, Is Damaged in the Japan Earthquake",
+      "description": "The centuries-old castle, one of the country’s best-known, was also affected by the region’s 2016 earthquakes.",
+      "bluf": "Kumamoto Castle, a Famed Landmark, Is Damaged in the Japan Earthquake. Classified under Natural Disaster. Reported by 2 outlets.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "Japan",
+      "lat": 36.2,
+      "lon": 138.3,
+      "publishedAt": "2026-07-28T17:06:28+00:00",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "url": "https://www.nytimes.com/2026/07/28/world/asia/japan-earthquake-kumamoto-castle-damage.html",
+          "label": "New York Times – World",
+          "domain": "nytimes.com",
+          "publishedAt": "2026-07-28T17:06:28.000Z"
+        },
+        {
+          "url": "https://www.straitstimes.com/asia/east-asia/japans-famed-kumamoto-castle-damaged-in-powerful-earthquake",
+          "label": "The Straits Times Asia (APAC)",
+          "domain": "straitstimes.com",
+          "publishedAt": "2026-07-28T14:45:00.000Z"
+        },
+        {
+          "url": "https://www.hindustantimes.com/world-news/kumamoto-castle-collapse-buildings-shaking-7-1-earthquake-in-japan-videos-social-media-tsunami-alert-101785227883079.html",
+          "label": "Hindustan Times World (APAC)",
+          "domain": "hindustantimes.com",
+          "publishedAt": "2026-07-28T08:59:17.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.nytimes.com/2026/07/28/world/asia/japan-earthquake-kumamoto-castle-damage.html",
+      "primaryDomain": "nytimes.com",
       "hasExecutiveTitle": false,
       "corporateScore": 0,
       "isCorporate": false,
@@ -7927,6 +9221,35 @@
       "hasExecutiveTitle": false,
       "corporateScore": 0,
       "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://news.sky.com/story/uefa-fury-as-fifa-boss-wants-to-sell-shares-in-world-cup-spin-off-venture-13567834",
+      "title": "European nations discussing World Cup boycott after FIFA's Infantino 'crosses a line'",
+      "description": "European nations are discussing boycotting the World Cup if Gianni Infantino pushes ahead with plans to sell off part of FIFA to private investors, Sky News can reveal.",
+      "bluf": "European nations discussing World Cup boycott after FIFA's Infantino 'crosses a line'. Classified under Corporate Reputation. Reported by 1 outlet.",
+      "category": "corporate_reputation",
+      "categoryLabel": "Corporate Reputation",
+      "categoryColor": "#5b8def",
+      "severity": "LOW",
+      "country": "United Kingdom",
+      "lat": 54,
+      "lon": -2.9,
+      "publishedAt": "2026-07-28T15:12:00+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://news.sky.com/story/uefa-fury-as-fifa-boss-wants-to-sell-shares-in-world-cup-spin-off-venture-13567834",
+          "label": "Sky News – World",
+          "domain": "news.sky.com",
+          "publishedAt": "2026-07-28T15:12:00.000Z"
+        }
+      ],
+      "primaryUrl": "https://news.sky.com/story/uefa-fury-as-fifa-boss-wants-to-sell-shares-in-world-cup-spin-off-venture-13567834",
+      "primaryDomain": "news.sky.com",
+      "hasExecutiveTitle": false,
+      "corporateScore": 2,
+      "isCorporate": true,
       "isLikelyPolitical": false
     },
     {
@@ -11696,35 +13019,6 @@
       "isLikelyPolitical": false
     },
     {
-      "id": "https://www.jpost.com/environment-and-climate-change/article-903876",
-      "title": "At least 13 killed as 7.1 earthquake hits Japan, evacuation issued for 260,000 people amid blackout",
-      "description": "<img align='right' src='https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_2643,w_3968/731815' alt='An aerial view shows the damaged Aeon Mall shopping centre after an earthquake with a preliminary magnitude of 7.1 struck Japan's southern Kumamoto prefecture, in Kashima Town, Kumamoto Prefecture, Japan, July 28, 2026. (photo credit: KYODO/VIA REUTERS)' title='An aerial view shows the damaged Aeon Mall shopping centre after an earthquake with a preliminary magnitude of 7.1 struck Japan's southern Kumamoto prefecture, in Kashima Town, Kumamoto Prefecture, Japan, July 28, 2026. (photo credit: KYODO/VIA REUTERS)' /><br />The Japanese government issued emergency earthquake warnings for Kumamoto, Nagasaki, Kagoshima, Fukuoka, Saga, Oita, and Miyazaki prefectures, all on Japan's southern Kyushu island.<br />",
-      "bluf": "At least 13 killed as 7.1 earthquake hits Japan, evacuation issued for 260,000 people amid blackout. Classified under Natural Disaster. Reported by 1 outlet.",
-      "category": "natural_disaster",
-      "categoryLabel": "Natural Disaster",
-      "categoryColor": "#5cb85c",
-      "severity": "HIGH",
-      "country": "Japan",
-      "lat": 36.2,
-      "lon": 138.3,
-      "publishedAt": "2026-07-28T10:48:36+00:00",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.jpost.com/environment-and-climate-change/article-903876",
-          "label": "Jerusalem Post (EMEA)",
-          "domain": "jpost.com",
-          "publishedAt": "2026-07-28T10:48:36.000Z"
-        }
-      ],
-      "primaryUrl": "https://www.jpost.com/environment-and-climate-change/article-903876",
-      "primaryDomain": "jpost.com",
-      "hasExecutiveTitle": false,
-      "corporateScore": 0,
-      "isCorporate": false,
-      "isLikelyPolitical": true
-    },
-    {
       "id": "https://www.glasgowlive.co.uk/news/glasgow-news/sextortion-probe-launched-young-east-34363779",
       "title": "Sextortion probe launched as young East Renfrewshire boys 'financially blackmailed'",
       "description": "The male victims range in age between 12 to 17 years old, with five reports made in the last week.",
@@ -12794,35 +14088,6 @@
       "isLikelyPolitical": true
     },
     {
-      "id": "https://scroll.in/latest/1094594/supreme-court-orders-release-of-students-held-during-youth-protests?utm_source=rss&utm_medium=public",
-      "title": "Youth protests: SC orders release of detained minors, students with no criminal record",
-      "description": "The court said it may set up a high-powered investigation team to examine allegations of police excesses during the July 20 march to Parliament.",
-      "bluf": "Youth protests. Classified under Civil Unrest. Reported by 1 outlet.",
-      "category": "civil_unrest",
-      "categoryLabel": "Civil Unrest",
-      "categoryColor": "#f2b134",
-      "severity": "LOW",
-      "country": "Unknown",
-      "lat": null,
-      "lon": null,
-      "publishedAt": "2026-07-28T09:03:19+00:00",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://scroll.in/latest/1094594/supreme-court-orders-release-of-students-held-during-youth-protests?utm_source=rss&utm_medium=public",
-          "label": "Scroll.in (India)",
-          "domain": "scroll.in",
-          "publishedAt": "2026-07-28T09:03:19.000Z"
-        }
-      ],
-      "primaryUrl": "https://scroll.in/latest/1094594/supreme-court-orders-release-of-students-held-during-youth-protests?utm_source=rss&utm_medium=public",
-      "primaryDomain": "scroll.in",
-      "hasExecutiveTitle": false,
-      "corporateScore": 0,
-      "isCorporate": false,
-      "isLikelyPolitical": true
-    },
-    {
       "id": "https://globalnews.ca/news/11995886/canadians-returning-from-isis-highly-likely-threat/",
       "title": "Canadians returning from ISIS ‘highly likely’ to pose threat, intelligence report says",
       "description": "The report by Canada's threat assessment agency highlights the risks posed by veterans of the terror group.",
@@ -13235,6 +14500,12 @@
           "label": "CBS News – World",
           "domain": "cbsnews.com",
           "publishedAt": "2026-07-28T23:23:20.000Z"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/07/28/world/asia/japan-earthquake-kumamoto-rescue-survivors.html",
+          "label": "New York Times – World",
+          "domain": "nytimes.com",
+          "publishedAt": "2026-07-29T07:10:43.000Z"
         }
       ],
       "primaryUrl": "https://news.sky.com/story/major-earthquake-hits-japan-13567677",
@@ -17935,6 +19206,12 @@
           "label": "India Today Home (India)",
           "domain": "indiatoday.in",
           "publishedAt": "2026-07-28T14:14:29.000Z"
+        },
+        {
+          "url": "https://scroll.in/latest/1094616/after-assam-and-bihar-bengal-and-maharashtra-to-stop-coercive-action-against-protesters?utm_source=rss&utm_medium=public",
+          "label": "Scroll.in (India)",
+          "domain": "scroll.in",
+          "publishedAt": "2026-07-29T02:37:52.000Z"
         }
       ],
       "primaryUrl": "https://www.ndtv.com/india-news/after-bihar-assam-drops-cases-assures-no-action-against-cjp-protesters-11830335#publisher=newsstand",
@@ -23073,6 +24350,41 @@
       ],
       "primaryUrl": "https://www.independent.co.uk/news/uk/home-news/wildfire-fire-uk-australia-alert-b3022337.html",
       "primaryDomain": "independent.co.uk",
+      "hasExecutiveTitle": false,
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": false
+    },
+    {
+      "id": "https://www.cbc.ca/news/world/human-made-forest-france-wildfires-9.7287788?cmp=rss",
+      "title": "A human-made forest is at the centre of France's raging wildfires",
+      "description": "<img src='https://i.cbc.ca/ais/f028713c-b6d0-4aba-befb-42808b05b138,1785310001514/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C31%2C594%2C334%29%3BResize%3D%28620%29' alt='A man digs with a shovel in a pine tree forest damaged by wildfire.' width='620' height='349' title='Volunteer civilians work to extinguish remaining hot spots in a scorched pine forest near their homes in Marcheprime following massive wildfires in the Gironde region in southwestern France, on July 27, 2026. (Photo by Sami Karaali / Hans Lucas / AFP via Getty Images)'/><p></p>",
+      "bluf": "A human. Classified under Natural Disaster. Reported by 1 outlet.",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
+      "severity": "LOW",
+      "country": "France",
+      "lat": 46.6,
+      "lon": 2.2,
+      "publishedAt": "2026-07-27T14:51:19+00:00",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.cbc.ca/news/world/human-made-forest-france-wildfires-9.7287788?cmp=rss",
+          "label": "CBC News Top Stories (Canada)",
+          "domain": "cbc.ca",
+          "publishedAt": "2026-07-27T14:51:19.000Z"
+        },
+        {
+          "url": "https://www.cbc.ca/news/world/human-made-forest-france-wildfires-9.7287788?cmp=rss",
+          "label": "CBC News World (Canada)",
+          "domain": "cbc.ca",
+          "publishedAt": "2026-07-27T14:51:19.000Z"
+        }
+      ],
+      "primaryUrl": "https://www.cbc.ca/news/world/human-made-forest-france-wildfires-9.7287788?cmp=rss",
+      "primaryDomain": "cbc.ca",
       "hasExecutiveTitle": false,
       "corporateScore": 0,
       "isCorporate": false,
@@ -29484,9 +30796,9 @@
       "title": "France wildfires live: Inferno threatens Bordeaux as Macron holds crisis meeting",
       "description": "More than 250,000 people have been evacuated in south-west France due to raging wildfires heading towards Bordeaux and its airport",
       "bluf": "France wildfires live. Classified under Terrorism. Reported by 1 outlet.",
-      "category": "terrorism",
-      "categoryLabel": "Terrorism",
-      "categoryColor": "#c0392b",
+      "category": "natural_disaster",
+      "categoryLabel": "Natural Disaster",
+      "categoryColor": "#5cb85c",
       "severity": "MEDIUM",
       "country": "France",
       "lat": 46.6,
@@ -29511,6 +30823,18 @@
           "label": "NDTV Latest (India)",
           "domain": "ndtv.com",
           "publishedAt": "2026-07-27T14:15:09.000Z"
+        },
+        {
+          "url": "https://www.mirror.co.uk/news/world-news/france-wildfires-bordeaux-weather-heatwave-37489052",
+          "label": "The Mirror (UK)",
+          "domain": "mirror.co.uk",
+          "publishedAt": "2026-07-29T09:50:24.000Z"
+        },
+        {
+          "url": "https://www.mirror.co.uk/news/world-news/france-wildfires-map-heatwave-spain-37479425",
+          "label": "The Mirror (UK)",
+          "domain": "mirror.co.uk",
+          "publishedAt": "2026-07-29T09:03:00.000Z"
         }
       ],
       "primaryUrl": "https://www.mirror.co.uk/news/world-news/france-wildfires-live-bordeaux-airport-37479425",
@@ -29518,7 +30842,7 @@
       "hasExecutiveTitle": false,
       "corporateScore": 0,
       "isCorporate": false,
-      "isLikelyPolitical": true
+      "isLikelyPolitical": false
     },
     {
       "id": "https://www.indiatoday.in/science/story/68-dead-over-500000-affected-why-assam-faces-deadly-floods-every-year-2957169-2026-07-27?utm_source=rss",
@@ -44218,21 +45542,27 @@
       "lat": 22,
       "lon": 79,
       "publishedAt": "2026-07-25T23:57:00+00:00",
-      "sourceCount": 1,
+      "sourceCount": 2,
       "sources": [
         {
           "url": "https://www.japantimes.co.jp/news/2026/07/26/asia-pacific/politics/india-youth-protests-end-modi/",
           "label": "Japan Times (APAC)",
           "domain": "japantimes.co.jp",
           "publishedAt": "2026-07-25T23:57:00.000Z"
+        },
+        {
+          "url": "https://www.straitstimes.com/asia/south-asia/indias-youth-protests-puncture-modis-aura-of-invincibility",
+          "label": "The Straits Times Asia (APAC)",
+          "domain": "straitstimes.com",
+          "publishedAt": "2026-07-29T07:20:00.000Z"
         }
       ],
       "primaryUrl": "https://www.japantimes.co.jp/news/2026/07/26/asia-pacific/politics/india-youth-protests-end-modi/",
       "primaryDomain": "japantimes.co.jp",
       "hasExecutiveTitle": false,
-      "corporateScore": 2,
-      "isCorporate": true,
-      "isLikelyPolitical": false
+      "corporateScore": 0,
+      "isCorporate": false,
+      "isLikelyPolitical": true
     },
     {
       "id": "https://www.dailymail.com/news/article-16005279/trump-canada-air-filter-barrier-tariffs.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
