@@ -233,6 +233,45 @@ function resolveRows(newEvents, existingIndex, nowIso) {
   return rows;
 }
 
+/** Defensive final guard, applied right before upsert: makes sure no two
+ *  rows in the batch share an "id". Supabase's ON CONFLICT DO UPDATE
+ *  upsert cannot affect the same row twice within a single command, and
+ *  will fail the ENTIRE chunk (Postgres error 21000) if it ever sees a
+ *  duplicate id - which is exactly what happened here. claimedExistingIds
+ *  in resolveRows() already prevents two events from merging into the same
+ *  EXISTING archive row, but nothing previously stopped two genuinely-new
+ *  events from colliding on id (most likely an id-generation edge case in
+ *  categorize.mjs, worth checking next if this keeps happening in the
+ *  logs below). Rather than crash the whole pipeline run over what should
+ *  be a handful of rows, colliding rows are merged (sources combined, like
+ *  every other merge path in this file) into a single row per id, and a
+ *  warning is logged with the offending id so the root cause can be
+ *  tracked down without losing a run in the meantime. */
+function dedupeRowsById(rows) {
+  const byId = new Map();
+  for (const row of rows) {
+    const existing = byId.get(row.id);
+    if (!existing) {
+      byId.set(row.id, row);
+      continue;
+    }
+    console.warn(`[build] duplicate id in upsert batch, merging: ${row.id}`);
+    const combinedSources = [...(existing.sources || [])];
+    const seenUrls = new Set(combinedSources.map(s => s.url));
+    for (const s of row.sources || []) {
+      if (!seenUrls.has(s.url)) { combinedSources.push(s); seenUrls.add(s.url); }
+    }
+    const uniqueDomains = new Set(combinedSources.map(s => s.domain));
+    byId.set(row.id, {
+      ...existing,
+      sources: combinedSources,
+      source_count: uniqueDomains.size,
+      last_seen_at: row.last_seen_at > existing.last_seen_at ? row.last_seen_at : existing.last_seen_at
+    });
+  }
+  return [...byId.values()];
+}
+
 /** Upserts the resolved rows (new inserts and merges alike) into the
  *  permanent archive. Uses Supabase's merge-duplicates upsert, matching on
  *  the "id" primary key - for merges, that id is the EXISTING row's id, so
@@ -308,7 +347,11 @@ async function main() {
   console.log(`[build] checking against existing archive for cross-run duplicates...`);
   const existingIndex = await fetchExistingArchiveIndex();
   const nowIso = new Date().toISOString();
-  const resolvedRows = resolveRows(consolidatedEvents, existingIndex, nowIso);
+  const resolvedRowsRaw = resolveRows(consolidatedEvents, existingIndex, nowIso);
+  const resolvedRows = dedupeRowsById(resolvedRowsRaw);
+  if (resolvedRows.length !== resolvedRowsRaw.length) {
+    console.log(`[build] collapsed ${resolvedRowsRaw.length - resolvedRows.length} duplicate-id row(s) before upsert (see warnings above) - if this keeps happening, the id generation in categorize.mjs likely needs a look`);
+  }
   const mergedCount = resolvedRows.filter(r => existingIndex.some(e => e.id === r.id)).length;
   console.log(`[build] ${resolvedRows.length - mergedCount} genuinely new stories, ${mergedCount} merged into existing archive rows (same story, different outlet/wording)`);
 
