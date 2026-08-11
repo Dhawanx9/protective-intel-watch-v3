@@ -11,7 +11,7 @@
 .field .help{ font-size:11px; color:var(--text-faint); margin-top:6px; line-height:1.5; }
 
 table.data-table{ width:100%; border-collapse:collapse; font-size:12.5px; }
-table.data-table th{ text-align:left; color:var(--text-faint); font-weight:600; padding:9px 10px; border-bottom:1px solid var(--border-soft); text-transform:uppercase; font-size:10.5px; letter-spacing:.04em; }
+table.data-table th{ text-align:left; color:var(--text-faint); font-weight:600; padding:9px 10px; border-bottom:1px solid var(--border-soft); text-transform:uppercase; font-size:10.5px; letter-spacing:.04em; white-space:nowrap; vertical-align:middle; }
 table.data-table td{ padding:9px 10px; border-bottom:1px solid var(--border-soft); vertical-align:middle; }
 
 .toast-stack{ position:fixed; bottom:20px; right:20px; z-index:9000; display:flex; flex-direction:column; gap:10px; max-width:340px; }
