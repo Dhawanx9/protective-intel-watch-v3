@@ -29,3 +29,12 @@
 #view-feedManager .analytics-grid > .panel:first-child .panel-body{
   max-height:640px;
 }
+
+/* Add/Edit a Feed and OPML sit stacked in the right column - without this,
+   OPML (just two buttons) ends up a very different height than Add/Edit
+   (three fields plus a button plus help text), which looks inconsistent
+   even though neither is wrong on its own. Giving both the same floor
+   height makes the pair read as one deliberate set of cards. */
+#view-feedManager .analytics-grid > div > .panel{
+  min-height:300px;
+}
