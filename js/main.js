@@ -1,3 +1,4 @@
+import { initLoginGate } from "./modules/auth.js";
 import { store } from "./state.js";
 import { loadIntelligenceData } from "./api.js";
 import { initRouter, navigateTo } from "./router.js";
@@ -109,4 +110,6 @@ async function main() {
   scheduleRefresh(store.data.settings.refreshIntervalMinutes);
 }
 
-main();
+initLoginGate(() => {
+  main();
+});
