@@ -59,3 +59,24 @@ input[type="text"]:focus, select:focus{ border-color:var(--accent-dim); }
 .status-dot.ok{ background:var(--low); }
 .status-dot.err{ background:var(--high); }
 .status-dot.disabled{ background:var(--text-faint); }
+
+.login-screen{
+  display:none;
+  position:fixed; inset:0; z-index:9999;
+  align-items:center; justify-content:center;
+  background:
+    radial-gradient(circle at 20% 20%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 45%),
+    radial-gradient(circle at 80% 80%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 50%),
+    linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg) 60%);
+}
+.login-screen::before{
+  content:"";
+  position:absolute; inset:0;
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--text) 4%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--text) 4%, transparent) 1px, transparent 1px);
+  background-size:42px 42px;
+  mask-image:radial-gradient(circle at 50% 50%, black 0%, transparent 75%);
+  pointer-events:none;
+}
+.login-screen form{ position:relative; z-index:1; }
