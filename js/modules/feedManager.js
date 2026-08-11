@@ -9,6 +9,15 @@ let feedHealthByLabelGetter = null;
 let currentFeeds = [];
 let pendingChecks = new Set(); // feed ids added this session, awaiting their first health report
 
+// Icon-only action buttons instead of text labels - matches the icon style
+// already used for the theme toggle and logout button elsewhere in the app
+// (stroke-based, 24x24 viewBox). Each has a title/aria-label for a hover
+// tooltip and screen readers, since removing the text label means the
+// icon alone has to carry the meaning.
+const ICON_TEST = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>`;
+const ICON_EDIT = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>`;
+const ICON_DELETE = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>`;
+
 export function initFeedManager({ getFeedHealth }) {
   feedHealthByLabelGetter = getFeedHealth;
 
@@ -67,16 +76,16 @@ function renderTable(feeds) {
       <td${errTitle}><span class="status-dot ${statusClass}"></span>${statusLabel}</td>
       <td>
         <div><b>${escapeHtml(f.label)}</b></div>
-        <div class="mono" style="font-size:10.5px;color:var(--text-faint);">${escapeHtml(f.url)}</div>
+        <div class="mono" title="${escapeHtml(f.url)}" style="font-size:10.5px;color:var(--text-faint);max-width:320px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(f.url)}</div>
         ${errorLine}
       </td>
       <td class="mono">${lastPull}</td>
       <td class="mono">${count}</td>
       <td><div class="toggle${f.enabled ? " on" : ""}" data-toggle></div></td>
       <td class="row-actions">
-        <button class="btn small" data-test>Test now</button>
-        <button class="btn small" data-edit>Edit</button>
-        <button class="btn small danger" data-remove>Delete</button>
+        <button class="btn small" data-test title="Test now" aria-label="Test now">${ICON_TEST}</button>
+        <button class="btn small" data-edit title="Edit" aria-label="Edit">${ICON_EDIT}</button>
+        <button class="btn small danger" data-remove title="Delete" aria-label="Delete">${ICON_DELETE}</button>
       </td>
     </tr>`;
   }).join("") : `<tr><td colspan="6"><div class="empty-state">No feeds yet. Add one on the right.</div></td></tr>`;
@@ -123,9 +132,9 @@ function renderTable(feeds) {
  *  user gets a pass/fail toast in seconds instead of waiting for the next
  *  10-minute pipeline run. */
 async function testFeedNow(feed, btn) {
-  const originalLabel = btn.textContent;
+  const originalHtml = btn.innerHTML;
   btn.disabled = true;
-  btn.textContent = "Testing\u2026";
+  btn.style.opacity = "0.5";
 
   try {
     const { data, error } = await supabase.functions.invoke("test-feed", {
@@ -152,7 +161,8 @@ async function testFeedNow(feed, btn) {
     });
   } finally {
     btn.disabled = false;
-    btn.textContent = originalLabel;
+    btn.style.opacity = "";
+    btn.innerHTML = originalHtml;
   }
 }
 
@@ -177,7 +187,7 @@ function bindFeedForm() {
     if (error) { alert("Couldn't save: " + error.message); return; }
 
     pendingChecks.add(newId);
-    notify({ message: `${label} added — checking whether it's valid RSS on the next pipeline run (~10 min).`, severity: "MEDIUM" });
+    notify({ message: `${label} added \u2014 checking whether it's valid RSS on the next pipeline run (~10 min).`, severity: "MEDIUM" });
 
     document.getElementById("newFeedLabel").value = "";
     document.getElementById("newFeedUrl").value = "";
@@ -198,9 +208,9 @@ function checkPendingFeeds() {
     const h = health.find(x => x.id === id);
     if (!h) continue; // not reported yet, keep waiting
     if (h.status === "ok") {
-      notify({ message: `${h.label}: confirmed working — ${h.count} article(s) pulled.`, severity: "LOW" });
+      notify({ message: `${h.label}: confirmed working \u2014 ${h.count} article(s) pulled.`, severity: "LOW" });
     } else if (h.status === "error") {
-      notify({ message: `${h.label}: couldn't be read as RSS (${h.error || "unknown error"}). This site is likely out of scope — check the URL or remove it.`, severity: "HIGH" });
+      notify({ message: `${h.label}: couldn't be read as RSS (${h.error || "unknown error"}). This site is likely out of scope \u2014 check the URL or remove it.`, severity: "HIGH" });
     }
     pendingChecks.delete(id);
   }
