@@ -43,6 +43,18 @@ function clearSession() {
   localStorage.removeItem(LAST_ACTIVITY_KEY);
 }
 
+/** Manual logout - same effect as the inactivity timeout, just triggered
+ *  immediately by the user instead of waiting 5 minutes. */
+export function logOut() {
+  clearSession();
+  location.reload();
+}
+
+function bindLogoutButton() {
+  const btn = document.getElementById("logoutBtn");
+  if (btn) btn.addEventListener("click", logOut);
+}
+
 /** Small throttle helper - activity events (especially mousemove) fire far
  *  too often to write to localStorage on every single one; this caps it to
  *  at most once every few seconds, which is still more than responsive
@@ -99,6 +111,7 @@ export function initLoginGate(onSuccess) {
     loginScreen.style.display = "none";
     appRoot.style.display = "";
     startActivityMonitor();
+    bindLogoutButton();
     onSuccess();
     return;
   }
@@ -120,6 +133,7 @@ export function initLoginGate(onSuccess) {
       loginScreen.style.display = "none";
       appRoot.style.display = "";
       startActivityMonitor();
+      bindLogoutButton();
       onSuccess();
     } else {
       errorEl.textContent = "Incorrect password. Try again.";
