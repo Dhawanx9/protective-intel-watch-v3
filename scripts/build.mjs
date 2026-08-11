@@ -275,7 +275,18 @@ function dedupeRowsById(rows) {
 /** Upserts the resolved rows (new inserts and merges alike) into the
  *  permanent archive. Uses Supabase's merge-duplicates upsert, matching on
  *  the "id" primary key - for merges, that id is the EXISTING row's id, so
- *  this correctly updates it in place rather than inserting a duplicate. */
+ *  this correctly updates it in place rather than inserting a duplicate.
+ *
+ *  dedupeRowsById() above already removes duplicate ids from the batch
+ *  before this runs, which should prevent Postgres error 21000 ("ON
+ *  CONFLICT DO UPDATE command cannot affect row a second time"). As a
+ *  second line of defense - in case some other, not-yet-understood path
+ *  still produces a duplicate within a 200-row chunk - a chunk that fails
+ *  with that specific error is retried one row at a time instead of
+ *  failing the entire pipeline run. A single-row upsert can never hit a
+ *  cardinality violation, so this guarantees the run completes either way.
+ *  It's slower for the rare chunk that needs it, but that only happens on
+ *  a genuine conflict, not on every run. */
 async function upsertRows(rows) {
   if (!rows.length) return;
   const CHUNK_SIZE = 200;
@@ -286,7 +297,26 @@ async function upsertRows(rows) {
       headers: supabaseHeaders({ Prefer: "resolution=merge-duplicates,return=minimal" }),
       body: JSON.stringify(chunk)
     });
-    if (!res.ok) throw new Error(`Failed to upsert articles (chunk starting at ${i}): HTTP ${res.status} ${await res.text()}`);
+    if (res.ok) continue;
+
+    const bodyText = await res.text();
+    const isCardinalityViolation = bodyText.includes('"code":"21000"');
+    if (!isCardinalityViolation) {
+      throw new Error(`Failed to upsert articles (chunk starting at ${i}): HTTP ${res.status} ${bodyText}`);
+    }
+
+    console.warn(`[build] chunk starting at ${i} hit a duplicate-id conflict on bulk upsert (${bodyText}) - retrying this chunk one row at a time`);
+    for (const row of chunk) {
+      const singleRes = await fetch(`${SUPABASE_URL}/rest/v1/articles?on_conflict=id`, {
+        method: "POST",
+        headers: supabaseHeaders({ Prefer: "resolution=merge-duplicates,return=minimal" }),
+        body: JSON.stringify([row])
+      });
+      if (!singleRes.ok) {
+        throw new Error(`Failed to upsert article id=${row.id}: HTTP ${singleRes.status} ${await singleRes.text()}`);
+      }
+    }
+    console.log(`[build] chunk starting at ${i} recovered via row-by-row upsert (${chunk.length} rows)`);
   }
 }
 
