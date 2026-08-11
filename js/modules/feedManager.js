@@ -9,6 +9,12 @@ let feedHealthByLabelGetter = null;
 let currentFeeds = [];
 let pendingChecks = new Set(); // feed ids added this session, awaiting their first health report
 
+// Pagination - shows a fixed page of rows instead of scrolling or letting
+// the panel stretch to fit everything at once. PAGE_SIZE is tuned to fit
+// comfortably inside the panel-body's 640px cap (see dashboard.css).
+const PAGE_SIZE = 8;
+let currentPage = 1;
+
 // Icon-only action buttons instead of text labels - matches the icon style
 // already used for the theme toggle and logout button elsewhere in the app
 // (stroke-based, 24x24 viewBox). Each has a title/aria-label for a hover
@@ -62,7 +68,13 @@ function renderTable(feeds) {
   const tbody = document.getElementById("feedRows");
   const health = feedHealthByLabelGetter ? feedHealthByLabelGetter() : [];
 
-  tbody.innerHTML = feeds.length ? feeds.map(f => {
+  const totalPages = Math.max(1, Math.ceil(feeds.length / PAGE_SIZE));
+  if (currentPage > totalPages) currentPage = totalPages;
+  if (currentPage < 1) currentPage = 1;
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const pageFeeds = feeds.slice(start, start + PAGE_SIZE);
+
+  tbody.innerHTML = pageFeeds.length ? pageFeeds.map(f => {
     const h = health.find(x => x.id === f.id);
     const statusClass = !f.enabled ? "disabled" : h?.status === "ok" ? "ok" : h?.status === "error" ? "err" : "disabled";
     const statusLabel = !f.enabled ? "Disabled" : h?.status === "ok" ? "Healthy" : h?.status === "error" ? "Error" : "Pending next run";
@@ -125,6 +137,50 @@ function renderTable(feeds) {
     const feed = feeds.find(f => f.id === id);
     testFeedNow(feed, b);
   }));
+
+  renderPagination(feeds.length, totalPages);
+}
+
+/** Numbered pagination controls under the table - Prev / 1 2 3 ... / Next.
+ *  Keeps the panel at a fixed, predictable height regardless of how many
+ *  feeds exist (4 or 400), instead of scrolling or growing the panel. */
+function renderPagination(totalFeeds, totalPages) {
+  const container = document.getElementById("feedPagination");
+  if (!container) return;
+
+  if (totalFeeds === 0 || totalPages <= 1) {
+    container.innerHTML = "";
+    return;
+  }
+
+  const start = (currentPage - 1) * PAGE_SIZE + 1;
+  const end = Math.min(currentPage * PAGE_SIZE, totalFeeds);
+
+  let pageButtons = "";
+  for (let p = 1; p <= totalPages; p++) {
+    pageButtons += `<button class="btn small${p === currentPage ? " primary" : ""}" data-page="${p}" ${p === currentPage ? 'aria-current="page"' : ""}>${p}</button>`;
+  }
+
+  container.innerHTML = `
+    <div class="pagination">
+      <span class="pagination-range mono">${start}\u2013${end} of ${totalFeeds}</span>
+      <div class="pagination-buttons">
+        <button class="btn small" data-page="prev" ${currentPage === 1 ? "disabled" : ""}>\u2039 Prev</button>
+        ${pageButtons}
+        <button class="btn small" data-page="next" ${currentPage === totalPages ? "disabled" : ""}>Next \u203a</button>
+      </div>
+    </div>
+  `;
+
+  container.querySelectorAll("[data-page]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const val = btn.getAttribute("data-page");
+      if (val === "prev") currentPage = Math.max(1, currentPage - 1);
+      else if (val === "next") currentPage = Math.min(totalPages, currentPage + 1);
+      else currentPage = parseInt(val, 10);
+      renderTable(currentFeeds);
+    });
+  });
 }
 
 /** Instant, on-demand feed check - calls the "test-feed" Supabase Edge Function

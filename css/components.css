@@ -31,6 +31,8 @@
 .btn.small{ padding:5px 9px; font-size:11.5px; }
 .btn.ghost{ border-color:transparent; }
 .btn.danger:hover{ border-color:var(--high); color:var(--high); }
+.btn:disabled{ opacity:.4; cursor:not-allowed; }
+.btn:disabled:hover{ border-color:var(--border); color:var(--text); }
 .chip{ display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:500; padding:6px 11px; border:1px solid var(--border); border-radius:999px; color:var(--text-dim); cursor:pointer; background:var(--panel); }
 .chip .dot{ width:7px; height:7px; border-radius:50%; }
 .chip.on{ border-color:var(--accent-dim); color:var(--text); background:var(--accent-bg); }
@@ -80,3 +82,17 @@ input[type="text"]:focus, select:focus{ border-color:var(--accent-dim); }
   pointer-events:none;
 }
 .login-screen form{ position:relative; z-index:1; }
+
+/* Pagination controls for the Feed Manager table - a page number row
+   under the table, instead of an internal scrollbar or a panel that
+   stretches to fill the page. */
+.pagination{ display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-top:14px; padding-top:14px; border-top:1px solid var(--border-soft); }
+.pagination-range{ font-size:11.5px; color:var(--text-faint); }
+.pagination-buttons{ display:flex; gap:5px; flex-wrap:wrap; }
+
+/* Row action icons (test/edit/delete) in the feeds table - forced onto a
+   single line. Without this, three inline-flex buttons in a narrow table
+   cell wrap onto separate lines the moment the column runs short on
+   width, stacking vertically instead of sitting side by side. */
+.row-actions{ display:flex; align-items:center; gap:4px; flex-wrap:nowrap; white-space:nowrap; }
+.row-actions .btn{ flex-shrink:0; }
