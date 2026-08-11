@@ -23,18 +23,41 @@
 .brief-section h3{ font-size:14px; margin-bottom:10px; color:var(--text); }
 .brief-region-row{ display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border-soft); font-size:13px; }
 
-/* Feed Manager's table gets a taller-than-normal but still fixed cap
-   (instead of the sitewide 440px) since pagination, not scrolling, is how
-   this specific table handles more rows than fit - see feedManager.js. */
-#view-feedManager .analytics-grid > .panel:first-child .panel-body{
-  max-height:640px;
+/* Feed Manager: the left "Connected Feeds" column and the right column
+   (Add/Edit a Feed + OPML stacked) should read as one matched row, each
+   side filling exactly as tall as the taller of the two - not the whole
+   page (that's a different, wrong fix we already tried), just each other.
+   align-items:stretch (the grid default) makes both grid items stretch to
+   the row's natural height. The left panel's body is flex:1 so it absorbs
+   any extra height as more breathing room around its (already paginated,
+   so bounded) 8 rows. The right column becomes its own flex column so
+   extra height goes specifically into the OPML card rather than sitting
+   as dead space between the two cards. Scoped entirely to #view-feedManager
+   so every other view keeps its original independent panel sizing. */
+#view-feedManager .analytics-grid{
+  align-items:stretch;
 }
-
-/* Add/Edit a Feed and OPML sit stacked in the right column - without this,
-   OPML (just two buttons) ends up a very different height than Add/Edit
-   (three fields plus a button plus help text), which looks inconsistent
-   even though neither is wrong on its own. Giving both the same floor
-   height makes the pair read as one deliberate set of cards. */
-#view-feedManager .analytics-grid > div > .panel{
-  min-height:300px;
+#view-feedManager .analytics-grid > .panel:first-child{
+  height:100%;
+  min-height:0;
+}
+#view-feedManager .analytics-grid > .panel:first-child .panel-body{
+  flex:1;
+  min-height:0;
+  max-height:none;
+}
+#view-feedManager .analytics-grid > div{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  min-height:0;
+}
+#view-feedManager .analytics-grid > div > .panel:last-child{
+  flex:1;
+  min-height:0;
+}
+#view-feedManager .analytics-grid > div > .panel:last-child .panel-body{
+  flex:1;
+  min-height:0;
+  max-height:none;
 }
