@@ -143,10 +143,9 @@
       <!-- LIVE FEED -->
       <section class="view" id="view-feed">
         <div class="panel filter-bar">
-          <div id="categoryChips" style="display:flex;gap:8px;flex-wrap:wrap;"></div>
-          <div class="filter-sep"></div>
-          <div id="severityChips" style="display:flex;gap:8px;"></div>
-          <div class="filter-sep"></div>
+          <select id="categorySelect"></select>
+          <select id="severitySelect"></select>
+          <select id="regionSelect"></select>
           <select id="countrySelect"></select>
           <select id="rangeSelect"></select>
           <select id="sortSelect"></select>
@@ -220,8 +219,8 @@
           <div class="analytics-grid" style="grid-template-columns:1fr 360px;">
             <div class="panel">
               <h2>Connected Feeds</h2>
-              <div class="panel-body">
-                <table class="data-table">
+              <div class="panel-body" style="overflow-x:auto;">
+                <table class="data-table" style="min-width:640px;">
                   <thead><tr><th>Status</th><th>Feed</th><th>Last Pull</th><th>Articles</th><th>Enabled</th><th></th></tr></thead>
                   <tbody id="feedRows"></tbody>
                 </table>

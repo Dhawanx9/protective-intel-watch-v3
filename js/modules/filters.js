@@ -1,6 +1,7 @@
 import { store } from "../state.js";
 import { el, escapeHtml, debounce } from "../utils/dom.js";
 import { navigateTo } from "../router.js";
+import { ALL_REGIONS } from "../utils/regions.js";
 
 const RANGES = [
   { id: "24h", label: "Last 24h" }, { id: "48h", label: "Last 48h" },
@@ -11,9 +12,16 @@ const SORTS = [
 ];
 const SEVERITIES = ["HIGH", "MEDIUM", "LOW"];
 
+// Category and severity moved from multi-select toggle chips to single-select
+// dropdowns - this is what guarantees only one thing is ever "selected" at a
+// time across the whole filter bar (a <select> can only show one chosen
+// value, so there's no possibility of two options both looking active, or
+// of a previous selection staying visually highlighted after picking a new
+// one - the exact bug this replaces).
 export function initFilters() {
-  buildCategoryChips();
-  buildSeverityChips();
+  buildCategorySelect();
+  buildSeveritySelect();
+  buildRegionSelect();
   buildRangeSelect();
   buildSortSelect();
   buildSidebarCategoryList();
@@ -21,19 +29,28 @@ export function initFilters() {
   document.getElementById("resetFiltersBtn").addEventListener("click", () => {
     store.resetFilters();
     document.getElementById("globalSearchInput").value = "";
+    syncSelectsToFilters();
   });
-  // Rebuilding on "events" alone meant clicking a chip updated the actual
-  // filter (so the feed list itself did filter correctly) but the chip's
-  // own highlighted/"on" state never got redrawn afterward - it just sat
-  // there looking unclicked forever, since nothing told it to re-check
-  // itself against the current filter state. Also rebuilding on "filters"
-  // fixes that, AND makes the Reset filters button and sidebar category
-  // clicks correctly clear/update every chip's visual state too, not just
-  // the underlying data.
   store.subscribe(topic => {
-    if (topic === "events") { buildCategoryChips(); buildCountryChips(); buildSidebarCategoryList(); }
-    if (topic === "filters") { buildCategoryChips(); buildSeverityChips(); }
+    if (topic === "events") { buildCategorySelect(); buildCountryChips(); buildSidebarCategoryList(); }
+    if (topic === "filters") { syncSelectsToFilters(); buildSidebarCategoryList(); }
   });
+}
+
+/** Keeps every dropdown's displayed value in sync with the actual filter
+ *  state, regardless of what triggered the change - a dropdown pick, the
+ *  Reset button, a sidebar category click, or a chart drill-down. This is
+ *  what prevents any dropdown from silently showing a stale selection. */
+function syncSelectsToFilters() {
+  const f = store.data.filters;
+  const catSelect = document.getElementById("categorySelect");
+  if (catSelect) catSelect.value = f.categories.size ? [...f.categories][0] : "";
+  const sevSelect = document.getElementById("severitySelect");
+  if (sevSelect) sevSelect.value = f.severities.size ? [...f.severities][0] : "";
+  const regionSelect = document.getElementById("regionSelect");
+  if (regionSelect) regionSelect.value = f.regions.size ? [...f.regions][0] : "";
+  const countrySelect = document.getElementById("countrySelect");
+  if (countrySelect) countrySelect.value = f.countries.size ? [...f.countries][0] : "";
 }
 
 function buildSidebarCategoryList() {
@@ -56,44 +73,37 @@ function buildSidebarCategoryList() {
   });
 }
 
-function buildCategoryChips() {
-  const root = document.getElementById("categoryChips");
+function buildCategorySelect() {
+  const root = document.getElementById("categorySelect");
   if (!root) return;
-  root.innerHTML = "";
-  store.data.categories.forEach(cat => {
-    const on = store.data.filters.categories.has(cat.id);
-    const chip = el("span", { class: `chip${on ? " on" : ""}` }, [
-      el("span", { class: "dot", style: `background:${cat.color}` }),
-      cat.label
-    ]);
-    chip.addEventListener("click", () => {
-      const set = store.data.filters.categories;
-      set.has(cat.id) ? set.delete(cat.id) : set.add(cat.id);
-      // Toggle this chip's own visual state immediately, synchronously -
-      // don't wait for the store subscription round-trip, so the click
-      // feels instant rather than possibly-delayed.
-      chip.classList.toggle("on");
-      store.updateFilters({ categories: set });
-    });
-    root.appendChild(chip);
-  });
+  const current = store.data.filters.categories.size ? [...store.data.filters.categories][0] : "";
+  root.innerHTML = `<option value="">All categories</option>` +
+    store.data.categories.map(c => `<option value="${escapeHtml(c.id)}" ${current === c.id ? "selected" : ""}>${escapeHtml(c.label)}</option>`).join("");
+  root.onchange = () => {
+    store.updateFilters({ categories: root.value ? new Set([root.value]) : new Set() });
+  };
 }
 
-function buildSeverityChips() {
-  const root = document.getElementById("severityChips");
+function buildSeveritySelect() {
+  const root = document.getElementById("severitySelect");
   if (!root) return;
-  root.innerHTML = "";
-  SEVERITIES.forEach(sev => {
-    const on = store.data.filters.severities.has(sev);
-    const chip = el("span", { class: `chip${on ? " on" : ""}` }, sev);
-    chip.addEventListener("click", () => {
-      const set = store.data.filters.severities;
-      set.has(sev) ? set.delete(sev) : set.add(sev);
-      chip.classList.toggle("on");
-      store.updateFilters({ severities: set });
-    });
-    root.appendChild(chip);
-  });
+  const current = store.data.filters.severities.size ? [...store.data.filters.severities][0] : "";
+  root.innerHTML = `<option value="">All severities</option>` +
+    SEVERITIES.map(s => `<option value="${s}" ${current === s ? "selected" : ""}>${s.charAt(0) + s.slice(1).toLowerCase()}</option>`).join("");
+  root.onchange = () => {
+    store.updateFilters({ severities: root.value ? new Set([root.value]) : new Set() });
+  };
+}
+
+function buildRegionSelect() {
+  const root = document.getElementById("regionSelect");
+  if (!root) return;
+  const current = store.data.filters.regions.size ? [...store.data.filters.regions][0] : "";
+  root.innerHTML = `<option value="">All regions</option>` +
+    ALL_REGIONS.map(r => `<option value="${escapeHtml(r)}" ${current === r ? "selected" : ""}>${escapeHtml(r)}</option>`).join("");
+  root.onchange = () => {
+    store.updateFilters({ regions: root.value ? new Set([root.value]) : new Set() });
+  };
 }
 
 function buildCountryChips() {
@@ -129,6 +139,7 @@ function bindSearch() {
 }
 
 export function refreshFilterUI() {
-  buildCategoryChips();
-  buildSeverityChips();
+  buildCategorySelect();
+  buildSeveritySelect();
+  buildRegionSelect();
 }
