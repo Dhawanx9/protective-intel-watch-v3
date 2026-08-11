@@ -22,3 +22,30 @@
 .brief-section{ margin-bottom:18px; }
 .brief-section h3{ font-size:14px; margin-bottom:10px; color:var(--text); }
 .brief-region-row{ display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--border-soft); font-size:13px; }
+
+/* Feed Manager: unlike every other view, this one should fill the full
+   available page height rather than sit at its natural content size -
+   an admin table benefits from showing as many rows as the screen allows,
+   not scrolling inside a short capped panel with blank space below it.
+   Scoped entirely to #view-feedManager so no other view's panel sizing
+   (which intentionally stays capped for visual uniformity) is affected. */
+#view-feedManager.active{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+  min-height:0;
+}
+#view-feedManager .analytics-grid{
+  flex:1;
+  min-height:0;
+  align-items:stretch;
+}
+#view-feedManager .analytics-grid > .panel:first-child{
+  height:100%;
+  min-height:0;
+}
+#view-feedManager .analytics-grid > .panel:first-child .panel-body{
+  max-height:none;
+  flex:1;
+  min-height:0;
+}
