@@ -1,12 +1,17 @@
 .panel{ background:var(--panel); border:1px solid var(--border-soft); border-radius:var(--radius-md); box-shadow:var(--shadow); display:flex; flex-direction:column; min-height:260px; }
 .panel > h2, .panel-head{ font-size:12.5px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:var(--text-dim); margin:0; padding:13px 16px; border-bottom:1px solid var(--border-soft); flex-shrink:0; }
-/* Caps how tall any panel's content can grow before scrolling - this is
-   what actually guarantees visual uniformity across the site: a 12-row
-   category list and a 3-row severity summary can sit side by side without
-   one forcing the other to match its height, or leaving a giant empty gap.
-   Scrolling only activates when content genuinely exceeds this height -
-   short content is completely unaffected. */
-.panel-body{ padding:15px 16px; flex:1; max-height:440px; overflow-y:auto; scrollbar-width:thin; scrollbar-color:var(--border) transparent; }
+/* Every panel-body sitewide is a FIXED height (not just a max-height
+   ceiling) - this is what actually guarantees uniformity: two panels
+   sitting side by side in the same row are always the same size, no
+   matter which one has more content. Whichever side has more content
+   than fits scrolls internally (overflow-y:auto below); the shorter side
+   just has some breathing room at the bottom instead of shrinking to fit.
+   flex is explicitly set to a fixed basis (0 0 440px), not flex:1 - a
+   plain flex:1 expands to flex-basis:0%, which silently overrides any
+   height set alongside it in a flex column, so the panel would keep
+   growing past 440px regardless of what height/max-height said. Pinning
+   flex-basis directly is what actually makes the fixed height stick. */
+.panel-body{ padding:15px 16px; flex:0 0 440px; height:440px; max-height:440px; overflow-y:auto; scrollbar-width:thin; scrollbar-color:var(--border) transparent; }
 .panel-body::-webkit-scrollbar{ width:6px; }
 .panel-body::-webkit-scrollbar-track{ background:transparent; }
 .panel-body::-webkit-scrollbar-thumb{ background:var(--border); border-radius:3px; }
