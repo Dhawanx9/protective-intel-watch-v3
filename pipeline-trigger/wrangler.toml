@@ -1,0 +1,11 @@
+name = "protective-intel-pipeline-trigger"
+main = "src/worker.js"
+compatibility_date = "2026-08-01"
+
+# Fires every 10 minutes. Cloudflare Cron Triggers run reliably at their
+# configured interval (unlike GitHub Actions' own `schedule:` event, which
+# is best-effort and can be delayed 30-80+ minutes under load) - this is
+# the whole reason this Worker exists instead of just trusting GitHub's
+# cron directly.
+[triggers]
+crons = ["*/10 * * * *"]
