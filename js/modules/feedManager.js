@@ -15,6 +15,12 @@ let pendingChecks = new Set(); // feed ids added this session, awaiting their fi
 const PAGE_SIZE = 8;
 let currentPage = 1;
 
+// Region filter - lets the team see how many feeds cover a specific
+// region without scrolling through the full paginated list. "" = all
+// regions. Applied before pagination, so the page count/range always
+// reflects the filtered set, not the full feed list.
+let regionFilter = "";
+
 // Icon-only action buttons instead of text labels - matches the icon style
 // already used for the theme toggle and logout button elsewhere in the app
 // (stroke-based, 24x24 viewBox). Each has a title/aria-label for a hover
@@ -35,6 +41,7 @@ export function initFeedManager({ getFeedHealth }) {
 
   bindFeedForm();
   bindOPML();
+  bindRegionFilter();
   loadFeeds();
 
   supabase
@@ -61,12 +68,50 @@ async function loadFeeds() {
     return;
   }
   currentFeeds = data || [];
+  populateRegionOptions();
   renderTable(currentFeeds);
 }
 
-function renderTable(feeds) {
+/** Builds the region dropdown from every distinct region across ALL feeds
+ *  (not just the current page/filter), each with a live count, so the
+ *  team can see coverage at a glance - e.g. "EMEA (38)" - before even
+ *  selecting it. Preserves whatever region is currently selected across
+ *  reloads/realtime updates instead of silently resetting to "All". */
+function populateRegionOptions() {
+  const select = document.getElementById("feedRegionSelect");
+  if (!select) return;
+
+  const counts = new Map();
+  for (const f of currentFeeds) {
+    const region = f.region || "Unspecified";
+    counts.set(region, (counts.get(region) || 0) + 1);
+  }
+  const regions = [...counts.keys()].sort((a, b) => a.localeCompare(b));
+
+  const previous = regionFilter;
+  select.innerHTML = `<option value="">All regions (${currentFeeds.length})</option>` +
+    regions.map(r => `<option value="${escapeHtml(r)}">${escapeHtml(r)} (${counts.get(r)})</option>`).join("");
+  select.value = previous;
+  // If the previously selected region no longer exists (e.g. its last feed
+  // was deleted), fall back to "All" rather than leaving a blank selection.
+  if (select.value !== previous) { regionFilter = ""; }
+}
+
+function bindRegionFilter() {
+  const select = document.getElementById("feedRegionSelect");
+  if (!select) return;
+  select.addEventListener("change", () => {
+    regionFilter = select.value;
+    currentPage = 1;
+    renderTable(currentFeeds);
+  });
+}
+
+function renderTable(allFeeds) {
   const tbody = document.getElementById("feedRows");
   const health = feedHealthByLabelGetter ? feedHealthByLabelGetter() : [];
+
+  const feeds = regionFilter ? allFeeds.filter(f => (f.region || "Unspecified") === regionFilter) : allFeeds;
 
   const totalPages = Math.max(1, Math.ceil(feeds.length / PAGE_SIZE));
   if (currentPage > totalPages) currentPage = totalPages;

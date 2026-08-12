@@ -237,6 +237,10 @@
             <div class="panel">
               <h2>Connected Feeds</h2>
               <div class="panel-body" style="overflow-x:auto;">
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap;">
+                  <label style="font-size:12px;color:var(--text-dim);white-space:nowrap;">Region</label>
+                  <select id="feedRegionSelect"></select>
+                </div>
                 <table class="data-table" style="min-width:640px;">
                   <thead><tr><th>Status</th><th>Feed</th><th>Last Pull</th><th>Articles</th><th>Enabled</th><th></th></tr></thead>
                   <tbody id="feedRows"></tbody>
@@ -252,7 +256,7 @@
                   <div class="field"><label>RSS URL</label><input type="text" id="newFeedUrl" placeholder="https://example.com/feed.xml"></div>
                   <div class="field"><label>Region (optional)</label><input type="text" id="newFeedRegion" placeholder="e.g. Europe"></div>
                   <button class="btn primary" id="addFeedBtn" style="width:100%;">Add feed</button>
-                  <div class="field help">Saves instantly. Live on the site in ~10 minutes.</div>
+                  <div class="field help">Saves instantly. Live on the site in ~10 minutes, once the next pipeline run picks it up.</div>
                 </div>
               </div>
               <div class="panel">
