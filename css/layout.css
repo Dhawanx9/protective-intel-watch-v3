@@ -1,8 +1,20 @@
-.app{ display:grid; grid-template-columns:248px 1fr; min-height:100vh; }
-@media (max-width:960px){ .app{ grid-template-columns:1fr; } .sidebar{ position:static; height:auto; } }
+/* .app no longer forces min-height:100vh - the page's total height is now
+   determined purely by its actual content (sidebar's natural height vs
+   main's natural height, whichever is taller), on any screen size or
+   resolution. This is what actually stops short pages (e.g. Feed Manager
+   with only a few feeds) from being stretched into a tall empty void just
+   because the browser window happens to be large. */
+.app{ display:grid; grid-template-columns:248px 1fr; }
+@media (max-width:960px){ .app{ grid-template-columns:1fr; } .sidebar{ position:static; max-height:none; } }
 .sidebar{
   background:var(--bg-elevated); border-right:1px solid var(--border-soft);
-  position:sticky; top:0; height:100vh; display:flex; flex-direction:column; padding:18px 0;
+  /* max-height (not height) caps the sidebar at the viewport size without
+     forcing the whole page to be at least that tall - it only kicks in if
+     the sidebar's own content (nav + categories) would exceed the
+     viewport, giving it its own internal scrollbar in that case rather
+     than pushing overall page height taller than the actual content
+     needs. */
+  position:sticky; top:0; max-height:100vh; display:flex; flex-direction:column; padding:18px 0;
   overflow-y:auto; overflow-x:hidden;
 }
 .brand{ display:flex; align-items:center; gap:10px; padding:0 18px 18px; border-bottom:1px solid var(--border-soft); margin-bottom:12px; }
@@ -25,4 +37,3 @@
 .content{ padding:22px 24px 60px; max-width:1800px; margin:0 auto; width:100%; }
 .view{ display:none; }
 .view.active{ display:block; }
-footer.app-footer{ padding:16px 24px 30px; font-size:11px; color:var(--text-faint); border-top:1px solid var(--border-soft); margin-top:12px; }
