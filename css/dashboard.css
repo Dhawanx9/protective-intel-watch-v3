@@ -32,7 +32,10 @@
    sitewide), the shorter side just has a bit of empty space at the
    bottom rather than shrinking. Scoped to #view-brief only. */
 #view-brief .analytics-grid .panel-body{
+  flex:0 0 440px !important;
   height:440px !important;
+  max-height:440px !important;
+  overflow-y:auto !important;
 }
 
 /* Feed Manager: the left "Connected Feeds" column and the right column
