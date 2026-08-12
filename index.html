@@ -160,6 +160,23 @@
 
       <!-- MAP -->
       <section class="view" id="view-map">
+        <div class="panel filter-bar" style="margin-bottom:16px;">
+          <select id="mapCategorySelect"></select>
+          <select id="mapSeveritySelect">
+            <option value="">All severities</option>
+            <option value="HIGH">High</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="LOW">Low</option>
+          </select>
+          <select id="mapRangeSelect">
+            <option value="24h">Last 24h</option>
+            <option value="48h">Last 48h</option>
+            <option value="72h">Last 72h</option>
+            <option value="7d" selected>Last 7d</option>
+            <option value="all">All time</option>
+          </select>
+          <button class="btn small" id="mapResetFiltersBtn" style="margin-left:auto;">Reset filters</button>
+        </div>
         <div class="map-legend">
           <span>Marker color = severity. Clusters split apart as you zoom in. Click any marker for details and the original article.</span>
           <span class="lg"><span style="background:var(--low)"></span>Low</span>
@@ -235,7 +252,7 @@
                   <div class="field"><label>RSS URL</label><input type="text" id="newFeedUrl" placeholder="https://example.com/feed.xml"></div>
                   <div class="field"><label>Region (optional)</label><input type="text" id="newFeedRegion" placeholder="e.g. Europe"></div>
                   <button class="btn primary" id="addFeedBtn" style="width:100%;">Add feed</button>
-                  <div class="field help">Saves instantly. Live on the site within ~10 minutes.</div>
+                  <div class="field help">Changes save immediately to Supabase — no commit, no redeploy. The next pipeline run (within 10 minutes) will start using it.</div>
                 </div>
               </div>
               <div class="panel">
@@ -277,7 +294,9 @@
 
     </div>
 
-    
+    <footer class="app-footer">
+      Protective Intel Watch — aggregating open-source intelligence across USA, UK, Singapore, EMEA &amp; APAC. Pipeline refreshes automatically every ~10 minutes.
+    </footer>
   </div>
 </div>
 
