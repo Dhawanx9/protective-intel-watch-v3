@@ -10,7 +10,7 @@
 // non-corporate stories entirely.
 
 // --- 1. Executive / leadership titles -------------------------------------
-// Matched case-insensitively, as whole phrases, against title + description.
+// Matched case-insensitively, as whole (stemmed) words, against title + description.
 export const EXECUTIVE_TITLES = [
   "Chairperson", "Chairman", "Vice Chairperson",
   "Board of Directors", "Independent Director",
@@ -98,45 +98,63 @@ const CORPORATE_SUFFIXES = [
   "Technologies", "Solutions", "Systems", "Co.",
 ];
 
-function escapeRegex(str) {
-  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+/** Lightweight suffix-stripping stemmer. Reduces regular English
+ *  inflections (plurals, past tense, gerunds, "-er"/"-ers" agent nouns) to
+ *  a common root, so "stalker", "stalking", and "stalked" all collapse to
+ *  "stalk" and match the same keyword without needing every grammatical
+ *  form spelled out in a config file. This deliberately does NOT attempt
+ *  full linguistic stemming (irregular derivations like threat -> threaten
+ *  aren't caught by suffix rules alone and still need to be listed
+ *  explicitly in categories.json) - it only handles the regular,
+ *  mechanical inflections, which cover the vast majority of real-world
+ *  keyword-matching misses like this one. */
+function stem(word) {
+  const w = word;
+  if (w.length > 6 && w.endsWith("ers")) return w.slice(0, -3);
+  if (w.length > 5 && w.endsWith("er")) return w.slice(0, -2);
+  if (w.length > 6 && w.endsWith("ing")) return w.slice(0, -3);
+  if (w.length > 5 && w.endsWith("ed")) return w.slice(0, -2);
+  if (w.length > 5 && w.endsWith("es")) return w.slice(0, -2);
+  if (w.length > 4 && w.endsWith("s") && !w.endsWith("ss")) return w.slice(0, -1);
+  return w;
 }
 
-/** Whole-word match only - "cto" will NOT match inside "inspector", "vp"
- *  will NOT match inside an unrelated word, etc. This is the permanent fix
- *  for the class of bug where a short acronym (CTO, VP, COO, CFO, CRO...)
- *  happens to be a substring of a completely unrelated ordinary word.
- *  Plain .includes() has no concept of word boundaries; lookaround
- *  assertions do, and unlike \b they correctly treat things like
- *  apostrophes or accented letters as non-word characters too. Used for
- *  every phrase check in this file, not just short ones - multi-word
- *  phrases benefit from the same safety. */
-function wordBoundaryTest(lowerText, phraseLower) {
-  const escaped = escapeRegex(phraseLower);
-  const re = new RegExp(`(?<![a-z0-9])${escaped}(?![a-z0-9])`, "i");
-  return re.test(lowerText);
+/** Splits text into real word tokens only (letters/digits) - this is what
+ *  keeps "cto" from ever matching inside "doctor": tokenization only
+ *  produces whole words to begin with, so a short acronym can never be a
+ *  substring hit inside an unrelated longer word. Stemming is applied on
+ *  top of these whole tokens, never on raw substrings. */
+function tokenize(text) {
+  return ((text || "").toLowerCase().match(/[a-z0-9]+/g)) || [];
 }
 
-function findAllWordBoundaryPositions(lowerText, phraseLower) {
-  const escaped = escapeRegex(phraseLower);
-  const re = new RegExp(`(?<![a-z0-9])${escaped}(?![a-z0-9])`, "gi");
+/** Finds every token-index position where `phrase` (a possibly multi-word
+ *  string, e.g. "death threat") appears in `textTokens`, comparing each
+ *  word by STEM rather than exact spelling. Returns an array of starting
+ *  token positions (used for proximity matching below), not booleans. */
+function findPhrasePositions(textTokens, phrase) {
+  const phraseTokens = tokenize(phrase).map(stem);
+  if (!phraseTokens.length) return [];
+  const stemmedText = textTokens.map(stem);
   const positions = [];
-  let match;
-  while ((match = re.exec(lowerText)) !== null) {
-    positions.push(match.index);
-    if (match[0].length === 0) re.lastIndex++; // safety against zero-length matches
+  for (let i = 0; i <= stemmedText.length - phraseTokens.length; i++) {
+    let match = true;
+    for (let j = 0; j < phraseTokens.length; j++) {
+      if (stemmedText[i + j] !== phraseTokens[j]) { match = false; break; }
+    }
+    if (match) positions.push(i);
   }
   return positions;
 }
 
 function containsAny(haystack, needles) {
-  const lower = haystack.toLowerCase();
-  return needles.some(n => wordBoundaryTest(lower, n.toLowerCase()));
+  const tokens = tokenize(haystack);
+  return needles.some(n => findPhrasePositions(tokens, n).length > 0);
 }
 
 function countMatches(haystack, needles) {
-  const lower = haystack.toLowerCase();
-  return needles.reduce((count, n) => wordBoundaryTest(lower, n.toLowerCase()) ? count + 1 : count, 0);
+  const tokens = tokenize(haystack);
+  return needles.reduce((count, n) => findPhrasePositions(tokens, n).length > 0 ? count + 1 : count, 0);
 }
 
 // --- Proximity matching --------------------------------------------------
@@ -149,32 +167,30 @@ function countMatches(haystack, needles) {
 // an executive title and an incident phrase appear close together in the
 // text - the way they actually would if the article is really about a
 // threat TO that executive, rather than the two concepts being unrelated
-// mentions in the same piece.
-const PROXIMITY_WINDOW_CHARS = 80;
+// mentions in the same piece. Measured in TOKENS (words) rather than raw
+// character count, since a fixed character window behaves inconsistently
+// across short vs. long words - roughly equivalent to the old 80-character
+// window for typical headline-length text.
+const PROXIMITY_WINDOW_TOKENS = 14;
 
 /**
  * Returns true only if an executive title AND one of the given incident
- * phrases both appear in the text as WHOLE WORDS (not substrings hiding
- * inside unrelated words - e.g. "cto" no longer matches inside
- * "inspector"), AND at least one occurrence of each is within
- * PROXIMITY_WINDOW_CHARS characters of the other.
+ * phrases both appear in the text as whole (stemmed) words, AND at least
+ * one occurrence of each is within PROXIMITY_WINDOW_TOKENS words of the
+ * other.
  */
 export function hasExecutiveIncidentNearby(text, incidentPhrases) {
-  const lower = (text || "").toLowerCase();
+  const tokens = tokenize(text);
 
   const titlePositions = [];
-  for (const t of EXECUTIVE_TITLES) {
-    titlePositions.push(...findAllWordBoundaryPositions(lower, t.toLowerCase()));
-  }
+  for (const t of EXECUTIVE_TITLES) titlePositions.push(...findPhrasePositions(tokens, t));
   if (!titlePositions.length) return false;
 
   const incidentPositions = [];
-  for (const w of incidentPhrases || []) {
-    incidentPositions.push(...findAllWordBoundaryPositions(lower, w.toLowerCase()));
-  }
+  for (const w of incidentPhrases || []) incidentPositions.push(...findPhrasePositions(tokens, w));
   if (!incidentPositions.length) return false;
 
-  return titlePositions.some(tp => incidentPositions.some(ip => Math.abs(tp - ip) <= PROXIMITY_WINDOW_CHARS));
+  return titlePositions.some(tp => incidentPositions.some(ip => Math.abs(tp - ip) <= PROXIMITY_WINDOW_TOKENS));
 }
 
 /**
